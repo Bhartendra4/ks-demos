@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ankeny Dental Arts — Family &amp; Cosmetic Dentistry in Ankeny, IA</title>
+<meta name="description" content="Family, cosmetic and restorative dentistry in Ankeny, Iowa. Request an appointment at Ankeny Dental Arts, 1210 NW 18th St, Suite 140.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#1f9aa6; --teal-d:#137580; --teal-l:#e6f5f6;
+  --navy:#12303a; --ink:#22343b; --muted:#5b6f76;
+  --cream:#fbf9f5; --line:#e3e9ea; --white:#fff; --leaf:#7fbf4d;
+  --r:18px; --shadow:0 10px 30px rgba(18,48,58,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;color:var(--navy);line-height:1.15;font-weight:600}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+.ribbon{background:var(--navy);color:#cfe7ea;text-align:center;font-size:13px;padding:7px 12px}
+.ribbon b{color:#fff;font-weight:600}
+header{position:sticky;top:0;z-index:50;background:rgba(251,249,245,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo svg{flex:none}
+.logo span{font-family:Fraunces,serif;font-size:20px;font-weight:600;color:var(--navy);line-height:1}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:11px;letter-spacing:.18em;color:var(--teal-d);text-transform:uppercase;margin-top:3px}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;font-size:15px;font-weight:500;color:var(--ink)}
+.links a:hover{color:var(--teal-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
+.btn-p{background:var(--teal);color:#fff}
+.btn-p:hover{background:var(--teal-d)}
+.btn-o{border-color:var(--navy);color:var(--navy);background:transparent}
+.btn-o:hover{background:var(--navy);color:#fff}
+.btn-w{background:#fff;color:var(--navy)}
+.menu-btn{display:none;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
+@media(max-width:900px){
+  .links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--cream);flex-direction:column;padding:18px;border-bottom:1px solid var(--line);gap:16px}
+  .links.open{display:flex}
+  .menu-btn{display:block}
+}
+/* hero */
+.hero{padding:56px 0 40px}
+.hero-g{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;background:var(--teal-l);color:var(--teal-d);font-weight:600;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,5.4vw,58px);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:520px;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img img{border-radius:28px;aspect-ratio:4/3.3;object-fit:cover;width:100%;box-shadow:var(--shadow)}
+.badge{position:absolute;left:-18px;bottom:28px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:270px}
+.badge .ic{width:42px;height:42px;border-radius:12px;background:var(--teal-l);display:grid;place-items:center;flex:none}
+.badge b{display:block;font-size:15px;color:var(--navy)}
+.badge span{font-size:13px;color:var(--muted)}
+@media(max-width:900px){.hero-g{grid-template-columns:1fr;gap:32px}.badge{left:12px;bottom:12px}}
+/* info strip */
+.strip{background:#fff;border:1px solid var(--line);border-radius:var(--r);display:grid;grid-template-columns:repeat(3,1fr);margin-top:8px}
+.strip div{padding:20px 24px;display:flex;gap:14px;align-items:flex-start}
+.strip div+div{border-left:1px solid var(--line)}
+.strip b{display:block;color:var(--navy);font-size:15px}
+.strip span,.strip a{font-size:14px;color:var(--muted);text-decoration:none}
+@media(max-width:760px){.strip{grid-template-columns:1fr}.strip div+div{border-left:0;border-top:1px solid var(--line)}}
+section{padding:76px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+.head p{color:var(--muted);font-size:17px}
+.kicker{color:var(--teal-d);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;display:block}
+/* services */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card .in{padding:22px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.svc div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;font-weight:500;display:flex;gap:10px;align-items:center;font-size:15px}
+.svc div::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--leaf);flex:none}
+@media(max-width:900px){.feat{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.svc{grid-template-columns:1fr}}
+/* why */
+.why{background:var(--navy);color:#d5e6e9}
+.why h2,.why h3{color:#fff}
+.why .head p{color:#a9c4c9}
+.why .kicker{color:#7fd3db}
+.why-g{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why-g div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px}
+.why-g .ic{width:46px;height:46px;border-radius:14px;background:rgba(127,211,219,.15);display:grid;place-items:center;margin-bottom:16px}
+.why-g h3{font-size:19px;margin-bottom:8px}
+.why-g p{font-size:15px}
+@media(max-width:900px){.why-g{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.why-g{grid-template-columns:1fr}}
+/* new patients */
+.np{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.np img{border-radius:24px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.steps{list-style:none;counter-reset:s;display:grid;gap:18px;margin:8px 0 28px}
+.steps li{counter-increment:s;display:flex;gap:16px}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--teal-l);color:var(--teal-d);font-weight:600;display:grid;place-items:center;flex:none}
+.steps b{color:var(--navy);display:block}
+.steps span{color:var(--muted);font-size:15px}
+@media(max-width:900px){.np{grid-template-columns:1fr}}
+/* appointment */
+.appt{background:var(--teal-l)}
+.appt-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+form{background:#fff;border-radius:22px;padding:30px;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:14px;font-weight:500;color:var(--navy);display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:15px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--cream);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);background:#fff}
+.full{grid-column:1/-1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips input{display:none}
+.chips span{padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;font-size:14px;cursor:pointer;background:var(--cream)}
+.chips input:checked+span{background:var(--teal);border-color:var(--teal);color:#fff}
+.note{font-size:13px;color:var(--muted)}
+.ok{display:none;grid-column:1/-1;background:#eaf6e1;color:#2d5a12;padding:14px;border-radius:12px;font-size:14px}
+.contact-list{display:grid;gap:14px;margin-top:24px}
+.contact-list a{display:flex;gap:14px;align-items:center;background:#fff;border-radius:14px;padding:16px 18px;text-decoration:none;font-weight:500;border:1px solid var(--line)}
+.contact-list a:hover{border-color:var(--teal)}
+.contact-list small{display:block;color:var(--muted);font-weight:400;font-size:13px}
+@media(max-width:900px){.appt-g{grid-template-columns:1fr}}
+@media(max-width:560px){form{grid-template-columns:1fr;padding:22px}}
+/* location */
+.loc{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.loc-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.loc-card h3{font-size:22px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;margin:10px 0 22px;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#e9eef0}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+@media(max-width:900px){.loc{grid-template-columns:1fr}}
+/* faq */
+.faq{max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--teal)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;font-size:15px}
+/* cta band + footer */
+.band{background:linear-gradient(120deg,var(--teal-d),var(--teal));border-radius:26px;padding:44px;color:#e9fbfc;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.band h2{color:#fff;font-size:clamp(26px,3vw,34px)}
+footer{background:var(--navy);color:#a9c4c9;padding:48px 0 90px;margin-top:76px;font-size:14px}
+.f-g{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:28px}
+footer h4{color:#fff;font-size:15px;margin-bottom:10px}
+footer a{color:#cfe7ea;text-decoration:none}
+footer p{margin-bottom:6px}
+.credits{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12px;color:#86a3a9}
+.credits a{color:#a9c4c9;text-decoration:underline}
+@media(max-width:760px){.f-g{grid-template-columns:1fr}}
+/* mobile action bar */
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 12px;gap:8px}
+.mbar a{flex:1;text-align:center;padding:12px 6px;border-radius:12px;font-weight:600;font-size:14px;text-decoration:none}
+@media(max-width:760px){.mbar{display:flex}}
+.reveal{opacity:0;transform:translateY(18px);transition:.6s ease}
+.reveal.on{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Ankeny Dental Arts</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Ankeny Dental Arts home">
+      <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6c-3-2.5-8.5-3-11.5.5S6.5 16 8 21c1.3 4.3 2 12 5 13 2.7.9 3.4-6.5 7-6.5s4.3 7.4 7 6.5c3-1 3.7-8.7 5-13 1.5-5 2.5-10-.5-13.5S23 3.5 20 6z" fill="#1f9aa6"/><path d="M14 13c2-1.5 4.5-1 6 .5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>Ankeny<small>Dental Arts</small></span>
+    </a>
+    <nav class="links" id="links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#new-patients">New Patients</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+      <a href="#appointment" class="btn btn-p">Request Appointment</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-g">
+      <div>
+        <span class="eyebrow">Family &amp; cosmetic dentistry · Ankeny, Iowa</span>
+        <h1>Dental care that keeps your <em>whole family</em> smiling.</h1>
+        <p class="lead">From routine cleanings to whitening, orthodontics and tooth replacement — comprehensive dental care for every age, in one comfortable office on NW 18th Street.</p>
+        <div class="cta">
+          <a href="#appointment" class="btn btn-p">Request an Appointment</a>
+          <a href="tel:+15159645700" class="btn btn-o">Call (515) 964-5700</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero.jpg" alt="Modern dental treatment room with patient chair" width="1024" height="686">
+        <div class="badge">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#137580" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><b>Your time matters</b><span>Seen within 15 minutes of your appointment time</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="strip">
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div><b>Call us</b><a href="tel:+15159645700">(515) 964-5700</a></div></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Mon – Thu, 7:30am – 4:00pm</b><span>Friday by appointment only</span></div></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>1210 NW 18th St, Suite 140</b><span>Ankeny, IA 50023</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Our services</span>
+      <h2>Everything your smile needs, under one roof</h2>
+      <p>Preventive, cosmetic and restorative care for children and adults — so the whole family can see one trusted team.</p>
+    </div>
+    <div class="feat">
+      <article class="card reveal"><img src="img/checkup.jpg" alt="Dental mirror used during a check-up" loading="lazy"><div class="in"><h3>Cleaning &amp; Prevention</h3><p>Regular check-ups and professional cleanings that catch small problems early and keep teeth and gums healthy.</p></div></article>
+      <article class="card reveal"><img src="img/care.jpg" alt="Toothbrush with toothpaste" loading="lazy"><div class="in"><h3>Family Dentistry</h3><p>Gentle, comprehensive care for every age — one office for kids, parents and grandparents.</p></div></article>
+      <article class="card reveal"><img src="img/office.jpg" alt="Dental chair rinse station" loading="lazy"><div class="in"><h3>Cosmetic Dentistry</h3><p>Teeth whitening and smile makeovers designed around how you want your smile to look and feel.</p></div></article>
+    </div>
+    <div class="svc reveal">
+      <div>Teeth Whitening</div>
+      <div>Tooth Replacement</div>
+      <div>Extractions &amp; Preservation</div>
+      <div>Orthodontics</div>
+      <div>Oral Appliances</div>
+      <div>Sedation &amp; Comfort</div>
+      <div>Botox®</div>
+      <div>Modern Technology</div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Why Ankeny Dental Arts</span>
+      <h2>A calmer, more comfortable dental visit</h2>
+      <p>We know a dental appointment fits into a busy day. Here's how we make it easier.</p>
+    </div>
+    <div class="why-g">
+      <div class="reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7fd3db" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>On-time appointments</h3><p>Your time is valuable — you'll be seen within 15 minutes of your appointment time.</p></div>
+      <div class="reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7fd3db" stroke-width="2"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Relaxing rooms</h3><p>Treatment rooms with televisions to ease anxiety and create a tranquil environment.</p></div>
+      <div class="reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7fd3db" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div><h3>Care for all ages</h3><p>A comprehensive dental solution for the entire family, from first visits to full smile makeovers.</p></div>
+      <div class="reveal"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7fd3db" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>No insurance? We can help</h3><p>Ask us about options that make care possible even if you don't have dental insurance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="new-patients">
+  <div class="wrap np">
+    <img src="img/hero.jpg" alt="Bright, clean dental office" loading="lazy" class="reveal">
+    <div class="reveal">
+      <span class="kicker">New patients</span>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:14px">Your first visit, made simple</h2>
+      <ol class="steps">
+        <li><div><b>Request a time</b><span>Use the form below or call — we'll confirm a time that works for you.</span></div></li>
+        <li><div><b>Fill in your forms</b><span>Download patient forms ahead of time to save time in the office.</span></div></li>
+        <li><div><b>Meet your dental team</b><span>A thorough exam, cleaning and a clear, no-pressure plan for your smile.</span></div></li>
+      </ol>
+      <a href="#appointment" class="btn btn-p">Book your first visit</a>
+    </div>
+  </div>
+</section>
+
+<section class="appt" id="appointment">
+  <div class="wrap appt-g">
+    <div class="reveal">
+      <span class="kicker">Request an appointment</span>
+      <h2 style="font-size:clamp(28px,3.6vw,40px);margin-bottom:12px">Tell us when suits you — we'll do the rest</h2>
+      <p style="color:var(--muted)">Send a request any time, day or night. Our team will contact you to confirm your appointment.</p>
+      <div class="contact-list">
+        <a href="tel:+15159645700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div>(515) 964-5700<small>Call the office</small></div></a>
+        <a href="sms:+15159645700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><div>Send a text<small>Quick questions by message</small></div></a>
+        <a href="mailto:ankenydentalarts@gmail.com"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f9aa6" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><div>ankenydentalarts@gmail.com<small>Email us</small></div></a>
+      </div>
+    </div>
+    <form id="apptForm" class="reveal" novalidate>
+      <label>Full name<input name="name" required placeholder="Your name"></label>
+      <label>Phone<input name="phone" type="tel" required placeholder="(515) 000-0000"></label>
+      <label class="full">Email<input name="email" type="email" placeholder="you@example.com"></label>
+      <label>I am a…<select name="type"><option>New patient</option><option>Returning patient</option></select></label>
+      <label>Preferred day<select name="day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday (by appointment)</option></select></label>
+      <div class="full"><label style="margin-bottom:8px">Reason for visit</label>
+        <div class="chips">
+          <label><input type="radio" name="reason" checked><span>Check-up &amp; cleaning</span></label>
+          <label><input type="radio" name="reason"><span>Whitening / cosmetic</span></label>
+          <label><input type="radio" name="reason"><span>Tooth pain</span></label>
+          <label><input type="radio" name="reason"><span>Orthodontics</span></label>
+          <label><input type="radio" name="reason"><span>Other</span></label>
+        </div>
+      </div>
+      <label class="full">Anything we should know?<textarea name="msg" rows="3" placeholder="Optional"></textarea></label>
+      <button type="submit" class="btn btn-p full">Send appointment request</button>
+      <p class="note full">This is a design preview — the form is not connected yet.</p>
+      <div class="ok" id="ok">Thank you! In the live site, this request would go straight to the front desk.</div>
+    </form>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Visit us</span>
+      <h2>Easy to find in Ankeny</h2>
+    </div>
+    <div class="loc">
+      <div class="loc-card reveal">
+        <h3>Ankeny Dental Arts</h3>
+        <p>1210 NW 18th St, Suite 140<br>Ankeny, IA 50023</p>
+        <table class="hours">
+          <tr><td>Monday – Thursday</td><td>7:30am – 4:00pm</td></tr>
+          <tr><td>Friday</td><td>By appointment only</td></tr>
+          <tr><td>Saturday – Sunday</td><td>Closed</td></tr>
+        </table>
+        <div class="cta">
+          <a class="btn btn-p" href="https://www.google.com/maps/search/?api=1&query=1210+NW+18th+St+Suite+140+Ankeny+IA+50023" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-o" href="tel:+15159645700">Call</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to Ankeny Dental Arts" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=1210%20NW%2018th%20St%20Suite%20140%2C%20Ankeny%2C%20IA%2050023&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:20px">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">FAQ</span>
+      <h2>Questions patients ask</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Are you accepting new patients?</summary><p>Yes — new patients are welcome. Request an appointment online or call (515) 964-5700 and we'll find a time that works for you.</p></details>
+      <details><summary>What if I don't have dental insurance?</summary><p>You can still get the care you need. Ask our team about the options available for patients without insurance.</p></details>
+      <details><summary>Do you see children and adults?</summary><p>Yes. We provide comprehensive dental care for the entire family, from routine cleanings to cosmetic and restorative treatment.</p></details>
+      <details><summary>I get nervous at the dentist. Can you help?</summary><p>Absolutely. We offer sedation and comfort options, and our treatment rooms have televisions to help you relax.</p></details>
+      <details><summary>What are your office hours?</summary><p>Monday to Thursday, 7:30am to 4:00pm. Friday visits are available by appointment only.</p></details>
+    </div>
+    <div class="band reveal" style="margin-top:48px">
+      <div><h2>Ready for a healthier, brighter smile?</h2><p>Request your visit in under a minute.</p></div>
+      <a href="#appointment" class="btn btn-w">Request Appointment</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-g">
+      <div><h4>Ankeny Dental Arts</h4><p>Family, cosmetic and restorative dentistry in Ankeny, Iowa.</p></div>
+      <div><h4>Contact</h4><p><a href="tel:+15159645700">(515) 964-5700</a></p><p><a href="mailto:ankenydentalarts@gmail.com">ankenydentalarts@gmail.com</a></p><p>1210 NW 18th St, Suite 140<br>Ankeny, IA 50023</p></div>
+      <div><h4>Hours</h4><p>Mon – Thu: 7:30am – 4:00pm</p><p>Fri: By appointment only</p></div>
+    </div>
+    <p class="credits" id="credits">Sample photos: loading credits… Real photos of your practice will replace these.</p>
+    <p class="credits" style="border:0;padding-top:8px">© <span id="yr">2026</span> Ankeny Dental Arts · Demo design by KS Digital Studio</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+15159645700" style="background:var(--teal-l);color:var(--teal-d)">Call</a>
+  <a href="sms:+15159645700" style="background:var(--teal-l);color:var(--teal-d)">Text</a>
+  <a href="#appointment" style="background:var(--teal);color:#fff">Book</a>
+</div>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('links').classList.toggle('open'));
+document.querySelectorAll('#links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('links').classList.remove('open')));
+document.getElementById('apptForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('ok').style.display='block';});
+document.getElementById('yr').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const CREDITS=[
+ {t:"Dental clinic",c:null,l:"CC0 1.0",p:"https://www.rawpixel.com/image/6020787/dental-clinic-free-public-domain-cc0-photo"},
+ {t:"Toothbrush with Toothpaste",c:"wwarby",l:"CC BY 2.0",p:"https://www.flickr.com/photos/26782864@N00/11693757123"},
+ {t:"Dental Mirror",c:null,l:"CC0 1.0",p:"https://www.rawpixel.com/image/5927059/dental-mirror-free-public-domain-cc0-photo"},
+ {t:"Dentist room",c:null,l:"CC0 1.0",p:"https://www.rawpixel.com/image/6025843/dentist-room-free-public-domain-cc0-photo"}
+];
+document.getElementById('credits').innerHTML='Sample photos: '+CREDITS.map(x=>`<a href="${x.p}" target="_blank" rel="noopener">${x.t}</a>${x.c?' by '+x.c:''} (${x.l})`).join(' · ')+'. Real photos of your practice will replace these.';
+</script>
+</body>
+</html>

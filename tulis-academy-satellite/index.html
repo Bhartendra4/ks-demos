@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tulis Academy — Abacus, Music &amp; Dance Classes in Satellite, Ahmedabad</title>
+<meta name="description" content="Tulis Abacus, Music and Dance Academy — classes for children and adults at Pushpam Complex, Anandnagar Road, Satellite, Ahmedabad.">
+<style>
+:root{--ink:#1d1a2f;--indigo:#2b2456;--gold:#e0a12b;--gold-d:#b97d12;--cream:#fbf6ec;--paper:#fff;--muted:#6b6780;--line:#ebe3d3;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:#d9d4ee;font-size:12.5px;text-align:center;padding:7px 14px;letter-spacing:.02em}
+.ribbon b{color:var(--gold);font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(251,246,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-family:Georgia,serif;font-size:22px;font-weight:700;color:var(--indigo);text-decoration:none}
+.brand span{color:var(--gold-d)}
+.links{display:none;gap:26px;font-size:15px}
+.links a{text-decoration:none;color:var(--ink);opacity:.8}
+.links a:hover{opacity:1;color:var(--gold-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;border:2px solid transparent;transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 8px 22px rgba(224,161,43,.35)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-dark{background:var(--indigo);color:#fff}
+.btn-line{border-color:var(--indigo);color:var(--indigo)}
+.btn-sm{padding:9px 16px;font-size:14px}
+.hero{position:relative;color:#fff;min-height:78vh;display:flex;align-items:flex-end;background:#1d1a2f}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,26,47,.35) 0%,rgba(29,26,47,.55) 45%,rgba(29,26,47,.93) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:54px;width:100%}
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
+.hero h1{font-size:clamp(36px,8vw,68px);max-width:14ch}
+.hero p{font-size:clamp(16px,2.4vw,20px);max-width:52ch;margin:16px 0 26px;color:#ece8f7}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.guj{margin-top:22px;font-size:15px;color:#f3d79d}
+section{padding:68px 0}
+.head{max-width:640px;margin-bottom:34px}
+.head h2{font-size:clamp(28px,5vw,40px);color:var(--indigo)}
+.head p{color:var(--muted);margin-top:10px;font-size:17px}
+.cards{display:grid;gap:22px}
+.card{background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px rgba(43,36,86,.07);display:flex;flex-direction:column}
+.card img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:24px;color:var(--indigo)}
+.card p{color:var(--muted);font-size:15.5px}
+.card ul{list-style:none;font-size:15px;display:grid;gap:6px;margin-top:2px}
+.card li{padding-left:22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:2px;background:var(--gold)}
+.fee{margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);font-size:14px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.fee a{color:var(--gold-d);font-weight:600;text-decoration:none;white-space:nowrap}
+.band{background:var(--indigo);color:#fff}
+.band .head h2{color:#fff}.band .head p{color:#cfc9ea}
+.steps{display:grid;gap:18px;counter-reset:s}
+.step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:var(--r);padding:24px}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:Georgia,serif;font-size:30px;color:var(--gold);display:block;margin-bottom:8px}
+.step h3{font-size:20px;margin-bottom:6px}
+.step p{color:#d5d0ec;font-size:15.5px}
+.info{display:grid;gap:22px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.panel h3{font-size:22px;color:var(--indigo);margin-bottom:12px}
+.panel p{color:var(--muted);margin-bottom:8px}
+.panel address{font-style:normal;font-size:17px;line-height:1.55;margin-bottom:16px}
+.rows{display:grid;gap:0;font-size:15.5px}
+.rows div{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line)}
+.rows div:last-child{border:0}
+.rows span:last-child{color:var(--muted);text-align:right}
+.contact{background:linear-gradient(135deg,#fff7e2,#fbf6ec)}
+.contact-box{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:34px 24px;text-align:center;box-shadow:0 20px 50px rgba(43,36,86,.08)}
+.contact-box h2{font-size:clamp(26px,5vw,38px);color:var(--indigo)}
+.contact-box p{color:var(--muted);max-width:50ch;margin:12px auto 24px}
+.contact-box .cta{justify-content:center}
+.mini{margin-top:20px;font-size:14.5px;color:var(--muted)}
+.mini a{color:var(--indigo);font-weight:600}
+footer{background:var(--ink);color:#b9b4d1;padding:34px 0 90px;font-size:14px}
+footer .f1{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-bottom:16px;color:#e7e3f6}
+footer .credits{font-size:12px;line-height:1.7;color:#8f8aa8;border-top:1px solid rgba(255,255,255,.1);padding-top:14px}
+footer .credits a{color:#b9b4d1}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid var(--line);box-shadow:0 -8px 24px rgba(0,0,0,.08)}
+.dock a{padding:13px 6px;text-align:center;text-decoration:none;font-weight:600;font-size:14.5px;color:var(--indigo)}
+.dock a+a{border-left:1px solid var(--line)}
+.dock a.w{color:#128c4b}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media(min-width:760px){
+ .links{display:flex}.cards{grid-template-columns:repeat(3,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:1.1fr .9fr}
+ .contact-box{padding:54px 40px}.dock{display:none}footer{padding-bottom:34px}section{padding:88px 0}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Tulis Academy</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Tulis<span>.</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="#classes">Classes</a><a href="#how">How to join</a><a href="#visit">Visit us</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-dark btn-sm" href="tel:+919924305769">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img src="img/hero.jpg" alt="Hands playing a keyboard during a music lesson" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Satellite · Ahmedabad</span>
+    <h1>Abacus, Music &amp; Dance — under one roof.</h1>
+    <p>Tulis Academy helps children and grown-ups build sharp minds, musical ears and confident feet, in friendly small-group classes on Anandnagar Road.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="#contact">Enquire about a class</a>
+      <a class="btn btn-ghost" href="#classes">See our classes</a>
+    </div>
+    <p class="guj">શીખો, રમો, આગળ વધો — Learn, play, grow.</p>
+  </div>
+</div>
+
+<section id="classes">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our classes</span>
+      <h2>Three ways to learn something new</h2>
+      <p>Pick one, or mix them. Call us for current batches, age groups and fees.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/abacus.jpg" alt="Close-up of a wooden abacus" loading="lazy" width="900" height="599">
+        <div class="body">
+          <h3>Abacus</h3>
+          <p>Hands-on number practice that builds speed, focus and confidence with maths.</p>
+          <ul><li>Step-by-step levels</li><li>Mental arithmetic practice</li><li>Regular progress check-ins</li></ul>
+          <div class="fee"><span>Fees: on request</span><a href="#contact">Ask about batches →</a></div>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/music.jpg" alt="A pair of tabla drums" loading="lazy" width="900" height="657">
+        <div class="body">
+          <h3>Music</h3>
+          <p>Learn rhythm, melody and the joy of playing — from the very first note.</p>
+          <ul><li>Beginner-friendly lessons</li><li>Guided practice in class</li><li>For children and adults</li></ul>
+          <div class="fee"><span>Fees: on request</span><a href="#contact">Ask about batches →</a></div>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/dance.jpg" alt="A dancer's foot with ankle bells on stage" loading="lazy" width="900" height="642">
+        <div class="body">
+          <h3>Dance</h3>
+          <p>Movement, expression and stage confidence, taught with patience and care.</p>
+          <ul><li>Structured training</li><li>Small, friendly groups</li><li>Learn at your own pace</li></ul>
+          <div class="fee"><span>Fees: on request</span><a href="#contact">Ask about batches →</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">How to join</span>
+      <h2>Getting started is simple</h2>
+      <p>No forms to hunt for. Just three small steps.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Call or message us</h3><p>Tell us the learner's age and which class you are interested in.</p></div>
+      <div class="step reveal"><h3>Choose a batch</h3><p>We will share the available days, timings and fees so you can pick what suits you.</p></div>
+      <div class="step reveal"><h3>Come and begin</h3><p>Visit the academy at Pushpam Complex and start learning.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Visit us</span>
+      <h2>Find us on Anandnagar Road</h2>
+    </div>
+    <div class="info">
+      <div class="panel reveal">
+        <h3>Address</h3>
+        <address>Tulis Academy<br>Shop No. 10, First Floor, Pushpam Complex<br>Opp. Seema Hall, Anandnagar Road<br>Satellite, Ahmedabad, Gujarat</address>
+        <a class="btn btn-line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Tulis+Pushpam+Complex+Anandnagar+Road+Satellite+Ahmedabad">Open in Google Maps</a>
+      </div>
+      <div class="panel reveal">
+        <h3>Class timings</h3>
+        <div class="rows">
+          <div><span>Abacus batches</span><span>Please call</span></div>
+          <div><span>Music batches</span><span>Please call</span></div>
+          <div><span>Dance batches</span><span>Please call</span></div>
+        </div>
+        <p style="margin-top:14px;font-size:14.5px">Batch days and timings change through the year — a quick call gets you the latest schedule.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-box reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Ask about a class today</h2>
+      <p>Call, WhatsApp or email us with the learner's age and the class you are interested in. We will get back to you with batch details.</p>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+919924305769">Call 99243 05769</a>
+        <a class="btn btn-dark" target="_blank" rel="noopener" href="https://wa.me/919924305769?text=Hello%20Tulis%20Academy%2C%20I%20would%20like%20to%20know%20about%20your%20classes.">WhatsApp us</a>
+        <a class="btn btn-line" href="mailto:tulichants@gmail.com?subject=Class%20enquiry">Email us</a>
+      </div>
+      <p class="mini">Email: <a href="mailto:tulichants@gmail.com">tulichants@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f1"><span>© <span id="yr">2026</span> Tulis Abacus, Music and Dance Academy, Ahmedabad</span><span>Website design: KS Digital Studio</span></div>
+    <p class="credits">Sample photos: “Playing piano” by nayukim (<a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>); “Abacus 1680-1117” by Paul Schadler (<a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>); “Tabla” by Lestat (<a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener">CC BY-SA 3.0</a>); “rhythmic moves” by pabak sarkar (<a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>). Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Quick contact">
+  <a href="tel:+919924305769">Call</a>
+  <a class="w" target="_blank" rel="noopener" href="https://wa.me/919924305769">WhatsApp</a>
+  <a href="mailto:tulichants@gmail.com">Email</a>
+</nav>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var els=document.querySelectorAll('.reveal');
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+ els.forEach(function(e){io.observe(e)});
+ setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},2500);
+})();
+</script>
+</body>
+</html>

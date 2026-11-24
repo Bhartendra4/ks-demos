@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Girdhar Industries | Copper Winding Wire Manufacturer</title>
+<meta name="description" content="Girdhar Industries manufactures super enamelled copper winding wire, enamelled rectangular strip, paper covered copper conductors and bare copper wire for transformers, motors, pumps, fans and auto components. (Demo website)">
+<meta name="theme-color" content="#111418">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --copper:#c8702f; --copper-2:#e8955a; --copper-3:#f6c08f; --copper-dim:rgba(232,149,90,.14);
+  --bg:#0f1216; --bg-2:#151a20; --bg-3:#1b2129; --card:#1a1f26; --line:rgba(255,255,255,.08); --line-2:rgba(255,255,255,.14);
+  --text:#eef1f4; --text-2:#c3c9d1; --muted:#8c95a1;
+  --warn-bg:#2a2210; --warn:#f3cf7a;
+  --radius:16px; --wrap:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:16px;overflow-x:hidden}
+h1,h2,h3,h4{font-family:Sora,Inter,sans-serif;line-height:1.2;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;font-family:inherit}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(135deg,var(--copper-2),var(--copper));color:#fff;box-shadow:0 8px 22px rgba(200,112,47,.35)}
+.btn-primary:hover{box-shadow:0 10px 28px rgba(200,112,47,.5)}
+.btn-ghost{border-color:var(--line-2);color:#fff;background:rgba(255,255,255,.03)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.btn-wa{background:#25d366;color:#fff}
+.tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--copper-2)}
+section{padding:88px 0}
+.alt{background:var(--bg-2)}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:8px 0 12px}
+.sec-head p{color:var(--muted);font-size:17px}
+.note{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.02em;color:var(--warn);background:var(--warn-bg);border:1px solid rgba(243,207,122,.25);border-radius:6px;padding:2px 8px}
+.photo{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--bg-3)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font-size:12px;color:#d7dce2;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+
+/* demo ribbon */
+.demo-bar{background:var(--warn-bg);color:var(--warn);font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid rgba(243,207,122,.2)}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(15,18,22,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-family:Sora;font-weight:800;font-size:18px}
+.logo small{display:block;font-family:Inter;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.08em}
+.nav ul{display:flex;gap:22px;list-style:none}
+.nav ul a{color:var(--text-2);font-size:14px;font-weight:500}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+.menu-btn{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:6px}
+
+/* hero */
+.hero{position:relative;padding:84px 0 96px;overflow:hidden;background:radial-gradient(900px 500px at 80% 0%,rgba(232,149,90,.20),transparent 60%),linear-gradient(170deg,#0d1014,#171c23)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,60px);font-weight:800;margin:14px 0 18px}
+.hero h1 span{background:linear-gradient(90deg,var(--copper-2),var(--copper-3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--text-2);font-size:18px;max-width:580px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-size:13px;color:var(--text-2);border:1px solid var(--line-2);padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.03)}
+.hero-media{position:relative;display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:1fr 1fr;gap:14px;height:520px}
+.hero-media .photo:first-child{grid-row:1/3}
+.hero-media .photo{box-shadow:0 30px 60px rgba(0,0,0,.45);border:1px solid var(--line)}
+.hero-badge{position:absolute;left:-22px;bottom:34px;background:rgba(21,26,32,.95);border:1px solid var(--line-2);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:center;box-shadow:0 16px 40px rgba(0,0,0,.4)}
+.hero-badge b{font-family:Sora;font-size:15px;display:block}
+.hero-badge span{font-size:12px;color:var(--muted)}
+
+/* stats */
+.stats{background:var(--bg-3);padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:30px 22px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:Sora;font-size:32px;color:var(--copper-2);line-height:1.1}
+.stat span{font-size:14px;color:var(--text-2)}
+.stat em{font-style:normal;font-size:11px;color:var(--muted);display:block;margin-top:4px}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about p{color:var(--text-2);margin-bottom:14px}
+.about-media{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-media .photo{aspect-ratio:4/5}
+.about-media .photo:nth-child(2){margin-top:40px}
+.ticks{list-style:none;display:grid;gap:10px;margin-top:20px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;color:var(--text-2)}
+.ticks li::before{content:"";flex:0 0 20px;height:20px;border-radius:50%;background:var(--copper-dim) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%23e8955a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat;margin-top:2px}
+
+/* products */
+.prod-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.prod{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:grid;grid-template-columns:.85fr 1.15fr;transition:border-color .2s,transform .2s}
+.prod:hover{border-color:rgba(232,149,90,.4);transform:translateY(-2px)}
+.prod .photo{border-radius:0;min-height:100%}
+.prod .body{padding:24px;display:flex;flex-direction:column}
+.prod h3{font-size:19px;margin-bottom:6px}
+.prod .desc{color:var(--muted);font-size:14.5px}
+.spec{margin-top:14px;border-top:1px dashed var(--line-2);padding-top:12px;display:grid;gap:6px;font-size:13.5px}
+.spec div{display:flex;justify-content:space-between;gap:12px}
+.spec span{color:var(--muted)}
+.spec b{font-weight:600;text-align:right;color:var(--text)}
+.apps{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.apps i{font-style:normal;font-size:12px;color:var(--copper-3);background:var(--copper-dim);border-radius:999px;padding:3px 10px}
+.prod .more{margin-top:auto;padding-top:16px;color:var(--copper-2);font-weight:600;font-size:14px}
+.illus{display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#2a2016,#14181d)}
+.illus svg{width:78%;height:auto}
+
+/* spec table */
+.table-wrap{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.table-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.table-head h3{font-size:18px}
+.scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:720px}
+th,td{padding:12px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;background:rgba(255,255,255,.02)}
+td{color:var(--text-2)}
+td b{color:var(--text);font-weight:600}
+tr:last-child td{border-bottom:0}
+
+/* process */
+.process-track{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;position:relative}
+.pstep{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.pstep .media{aspect-ratio:1/1;position:relative}
+.pstep .media img{width:100%;height:100%;object-fit:cover}
+.pstep .media.illus svg{width:70%}
+.pstep .n{position:absolute;top:10px;left:10px;font-family:Sora;font-size:12px;font-weight:700;background:rgba(15,18,22,.85);color:var(--copper-2);border:1px solid var(--line-2);padding:3px 9px;border-radius:999px}
+.pstep .t{padding:14px}
+.pstep h4{font-size:15px;margin-bottom:4px}
+.pstep p{font-size:13px;color:var(--muted)}
+
+/* quality */
+.q-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.q-side{display:grid;gap:18px}
+.q-side .photo{aspect-ratio:4/3}
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.cert{border:1px dashed var(--line-2);border-radius:14px;padding:16px;background:rgba(255,255,255,.02)}
+.cert b{display:block;font-family:Sora;font-size:15px}
+.cert span{font-size:12.5px;color:var(--muted)}
+
+/* capacity */
+.cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.capc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.capc b{display:block;font-family:Sora;font-size:26px;color:var(--copper-2)}
+.capc span{color:var(--text-2);font-size:14px}
+.capc em{display:block;font-style:normal;font-size:11.5px;color:var(--muted);margin-top:6px}
+.bar{height:6px;border-radius:6px;background:rgba(255,255,255,.07);margin-top:14px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--copper),var(--copper-3));border-radius:6px;transition:width 1.4s ease}
+
+/* industries */
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ind{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.ind .photo{border-radius:0;aspect-ratio:16/10}
+.ind .ico{height:auto;aspect-ratio:16/10;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#2a2016,#14181d)}
+.ind .t{padding:16px}
+.ind h4{font-size:16px;margin-bottom:4px}
+.ind p{font-size:13.5px;color:var(--muted)}
+
+/* why */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why{padding:24px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.why .wi{width:44px;height:44px;border-radius:12px;background:var(--copper-dim);display:grid;place-items:center;margin-bottom:14px}
+.why b{display:block;font-family:Sora;font-size:17px;margin-bottom:6px}
+.why p{color:var(--muted);font-size:14.5px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gallery button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;border-radius:14px;background:var(--bg-3);border:1px solid var(--line)}
+.gallery button:focus-visible{outline:2px solid var(--copper-2);outline-offset:2px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery .cap{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 9px;font-size:12.5px;color:#e6e9ed;background:linear-gradient(transparent,rgba(0,0,0,.78))}
+.gallery .w2{grid-column:span 2}
+.gallery .h2{grid-row:span 2}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(5,6,8,.92);display:none;align-items:center;justify-content:center;padding:20px;flex-direction:column;gap:12px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,100%);max-height:80vh;border-radius:10px;object-fit:contain}
+.lightbox p{color:#d7dce2;font-size:14px;text-align:center;max-width:800px}
+.lb-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,.1);border:0;color:#fff;width:44px;height:44px;border-radius:50%;font-size:24px;cursor:pointer}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:0;color:#fff;width:46px;height:46px;border-radius:50%;font-size:22px;cursor:pointer}
+.lb-prev{left:14px}.lb-next{right:14px}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:18px 52px 18px 20px;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:22px;color:var(--copper-2);transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding:0 20px 18px;color:var(--text-2);font-size:15px}
+
+/* enquiry */
+.enquiry{background:radial-gradient(800px 400px at 0% 100%,rgba(232,149,90,.12),transparent 60%),var(--bg-2)}
+.enquiry .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+.contact-list{display:grid;gap:12px;margin-top:24px}
+.contact-item{display:flex;gap:14px;align-items:flex-start;background:var(--card);border-radius:14px;padding:16px;border:1px solid var(--line)}
+.contact-item .ci{flex:0 0 40px;height:40px;border-radius:10px;background:var(--copper);display:grid;place-items:center}
+.contact-item small{color:var(--muted);display:block;font-size:12.5px}
+.contact-item b{font-weight:600;font-size:15px}
+.map{margin-top:16px;border-radius:16px;overflow:hidden;border:1px solid var(--line);position:relative;height:230px;background:#141a20}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .pin{position:absolute;left:50%;top:44%;transform:translate(-50%,-100%);text-align:center}
+.map .pin span{display:block;margin-top:6px;font-size:12.5px;background:rgba(15,18,22,.9);border:1px solid var(--line-2);padding:5px 10px;border-radius:8px;color:var(--text-2);white-space:nowrap}
+form.quote{background:var(--card);border-radius:20px;padding:30px;box-shadow:0 24px 50px rgba(0,0,0,.3);border:1px solid var(--line-2)}
+form.quote h3{font-size:22px;margin-bottom:4px}
+form.quote > p{color:var(--muted);font-size:14px;margin-bottom:20px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:13px;font-weight:600;color:var(--text-2)}
+.field input,.field select,.field textarea{font:inherit;font-size:15px;padding:12px 14px;border-radius:10px;border:1px solid var(--line-2);background:#11151a;color:var(--text);width:100%}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5' fill='none' stroke='%238c95a1' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:38px}
+.field input::placeholder,.field textarea::placeholder{color:#5f6874}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid rgba(232,149,90,.35);border-color:var(--copper-2)}
+.field textarea{min-height:96px;resize:vertical}
+.form-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.form-note{font-size:12.5px;color:var(--muted);margin-top:12px}
+.toast{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;background:rgba(37,211,102,.12);color:#8be5ad;font-size:14px}
+.toast.err{background:rgba(239,68,68,.12);color:#fca5a5}
+
+/* footer */
+footer{background:#0b0d10;color:var(--muted);padding:56px 0 26px;font-size:14px;border-top:1px solid var(--line)}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px}
+footer h5{color:#fff;font-size:14px;margin-bottom:12px;font-family:Sora}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:#fff}
+footer .credits{border-top:1px solid var(--line);padding-top:18px;margin-bottom:18px}
+footer .credits summary{padding:0;font-weight:500;font-size:13px;color:var(--text-2)}
+footer .credits summary::after{content:none}
+footer .credits details{background:none;border:0;margin:0}
+footer .credits ul{margin-top:10px;font-size:12px;gap:4px}
+footer .credits a{text-decoration:underline}
+footer .bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:transform .15s}
+.wa-float:hover{transform:scale(1.06)}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.bar i{transition:none}}
+
+/* responsive */
+@media (max-width:1100px){
+  .process-track{grid-template-columns:repeat(4,1fr)}
+  .nav ul{gap:16px}
+}
+@media (max-width:980px){
+  .hero .wrap,.about .wrap,.enquiry .wrap,.q-grid,.faq-grid{grid-template-columns:1fr}
+  .hero-media{height:420px}
+  .hero-badge{left:12px}
+  .prod-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .ind-grid,.cap-grid{grid-template-columns:1fr 1fr}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  footer .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .nav ul{display:none;position:absolute;top:68px;left:0;right:0;background:#0f1216;flex-direction:column;gap:0;padding:8px 20px 18px;border-bottom:1px solid var(--line)}
+  .nav ul.open{display:flex}
+  .nav ul li a{display:block;padding:12px 0;border-bottom:1px solid var(--line)}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+}
+@media (max-width:640px){
+  section{padding:62px 0}
+  .wrap{padding:0 16px}
+  .hero{padding:52px 0 64px}
+  .hero-media{height:340px;grid-template-columns:1fr 1fr}
+  .hero-badge{display:none}
+  .prod{grid-template-columns:1fr}
+  .prod .photo{aspect-ratio:16/10}
+  .process-track{grid-template-columns:1fr 1fr}
+  .why-grid,.ind-grid,.cap-grid,.frow,.cert-grid{grid-template-columns:1fr}
+  .about-media .photo:nth-child(2){margin-top:24px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .gallery .w2{grid-column:span 2}
+  footer .cols{grid-template-columns:1fr}
+  form.quote{padding:22px}
+  .stat{padding:20px 14px}
+  .stat b{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-bar">Demo website by KS Digital Studio. Photos are representative stock images, and figures marked "sample" are placeholders until Girdhar Industries confirms real details.</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#home" class="logo" aria-label="Girdhar Industries home">
+      <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3b27a"/><stop offset="1" stop-color="#b85f24"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#lg)"/><path d="M27 14.5a8 8 0 1 0 1.6 7.5H20" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <span>GIRDHAR<small>INDUSTRIES</small></span>
+    </a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#quality">Quality</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="tag">Copper Winding Wire Manufacturer · India</span>
+      <h1>Precision <span>copper winding wire</span> for transformers, motors and machines.</h1>
+      <p class="lead">Girdhar Industries manufactures super enamelled copper wire, enamelled rectangular strip, paper covered conductors and bare copper wire. Electrolytic grade copper, controlled drawing and annealing, uniform enamel build, and a test report with every lot.</p>
+      <div class="ctas">
+        <a href="#contact" class="btn btn-primary">Request a Quote
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#" class="btn btn-ghost js-wa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+          WhatsApp Us</a>
+      </div>
+      <div class="chips">
+        <span class="chip">Thermal class 130 – 220</span>
+        <span class="chip">IS 13730 / IEC 60317 type products</span>
+        <span class="chip">SWG 8 – 44 range</span>
+        <span class="chip">DIN / PT spools &amp; bulk coils</span>
+      </div>
+    </div>
+    <div class="hero-media">
+      <figure class="photo"><img src="img/hero-enamelled-spools.jpg" alt="Spools of enamelled copper winding wire in different sizes" fetchpriority="high"><figcaption>Enamelled copper wire spools (representative)</figcaption></figure>
+      <figure class="photo"><img src="img/copper-rod-coil.jpg" alt="Coil of 8 mm electrolytic copper rod, the raw material" loading="lazy"></figure>
+      <figure class="photo"><img src="img/motor-stator-winding.jpg" alt="Motor stator wound with enamelled copper wire" loading="lazy"></figure>
+      <div class="hero-badge">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <div><b>Test report with every lot</b><span>Breakdown voltage, elongation, resistance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Key figures (sample)">
+  <div class="wrap">
+    <div class="stat"><b><span class="count" data-to="150">0</span> MT</b><span>Monthly production capacity</span><em>sample figure</em></div>
+    <div class="stat"><b><span class="count" data-to="400">0</span>+</b><span>Wire and strip sizes</span><em>sample figure</em></div>
+    <div class="stat"><b><span class="count" data-to="99.97" data-dec="2">0</span>%</b><span>Copper purity (ETP grade)</span><em>sample figure</em></div>
+    <div class="stat"><b><span class="count" data-to="48">0</span> hrs</b><span>Dispatch on stock sizes</span><em>sample figure</em></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">About Us</span>
+      <h2 style="font-size:clamp(28px,3.6vw,42px);margin:8px 0 16px">A copper wire plant built around consistency.</h2>
+      <p>Girdhar Industries is a copper winding wire manufacturing unit serving transformer and motor OEMs, pump and fan makers, auto component suppliers, rewinding workshops and traders.</p>
+      <p>Every stage happens under one roof: drawing the copper rod down to size, annealing it for softness, applying the enamel or paper covering, testing each lot in our lab and packing it moisture-safe on the spool you need.</p>
+      <ul class="ticks">
+        <li>Electrolytic tough pitch (ETP) copper rod, 99.9% Cu minimum</li>
+        <li>In-house drawing, annealing, enamelling, paper taping and testing</li>
+        <li>Grade 1, 2 and 3 insulation build, thermal class 130 to 220</li>
+        <li>Custom sizes, spool types and labelling for OEM lines</li>
+        <li>Lot-wise test certificate and traceable batch number on every spool</li>
+      </ul>
+      <p style="margin-top:18px"><span class="note">Placeholder: add founding year, founder name and factory location</span></p>
+    </div>
+    <div class="about-media reveal">
+      <figure class="photo"><img src="img/enamelled-wire-spool.jpg" alt="Spool of super enamelled copper wire" loading="lazy"><figcaption>Super enamelled wire on spool</figcaption></figure>
+      <figure class="photo"><img src="img/rectangular-ctc-paper.jpg" alt="Enamelled rectangular copper strips with paper insulation" loading="lazy"><figcaption>Rectangular strip with paper wrap</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="products alt" id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Products</span>
+      <h2>Copper wire for every kind of winding.</h2>
+      <p>Standard sizes are kept ready. Special sizes, coatings, paper layers and packing are made to order. Ranges below are typical industry ranges <span class="note">sample, confirm with factory</span></p>
+    </div>
+    <div class="prod-grid">
+      <article class="prod reveal">
+        <figure class="photo"><img src="img/enamelled-wire-spool.jpg" alt="Super enamelled round copper winding wire" loading="lazy"></figure>
+        <div class="body">
+          <h3>Super Enamelled Round Copper Wire</h3>
+          <p class="desc">Round magnet wire with polyester, polyesterimide or dual-coat (polyesterimide + polyamide-imide) enamel.</p>
+          <div class="spec">
+            <div><span>Conductor size</span><b>0.10 – 4.00 mm (SWG 8 – 42)</b></div>
+            <div><span>Thermal class</span><b>130 · 155 · 180 · 200 · 220 °C</b></div>
+            <div><span>Insulation build</span><b>Grade 1 / 2 / 3</b></div>
+            <div><span>Copper</span><b>ETP, 99.9% Cu min</b></div>
+            <div><span>Standard</span><b>IS 13730 / IEC 60317</b></div>
+          </div>
+          <div class="apps"><i>Motors</i><i>Transformers</i><i>Pumps</i><i>Fans</i><i>Coils</i></div>
+          <a href="#contact" class="more js-product" data-product="Super Enamelled Round Copper Wire">Enquire &rarr;</a>
+        </div>
+      </article>
+      <article class="prod reveal">
+        <figure class="photo"><img src="img/rectangular-ctc-paper.jpg" alt="Enamelled rectangular copper strip" loading="lazy"></figure>
+        <div class="body">
+          <h3>Enamelled Rectangular Copper Strip</h3>
+          <p class="desc">Flat enamelled conductors with rounded edges for high space-factor windings in distribution and power transformers.</p>
+          <div class="spec">
+            <div><span>Thickness</span><b>0.80 – 5.60 mm</b></div>
+            <div><span>Width</span><b>2.0 – 16.0 mm</b></div>
+            <div><span>Thermal class</span><b>155 · 180 · 200 °C</b></div>
+            <div><span>Edge</span><b>Rounded, as per radius table</b></div>
+            <div><span>Standard</span><b>IS 13730 / IEC 60317-0-2</b></div>
+          </div>
+          <div class="apps"><i>Transformers</i><i>Traction motors</i><i>Generators</i></div>
+          <a href="#contact" class="more js-product" data-product="Enamelled Rectangular Copper Strip">Enquire &rarr;</a>
+        </div>
+      </article>
+      <article class="prod reveal">
+        <div class="photo illus">
+          <svg viewBox="0 0 200 160" aria-label="Illustration: paper covered copper strip cross-section" role="img">
+            <defs><linearGradient id="cuP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6c08f"/><stop offset=".5" stop-color="#d9823f"/><stop offset="1" stop-color="#8a4316"/></linearGradient></defs>
+            <rect x="34" y="38" width="132" height="84" rx="14" fill="#c9a26b"/>
+            <rect x="40" y="44" width="120" height="72" rx="11" fill="#e2c38f"/>
+            <rect x="46" y="50" width="108" height="60" rx="8" fill="#c9a26b"/>
+            <rect x="54" y="58" width="92" height="44" rx="6" fill="url(#cuP)"/>
+            <g stroke="#a88352" stroke-width="1.2" opacity=".7"><path d="M34 60l18-18M34 80l38-38M40 100l58-58M60 120l72-72M100 120l60-60M140 120l26-26"/></g>
+            <text x="100" y="146" text-anchor="middle" fill="#c3c9d1" font-size="11" font-family="Inter,sans-serif">Copper strip + kraft paper layers</text>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Paper Covered Copper Strip &amp; Wire</h3>
+          <p class="desc">Kraft, crepe or thermally upgraded paper wrapped in overlapping layers for oil-immersed transformers.</p>
+          <div class="spec">
+            <div><span>Paper</span><b>Kraft / Crepe / TUK</b></div>
+            <div><span>Covering</span><b>0.20 – 2.00 mm (as per design)</b></div>
+            <div><span>Conductor</span><b>Round or rectangular</b></div>
+            <div><span>Standard</span><b>IS 7404 type</b></div>
+          </div>
+          <div class="apps"><i>Oil-filled transformers</i><i>Reactors</i></div>
+          <a href="#contact" class="more js-product" data-product="Paper Covered Copper Strip">Enquire &rarr;</a>
+        </div>
+      </article>
+      <article class="prod reveal">
+        <figure class="photo"><img src="img/bare-copper-wires.jpg" alt="Bare copper conductors" loading="lazy"></figure>
+        <div class="body">
+          <h3>Bare Copper Wire</h3>
+          <p class="desc">Annealed (soft) or hard-drawn bare copper for earthing, bus connections, braiding, stranding and further processing.</p>
+          <div class="spec">
+            <div><span>Size range</span><b>0.20 – 8.00 mm</b></div>
+            <div><span>Temper</span><b>Soft annealed / Hard drawn</b></div>
+            <div><span>Conductivity</span><b>≥ 100% IACS (annealed)</b></div>
+            <div><span>Packing</span><b>Coils / Spools / Drums</b></div>
+          </div>
+          <div class="apps"><i>Earthing</i><i>Cables</i><i>Braiding</i><i>Switchgear</i></div>
+          <a href="#contact" class="more js-product" data-product="Bare Copper Wire">Enquire &rarr;</a>
+        </div>
+      </article>
+      <article class="prod reveal">
+        <figure class="photo"><img src="img/fine-copper-wire-spool.jpg" alt="Small spool of fine copper wire" loading="lazy"></figure>
+        <div class="body">
+          <h3>Fine Wire for Auto Components</h3>
+          <p class="desc">Thin-gauge enamelled wire for magnetos, stators, ignition coils, relays and sensors in two-wheelers and cars.</p>
+          <div class="spec">
+            <div><span>Size range</span><b>0.05 – 0.50 mm (SWG 30 – 44)</b></div>
+            <div><span>Thermal class</span><b>155 · 180 · 200 °C</b></div>
+            <div><span>Options</span><b>Self-bonding, solderable</b></div>
+          </div>
+          <div class="apps"><i>Magnetos</i><i>Ignition coils</i><i>Relays</i><i>Sensors</i></div>
+          <a href="#contact" class="more js-product" data-product="Fine Wire for Auto Components">Enquire &rarr;</a>
+        </div>
+      </article>
+      <article class="prod reveal">
+        <div class="photo illus">
+          <svg viewBox="0 0 200 160" aria-label="Illustration: custom spool with specification tag" role="img">
+            <defs><linearGradient id="cuS" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7a3a12"/><stop offset=".3" stop-color="#d9823f"/><stop offset=".5" stop-color="#ffd2a3"/><stop offset=".7" stop-color="#d9823f"/><stop offset="1" stop-color="#7a3a12"/></linearGradient>
+            <pattern id="trn" width="200" height="5" patternUnits="userSpaceOnUse"><rect width="200" height="5" fill="url(#cuS)"/><rect y="4" width="200" height="1" fill="#5c2a0c" opacity=".5"/></pattern></defs>
+            <rect x="40" y="22" width="90" height="14" rx="7" fill="#3a414c"/>
+            <rect x="50" y="34" width="70" height="92" fill="url(#trn)"/>
+            <rect x="40" y="124" width="90" height="14" rx="7" fill="#3a414c"/>
+            <path d="M120 70 C150 70 150 50 168 48" fill="none" stroke="#e8955a" stroke-width="3"/>
+            <rect x="140" y="30" width="44" height="34" rx="5" fill="#f3efe9"/>
+            <path d="M147 40h30M147 47h22M147 54h26" stroke="#8c95a1" stroke-width="2.5"/>
+          </svg>
+        </div>
+        <div class="body">
+          <h3>Custom &amp; Job-Work Orders</h3>
+          <p class="desc">Your size, your enamel, your spool and label. Share the application and drawing, and we match the specification.</p>
+          <div class="spec">
+            <div><span>MOQ</span><b>On request <span class="note">sample</span></b></div>
+            <div><span>Samples</span><b>Available for approval</b></div>
+            <div><span>Spools</span><b>DIN 125 – 500, PT 4 – 90</b></div>
+          </div>
+          <div class="apps"><i>OEM lines</i><i>Special sizes</i><i>Private label</i></div>
+          <a href="#contact" class="more js-product" data-product="Custom order">Discuss requirement &rarr;</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="table-wrap reveal">
+      <div class="table-head">
+        <h3>Quick specification sheet</h3>
+        <span class="note">Typical industry values, replace with Girdhar's own datasheet</span>
+      </div>
+      <div class="scroll-x">
+        <table>
+          <thead><tr><th>Thermal class</th><th>Enamel base</th><th>Max. operating temp.</th><th>Typical use</th></tr></thead>
+          <tbody>
+            <tr><td><b>Class 130 (B)</b></td><td>Polyester / modified polyester</td><td>130 °C</td><td>Fans, small motors, ballasts</td></tr>
+            <tr><td><b>Class 155 (F)</b></td><td>Modified polyester / polyesterimide</td><td>155 °C</td><td>Pumps, induction motors, transformers</td></tr>
+            <tr><td><b>Class 180 (H)</b></td><td>Polyesterimide</td><td>180 °C</td><td>Submersible pumps, compressors, auto parts</td></tr>
+            <tr><td><b>Class 200 (C)</b></td><td>Polyesterimide + polyamide-imide overcoat</td><td>200 °C</td><td>Heavy duty motors, hermetic compressors</td></tr>
+            <tr><td><b>Class 220</b></td><td>Polyamide-imide / polyimide</td><td>220 °C</td><td>Traction, high-temperature applications</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Manufacturing Process</span>
+      <h2>From copper rod to finished spool.</h2>
+      <p>Seven controlled stages, all in-house, so every spool carries the same quality.</p>
+    </div>
+    <div class="process-track">
+      <div class="pstep reveal"><div class="media"><img src="img/copper-rod-coil.jpg" alt="Copper rod coil" loading="lazy"><span class="n">01</span></div><div class="t"><h4>Copper rod</h4><p>8 mm ETP copper rod from approved producers, checked for conductivity and surface.</p></div></div>
+      <div class="pstep reveal"><div class="media"><img src="img/wire-drawing-floor.jpg" alt="Wire drawing machine on a factory floor" loading="lazy"><span class="n">02</span></div><div class="t"><h4>Wire drawing</h4><p>Rod breakdown and fine drawing through tungsten carbide and diamond dies to exact size.</p></div></div>
+      <div class="pstep reveal"><div class="media illus">
+        <svg viewBox="0 0 120 120" aria-label="Illustration: annealing furnace" role="img"><rect x="18" y="40" width="84" height="48" rx="8" fill="#2c333d" stroke="#4a525e"/><rect x="28" y="52" width="64" height="24" rx="4" fill="#e8955a" opacity=".85"/><path d="M6 64h112" stroke="#f6c08f" stroke-width="3"/><path d="M40 34c0-6 6-6 6-12M60 34c0-6 6-6 6-12M80 34c0-6 6-6 6-12" stroke="#8c95a1" stroke-width="2" fill="none" stroke-linecap="round"/><text x="60" y="106" text-anchor="middle" fill="#8c95a1" font-size="9" font-family="Inter,sans-serif">in-line annealer</text></svg>
+        <span class="n">03</span></div><div class="t"><h4>Annealing</h4><p>Controlled in-line annealing for softness, elongation and easy winding.</p></div></div>
+      <div class="pstep reveal"><div class="media illus">
+        <svg viewBox="0 0 120 120" aria-label="Illustration: enamelling oven with multiple passes" role="img"><rect x="38" y="12" width="44" height="82" rx="6" fill="#2c333d" stroke="#4a525e"/><path d="M30 86V26M50 86V26M70 86V26M90 86V26" stroke="#c8702f" stroke-width="3"/><path d="M30 26h20M50 86h20M70 26h20" stroke="#c8702f" stroke-width="3" fill="none"/><rect x="44" y="40" width="32" height="30" rx="3" fill="#e8955a" opacity=".35"/><text x="60" y="110" text-anchor="middle" fill="#8c95a1" font-size="9" font-family="Inter,sans-serif">multi-pass enamel oven</text></svg>
+        <span class="n">04</span></div><div class="t"><h4>Enamelling / taping</h4><p>Multi-pass enamel coating and curing, or paper taping for PICC conductors.</p></div></div>
+      <div class="pstep reveal"><div class="media"><img src="img/winding-resistance-tester.jpg" alt="Electrical resistance testing instrument" loading="lazy"><span class="n">05</span></div><div class="t"><h4>Testing</h4><p>Lab checks on every lot: size, elongation, breakdown voltage, pin-holes, resistance.</p></div></div>
+      <div class="pstep reveal"><div class="media"><img src="img/enamelled-wire-spool.jpg" alt="Finished enamelled wire on spool" loading="lazy"><span class="n">06</span></div><div class="t"><h4>Spooling</h4><p>Precision take-up on DIN / PT spools with label, size, class and batch number.</p></div></div>
+      <div class="pstep reveal"><div class="media"><img src="img/copper-coils-packed.jpg" alt="Wrapped copper coils ready for dispatch" loading="lazy"><span class="n">07</span></div><div class="t"><h4>Packing &amp; dispatch</h4><p>Moisture-safe wrapping, cartons or pallets, and pan-India transport.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="quality alt" id="quality">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Quality &amp; Testing</span>
+      <h2>Tested before it leaves the plant.</h2>
+      <p>Each lot is sampled and tested as per IEC 60851 / IS 13730 test methods. A test certificate goes with the consignment.</p>
+    </div>
+    <div class="q-grid">
+      <div class="table-wrap reveal" style="margin-top:0">
+        <div class="scroll-x">
+          <table>
+            <thead><tr><th>Test</th><th>What it checks</th><th>Frequency</th></tr></thead>
+            <tbody>
+              <tr><td><b>Conductor &amp; overall diameter</b></td><td>Size tolerance and insulation build</td><td>Every lot</td></tr>
+              <tr><td><b>Elongation &amp; springback</b></td><td>Softness for smooth machine winding</td><td>Every lot</td></tr>
+              <tr><td><b>Breakdown voltage</b></td><td>Dielectric strength of the enamel</td><td>Every lot</td></tr>
+              <tr><td><b>Pin-hole / continuity</b></td><td>Faults in the insulation coating</td><td>Every lot</td></tr>
+              <tr><td><b>Flexibility &amp; adherence</b></td><td>Enamel does not crack on bending</td><td>Every lot</td></tr>
+              <tr><td><b>Heat shock &amp; cut-through</b></td><td>Performance at thermal class temperature</td><td>Periodic</td></tr>
+              <tr><td><b>Resistance at 20 °C</b></td><td>Copper conductivity and purity</td><td>Every lot</td></tr>
+              <tr><td><b>Solderability</b></td><td>For solderable grades only</td><td>As required</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="q-side reveal">
+        <figure class="photo"><img src="img/winding-resistance-tester.jpg" alt="Resistance tester used for checking copper conductors" loading="lazy"><figcaption>Electrical testing (representative)</figcaption></figure>
+        <div class="cert-grid">
+          <div class="cert"><b>ISO 9001</b><span>Placeholder. Show only if certified.</span></div>
+          <div class="cert"><b>BIS / IS 13730</b><span>Placeholder. Add licence number if held.</span></div>
+          <div class="cert"><b>MSME / Udyam</b><span>Placeholder. Add registration number.</span></div>
+          <div class="cert"><b>GST registered</b><span>Placeholder. Add GSTIN.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="capacity" id="capacity">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Production Capacity</span>
+      <h2>Capacity to support your production line.</h2>
+      <p>Indicative figures for the demo <span class="note">sample, replace with real numbers</span></p>
+    </div>
+    <div class="cap-grid">
+      <div class="capc reveal"><b>150 MT</b><span>Total output per month</span><div class="bar"><i data-w="100"></i></div><em>sample figure</em></div>
+      <div class="capc reveal"><b>90 MT</b><span>Enamelled round wire</span><div class="bar"><i data-w="60"></i></div><em>sample figure</em></div>
+      <div class="capc reveal"><b>40 MT</b><span>Rectangular &amp; paper covered strip</span><div class="bar"><i data-w="27"></i></div><em>sample figure</em></div>
+      <div class="capc reveal"><b>20 MT</b><span>Bare copper wire</span><div class="bar"><i data-w="14"></i></div><em>sample figure</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="industries alt" id="industries">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Industries Served</span>
+      <h2>Wherever there is a winding.</h2>
+      <p>Our copper goes into the machines that power homes, farms, factories and roads.</p>
+    </div>
+    <div class="ind-grid">
+      <div class="ind reveal"><figure class="photo"><img src="img/transformer-coil-winding.jpg" alt="Workers winding transformer coils" loading="lazy"></figure><div class="t"><h4>Transformers</h4><p>Distribution, power, control and instrument transformers.</p></div></div>
+      <div class="ind reveal"><figure class="photo"><img src="img/generator-stator.jpg" alt="Large generator stator with copper windings" loading="lazy"></figure><div class="t"><h4>Generators &amp; Alternators</h4><p>Alternators, DG sets and large rotating machines.</p></div></div>
+      <div class="ind reveal"><figure class="photo"><img src="img/motor-stator-winding.jpg" alt="Electric motor stator winding" loading="lazy"></figure><div class="t"><h4>Motors &amp; Pumps</h4><p>Induction motors, submersible and monoblock pumps.</p></div></div>
+      <div class="ind reveal"><div class="ico"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.4" aria-hidden="true"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-8h5l3 8M10 9H8"/></svg></div><div class="t"><h4>Two-Wheeler &amp; Auto</h4><p>Magnetos, stators, starter motors, ignition coils.</p></div></div>
+      <div class="ind reveal"><div class="ico"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-4 1-7 3-7s1 5-1 8M14 12c4 0 7 1 7 3s-5 1-8-1M12 14c0 4-1 7-3 7s-1-5 1-8M10 12c-4 0-7-1-7-3s5-1 8 1"/></svg></div><div class="t"><h4>Fans &amp; Appliances</h4><p>Ceiling fans, coolers, mixers and home appliances.</p></div></div>
+      <div class="ind reveal"><div class="ico"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.4" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg></div><div class="t"><h4>Rewinding Workshops</h4><p>Motor, pump and transformer repair units.</p></div></div>
+      <div class="ind reveal"><div class="ico"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.4" aria-hidden="true"><path d="M5 12c0-3 2-5 4-5s3 2 3 5 1 5 3 5 4-2 4-5"/><path d="M2 12h3M19 12h3"/></svg></div><div class="t"><h4>Chokes, UPS &amp; Inverters</h4><p>Stabilizers, ballasts, welding machines, inductors.</p></div></div>
+      <div class="ind reveal"><div class="ico"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="1.4" aria-hidden="true"><path d="M3 7h18v12H3zM3 7l3-3h12l3 3"/><path d="M9 12h6"/></svg></div><div class="t"><h4>Traders &amp; Distributors</h4><p>Bulk supply with dealer pricing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why-sec" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Why Girdhar</span>
+      <h2>A supplier you do not have to chase.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div><b>Consistent gauge</b><p>Tight diameter tolerance means fewer breaks and smoother winding on automatic machines.</p></div>
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/></svg></div><b>Pure copper only</b><p>ETP grade copper rod only. No mixed scrap, no compromise on conductivity.</p></div>
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5"/><circle cx="7" cy="18" r="1.8"/><circle cx="18" cy="18" r="1.8"/></svg></div><b>On-time dispatch</b><p>Stock sizes ready to ship, with clear lead times for made-to-order specs.</p></div>
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><path d="M4 19h16M7 15l3-4 3 2 4-6"/></svg></div><b>Transparent pricing</b><p>Rates linked to the prevailing copper price plus a clear conversion charge.</p></div>
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div><b>Flexible quantities</b><p>From small workshop orders to full truckloads for OEM lines.</p></div>
+      <div class="why reveal"><div class="wi"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8955a" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div><b>Direct factory support</b><p>Talk to the people who make your wire, not a middleman.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-sec alt" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Gallery</span>
+      <h2>Inside copper wire manufacturing.</h2>
+      <p>Representative stock photos for the demo <span class="note">replace with real Girdhar factory photos</span></p>
+    </div>
+    <div class="gallery" id="gallery-grid">
+      <button class="w2 h2" data-src="img/hero-enamelled-spools.jpg" data-cap="Enamelled copper winding wire on spools"><img src="img/hero-enamelled-spools.jpg" alt="Enamelled copper winding wire on spools" loading="lazy"><span class="cap">Enamelled wire spools</span></button>
+      <button data-src="img/copper-rod-coil.jpg" data-cap="Copper rod coil, the raw material"><img src="img/copper-rod-coil.jpg" alt="Copper rod coil" loading="lazy"><span class="cap">Copper rod</span></button>
+      <button data-src="img/wire-drawing-floor.jpg" data-cap="Wire drawing on the factory floor"><img src="img/wire-drawing-floor.jpg" alt="Wire drawing machine" loading="lazy"><span class="cap">Wire drawing</span></button>
+      <button data-src="img/rectangular-ctc-paper.jpg" data-cap="Enamelled rectangular conductors with paper insulation"><img src="img/rectangular-ctc-paper.jpg" alt="Rectangular copper strip" loading="lazy"><span class="cap">Rectangular strip</span></button>
+      <button data-src="img/winding-resistance-tester.jpg" data-cap="Electrical resistance testing"><img src="img/winding-resistance-tester.jpg" alt="Resistance tester" loading="lazy"><span class="cap">Quality testing</span></button>
+      <button class="w2" data-src="img/copper-coils-packed.jpg" data-cap="Copper coils wrapped and ready for dispatch"><img src="img/copper-coils-packed.jpg" alt="Wrapped copper coils" loading="lazy"><span class="cap">Packing &amp; dispatch</span></button>
+      <button data-src="img/bare-copper-strand.jpg" data-cap="Stranded copper conductor"><img src="img/bare-copper-strand.jpg" alt="Stranded copper conductor" loading="lazy"><span class="cap">Stranded conductor</span></button>
+      <button data-src="img/transformer-coil-winding.jpg" data-cap="Transformer coil winding"><img src="img/transformer-coil-winding.jpg" alt="Transformer coil winding" loading="lazy"><span class="cap">Transformer winding</span></button>
+      <button data-src="img/generator-stator.jpg" data-cap="Generator stator with copper windings"><img src="img/generator-stator.jpg" alt="Generator stator" loading="lazy"><span class="cap">Generator stator</span></button>
+      <button data-src="img/motor-stator-winding.jpg" data-cap="Motor stator wound with enamelled wire"><img src="img/motor-stator-winding.jpg" alt="Motor stator" loading="lazy"><span class="cap">Motor stator</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal">
+      <span class="tag">FAQ</span>
+      <h2 style="font-size:clamp(28px,3.6vw,42px);margin:8px 0 12px">Common questions from buyers.</h2>
+      <p style="color:var(--muted)">Did not find your answer? Message us on WhatsApp and the factory team will reply.</p>
+      <a href="#" class="btn btn-wa js-wa" style="margin-top:20px">Ask on WhatsApp</a>
+    </div>
+    <div class="reveal">
+      <details open><summary>What is the minimum order quantity?</summary><p>Stock sizes can be supplied in small quantities for workshops. For special sizes and OEM orders, MOQ depends on the size and enamel type. <span class="note">sample answer, confirm with factory</span></p></details>
+      <details><summary>How is the price decided?</summary><p>Copper wire is priced on the prevailing copper rate on the day of order, plus a conversion charge that depends on size, enamel class and packing. We share both parts clearly in the quotation.</p></details>
+      <details><summary>Which sizes and thermal classes do you make?</summary><p>Round enamelled wire roughly from SWG 8 to SWG 44, rectangular strip by thickness and width, and thermal classes 130, 155, 180, 200 and 220. See the specification sheet above or send us your drawing.</p></details>
+      <details><summary>Do you give a test certificate?</summary><p>Yes. Each lot is tested in our lab and a test certificate with diameter, elongation, breakdown voltage and resistance results is sent with the consignment.</p></details>
+      <details><summary>Can I get a sample before a bulk order?</summary><p>Yes, samples can be arranged for approval on your winding machine before bulk production.</p></details>
+      <details><summary>What spools and packing do you use?</summary><p>DIN and PT type plastic spools for enamelled wire, wooden drums or coils for strips and bare wire, all wrapped against moisture and labelled with size, class and batch number.</p></details>
+      <details><summary>How long does delivery take?</summary><p>Stock sizes are typically dispatched within 48 hours. Made-to-order items take a few days depending on quantity. We deliver across India through transport partners. <span class="note">sample answer</span></p></details>
+      <details><summary>What are the payment terms?</summary><p>Payment terms are shared with the quotation. <span class="note">placeholder, add actual terms</span></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="enquiry" id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="tag">Get a Quote</span>
+      <h2 style="font-size:clamp(28px,3.6vw,42px);margin:8px 0 12px">Tell us your size and quantity.</h2>
+      <p style="color:var(--text-2)">We usually reply with a price within one working day. For urgent orders, message us on WhatsApp.</p>
+      <div class="contact-list">
+        <div class="contact-item"><div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><small>Factory address (placeholder)</small><b>Plot No. __, Industrial Area, City, State, India</b></div></div>
+        <div class="contact-item"><div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div><div><small>Phone / WhatsApp (placeholder)</small><b>+91 XXXXX XXXXX</b></div></div>
+        <div class="contact-item"><div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><small>Email (placeholder)</small><b>sales@girdharindustries.example</b></div></div>
+        <div class="contact-item"><div class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><small>Working hours</small><b>Mon – Sat, 9:30 AM – 6:30 PM</b></div></div>
+      </div>
+      <div class="map" aria-label="Map placeholder">
+        <svg viewBox="0 0 600 230" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="600" height="230" fill="#141a20"/>
+          <g stroke="#232b34" stroke-width="10" fill="none"><path d="M-10 70H620M-10 170H620M120-10V240M330-10V240M480-10V240"/></g>
+          <g stroke="#1d242c" stroke-width="4" fill="none"><path d="M-10 120H620M220-10V240M410-10V240M40 20L250 230"/></g>
+          <g fill="#1a2027"><rect x="140" y="85" width="60" height="70" rx="4"/><rect x="350" y="85" width="40" height="70" rx="4"/><rect x="500" y="20" width="80" height="35" rx="4"/><rect x="20" y="185" width="80" height="35" rx="4"/></g>
+        </svg>
+        <div class="pin">
+          <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-7-6.4-7-12a7 7 0 0 1 14 0c0 5.6-7 12-7 12z" fill="#c8702f"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg>
+          <span>Google Map embed will go here (add factory location)</span>
+        </div>
+      </div>
+    </div>
+    <form class="quote reveal" id="quoteForm" novalidate>
+      <h3>Request a quotation</h3>
+      <p>Fill in what you know. We will call back for the rest.</p>
+      <div class="frow">
+        <div class="field"><label for="f-name">Your name *</label><input id="f-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" autocomplete="organization"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="f-phone">Phone / WhatsApp *</label><input id="f-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-city">City</label><input id="f-city" name="city" autocomplete="address-level2"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="f-product">Product *</label>
+          <select id="f-product" name="product" required>
+            <option value="">Select product</option>
+            <option>Super Enamelled Round Copper Wire</option>
+            <option>Enamelled Rectangular Copper Strip</option>
+            <option>Paper Covered Copper Strip</option>
+            <option>Bare Copper Wire</option>
+            <option>Fine Wire for Auto Components</option>
+            <option>Custom order</option>
+          </select></div>
+        <div class="field"><label for="f-size">Size / gauge</label><input id="f-size" name="size" placeholder="e.g. 0.45 mm or 24 SWG"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label for="f-class">Thermal class</label>
+          <select id="f-class" name="tclass">
+            <option value="">Not sure</option>
+            <option>Class 130 (B)</option><option>Class 155 (F)</option><option>Class 180 (H)</option><option>Class 200 (C)</option><option>Class 220</option>
+          </select></div>
+        <div class="field"><label for="f-qty">Quantity</label><input id="f-qty" name="qty" placeholder="e.g. 500 kg per month"></div>
+      </div>
+      <div class="field"><label for="f-use">Application</label>
+        <select id="f-use" name="use">
+          <option value="">Select</option>
+          <option>Transformer</option><option>Motor / Pump</option><option>Generator / Alternator</option><option>Fan / Appliance</option>
+          <option>Two-wheeler / Auto component</option><option>Rewinding</option><option>Trading</option><option>Other</option>
+        </select></div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Spool type, delivery location, timeline..."></textarea></div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send on WhatsApp</button>
+        <a href="#" class="btn btn-ghost js-wa">Just chat</a>
+      </div>
+      <div class="toast" id="toast" role="status"></div>
+      <p class="form-note">Demo: the form opens WhatsApp with your enquiry pre-filled. Nothing is stored on this website.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="#home" class="logo" style="margin-bottom:12px">
+          <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#c8702f"/><path d="M27 14.5a8 8 0 1 0 1.6 7.5H20" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/></svg>
+          <span>GIRDHAR<small>INDUSTRIES</small></span>
+        </a>
+        <p>Manufacturer of enamelled copper winding wire, rectangular and paper covered strips and bare copper wire for transformers, motors, pumps, fans and auto components.</p>
+      </div>
+      <div><h5>Products</h5><ul><li><a href="#products">Enamelled Round Wire</a></li><li><a href="#products">Rectangular Strip</a></li><li><a href="#products">Paper Covered</a></li><li><a href="#products">Bare Copper</a></li><li><a href="#products">Fine Auto Wire</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="#about">About</a></li><li><a href="#process">Process</a></li><li><a href="#quality">Quality</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li>+91 XXXXX XXXXX</li><li>sales@girdharindustries.example</li><li><a href="#contact">Request a quote</a></li></ul></div>
+    </div>
+    <div class="credits">
+      <details>
+        <summary>Photo credits (Wikimedia Commons)</summary>
+        <ul id="creditList"></ul>
+      </details>
+    </div>
+    <div class="bottom">
+      <span>&copy; <span id="yr">2026</span> Girdhar Industries. All rights reserved.</span>
+      <span>Demo website by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener" style="color:#e8955a">KS Digital Studio</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa-float js-wa" aria-label="Chat on WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script>
+// Set the factory WhatsApp number here, digits only with country code, e.g. "919876543210".
+// Left empty in the demo: WhatsApp then opens and lets the visitor pick a chat.
+var WHATSAPP_NUMBER = "";
+
+// Photo credits, kept in sync with img/credits.json (required by the CC BY / BY-SA licences).
+var CREDITS = [
+  ["Enamelled copper wire", "Nick Hubbard", "CC BY 2.0", "https://commons.wikimedia.org/wiki/File:Enamelled_copper_wire_(6032437746).jpg"],
+  ["Kupferlackdraht rolle", "wdwd", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Kupferlackdraht_rolle.jpg"],
+  ["Continuously Transposed Conductor Cu", "Fluppe37", "CC BY 4.0", "https://commons.wikimedia.org/wiki/File:Continuously_Transposed_Conductor_Cu_(Copper_CTC)_3.jpg"],
+  ["Enamelled litz copper wire", "Alisdojo", "CC0", "https://commons.wikimedia.org/wiki/File:Enamelled_litz_copper_wire.JPG"],
+  ["Copper wires", "Mauro Cateb", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Copper_wires.JPG"],
+  ["Stator Winding of a BLDC Motor", "Medvedev", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Stator_Winding_of_a_BLDC_Motor.jpg"],
+  ["Copper Rod", "Niklitov", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Copper_Rod.jpg"],
+  ["Copper wire rod", "Lsgeeks", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Copper_wire_rod_produced_by_LS_Cable_%26_System.jpg"],
+  ["Stator winding at WPS", "Astronomyinertia", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Stator_winding_at_WPS.JPG"],
+  ["Winding transformer coils", "National Photo Company Collection", "Public domain", "https://commons.wikimedia.org/wiki/File:Winding_transformer_coils_LCCN2016850643.jpg"],
+  ["Alambre de cobre", "Gelpgim22 (Sergio Panei Pitrau)", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Alambre_de_cobre.JPG"],
+  ["Hipot tester", "Dr Lotus Black", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Hipot_tester.jpg"],
+  ["Tréfilerie Alcan Shawinigan", "Alcan", "Public domain", "https://commons.wikimedia.org/wiki/File:Tr%C3%A9filerie_Alcan_Shawinigan.jpg"]
+];
+
+function waLink(text) {
+  var base = WHATSAPP_NUMBER ? "https://wa.me/" + WHATSAPP_NUMBER : "https://wa.me/";
+  return base + "?text=" + encodeURIComponent(text);
+}
+
+document.querySelectorAll(".js-wa").forEach(function (a) {
+  a.href = waLink("Hello Girdhar Industries, I would like a quote for copper wire.");
+  a.target = "_blank";
+  a.rel = "noopener";
+});
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+var creditList = document.getElementById("creditList");
+CREDITS.forEach(function (c) {
+  var li = document.createElement("li");
+  var a = document.createElement("a");
+  a.href = c[3]; a.target = "_blank"; a.rel = "noopener"; a.textContent = c[0];
+  li.appendChild(a);
+  li.appendChild(document.createTextNode(" by " + c[1] + ", " + c[2]));
+  creditList.appendChild(li);
+});
+
+var menuBtn = document.getElementById("menuBtn");
+var menu = document.getElementById("menu");
+menuBtn.addEventListener("click", function () {
+  var open = menu.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+});
+menu.querySelectorAll("a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    menu.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+  });
+});
+
+document.querySelectorAll(".js-product").forEach(function (a) {
+  a.addEventListener("click", function () {
+    document.getElementById("f-product").value = a.dataset.product;
+  });
+});
+
+var form = document.getElementById("quoteForm");
+var toast = document.getElementById("toast");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = form.elements;
+  var missing = ["name", "phone", "product"].filter(function (k) { return !f[k].value.trim(); });
+  if (missing.length) {
+    toast.className = "toast err";
+    toast.style.display = "block";
+    toast.textContent = "Please fill name, phone and product.";
+    f[missing[0]].focus();
+    return;
+  }
+  var lines = [
+    "Quote request - Girdhar Industries",
+    "Name: " + f.name.value,
+    f.company.value && "Company: " + f.company.value,
+    "Phone: " + f.phone.value,
+    f.city.value && "City: " + f.city.value,
+    "Product: " + f.product.value,
+    f.size.value && "Size: " + f.size.value,
+    f.tclass.value && "Thermal class: " + f.tclass.value,
+    f.qty.value && "Quantity: " + f.qty.value,
+    f.use.value && "Application: " + f.use.value,
+    f.message.value && "Message: " + f.message.value
+  ].filter(Boolean);
+  window.open(waLink(lines.join("\n")), "_blank", "noopener");
+  toast.className = "toast";
+  toast.style.display = "block";
+  toast.textContent = "Thank you! WhatsApp has opened with your enquiry. Press send to reach our sales team.";
+});
+
+// Gallery lightbox
+var shots = Array.prototype.slice.call(document.querySelectorAll("#gallery-grid button"));
+var lb = document.getElementById("lightbox"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+var cur = 0, lastFocus = null;
+function showShot(i) {
+  cur = (i + shots.length) % shots.length;
+  lbImg.src = shots[cur].dataset.src;
+  lbImg.alt = shots[cur].dataset.cap;
+  lbCap.textContent = shots[cur].dataset.cap + " (representative photo)";
+}
+function openLb(i) { lastFocus = document.activeElement; showShot(i); lb.classList.add("open"); document.getElementById("lbClose").focus(); }
+function closeLb() { lb.classList.remove("open"); if (lastFocus) lastFocus.focus(); }
+shots.forEach(function (b, i) { b.addEventListener("click", function () { openLb(i); }); });
+document.getElementById("lbClose").addEventListener("click", closeLb);
+document.getElementById("lbPrev").addEventListener("click", function () { showShot(cur - 1); });
+document.getElementById("lbNext").addEventListener("click", function () { showShot(cur + 1); });
+lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
+document.addEventListener("keydown", function (e) {
+  if (!lb.classList.contains("open")) return;
+  if (e.key === "Escape") closeLb();
+  if (e.key === "ArrowLeft") showShot(cur - 1);
+  if (e.key === "ArrowRight") showShot(cur + 1);
+});
+
+// Counters and capacity bars
+var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function runCount(el) {
+  var to = parseFloat(el.dataset.to), dec = parseInt(el.dataset.dec || "0", 10);
+  if (reduce) { el.textContent = to.toFixed(dec); return; }
+  var start = null, dur = 1400;
+  function step(t) {
+    if (!start) start = t;
+    var p = Math.min((t - start) / dur, 1), v = to * (1 - Math.pow(1 - p, 3));
+    el.textContent = v.toFixed(dec);
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+if ("IntersectionObserver" in window) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      var el = en.target;
+      if (el.classList.contains("count")) runCount(el);
+      else if (el.dataset.w) el.style.width = el.dataset.w + "%";
+      else el.classList.add("in");
+      io.unobserve(el);
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".reveal, .count, .bar i").forEach(function (el) { io.observe(el); });
+} else {
+  document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+  document.querySelectorAll(".count").forEach(function (el) { el.textContent = el.dataset.to; });
+  document.querySelectorAll(".bar i").forEach(function (el) { el.style.width = el.dataset.w + "%"; });
+}
+</script>
+</body>
+</html>

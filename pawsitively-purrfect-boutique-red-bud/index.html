@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pawsitively Purrfect Boutique · Dog Grooming, Pet Wash &amp; Daycare in Red Bud, IL</title>
+<meta name="description" content="Dog grooming, a self-serve pet wash station, doggy daycare and pet retail at 301 West Market Street, Red Bud, Illinois.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fbf6ef; --paper:#ffffff; --ink:#2b2420; --muted:#6c6058;
+  --plum:#7a3e65; --plum-d:#5e2e4e; --peach:#f3c9a8; --sage:#dfe8dc; --line:#ece2d6;
+  --radius:18px; --shadow:0 10px 30px rgba(60,35,20,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+.ribbon{background:var(--ink);color:#f5ede4;font-size:13px;text-align:center;padding:7px 16px}
+.ribbon a{color:var(--peach);text-decoration:none}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{font-family:Fraunces,serif;font-weight:700;font-size:19px;text-decoration:none;color:var(--plum-d);display:flex;align-items:center;gap:8px}
+.brand svg{width:26px;height:26px;fill:var(--plum)}
+.nav ul{display:none;list-style:none;gap:26px;font-weight:600;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--plum)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn-primary{background:var(--plum);color:#fff}
+.btn-primary:hover{background:var(--plum-d)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-outline{border-color:var(--plum);color:var(--plum)}
+.nav .btn{padding:9px 16px;font-size:14px;white-space:nowrap}
+@media(max-width:420px){.brand{font-size:17px}.nav .btn{padding:8px 13px;font-size:13px}}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,18,12,.15) 0%,rgba(30,18,12,.35) 45%,rgba(30,18,12,.82) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:120px}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(36px,8vw,68px);max-width:760px}
+.hero p{font-size:clamp(17px,2.4vw,20px);max-width:560px;margin:14px 0 26px;opacity:.95}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+
+.quick{background:var(--paper);border-bottom:1px solid var(--line)}
+.quick .wrap{display:grid;grid-template-columns:1fr;gap:0}
+.quick div{padding:18px 4px;display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line)}
+.quick div:last-child{border-bottom:0}
+.quick svg{width:26px;height:26px;fill:var(--plum);flex:none}
+.quick b{display:block;font-size:15px}
+.quick span{color:var(--muted);font-size:14px}
+
+section{padding:72px 0}
+.head{max-width:640px;margin-bottom:36px}
+.kicker{color:var(--plum);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.head h2{font-size:clamp(28px,4.6vw,42px);margin:8px 0 10px}
+.head p{color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:1fr;gap:22px}
+.card{background:var(--paper);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:22px}
+.card p{color:var(--muted);font-size:15px}
+.card ul{list-style:none;font-size:14.5px;display:grid;gap:4px;margin-top:4px}
+.card li::before{content:"✓";color:var(--plum);font-weight:700;margin-right:8px}
+.card .price{margin-top:auto;padding-top:12px;font-weight:700;color:var(--plum-d);font-size:14px}
+
+.retail{background:var(--sage)}
+.retail .grid{display:grid;grid-template-columns:1fr;gap:16px}
+.pill{background:var(--paper);border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.pill svg{width:30px;height:30px;fill:var(--plum);flex:none}
+.pill b{display:block}
+.pill span{color:var(--muted);font-size:14.5px}
+
+.hours{background:var(--paper)}
+.hours .grid{display:grid;grid-template-columns:1fr;gap:22px}
+.hcard{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--cream)}
+.hcard h3{font-size:20px;margin-bottom:12px}
+.hcard table{width:100%;border-collapse:collapse;font-size:15px}
+.hcard td{padding:8px 0;border-bottom:1px dashed var(--line)}
+.hcard td:last-child{text-align:right;font-weight:700}
+.hcard tr:last-child td{border-bottom:0}
+.hcard tr.today td{color:var(--plum)}
+.closed{color:var(--muted);font-weight:600!important}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+
+.visit .grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:stretch}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:320px;background:var(--line)}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.info{background:var(--paper);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px}
+.info .row{display:flex;gap:12px;align-items:flex-start}
+.info svg{width:22px;height:22px;fill:var(--plum);flex:none;margin-top:3px}
+.info a{text-decoration:none;font-weight:700;color:var(--plum-d)}
+
+.contact{background:var(--plum-d);color:#fff;text-align:center}
+.contact h2{font-size:clamp(28px,5vw,44px);margin-bottom:10px}
+.contact p{opacity:.9;max-width:560px;margin:0 auto 26px}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.contact .btn-primary{background:#fff;color:var(--plum-d)}
+
+footer{background:var(--ink);color:#cfc3b8;font-size:14px;padding:36px 0 90px}
+footer .wrap{display:grid;gap:12px}
+footer b{color:#fff}
+.credits{font-size:12px;color:#9c8f84;line-height:1.5}
+.credits a{color:#c8b9ab}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.callbar .btn{flex:1;padding:12px 10px}
+
+@media(min-width:720px){
+  .quick .wrap{grid-template-columns:repeat(3,1fr)}
+  .quick div{border-bottom:0;border-right:1px solid var(--line);padding:22px 18px}
+  .quick div:last-child{border-right:0}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .retail .grid{grid-template-columns:repeat(2,1fr)}
+  .hours .grid{grid-template-columns:repeat(3,1fr)}
+  .visit .grid{grid-template-columns:1.3fr 1fr}
+}
+@media(min-width:900px){
+  .nav ul{display:flex}
+  .callbar{display:none}
+  footer{padding-bottom:36px}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Pawsitively Purrfect Boutique</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Pawsitively Purrfect Boutique home">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 13c-2.8 0-6 2.9-6 5.4C6 20 7.3 21 9 21c1.2 0 2-.6 3-.6s1.8.6 3 .6c1.7 0 3-1 3-2.6C18 15.9 14.8 13 12 13zM5.5 12.5c1.2-.3 1.8-1.8 1.4-3.4S5.2 6.6 4 6.9 2.2 8.7 2.6 10.3s1.7 2.5 2.9 2.2zm13 0c1.2.3 2.5-.6 2.9-2.2s-.2-3.1-1.4-3.4-2.6.6-3 2.2.3 3.1 1.5 3.4zM9 8.6c1.4 0 2.4-1.4 2.4-3.1S10.4 2.4 9 2.4 6.6 3.8 6.6 5.5 7.6 8.6 9 8.6zm6 0c1.4 0 2.4-1.4 2.4-3.1S16.4 2.4 15 2.4s-2.4 1.4-2.4 3.1 1 3.1 2.4 3.1z"/></svg>
+      Pawsitively Purrfect
+    </a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#shop">Pet Shop</a></li>
+      <li><a href="#hours">Hours</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-primary" href="tel:+18124533134">Call to book</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="A freshly groomed dog" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">Red Bud, Illinois</span>
+      <h1>Pawsitively Purrfect Boutique</h1>
+      <p>Dog grooming, a self-serve pet wash, doggy daycare and a little pet shop, all under one roof on West Market Street.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="tel:+18124533134"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call 812-453-3134</a>
+        <a class="btn btn-ghost" href="#services">See services</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="quick">
+    <div class="wrap">
+      <div><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><p><b>301 West Market Street</b><span>Red Bud, IL 62278</span></p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4 3.5 2.1-.8 1.3L11 13V7h2z"/></svg><p><b>Pet wash open 8 am – 8 pm</b><span>7 days a week</span></p></div>
+      <div><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><p><b>812-453-3134</b><span>Call to book grooming or daycare</span></p></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">What we do</span>
+        <h2>Clean, comfy, happy pups</h2>
+        <p>From a full groom to a quick DIY bath or a day of play while you're at work, we have the care your dog needs, right here in Red Bud.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="img/grooming.jpg" alt="Dog being groomed" loading="lazy">
+          <div class="body">
+            <h3>Dog Grooming</h3>
+            <p>Gentle, hands-on grooming by appointment so your dog leaves looking and feeling great.</p>
+            <ul><li>Dog grooming by appointment</li><li>Boutique hours Tue – Fri</li><li>Call to talk about your dog's needs</li></ul>
+            <span class="price">Price on request · Call to book</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/wash.jpg" alt="Dog having a bath" loading="lazy">
+          <div class="body">
+            <h3>Self-Serve Pet Wash</h3>
+            <p>Our indoor wash station lets you bathe your dog yourself, without the mess at home.</p>
+            <ul><li>Indoor station</li><li>Open 8 am – 8 pm</li><li>7 days a week</li></ul>
+            <span class="price">Price on request · Walk in</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/daycare.jpg" alt="Dogs playing together" loading="lazy">
+          <div class="body">
+            <h3>Doggy Daycare</h3>
+            <p>Our all-new daycare gives your dog company and play time while you're busy.</p>
+            <ul><li>Monday – Friday</li><li>7:30 am – 5 pm</li><li>Call to reserve a spot</li></ul>
+            <span class="price">Price on request · Reserve by phone</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="retail" id="shop">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Pet boutique</span>
+        <h2>Pick up a little something</h2>
+        <p>Drop by the boutique for pet supplies and treats while you're here. Ask in store about what's on the shelves this week.</p>
+      </div>
+      <div class="grid">
+        <div class="pill"><svg viewBox="0 0 24 24"><path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5L4 21h16L19 7zm-9-1a2 2 0 0 1 4 0v1h-4V6z"/></svg><p><b>Pet retail</b><span>Everyday essentials for dogs and cats.</span></p></div>
+        <div class="pill"><svg viewBox="0 0 24 24"><path d="M20.8 6.6c-.7-1.6-2.4-2.4-3.9-1.8-.2-1.7-1.6-3-3.3-2.8-1.4.2-2.4 1.4-2.5 2.8L5 11.2a2.9 2.9 0 0 0-3 4.9 2.9 2.9 0 0 0 4.4 3.5 2.9 2.9 0 0 0 5-2.9l6.1-6.1c1.4 0 2.6-1 2.8-2.4.1-.6 0-1.1-.2-1.6z"/></svg><p><b>Treats &amp; goodies</b><span>A reward for a good bath day.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours" id="hours">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Opening hours</span>
+        <h2>When to find us</h2>
+      </div>
+      <div class="grid">
+        <div class="hcard">
+          <h3>Boutique &amp; grooming</h3>
+          <table id="shopHours">
+            <tr data-d="1"><td>Monday</td><td class="closed">Closed</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>9:00 am – 4:00 pm</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>9:00 am – 4:00 pm</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>12:00 – 6:00 pm</td></tr>
+            <tr data-d="5"><td>Friday</td><td>9:00 am – 4:00 pm</td></tr>
+            <tr data-d="6"><td>Saturday</td><td class="closed">Closed</td></tr>
+            <tr data-d="0"><td>Sunday</td><td class="closed">Closed</td></tr>
+          </table>
+        </div>
+        <div class="hcard">
+          <h3>Self-serve pet wash</h3>
+          <table><tr><td>Every day</td><td>8:00 am – 8:00 pm</td></tr></table>
+          <p class="note">Open 7 days a week, including weekends.</p>
+        </div>
+        <div class="hcard">
+          <h3>Doggy daycare</h3>
+          <table><tr><td>Mon – Fri</td><td>7:30 am – 5:00 pm</td></tr><tr><td>Sat – Sun</td><td class="closed">Closed</td></tr></table>
+          <p class="note">Spots are limited, so please call to reserve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="head">
+        <span class="kicker">Visit us</span>
+        <h2>On West Market Street, Red Bud</h2>
+      </div>
+      <div class="grid">
+        <div class="map">
+          <iframe title="Map to Pawsitively Purrfect Boutique" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=301%20West%20Market%20Street%2C%20Red%20Bud%2C%20IL%2062278&z=15&output=embed"></iframe>
+        </div>
+        <div class="info">
+          <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><p>301 West Market Street<br>Red Bud, IL 62278<br><a href="https://www.google.com/maps/dir/?api=1&destination=301+West+Market+Street+Red+Bud+IL+62278" target="_blank" rel="noopener">Get directions →</a></p></div>
+          <div class="row"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><p><a href="tel:+18124533134">812-453-3134</a><br>Call to book</p></div>
+          <div class="row"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4 3.5 2.1-.8 1.3L11 13V7h2z"/></svg><p>Boutique: Tue, Wed, Fri 9–4 · Thu 12–6<br>Pet wash: daily 8 am – 8 pm</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Ready for a fresh, fluffy pup?</h2>
+      <p>Call to book a grooming appointment or reserve a daycare spot. For the pet wash, just walk in any day from 8 am to 8 pm.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="tel:+18124533134">Call 812-453-3134</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=301+West+Market+Street+Red+Bud+IL+62278" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Pawsitively Purrfect Boutique</b> · 301 West Market Street, Red Bud, IL 62278 · 812-453-3134</p>
+    <p class="credits">Sample photos: <a href="https://commons.wikimedia.org/wiki/File:Golden_Retriever_2019.jpg" target="_blank" rel="noopener">Golden Retriever 2019</a> by Johannnes89 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>); <a href="https://commons.wikimedia.org/wiki/File:Dog_brush.JPG" target="_blank" rel="noopener">Dog brush</a> by ZooFari (<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>); <a href="https://commons.wikimedia.org/wiki/File:Cute_bath_dog.jpg" target="_blank" rel="noopener">Cute bath dog</a> by Kjeldgaardcameron (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>); <a href="https://commons.wikimedia.org/wiki/File:2017-07-06_Hunde_Berlin-Karow_08.jpg" target="_blank" rel="noopener">2017-07-06 Hunde Berlin-Karow 08</a> by Meine Mutter (Erlaubnis liegt vor) (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>). Real photos of your business will replace these.</p>
+    <p class="credits">Demo website designed by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a>.</p>
+  </div>
+</footer>
+
+<nav class="callbar" aria-label="Quick contact">
+  <a class="btn btn-primary" href="tel:+18124533134">Call</a>
+  <a class="btn btn-outline" href="#hours">Hours</a>
+  <a class="btn btn-outline" href="#visit">Directions</a>
+</nav>
+
+<script>
+(function(){
+  var d=new Date().getDay();
+  var row=document.querySelector('#shopHours tr[data-d="'+d+'"]');
+  if(row) row.classList.add('today');
+})();
+</script>
+</body>
+</html>

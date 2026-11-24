@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Unnati's Food Magic — Home-baked Cakes & Millet Cookies, Zundal, Ahmedabad</title>
+<meta name="description" content="Home-baked, 100% vegetarian cakes, millet cookies, cupcakes and gift hampers from Zundal, Ahmedabad. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf6ef;--paper:#fffdf9;--cocoa:#3b2418;--cocoa2:#5a3a28;--rose:#c8566b;--rose-d:#a8435a;--sage:#5f7a4f;--muted:#7a6558;--line:#ecdfd1;--wa:#1f9d55}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--cocoa);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;font-weight:700}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.ribbon{background:var(--cocoa);color:#f3e4d6;text-align:center;font-size:12.5px;padding:7px 12px;letter-spacing:.2px}
+.ribbon a{color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:20px;text-decoration:none}
+.logo span{color:var(--rose)}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--cocoa2)}
+.nav ul a:hover{color:var(--rose)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#178547}
+.btn-rose{background:var(--rose);color:#fff}
+.btn-rose:hover{background:var(--rose-d)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.75)}
+.btn svg{width:18px;height:18px}
+.nav .btn{padding:9px 16px;font-size:14px}
+.hero{position:relative;min-height:560px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,15,8,.15) 0%,rgba(30,15,8,.55) 55%,rgba(30,15,8,.85) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-top:80px;padding-bottom:56px;width:100%}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 12px;border-radius:999px;font-size:13px;margin-bottom:16px;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(38px,6.5vw,68px);max-width:760px}
+.hero p.lead{font-size:clamp(16px,2vw,19px);max-width:560px;margin:14px 0 26px;color:#f6ebe2}
+.hero .gu{font-family:Fraunces,serif;font-style:italic;opacity:.9;font-size:17px;margin-top:8px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.promise{background:var(--paper);border-bottom:1px solid var(--line)}
+.promise .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding-top:22px;padding-bottom:22px}
+.promise div{text-align:center;font-size:14px;color:var(--muted)}
+.promise b{display:block;font-family:Fraunces,serif;color:var(--cocoa);font-size:17px}
+section{padding:76px 0}
+.eyebrow{color:var(--rose);font-weight:600;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:8px}
+.sec-h{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.sec-p{color:var(--muted);max-width:620px;margin-bottom:36px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 14px 34px rgba(59,36,24,.12);transform:translateY(-3px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card ul{list-style:none;margin:12px 0 16px;font-size:14px;color:var(--cocoa2)}
+.card li{padding:3px 0}
+.card li::before{content:"•";color:var(--rose);margin-right:8px}
+.price{display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:14px;font-size:14px}
+.price span{color:var(--muted)}
+.price a{color:var(--rose);font-weight:600;text-decoration:none}
+.extra{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:24px}
+.extra div{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.extra h3{font-size:19px;margin-bottom:4px}
+.extra p{color:var(--muted);font-size:14.5px}
+.why{background:var(--cocoa);color:#f3e4d6}
+.why .sec-h{color:#fff}
+.why .eyebrow{color:#f0a7b4}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.why-grid div{border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:22px}
+.why-grid h3{color:#fff;font-size:19px;margin-bottom:6px}
+.why-grid p{font-size:14.5px;color:#d9c6b7}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px 20px;position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--rose);color:#fff;font-weight:600;margin-bottom:12px}
+.step h3{font-size:17px;margin-bottom:4px}
+.step p{font-size:14px;color:var(--muted)}
+.note{margin-top:20px;font-size:14px;color:var(--muted)}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px}
+.panel h3{font-size:22px;margin-bottom:14px}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;gap:12px}
+.row:last-child{border:0}
+.row span:first-child{color:var(--muted)}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:320px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:320px;border:0}
+.contact{text-align:center;background:linear-gradient(135deg,#f6e3dc,#fbf1e6)}
+.contact .sec-p{margin:0 auto 26px}
+.contact .cta-row{justify-content:center}
+.phone-big{font-family:Fraunces,serif;font-size:28px;margin-bottom:22px;display:block;text-decoration:none}
+footer{background:#2a1910;color:#bfa999;font-size:13.5px;padding:34px 0 90px}
+footer .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:18px}
+footer .logo{color:#fff}
+.credits{font-size:12px;color:#8f7a6c;border-top:1px solid rgba(255,255,255,.08);padding-top:14px;line-height:1.7}
+.credits a{color:#b49c8b}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.fab svg{width:28px;height:28px;fill:#fff}
+@media (max-width:860px){
+ .nav ul{display:none}
+ .cards,.why-grid{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .info,.extra{grid-template-columns:1fr}
+ .promise .wrap{grid-template-columns:1fr 1fr;row-gap:16px}
+ section{padding:56px 0}
+ .hero{min-height:520px}
+}
+@media (max-width:480px){.steps{grid-template-columns:1fr}.nav .btn span{display:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Unnati's Food Magic</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">Unnati's <span>Food Magic</span></a>
+    <ul>
+      <li><a href="#menu">What we bake</a></li>
+      <li><a href="#order">How to order</a></li>
+      <li><a href="#visit">Delivery area</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-wa" href="https://wa.me/919727800593?text=Hi%20Unnati%27s%20Food%20Magic%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+      <span>Order</span>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="A slice of rich chocolate cake topped with walnuts" fetchpriority="high">
+    <div class="wrap">
+      <span class="tag">100% Vegetarian · Eggless options · Zundal, Ahmedabad</span>
+      <h1>Home-baked cakes &amp; millet cookies, made with love.</h1>
+      <p class="gu">ઘરે બનાવેલું, પ્રેમથી બનાવેલું</p>
+      <p class="lead">Small-batch bakes with no maida, no palm oil and no artificial preservatives, delivered fresh to your doorstep in Ahmedabad.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/919727800593?text=Hi%20Unnati%27s%20Food%20Magic%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn-ghost" href="#menu">See what we bake</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="promise">
+    <div class="wrap">
+      <div><b>100% Veg</b>Eggless options</div>
+      <div><b>No Maida</b>Wholesome flours</div>
+      <div><b>No Palm Oil</b>No preservatives</div>
+      <div><b>Small Batches</b>Baked to order</div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <p class="eyebrow">What we bake</p>
+      <h2 class="sec-h">Treats for every celebration, and every day</h2>
+      <p class="sec-p">Everything is baked at home in small batches, to order. Share your occasion, flavour and quantity on WhatsApp and we'll confirm the details.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="img/cookies.jpg" alt="Wholesome home-baked cookies on a plate" loading="lazy" width="900" height="675">
+          <div class="body">
+            <h3>Nutri Crumb — Millet Cookies</h3>
+            <p>Wholesome cookies made with millets, a guilt-free snack for kids and adults.</p>
+            <ul><li>Ragi cookies</li><li>Jowar cookies</li><li>Bajra cookies</li></ul>
+            <div class="price"><span>Price on request</span><a href="#contact">Ask now →</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cake.jpg" alt="A slice of layered chocolate cake" loading="lazy" width="900" height="672">
+          <div class="body">
+            <h3>Velvet Memories — Cakes</h3>
+            <p>Artisanal cakes and chocolates, plus theme-based premium cakes for birthdays, anniversaries and parties.</p>
+            <ul><li>Custom celebration cakes</li><li>Theme-based premium cakes</li><li>Handmade chocolates</li></ul>
+            <div class="price"><span>Price on request</span><a href="#contact">Ask now →</a></div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cupcakes.jpg" alt="A chocolate-frosted cupcake with sprinkles" loading="lazy" width="900" height="900">
+          <div class="body">
+            <h3>Velvet Crumb — The Bakehouse Series</h3>
+            <p>Cupcakes and cookies for gifting, parties and everyday cravings.</p>
+            <ul><li>Cupcakes</li><li>Cookies</li><li>Bakehouse specials</li></ul>
+            <div class="price"><span>Price on request</span><a href="#contact">Ask now →</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="extra">
+        <div><h3>🎁 Gift hampers</h3><p>Curated boxes of cookies, chocolates and treats for festivals, Diwali and corporate gifting.</p></div>
+        <div><h3>🎉 Bulk cookie packs for events</h3><p>Return gifts, office events and get-togethers. Share the count and we'll plan the batch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <p class="eyebrow">Our promise</p>
+      <h2 class="sec-h">Baked the way you'd bake at home</h2>
+      <div class="why-grid">
+        <div><h3>Honest ingredients</h3><p>No maida, no palm oil and no artificial preservatives. Just wholesome flours and honest baking.</p></div>
+        <div><h3>Pure vegetarian</h3><p>100% vegetarian kitchen, with eggless options for every order.</p></div>
+        <div><h3>Fresh, never stocked</h3><p>Everything is baked in small batches for your order and delivered fresh.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="wrap">
+      <p class="eyebrow">How to order</p>
+      <h2 class="sec-h">Four simple steps</h2>
+      <p class="sec-p">Ordering takes a couple of WhatsApp messages.</p>
+      <div class="steps">
+        <div class="step"><h3>Message us</h3><p>WhatsApp what you need, the date and the quantity.</p></div>
+        <div class="step"><h3>Confirm details</h3><p>Flavour, design, eggless or not, and the final price.</p></div>
+        <div class="step"><h3>50% advance</h3><p>Via UPI or bank transfer. The balance is due on completion.</p></div>
+        <div class="step"><h3>Fresh delivery</h3><p>Delivered locally in Ahmedabad, or pick up and pay in cash.</p></div>
+      </div>
+      <p class="note"><b>Lead time:</b> cookies &amp; cupcakes 24–48 hours · bulk hampers 3–5 days · custom cakes at least 3 days.</p>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap info">
+      <div class="panel">
+        <p class="eyebrow">Orders &amp; delivery</p>
+        <h3>Zundal, Ahmedabad</h3>
+        <div class="row"><span>Kitchen</span><span>Zundal, Ahmedabad, Gujarat</span></div>
+        <div class="row"><span>Delivery</span><span>Local delivery across Ahmedabad</span></div>
+        <div class="row"><span>Pickup</span><span>Available, address shared on order</span></div>
+        <div class="row"><span>Order hours</span><span>Message any time, we reply soon</span></div>
+        <div class="row"><span>Payment</span><span>UPI · Bank transfer · Cash on pickup</span></div>
+      </div>
+      <div class="map">
+        <iframe title="Map of Zundal, Ahmedabad" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Zundal,+Ahmedabad,+Gujarat&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="sec-h">Planning a celebration?</h2>
+      <p class="sec-p">Tell us the occasion and we'll bake something special for it.</p>
+      <a class="phone-big" href="tel:+919727800593">+91 97278 00593</a>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/919727800593?text=Hi%20Unnati%27s%20Food%20Magic%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp us</a>
+        <a class="btn btn-rose" href="tel:+919727800593">Call now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <span class="logo">Unnati's Food Magic</span>
+      <span>Home bakery · Zundal, Ahmedabad · +91 97278 00593</span>
+    </div>
+    <p class="credits" id="credits">Sample photos: <a href="https://www.rawpixel.com/image/5926110/photo-image-public-domain-food-chocolate" target="_blank" rel="noopener">Chocolate Cake Slice</a> (rawpixel, CC0 1.0); <a href="https://www.flickr.com/photos/49845772@N03/7891156002" target="_blank" rel="noopener">Vegan Peanut Butter Oatmeal Chocolate Chip Cookies</a> by tomatoes and friends (CC BY 2.0); <a href="https://www.flickr.com/photos/14052937@N04/22011162965" target="_blank" rel="noopener">Chocolate Cake Slice</a> by Leslie Richards (CC BY 2.0); <a href="https://www.flickr.com/photos/95142644@N00/7055048117" target="_blank" rel="noopener">Cupcake frosting</a> by Ruth and Dave (CC BY 2.0). Real photos of your business will replace these.<br>Demo website designed by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a>, Ahmedabad.</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919727800593?text=Hi%20Unnati%27s%20Food%20Magic%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+</body>
+</html>

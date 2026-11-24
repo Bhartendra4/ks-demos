@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shubh Yatra Cabs — Ahmedabad Taxi & Outstation (Demo)</title>
+<meta name="description" content="Ahmedabad outstation taxi: Statue of Unity, Dwarka, Somnath, Kutch, Udaipur. Instant fare estimate and WhatsApp booking.">
+<meta property="og:title" content="Shubh Yatra Cabs — Ahmedabad Taxi & Outstation">
+<meta property="og:description" content="Instant fare estimate + WhatsApp booking. Sedan, Ertiga, Innova Crysta, Tempo Traveller.">
+<meta property="og:type" content="website">
+<style>
+:root{--brand:#f59e0b;--brand-d:#b45309;--ink:#1f2937;--muted:#6b7280;--bg:#fffbeb;--card:#fff;--line:#fde68a;--wa:#16a34a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI","Noto Sans Gujarati","Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.demo{background:#111;color:#fde68a;text-align:center;font-size:13px;padding:6px 16px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;text-decoration:none}
+.brand i{width:38px;height:38px;border-radius:10px;background:var(--brand);display:grid;place-items:center;font-style:normal;font-size:20px}
+.lang{display:flex;gap:4px}
+.lang button{border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 9px;cursor:pointer;font:inherit;font-size:14px}
+.lang button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.hero{background:linear-gradient(135deg,#78350f,#f59e0b);color:#fff;padding:48px 0 64px}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:0 0 12px}
+.hero p{font-size:18px;opacity:.95;margin:0 0 20px;max-width:620px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{background:rgba(255,255,255,.18);border-radius:999px;padding:6px 12px;font-size:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:12px 18px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.btn.wa{background:var(--wa);color:#fff}.btn.call{background:#fff;color:var(--ink)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+section{padding:44px 0}
+h2{font-size:clamp(22px,3.4vw,30px);margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 22px}
+.estimator{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-top:-40px;box-shadow:0 10px 30px rgba(120,53,15,.12);position:relative}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+@media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:4px}
+select,input{width:100%;padding:10px;border:1px solid #e5e7eb;border-radius:10px;font:inherit;background:#fff}
+.trip{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.trip button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:inherit;cursor:pointer}
+.trip button.on{background:var(--brand);border-color:var(--brand);font-weight:700}
+.result{margin-top:16px;display:grid;grid-template-columns:1.3fr 1fr;gap:16px;align-items:center}
+@media(max-width:700px){.result{grid-template-columns:1fr}}
+.fare{background:var(--bg);border-radius:12px;padding:14px 16px}
+.fare .big{font-size:34px;font-weight:800}
+.fare table{width:100%;font-size:14px;border-collapse:collapse;margin-top:6px}
+.fare td{padding:3px 0}.fare td:last-child{text-align:right}
+.small{font-size:13px;color:var(--muted)}
+.cars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media(max-width:820px){.cars{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.cars{grid-template-columns:1fr}}
+.car{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.car .ic{font-size:34px}.car h3{margin:6px 0 2px;font-size:18px}
+.car .rate{font-weight:800;color:var(--brand-d);font-size:20px}
+.routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(max-width:820px){.routes{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.routes{grid-template-columns:1fr}}
+.route{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.route b{display:block}.route button{border:0;background:var(--ink);color:#fff;border-radius:8px;padding:7px 10px;cursor:pointer;font:inherit;font-size:14px;white-space:nowrap}
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media(max-width:820px){.why{grid-template-columns:1fr 1fr}}
+.why div{background:#fff;border-radius:12px;padding:16px;border:1px solid var(--line)}
+.why b{display:block;margin:6px 0 2px}
+details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+summary{font-weight:700;cursor:pointer}
+footer{background:#1f2937;color:#e5e7eb;padding:28px 0 90px;font-size:14px}
+.float{position:fixed;right:16px;bottom:16px;z-index:9;border-radius:999px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+<div class="demo" data-i="demo">Demo website by KS Digital Studio — sample name, number and rates. Final site uses your own details.</div>
+<header><div class="wrap">
+  <a class="brand" href="#"><i>🚕</i><span data-i="name">Shubh Yatra Cabs</span></a>
+  <div class="lang" id="lang"><button data-l="en" class="on">EN</button><button data-l="gu">ગુ</button><button data-l="hi">हि</button></div>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1 data-i="h1">Ahmedabad taxi for outstation, airport &amp; weddings</h1>
+  <p data-i="hp">Clean AC cars, verified drivers, clear fares. See your estimate in 10 seconds and book on WhatsApp.</p>
+  <div class="pills"><span data-i="p1">24×7 airport pickup</span><span data-i="p2">One-way &amp; round trip</span><span data-i="p3">Toll &amp; parking shown upfront</span></div>
+  <div class="cta"><a class="btn wa" id="heroWa" href="#est">💬 <span data-i="cta1">Get fare &amp; book</span></a><a class="btn call" id="callBtn" href="tel:+919999999999">📞 <span data-i="cta2">Call now</span></a></div>
+</div></div>
+
+<div class="wrap" id="est">
+  <div class="estimator">
+    <h2 data-i="eh">Instant fare estimate</h2>
+    <div class="trip" id="trip"><button data-t="round" class="on" data-i="tr">Round trip</button><button data-t="oneway" data-i="to">One way</button></div>
+    <div class="grid">
+      <div><label data-i="lfrom">From</label><input id="from" value="Ahmedabad" readonly></div>
+      <div><label data-i="lto">Destination</label><select id="dest"></select></div>
+      <div><label data-i="lcar">Car</label><select id="car"></select></div>
+      <div><label data-i="ldays">Days</label><input id="days" type="number" min="1" max="15" value="2"></div>
+      <div><label data-i="ldate">Travel date</label><input id="date" type="date"></div>
+      <div><label data-i="lpax">Passengers</label><input id="pax" type="number" min="1" max="26" value="4"></div>
+      <div style="grid-column:span 2"><label data-i="lname">Your name</label><input id="cname" autocomplete="name"></div>
+    </div>
+    <div class="result">
+      <div class="fare">
+        <div class="small" data-i="approx">Approx. fare</div>
+        <div class="big" id="total">₹0</div>
+        <table id="break"></table>
+        <div class="small" data-i="note">Toll, parking &amp; state permit extra at actual. Final fare confirmed on WhatsApp.</div>
+      </div>
+      <div>
+        <p class="small" id="paxWarn" style="color:#b91c1c;display:none" data-i="paxw">Too many passengers for this car. Choose a bigger car.</p>
+        <button class="btn wa" id="book" style="width:100%;justify-content:center">💬 <span data-i="book">Book on WhatsApp</span></button>
+        <p class="small" data-i="bookn">Opens WhatsApp with your trip details filled in. No payment online.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <h2 data-i="ch">Our cars</h2><p class="sub" data-i="cs">All AC · driver included · rates per km</p>
+  <div class="cars" id="cars"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 data-i="rh">Popular trips from Ahmedabad</h2><p class="sub" data-i="rs">Tap a route to see its fare</p>
+  <div class="routes" id="routes"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 data-i="wh">Why families choose us</h2>
+  <div class="why">
+    <div>🧾<b data-i="w1">Clear bill</b><span data-i="w1s">Km, driver allowance and toll written separately</span></div>
+    <div>🧑‍✈️<b data-i="w2">Known drivers</b><span data-i="w2s">Experienced on Gujarat &amp; Rajasthan highways</span></div>
+    <div>💍<b data-i="w3">Wedding bookings</b><span data-i="w3s">Multiple cars for baraat and guest pickups</span></div>
+    <div>📍<b data-i="w4">Live location</b><span data-i="w4s">Driver shares location on WhatsApp during the trip</span></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2 data-i="fh">Questions</h2>
+  <details><summary data-i="f1">How is the fare calculated?</summary><p data-i="f1a">Round trip: kilometres × rate, with a minimum of 300 km per day, plus driver allowance per day. One way: distance × rate plus driver allowance. Toll, parking and state permit are extra at actual.</p></details>
+  <details><summary data-i="f2">Do I pay advance?</summary><p data-i="f2a">A small advance confirms the booking. Pay the rest to the driver after the trip. We never ask for payment through this website.</p></details>
+  <details><summary data-i="f3">Can I book for a wedding?</summary><p data-i="f3a">Yes. Tell us the date, number of cars and pickup points on WhatsApp and we will send a combined quote.</p></details>
+</div></section>
+
+<footer><div class="wrap">
+  <b data-i="name">Shubh Yatra Cabs</b> · <span data-i="addr">Ahmedabad, Gujarat</span><br>
+  <span data-i="foot">Website by KS Digital Studio · ksdigitalstudio.in</span>
+</div></footer>
+<a class="btn wa float" id="floatWa" href="#">💬 WhatsApp</a>
+
+<script>
+/* ====== EDIT THESE FOR EACH CLIENT ====== */
+const CONFIG={
+  whatsapp:"919999999999",           // client ka WhatsApp number (country code ke saath, + ke bina)
+  minKmPerDay:300,
+  cars:[ // rate = ₹ per km, da = driver allowance per day, seats
+    {id:"sedan",ic:"🚗",name:{en:"Sedan (Dzire/Aura)",gu:"સેડાન (ડિઝાયર/ઓરા)",hi:"सेडान (डिज़ायर/ऑरा)"},rate:11,da:300,seats:4},
+    {id:"ertiga",ic:"🚙",name:{en:"Ertiga / SUV",gu:"અર્ટિગા / SUV",hi:"अर्टिगा / SUV"},rate:14,da:300,seats:6},
+    {id:"innova",ic:"🚐",name:{en:"Innova Crysta",gu:"ઇનોવા ક્રિસ્ટા",hi:"इनोवा क्रिस्टा"},rate:17,da:400,seats:7},
+    {id:"tempo",ic:"🚌",name:{en:"Tempo Traveller 12",gu:"ટેમ્પો ટ્રાવેલર 12",hi:"टेम्पो ट्रैवलर 12"},rate:24,da:500,seats:12}
+  ],
+  routes:[ // km = approx one-way road distance from Ahmedabad (check on Google Maps for client)
+    {en:"Statue of Unity",gu:"સ્ટેચ્યુ ઓફ યુનિટી",hi:"स्टैच्यू ऑफ यूनिटी",km:200},
+    {en:"Dwarka",gu:"દ્વારકા",hi:"द्वारका",km:440},
+    {en:"Somnath",gu:"સોમનાથ",hi:"सोमनाथ",km:410},
+    {en:"Rann of Kutch (Dhordo)",gu:"કચ્છ રણ (ધોરડો)",hi:"कच्छ रण (धोरडो)",km:400},
+    {en:"Udaipur",gu:"ઉદયપુર",hi:"उदयपुर",km:260},
+    {en:"Mount Abu",gu:"માઉન્ટ આબુ",hi:"माउंट आबू",km:225},
+    {en:"Ambaji",gu:"અંબાજી",hi:"अंबाजी",km:180},
+    {en:"Saputara",gu:"સાપુતારા",hi:"सापुतारा",km:400},
+    {en:"Vadodara",gu:"વડોદરા",hi:"वडोदरा",km:110}
+  ]
+};
+/* ======================================= */
+const T={
+en:{},
+gu:{demo:"KS Digital Studio દ્વારા ડેમો વેબસાઇટ — નામ, નંબર અને ભાવ નમૂના છે. ફાઇનલ સાઇટમાં તમારી વિગતો હશે.",name:"શુભ યાત્રા કેબ્સ",h1:"અમદાવાદથી આઉટસ્ટેશન, એરપોર્ટ અને લગ્ન માટે ટેક્સી",hp:"સ્વચ્છ AC ગાડી, ભરોસાપાત્ર ડ્રાઇવર, સ્પષ્ટ ભાડું. 10 સેકન્ડમાં અંદાજ જુઓ અને WhatsApp પર બુક કરો.",p1:"24×7 એરપોર્ટ પિકઅપ",p2:"વન-વે અને રાઉન્ડ ટ્રિપ",p3:"ટોલ-પાર્કિંગ પહેલેથી જણાવીએ",cta1:"ભાડું જુઓ અને બુક કરો",cta2:"કૉલ કરો",eh:"તરત ભાડાનો અંદાજ",tr:"રાઉન્ડ ટ્રિપ",to:"વન-વે",lfrom:"ક્યાંથી",lto:"ક્યાં જવું",lcar:"ગાડી",ldays:"દિવસ",ldate:"તારીખ",lpax:"મુસાફર",lname:"તમારું નામ",approx:"અંદાજિત ભાડું",note:"ટોલ, પાર્કિંગ અને સ્ટેટ પરમિટ વાસ્તવિક મુજબ અલગ. ફાઇનલ ભાડું WhatsApp પર કન્ફર્મ.",paxw:"આ ગાડી માટે મુસાફર વધારે છે. મોટી ગાડી પસંદ કરો.",book:"WhatsApp પર બુક કરો",bookn:"તમારી ટ્રિપની વિગત સાથે WhatsApp ખુલશે. ઓનલાઇન પેમેન્ટ નથી.",ch:"અમારી ગાડીઓ",cs:"બધી AC · ડ્રાઇવર સાથે · કિ.મી. મુજબ ભાવ",rh:"અમદાવાદથી લોકપ્રિય ટ્રિપ",rs:"રૂટ પર ટેપ કરો અને ભાડું જુઓ",wh:"પરિવારો અમને કેમ પસંદ કરે છે",w1:"સ્પષ્ટ બિલ",w1s:"કિ.મી., ડ્રાઇવર ભથ્થું અને ટોલ અલગ લખેલા",w2:"અનુભવી ડ્રાઇવર",w2s:"ગુજરાત અને રાજસ્થાન હાઇવેનો અનુભવ",w3:"લગ્ન બુકિંગ",w3s:"જાન અને મહેમાનો માટે ઘણી ગાડીઓ",w4:"લાઇવ લોકેશન",w4s:"ટ્રિપ દરમિયાન ડ્રાઇવર WhatsApp પર લોકેશન મોકલે",fh:"પ્રશ્નો",f1:"ભાડું કેવી રીતે ગણાય છે?",f1a:"રાઉન્ડ ટ્રિપ: કિ.મી. × ભાવ, દિવસના ઓછામાં ઓછા 300 કિ.મી., અને દરરોજનું ડ્રાઇવર ભથ્થું. વન-વે: અંતર × ભાવ + ડ્રાઇવર ભથ્થું. ટોલ, પાર્કિંગ, પરમિટ અલગ.",f2:"એડવાન્સ આપવું પડે?",f2a:"બુકિંગ કન્ફર્મ કરવા નાનું એડવાન્સ. બાકીનું ટ્રિપ પછી ડ્રાઇવરને. આ વેબસાઇટ પર ક્યારેય પેમેન્ટ માંગતા નથી.",f3:"લગ્ન માટે બુક કરી શકાય?",f3a:"હા. તારીખ, ગાડીની સંખ્યા અને પિકઅપ સ્થળ WhatsApp પર જણાવો, અમે એક સાથે ભાવ મોકલીશું.",addr:"અમદાવાદ, ગુજરાત",foot:"વેબસાઇટ: KS Digital Studio · ksdigitalstudio.in",km:"કિ.મી.",kmc:"કિ.મી. ભાડું",dac:"ડ્રાઇવર ભથ્થું",rate:"/કિ.મી.",seats:"સીટ",see:"ભાડું જુઓ",oneway:"વન-વે"},
+hi:{demo:"KS Digital Studio की डेमो वेबसाइट — नाम, नंबर और रेट सैंपल हैं। फ़ाइनल साइट में आपकी जानकारी होगी।",name:"शुभ यात्रा कैब्स",h1:"अहमदाबाद से आउटस्टेशन, एयरपोर्ट और शादी के लिए टैक्सी",hp:"साफ़ AC गाड़ी, भरोसेमंद ड्राइवर, साफ़ किराया। 10 सेकंड में अंदाज़ा देखें और WhatsApp पर बुक करें।",p1:"24×7 एयरपोर्ट पिकअप",p2:"वन-वे और राउंड ट्रिप",p3:"टोल-पार्किंग पहले से बताते हैं",cta1:"किराया देखें और बुक करें",cta2:"कॉल करें",eh:"तुरंत किराये का अंदाज़ा",tr:"राउंड ट्रिप",to:"वन-वे",lfrom:"कहाँ से",lto:"कहाँ जाना है",lcar:"गाड़ी",ldays:"दिन",ldate:"तारीख",lpax:"यात्री",lname:"आपका नाम",approx:"अंदाज़न किराया",note:"टोल, पार्किंग और स्टेट परमिट असल के हिसाब से अलग। फ़ाइनल किराया WhatsApp पर कन्फ़र्म।",paxw:"इस गाड़ी के लिए यात्री ज़्यादा हैं। बड़ी गाड़ी चुनें।",book:"WhatsApp पर बुक करें",bookn:"आपकी ट्रिप की जानकारी के साथ WhatsApp खुलेगा। ऑनलाइन पेमेंट नहीं।",ch:"हमारी गाड़ियाँ",cs:"सभी AC · ड्राइवर के साथ · प्रति किमी रेट",rh:"अहमदाबाद से लोकप्रिय ट्रिप",rs:"रूट पर टैप करके किराया देखें",wh:"परिवार हमें क्यों चुनते हैं",w1:"साफ़ बिल",w1s:"किमी, ड्राइवर भत्ता और टोल अलग लिखे",w2:"अनुभवी ड्राइवर",w2s:"गुजरात और राजस्थान हाईवे का अनुभव",w3:"शादी बुकिंग",w3s:"बारात और मेहमानों के लिए कई गाड़ियाँ",w4:"लाइव लोकेशन",w4s:"ट्रिप में ड्राइवर WhatsApp पर लोकेशन भेजता है",fh:"सवाल",f1:"किराया कैसे बनता है?",f1a:"राउंड ट्रिप: किमी × रेट, रोज़ कम से कम 300 किमी, और रोज़ का ड्राइवर भत्ता। वन-वे: दूरी × रेट + ड्राइवर भत्ता। टोल, पार्किंग, परमिट अलग।",f2:"एडवांस देना होगा?",f2a:"बुकिंग कन्फ़र्म करने के लिए छोटा एडवांस। बाकी ट्रिप के बाद ड्राइवर को। इस वेबसाइट पर कभी पेमेंट नहीं माँगते।",f3:"शादी के लिए बुक कर सकते हैं?",f3a:"हाँ। तारीख, गाड़ियों की संख्या और पिकअप जगह WhatsApp पर बताइए, हम एक साथ रेट भेजेंगे।",addr:"अहमदाबाद, गुजरात",foot:"वेबसाइट: KS Digital Studio · ksdigitalstudio.in",km:"किमी",kmc:"किमी किराया",dac:"ड्राइवर भत्ता",rate:"/किमी",seats:"सीट",see:"किराया देखें",oneway:"वन-वे"}
+};
+const EN={km:"km",kmc:"Km charge",dac:"Driver allowance",rate:"/km",seats:"seats",see:"See fare",oneway:"one way"};
+let L="en",trip="round";
+const $=id=>document.getElementById(id);
+document.querySelectorAll('[data-i]').forEach(el=>{el.dataset.en=el.innerHTML});
+const t=k=>(L!=="en"&&T[L][k])||EN[k]||k;
+const inr=n=>"₹"+Math.round(n).toLocaleString("en-IN");
+function fill(){
+  const d=$('dest').value,c=$('car').value;
+  $('dest').innerHTML=CONFIG.routes.map((r,i)=>`<option value="${i}">${r[L]} — ${r.km} ${t('km')}</option>`).join('');
+  $('car').innerHTML=CONFIG.cars.map(x=>`<option value="${x.id}">${x.name[L]} · ₹${x.rate}${t('rate')}</option>`).join('');
+  if(d)$('dest').value=d; if(c)$('car').value=c;
+  $('cars').innerHTML=CONFIG.cars.map(x=>`<div class="car"><div class="ic">${x.ic}</div><h3>${x.name[L]}</h3><div class="rate">₹${x.rate}${t('rate')}</div><div class="small">${x.seats} ${t('seats')} · ${t('dac')} ₹${x.da}</div></div>`).join('');
+  $('routes').innerHTML=CONFIG.routes.map((r,i)=>`<div class="route"><div><b>${r[L]}</b><span class="small">${r.km} ${t('km')} ${t('oneway')}</span></div><button data-r="${i}">${t('see')}</button></div>`).join('');
+}
+function calc(){
+  const r=CONFIG.routes[$('dest').value],car=CONFIG.cars.find(x=>x.id===$('car').value);
+  const days=Math.max(1,parseInt($('days').value)||1);
+  let km=trip==="round"?Math.max(r.km*2,CONFIG.minKmPerDay*days):r.km;
+  const dayCount=trip==="round"?days:1;
+  const kmc=km*car.rate,da=car.da*dayCount;
+  $('total').textContent=inr(kmc+da);
+  $('break').innerHTML=`<tr><td>${t('kmc')} (${km} ${t('km')} × ₹${car.rate})</td><td>${inr(kmc)}</td></tr><tr><td>${t('dac')} (${dayCount} × ₹${car.da})</td><td>${inr(da)}</td></tr>`;
+  $('days').disabled=trip!=="round";
+  $('paxWarn').style.display=(parseInt($('pax').value)||1)>car.seats?'block':'none';
+  return {r,car,days:dayCount,km,total:kmc+da};
+}
+function waLink(text){return `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`}
+function bookText(){
+  const x=calc(),name=$('cname').value.trim(),date=$('date').value||"-";
+  return `Hello ${T.en.name||"Shubh Yatra Cabs"}! I want to book a cab.\nTrip: Ahmedabad → ${x.r.en} (${trip==="round"?"Round trip, "+x.days+" day(s)":"One way"})\nCar: ${x.car.name.en}\nDate: ${date}\nPassengers: ${$('pax').value}\nWebsite estimate: ${inr(x.total)} + toll/parking\nName: ${name||"-"}`;
+}
+function setLang(l){L=l;document.documentElement.lang=l;
+  document.querySelectorAll('[data-i]').forEach(el=>{const k=el.dataset.i;el.innerHTML=(l==="en"?el.dataset.en:(T[l][k]||el.dataset.en))});
+  [...$('lang').children].forEach(b=>b.classList.toggle('on',b.dataset.l===l));
+  try{localStorage.setItem('cabLang',l)}catch(e){}
+  fill();calc();}
+$('lang').onclick=e=>{const b=e.target.closest('button');if(b)setLang(b.dataset.l)};
+$('trip').onclick=e=>{const b=e.target.closest('button');if(!b)return;trip=b.dataset.t;[...$('trip').children].forEach(x=>x.classList.toggle('on',x===b));calc()};
+['dest','car','days','pax'].forEach(k=>$(k).addEventListener('input',calc));
+$('routes').onclick=e=>{const b=e.target.closest('button');if(!b)return;$('dest').value=b.dataset.r;calc();$('est').scrollIntoView({behavior:'smooth'})};
+$('book').onclick=()=>window.open(waLink(bookText()),'_blank','noopener');
+$('floatWa').href=waLink("Hello! I want to know cab fare from Ahmedabad.");
+$('callBtn').href="tel:+"+CONFIG.whatsapp;
+const dt=new Date();dt.setDate(dt.getDate()+1);$('date').value=dt.toISOString().slice(0,10);$('date').min=new Date().toISOString().slice(0,10);
+T.en.name="Shubh Yatra Cabs";
+let saved="en";try{saved=localStorage.getItem('cabLang')||"en"}catch(e){}
+setLang(saved);
+</script>
+</body>
+</html>

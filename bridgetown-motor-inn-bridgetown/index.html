@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bridgetown Motor Inn | Stay in the Heart of the Annapolis Valley</title>
+<meta name="description" content="Bridgetown Motor Inn, a year-round motor inn on the banks of the Annapolis River in Bridgetown, Nova Scotia. Comfortable rooms, fire pit, BBQ and a conference room for up to 50.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#1f3a2e;--forest-2:#2c5140;--apple:#b8432f;--cream:#f7f3ea;--sand:#ece4d3;--ink:#1d2421;--muted:#5d675f;--white:#fff;--radius:14px;--shadow:0 10px 30px rgba(20,35,28,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;color:var(--forest)}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+.ribbon{background:var(--ink);color:#e9e4d8;font-size:13px;text-align:center;padding:7px 12px}
+header{position:sticky;top:0;z-index:50;background:rgba(247,243,234,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:20px;color:var(--forest);text-decoration:none;line-height:1.1}
+.logo small{display:block;font-family:Inter,sans-serif;font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--apple)}
+.links{display:flex;gap:26px;align-items:center}
+.links a{text-decoration:none;font-weight:500;font-size:15px}
+.links a:hover{color:var(--apple)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:15px;transition:.2s}
+.btn-primary{background:var(--apple);color:#fff}
+.btn-primary:hover{background:#9c3524}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--forest);color:#fff}
+.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--forest)}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;background:linear-gradient(100deg,rgba(18,34,27,.88) 0%,rgba(18,34,27,.6) 55%,rgba(18,34,27,.25) 100%),url(img/hero.jpg) center/cover}
+.hero .wrap{padding:90px 0}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;letter-spacing:.06em;margin-bottom:22px}
+.hero h1{color:#fff;font-size:clamp(38px,6vw,68px);max-width:760px;margin-bottom:18px}
+.hero p{font-size:clamp(17px,2vw,20px);max-width:600px;color:#e8ece9;margin-bottom:30px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.quick{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);margin-top:-48px;position:relative;z-index:5;display:grid;grid-template-columns:repeat(4,1fr)}
+.quick div{padding:22px 24px;border-right:1px solid var(--sand)}
+.quick div:last-child{border-right:0}
+.quick b{display:block;font-family:Fraunces,serif;color:var(--forest);font-size:18px}
+.quick span{font-size:14px;color:var(--muted)}
+section{padding:90px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head .tag{color:var(--apple);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;display:block}
+.sec-head h2{font-size:clamp(30px,4vw,44px);margin-bottom:12px}
+.sec-head p{color:var(--muted);font-size:17px}
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.split img{border-radius:var(--radius);box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover;width:100%}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin:22px 0 28px}
+.ticks li{padding-left:28px;position:relative;font-size:15px}
+.ticks li:before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;background:var(--forest-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E")}
+.rooms{background:var(--white)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--cream);border-radius:var(--radius);overflow:hidden;border:1px solid var(--sand);display:flex;flex-direction:column}
+.card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.card .body{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:22px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.pill{align-self:flex-start;background:var(--sand);color:var(--forest);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.why{background:var(--forest);color:#e6ede8}
+.why h2,.why h3{color:#fff}
+.why .sec-head p{color:#c5d3ca}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:26px}
+.feat .ic{width:46px;height:46px;border-radius:12px;background:var(--apple);display:grid;place-items:center;margin-bottom:16px}
+.feat h3{font-size:19px;margin-bottom:8px}
+.feat p{font-size:15px;color:#c5d3ca}
+.explore .list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px 0}
+.explore .list span{background:var(--white);border:1px solid var(--sand);border-radius:10px;padding:12px 14px;font-size:15px}
+.drive{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+.drive div{background:var(--sand);border-radius:10px;padding:12px 16px;font-size:14px}
+.drive b{display:block;font-family:Fraunces,serif;color:var(--forest);font-size:20px}
+.meet{background:var(--white)}
+.meet-box{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:var(--cream);border:1px solid var(--sand);border-radius:20px;padding:44px}
+.pk{border-left:3px solid var(--apple);padding:4px 0 4px 18px;margin-bottom:22px}
+.pk h3{font-size:20px;margin-bottom:4px}
+.pk p{color:var(--muted);font-size:15px}
+.book{background:linear-gradient(180deg,var(--cream),var(--sand))}
+.book-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
+.info{background:var(--forest);color:#e6ede8;border-radius:20px;padding:36px}
+.info h3{color:#fff;font-size:24px;margin-bottom:18px}
+.info .row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:15px}
+.info .row:last-of-type{border-bottom:0}
+.info .row b{display:block;color:#fff}
+.info a{color:#fff}
+.info .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.info .ctas .btn{padding:10px 18px;font-size:14px}
+form{background:var(--white);border-radius:20px;padding:36px;box-shadow:var(--shadow)}
+form h3{font-size:24px;margin-bottom:6px}
+form .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.full{grid-column:1/-1}
+label{font-size:13px;font-weight:600;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #d9d2c2;border-radius:10px;font:inherit;font-size:15px;background:#fdfcf8}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--forest-2);box-shadow:0 0 0 3px rgba(44,81,64,.15)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%;margin-top:18px}
+.note{display:none;margin-top:14px;background:#e7f1ea;color:var(--forest);padding:12px 14px;border-radius:10px;font-size:14px}
+.policies{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.policies div{background:var(--white);border-radius:12px;padding:18px;border:1px solid var(--sand)}
+.policies b{display:block;color:var(--forest);font-family:Fraunces,serif;font-size:17px}
+.policies span{font-size:14px;color:var(--muted)}
+.faq details{background:var(--white);border:1px solid var(--sand);border-radius:12px;margin-bottom:12px;padding:0 22px}
+.faq summary{cursor:pointer;font-weight:600;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary:after{content:"+";font-size:22px;color:var(--apple);line-height:1}
+.faq details[open] summary:after{content:"–"}
+.faq details p{padding-bottom:18px;color:var(--muted)}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--sand);height:360px}
+.map iframe{width:100%;height:100%;border:0}
+footer{background:var(--ink);color:#b9c0bb;padding:56px 0 30px;font-size:14px}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:34px}
+footer h4{color:#fff;font-family:Fraunces,serif;font-size:18px;margin-bottom:12px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+.fcols ul{list-style:none;display:grid;gap:6px}
+.credits{border-top:1px solid #333b37;padding-top:20px;font-size:12px;color:#8b938e}
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:none;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow);background:var(--apple)}
+@media (max-width:960px){
+ .links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--sand)}
+ .links.open{display:flex}
+ .menu-btn{display:block}
+ .split,.book-grid,.meet-box{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr 1fr}
+ .grid4,.policies{grid-template-columns:1fr 1fr}
+ .quick{grid-template-columns:1fr 1fr}
+ .quick div:nth-child(2){border-right:0}
+ .quick div:nth-child(-n+2){border-bottom:1px solid var(--sand)}
+ .fcols{grid-template-columns:1fr}
+ .fab{display:flex}
+}
+@media (max-width:600px){
+ section{padding:64px 0}
+ .cards,.grid4,.ticks,.explore .list,.fgrid{grid-template-columns:1fr}
+ .policies{grid-template-columns:1fr 1fr}
+ .meet-box,form,.info{padding:26px 20px}
+ .hero{min-height:80vh}
+ .quick div{padding:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by KS Digital Studio — for Bridgetown Motor Inn</div>
+
+<header>
+ <div class="wrap nav">
+  <a href="#top" class="logo">Bridgetown Motor Inn<small>Annapolis Valley · Nova Scotia</small></a>
+  <nav class="links" id="links">
+   <a href="#stay">The Inn</a>
+   <a href="#rooms">Rooms</a>
+   <a href="#explore">Explore</a>
+   <a href="#meetings">Meetings &amp; Packages</a>
+   <a href="#faq">FAQ</a>
+   <a href="#book" class="btn btn-primary">Check Availability</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <span class="eyebrow">Open year round · On the banks of the Annapolis River</span>
+  <h1>Your cozy base in the heart of the Annapolis Valley</h1>
+  <p>A peaceful half-acre property along Highway 1 in Bridgetown, with rooms set well back from the road, a fire pit under the stars and every corner of the Valley within easy reach.</p>
+  <div class="hero-ctas">
+   <a href="#book" class="btn btn-primary">Request a Booking</a>
+   <a href="tel:+19028240220" class="btn btn-ghost">Call 902-824-0220</a>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">
+ <div class="quick">
+  <div><b>Open all year</b><span>Under new management</span></div>
+  <div><b>Check-in 3–10 pm</b><span>Check-out 11 am</span></div>
+  <div><b>Free Wi-Fi</b><span>In every room</span></div>
+  <div><b>Fire pit &amp; BBQ</b><span>Picnic area for guests</span></div>
+ </div>
+</div>
+
+<section id="stay">
+ <div class="wrap split">
+  <div>
+   <div class="sec-head" style="margin-bottom:0">
+    <span class="tag">Welcome</span>
+    <h2>A Valley landmark, lovingly revived</h2>
+    <p>The Bridgetown Motor Inn began as a private residence in 1956 and grew into a motor inn in the early seventies. Today, under new management, it’s being refreshed room by room — with the same quiet setting guests have always loved.</p>
+   </div>
+   <ul class="ticks">
+    <li>Air-conditioned rooms</li>
+    <li>Flat-screen TV &amp; cable</li>
+    <li>Mini fridge &amp; microwave</li>
+    <li>Free wireless internet</li>
+    <li>Guest laundry &amp; ice machine</li>
+    <li>Fire pit, picnic area &amp; gas BBQ</li>
+   </ul>
+   <a href="#rooms" class="btn btn-dark">See our rooms</a>
+  </div>
+  <img src="img/firepit.jpg" alt="Stone fire pit on a green lawn" loading="lazy" width="900" height="675">
+ </div>
+</section>
+
+<section class="rooms" id="rooms">
+ <div class="wrap">
+  <div class="sec-head">
+   <span class="tag">Rooms</span>
+   <h2>Comfortable rooms for every kind of trip</h2>
+   <p>Every room is air-conditioned, with a flat-screen TV, cable, Wi-Fi, mini fridge and microwave. Hair dryers, cribs and cots are available on request.</p>
+  </div>
+  <div class="cards">
+   <article class="card">
+    <img src="img/room.jpg" alt="Comfortable guest room with a queen bed" loading="lazy" width="900" height="601">
+    <div class="body"><span class="pill">Couples &amp; solo travellers</span><h3>Queen Bed Room</h3><p>A modern, comfortable room with one queen bed — ideal for a restful night between Valley adventures.</p><a href="#book" class="btn btn-dark">Request this room</a></div>
+   </article>
+   <article class="card">
+    <img src="img/room.jpg" alt="Guest room interior" loading="lazy" width="900" height="601" style="object-position:30% 50%">
+    <div class="body"><span class="pill">Families &amp; friends</span><h3>Double Bed Room</h3><p>Two double beds with all the same in-room comforts — plenty of space for families, golf trips and road-trippers.</p><a href="#book" class="btn btn-dark">Request this room</a></div>
+   </article>
+   <article class="card">
+    <img src="img/room.jpg" alt="Accessible guest room" loading="lazy" width="900" height="601" style="object-position:80% 50%">
+    <div class="body"><span class="pill">Fully accessible</span><h3>Accessible Room</h3><p>One queen bed and one single bed in a fully accessible room, with cable TV and wireless internet.</p><a href="#book" class="btn btn-dark">Request this room</a></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="why">
+ <div class="wrap">
+  <div class="sec-head">
+   <span class="tag" style="color:#f0b3a6">Why stay with us</span>
+   <h2>Small-town comfort, Valley-wide access</h2>
+   <p>Everything you need for a relaxed stay — and nothing you don’t.</p>
+  </div>
+  <div class="grid4">
+   <div class="feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Central location</h3><p>Bridgetown sits right in the middle of the Annapolis Valley, so you can explore in every direction.</p></div>
+   <div class="feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></div><h3>Quiet nights</h3><p>Rooms sit well off the highway on a peaceful half-acre lot, so guests enjoy a solid sleep.</p></div>
+   <div class="feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2c2 4 6 5 6 10a6 6 0 01-12 0c0-3 2-4 2-7 2 1 3 3 4 3"/></svg></div><h3>Outdoor living</h3><p>Warm up at the fire pit, use the gas BBQ and enjoy the picnic area after a day outdoors.</p></div>
+   <div class="feat"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><h3>Open all year</h3><p>From apple-blossom spring to snowy winter weekends, our doors are open every season.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="explore" id="explore">
+ <div class="wrap split">
+  <img src="img/area.jpg" alt="Historic fort grounds in Annapolis Royal" loading="lazy" width="900" height="603">
+  <div>
+   <div class="sec-head" style="margin-bottom:0">
+    <span class="tag">Explore the Valley</span>
+    <h2>Wineries, tides and history — all close by</h2>
+    <p>Make the most of your time in the Annapolis Valley. A few favourite ways to spend the day:</p>
+   </div>
+   <div class="list">
+    <span>🍷 Wolfville wineries</span>
+    <span>🏰 Historic Annapolis Royal</span>
+    <span>🌊 Bay of Fundy tides</span>
+    <span>🌷 Annapolis Royal Historic Gardens</span>
+    <span>🐋 Whale watching</span>
+    <span>🥾 Hiking the Evangeline Trail</span>
+    <span>🚲 Cycling &amp; kayaking</span>
+    <span>⛳ Golf &amp; birdwatching</span>
+   </div>
+   <div class="drive">
+    <div><b>1.5 hrs</b>to Halifax</div>
+    <div><b>1.5 hrs</b>to Yarmouth ferry</div>
+    <div><b>45 min</b>to Digby ferry</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="meet" id="meetings">
+ <div class="wrap">
+  <div class="meet-box">
+   <div>
+    <span class="tag" style="color:var(--apple);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase">Meetings &amp; groups</span>
+    <h2 style="font-size:clamp(28px,3.5vw,38px);margin:10px 0 14px">A conference room for up to 50 guests</h2>
+    <p style="color:var(--muted);margin-bottom:22px">Hold your meeting, workshop or family gathering in the heart of the Valley. Wireless internet is included and catering is available. Special rates are available for seniors, government employees and commercial guests on request.</p>
+    <a href="#book" class="btn btn-primary">Ask about group rates</a>
+   </div>
+   <div>
+    <div class="pk"><h3>Golf Package</h3><p>Two rounds of golf at Eden Golf &amp; Country Club, an 18-hole Valley course about 10 minutes from Bridgetown, plus one night’s stay.</p></div>
+    <div class="pk"><h3>Oaklawn Farm Zoo Package</h3><p>Your stay plus a family pass for four to Nova Scotia’s largest zoo in Aylesford, about 20 minutes away.</p></div>
+    <div class="pk" style="margin-bottom:0"><h3>Local events</h3><p>Plan your stay around Bridgetown Ciderfest, Canada Day celebrations, the triathlon or the Annapolis Valley Exhibition.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="book" id="book">
+ <div class="wrap">
+  <div class="sec-head">
+   <span class="tag">Book your stay</span>
+   <h2>Request a room in under a minute</h2>
+   <p>Send us your dates and we’ll confirm availability by phone or email.</p>
+  </div>
+  <div class="book-grid">
+   <aside class="info">
+    <h3>Contact the Inn</h3>
+    <div class="row"><span>📍</span><div><b>Address</b>396 Granville Street<br>Bridgetown, Nova Scotia</div></div>
+    <div class="row"><span>📞</span><div><b>Phone</b><a href="tel:+19028240220">902-824-0220</a></div></div>
+    <div class="row"><span>✉️</span><div><b>Email</b><a href="mailto:thebridgetownmotorinn@gmail.com">thebridgetownmotorinn@gmail.com</a></div></div>
+    <div class="row"><span>🕒</span><div><b>Check-in / out</b>Check-in 3 pm – 10 pm · Check-out 11 am</div></div>
+    <div class="ctas">
+     <a href="tel:+19028240220" class="btn btn-primary">Call now</a>
+     <a href="sms:+19028240220" class="btn btn-ghost">Text us</a>
+     <a href="mailto:thebridgetownmotorinn@gmail.com?subject=Room%20enquiry" class="btn btn-ghost">Email</a>
+    </div>
+   </aside>
+   <form id="bookForm" novalidate>
+    <h3>Booking request</h3>
+    <p class="sub">We’ll get back to you to confirm your room.</p>
+    <div class="fgrid">
+     <div><label for="n">Full name</label><input id="n" required placeholder="Your name"></div>
+     <div><label for="p">Phone</label><input id="p" type="tel" placeholder="Best number to reach you"></div>
+     <div class="full"><label for="e">Email</label><input id="e" type="email" required placeholder="you@example.com"></div>
+     <div><label for="ci">Check-in</label><input id="ci" type="date" required></div>
+     <div><label for="co">Check-out</label><input id="co" type="date" required></div>
+     <div><label for="rt">Room type</label><select id="rt"><option>Queen Bed Room</option><option>Double Bed Room</option><option>Accessible Room</option><option>Not sure yet</option></select></div>
+     <div><label for="g">Guests</label><select id="g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+     <div class="full"><label for="m">Anything else? (packages, group booking, conference room)</label><textarea id="m" placeholder="Tell us about your trip"></textarea></div>
+    </div>
+    <button type="submit" class="btn btn-primary">Send booking request</button>
+    <div class="note" id="note">Thanks! This is a demo, so nothing was sent. On the live site, your request goes straight to the Inn’s inbox.</div>
+   </form>
+  </div>
+  <div class="policies">
+   <div><b>Check-in</b><span>3 pm to 10 pm</span></div>
+   <div><b>Check-out</b><span>11 am</span></div>
+   <div><b>Deposits</b><span>Credit card or deposit holds your room</span></div>
+   <div><b>Cancellations</b><span>72 hours’ notice required</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="faq" id="faq">
+ <div class="wrap split" style="align-items:start">
+  <div>
+   <div class="sec-head">
+    <span class="tag">FAQ</span>
+    <h2>Good to know before you arrive</h2>
+   </div>
+   <details><summary>Are you open in winter?</summary><p>Yes — the Bridgetown Motor Inn is open year round.</p></details>
+   <details><summary>What’s in the rooms?</summary><p>Every room has air conditioning, a flat-screen TV with cable, Wi-Fi, a mini fridge and a microwave. Hair dryers, cribs and cots are available on request.</p></details>
+   <details><summary>Do you have an accessible room?</summary><p>Yes, we have a fully accessible room with one queen bed and one single bed.</p></details>
+   <details><summary>Is there laundry on site?</summary><p>Yes. Our guest laundry room has a coin-operated washer and dryer, an iron and ironing board, and an ice machine.</p></details>
+   <details><summary>What is your cancellation policy?</summary><p>We ask for 72 hours’ notice for cancellations. A credit card or deposit is required to hold a room.</p></details>
+   <details><summary>Can I smoke at the property?</summary><p>Smoking is permitted in designated areas only.</p></details>
+  </div>
+  <div class="map">
+   <iframe title="Map to Bridgetown Motor Inn" loading="lazy" src="https://maps.google.com/maps?q=396%20Granville%20Street%2C%20Bridgetown%2C%20Nova%20Scotia&z=14&output=embed"></iframe>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fcols">
+   <div><h4>Bridgetown Motor Inn</h4><p>Nestled along the banks of the Annapolis River — your connection to the beautiful Annapolis Valley, open year round.</p></div>
+   <div><h4>Visit</h4><ul><li>396 Granville Street</li><li>Bridgetown, Nova Scotia</li><li><a href="tel:+19028240220">902-824-0220</a></li><li><a href="mailto:thebridgetownmotorinn@gmail.com">thebridgetownmotorinn@gmail.com</a></li></ul></div>
+   <div><h4>Explore</h4><ul><li><a href="#rooms">Rooms</a></li><li><a href="#explore">Things to do</a></li><li><a href="#meetings">Meetings &amp; packages</a></li><li><a href="#book">Booking request</a></li></ul></div>
+  </div>
+  <div class="credits" id="credits">Sample photos: <a href="https://www.flickr.com/photos/67402116@N02/8622876294" target="_blank" rel="noopener">Fire Pit</a> by john.anes (CC BY-SA 2.0); <a href="https://www.flickr.com/photos/56474869@N05/5308484339" target="_blank" rel="noopener">Annapolis Valley, Nova Scotia</a> by Suzanne Schroeter (CC BY-SA 2.0); <a href="https://www.flickr.com/photos/202846129@N03/54584349008" target="_blank" rel="noopener">Cozy bedroom with modern decor featuring comfortable bed, na</a> by nenadstojkovicart (CC BY 2.0); <a href="https://www.flickr.com/photos/23088289@N02/3615286561" target="_blank" rel="noopener">Fort Anne, Annapolis Royal, Nova Scotia</a> by cphoffman42 (CC BY-SA 2.0). Real photos of your business will replace these.</div>
+ </div>
+</footer>
+
+<div class="fab">
+ <a href="tel:+19028240220" aria-label="Call the Inn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></a>
+</div>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',function(){document.getElementById('links').classList.toggle('open')});
+document.querySelectorAll('#links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('links').classList.remove('open')})});
+var t=new Date(),ci=document.getElementById('ci'),co=document.getElementById('co');
+var iso=function(d){return d.toISOString().slice(0,10)};
+ci.min=iso(t);co.min=iso(new Date(t.getTime()+864e5));
+ci.addEventListener('change',function(){if(ci.value){var d=new Date(ci.value);d.setDate(d.getDate()+1);co.min=iso(d);if(co.value&&co.value<=ci.value)co.value=iso(d)}});
+document.getElementById('bookForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target;if(!f.checkValidity()){f.reportValidity();return}document.getElementById('note').style.display='block'});
+</script>
+</body>
+</html>

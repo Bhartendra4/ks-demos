@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sweet Vermont Treats — Bakery in Barre, VT</title>
+<meta name="description" content="Sweet Vermont Treats — a licensed and insured home-style bakery in Barre, Vermont. Pies, cookies, cupcakes and custom orders.">
+<style>
+:root{--cream:#fbf6ef;--paper:#fff;--ink:#2d2420;--muted:#6f625a;--berry:#a3324a;--berry-dk:#82243a;--maple:#c98b3c;--line:#eadfd2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+img{display:block;max-width:100%}
+a{color:inherit}
+.ribbon{background:var(--ink);color:#f3e9dc;font-size:.8rem;text-align:center;padding:.45rem 1rem}
+.ribbon a{color:#f3c98b;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:10;background:rgba(251,246,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem}
+.logo{font-family:Georgia,serif;font-size:1.25rem;font-weight:700;color:var(--berry);text-decoration:none}
+.nav-links{display:flex;gap:1.2rem;font-size:.95rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--berry)}
+@media(max-width:640px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:.45rem;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:.98rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--berry);color:#fff}
+.btn-main:hover{background:var(--berry-dk)}
+.btn-ghost{background:rgba(255,255,255,.92);color:var(--ink)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,18,14,.15) 0%,rgba(30,18,14,.72) 100%)}
+.hero-in{position:relative;z-index:1;max-width:1100px;margin:auto;width:100%;padding:3rem 1rem 3.5rem}
+.tag{display:inline-block;background:var(--maple);color:#fff;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);margin-bottom:.6rem}
+.hero p{font-size:clamp(1.05rem,2.4vw,1.3rem);max-width:560px;margin-bottom:1.6rem;opacity:.95}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+section{padding:4.5rem 1rem}
+.wrap{max-width:1100px;margin:auto}
+.eyebrow{color:var(--berry);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;margin-bottom:.5rem}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1rem}
+.lead{color:var(--muted);max-width:640px;font-size:1.08rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;margin-top:2.5rem}
+.card{background:var(--paper);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(60,35,20,.08);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-b{padding:1.3rem 1.4rem 1.5rem;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.35rem;margin-bottom:.4rem}
+.card p{color:var(--muted);flex:1}
+.price{margin-top:1rem;font-size:.9rem;font-weight:600;color:var(--berry)}
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+@media(max-width:800px){.about-grid{grid-template-columns:1fr}}
+.points{list-style:none;margin-top:1.4rem;display:grid;gap:.8rem}
+.points li{padding-left:2rem;position:relative}
+.points li::before{content:"✓";position:absolute;left:0;top:0;width:1.4rem;height:1.4rem;border-radius:50%;background:#f6e3e7;color:var(--berry);font-size:.8rem;display:grid;place-items:center;font-weight:700}
+.about-img{border-radius:22px;overflow:hidden;box-shadow:0 20px 40px rgba(60,35,20,.12)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:2rem}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:1.4rem}
+.step b{display:block;font-family:Georgia,serif;font-size:2rem;color:var(--maple);line-height:1;margin-bottom:.5rem}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:2rem}
+@media(max-width:800px){.info{grid-template-columns:1fr}}
+.box{background:var(--paper);border-radius:18px;padding:1.6rem;box-shadow:0 10px 30px rgba(60,35,20,.06)}
+.box h3{margin-bottom:.8rem}
+.box p{color:var(--muted)}
+.map{border:0;width:100%;height:260px;border-radius:14px;margin-top:1rem}
+.contact{background:var(--berry);color:#fff;text-align:center}
+.contact .eyebrow{color:#f3c98b}
+.contact .lead{color:#f6dfe4;margin:0 auto 1.8rem}
+.contact .cta{justify-content:center}
+footer{background:var(--ink);color:#cbbfb4;font-size:.85rem;padding:2rem 1rem}
+footer .wrap{display:grid;gap:.8rem}
+footer a{color:#f3c98b}
+.credits{font-size:.75rem;opacity:.8}
+.float{position:fixed;right:16px;bottom:16px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Sweet Vermont Treats</div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top">Sweet Vermont Treats</a>
+    <nav class="nav-links">
+      <a href="#treats">Treats</a>
+      <a href="#about">About</a>
+      <a href="#order">How to order</a>
+      <a href="#visit">Find us</a>
+    </nav>
+    <a class="btn btn-main" href="#contact" style="padding:.55rem 1.1rem;font-size:.9rem">Order</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="A display of freshly baked pastries and small tarts" fetchpriority="high">
+    <div class="hero-in">
+      <span class="tag">Licensed &amp; insured bakery · Barre, VT</span>
+      <h1>Sweet Vermont Treats</h1>
+      <p>Small-batch pies, cookies, cupcakes and custom bakes, made in Barre for your family table, parties and holidays.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="https://forms.gle/M9V9bcb6cBDSSmmZA" target="_blank" rel="noopener">Place an order</a>
+        <a class="btn btn-ghost" href="mailto:karli.chouinard@gmail.com?subject=Order%20enquiry">✉ Email us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="treats">
+    <div class="wrap">
+      <p class="eyebrow">From our oven</p>
+      <h2>Treats for every occasion</h2>
+      <p class="lead">Every bake is made to order in small batches. Tell us what you are celebrating and we will help you choose.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="img/pie.jpg" alt="A golden double-crust apple pie" loading="lazy">
+          <div class="card-b">
+            <h3>Pies</h3>
+            <p>Classic flaky-crust pies — perfect for Thanksgiving, Christmas and Sunday dinners. Pre-order ahead of the holidays.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cookies.jpg" alt="Decorated chocolate cookies in star, flower and animal shapes" loading="lazy">
+          <div class="card-b">
+            <h3>Cookies</h3>
+            <p>Decorated cookies by the dozen for birthdays, showers, school events and gift boxes.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cupcakes.jpg" alt="A chocolate cupcake with swirled frosting" loading="lazy">
+          <div class="card-b">
+            <h3>Cupcakes &amp; custom bakes</h3>
+            <p>Cupcakes, cakes and party trays made to your colours and theme. Share your idea and date.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>A local bakery, baked with care</h2>
+        <p class="lead">Sweet Vermont Treats is a licensed and insured bakery in Barre, Vermont. We bake to order, so everything you pick up is fresh.</p>
+        <ul class="points">
+          <li>Licensed and insured in Vermont</li>
+          <li>Made to order in small batches</li>
+          <li>Holiday pre-orders and custom requests welcome</li>
+          <li>Easy online order form</li>
+        </ul>
+      </div>
+      <div class="about-img"><img src="img/hero.jpg" alt="Assorted baked goods on display" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;width:100%"></div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="wrap">
+      <p class="eyebrow">How to order</p>
+      <h2>Three easy steps</h2>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Choose</h3><p>Pick your treats or describe a custom idea.</p></div>
+        <div class="step"><b>2</b><h3>Send your order</h3><p>Fill in the online order form or email us with your date.</p></div>
+        <div class="step"><b>3</b><h3>Pick up</h3><p>We confirm your order and pickup time in Barre.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Find us</p>
+      <h2>Pickup &amp; hours</h2>
+      <div class="info">
+        <div class="box">
+          <h3>Location</h3>
+          <p>275 Hill Street<br>Barre, Vermont, USA</p>
+          <iframe class="map" title="Map of Barre, Vermont" loading="lazy" src="https://www.google.com/maps?q=275+Hill+Street,+Barre,+VT&output=embed"></iframe>
+        </div>
+        <div class="box">
+          <h3>Hours</h3>
+          <p>We bake to order. Pickup times are arranged when your order is confirmed.</p>
+          <p style="margin-top:1rem"><strong>Holiday orders:</strong> please order early — popular dates fill up fast.</p>
+          <p style="margin-top:1.4rem"><a class="btn btn-main" href="https://forms.gle/M9V9bcb6cBDSSmmZA" target="_blank" rel="noopener">Open the order form</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Planning something sweet?</h2>
+      <p class="lead">Send us your date, number of guests and what you would like. We will reply with options and a quote.</p>
+      <div class="cta">
+        <a class="btn btn-ghost" href="mailto:karli.chouinard@gmail.com?subject=Order%20enquiry">✉ karli.chouinard@gmail.com</a>
+        <a class="btn btn-ghost" href="https://forms.gle/M9V9bcb6cBDSSmmZA" target="_blank" rel="noopener">📝 Order form</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/sweetvermonttreats/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="btn btn-main float" href="mailto:karli.chouinard@gmail.com?subject=Order%20enquiry" aria-label="Email Sweet Vermont Treats">✉ Order</a>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Sweet Vermont Treats · Barre, Vermont</div>
+    <div class="credits" id="credits">Sample photos: “Desserts display - bright - Wall Two 80” by avlxyz (CC BY-SA 2.0); “And yet another apple pie” by Benimoto (CC BY 2.0); “devil's food cupcakes with white chocolate cream cheese frosting” by ginnerobot (CC BY-SA 2.0); “decorated cookies” by robanhk (CC BY-SA 2.0) — via Flickr. Real photos of your business will replace these.</div>
+    <div class="credits">Website demo by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

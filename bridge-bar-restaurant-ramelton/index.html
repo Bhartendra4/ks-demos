@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bridge Bar Restaurant — Ramelton, Co. Donegal</title>
+<meta name="description" content="Bridge Bar Restaurant, Bridge End, Ramelton, Co. Donegal. Simple, locally inspired and seasonal menus, modern Irish dishes and sharing plates.">
+<style>
+:root{--ink:#1c1a17;--bg:#f7f3ec;--card:#fffdf9;--green:#22392f;--green-d:#16271f;--gold:#b98a3e;--muted:#6d665b;--line:#e4dccd}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--green-d);color:#e9e2d2;font-size:.8rem;text-align:center;padding:7px 16px;letter-spacing:.02em}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(247,243,236,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:Georgia,serif;font-size:1.15rem;text-decoration:none;letter-spacing:.02em}
+.brand span{color:var(--gold)}
+.nav nav{display:none;gap:26px;font-size:.92rem}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:12px 22px;border-radius:4px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#a67a33}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-dark{background:var(--green);color:#fff}
+.btn-line{border-color:var(--green);color:var(--green)}
+.nav .btn{padding:8px 16px;font-size:.88rem}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;background:#111}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,10,.35) 0%,rgba(10,12,10,.45) 45%,rgba(10,12,10,.88) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:56px;width:100%}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px}
+.hero .eyebrow{color:#e6c88f}
+.hero h1{font-size:clamp(2.4rem,8vw,4.4rem);margin-bottom:14px}
+.hero p{max-width:540px;font-size:1.08rem;color:#eee6d8;margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:64px 0}
+.sec-head{max-width:620px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(1.8rem,5vw,2.5rem);margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.about{display:grid;gap:30px}
+.about p{color:#3d3832;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.tags span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-size:.85rem;color:var(--green)}
+.cards{display:grid;gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.card img{width:100%;height:230px;object-fit:cover}
+.card .body{padding:20px}
+.card h3{font-size:1.3rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.card .price{margin-top:12px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.dark{background:var(--green);color:#f1ebdd}
+.dark .sec-head p{color:#c9c2b0}
+.split{display:grid;gap:30px}
+.hours{list-style:none;border-top:1px solid rgba(255,255,255,.18)}
+.hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.18);font-size:.98rem}
+.hours li.today{color:#e6c88f;font-weight:600}
+.note{font-size:.82rem;color:#c9c2b0;margin-top:12px}
+.find img{border-radius:8px;width:100%;height:280px;object-fit:cover}
+.find address{font-style:normal;font-size:1.05rem;margin:14px 0 18px}
+.contact{text-align:center}
+.contact .sec-head{margin:0 auto 26px}
+.contact .cta{justify-content:center}
+.contact .small{margin-top:18px;color:var(--muted);font-size:.9rem}
+footer{background:var(--green-d);color:#c9c2b0;padding:34px 0;font-size:.88rem}
+footer .credits{margin-top:10px;font-size:.76rem;line-height:1.5;color:#9e9887}
+footer a{color:inherit}
+@media(min-width:760px){
+  .nav nav{display:flex}
+  .about{grid-template-columns:1.1fr .9fr;align-items:center}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .split{grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  section{padding:88px 0}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by KS Digital Studio — for Bridge Bar Restaurant</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Bridge Bar <span>Restaurant</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Food</a>
+      <a href="#hours">Hours</a>
+      <a href="#find">Find us</a>
+    </nav>
+    <a class="btn btn-dark" href="tel:+353749152226">Book a table</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <img src="img/hero.jpg" alt="Sharing plate, candlelight and a glass of wine on a wooden table">
+  <div class="wrap">
+    <div class="eyebrow">Bridge End · Ramelton · Co. Donegal</div>
+    <h1>Bridge Bar Restaurant</h1>
+    <p>Simple, locally inspired and seasonal menus with a relaxed vibe. Modern Irish dishes and sharing plates, by the bridge in Ramelton.</p>
+    <div class="cta">
+      <a class="btn btn-gold" href="tel:+353749152226">Call to book · 074 915 2226</a>
+      <a class="btn btn-ghost" href="#menu">See the food</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="eyebrow">Welcome</div>
+      <div class="sec-head"><h2>Good food, an easy evening</h2></div>
+      <p>Pull up a chair by the bridge. Our menus are short and change with the seasons, built around what is good locally right now.</p>
+      <p>Come for a full dinner, or order a few sharing plates for the table and a glass of something nice. Either way, there is no rush.</p>
+      <div class="tags"><span>Gluten-free options</span><span>Vegetarian</span><span>Vegan</span></div>
+    </div>
+    <div class="find"><img src="img/ramelton.jpg" alt="Ramelton seen across the River Lennon" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="menu" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Food</div>
+      <h2>A seasonal menu</h2>
+      <p>A sample of what to expect. Dishes change often — call us for this week's menu.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <img src="img/sharing.jpg" alt="Sharing plate with bread, olives and cured meats" loading="lazy">
+        <div class="body"><h3>Sharing plates</h3><p>Small plates made for the middle of the table. Order a few and pass them around.</p><div class="price">Price on request</div></div>
+      </article>
+      <article class="card">
+        <img src="img/seafood.jpg" alt="Bowl of mussels, prawns and white fish with toasted bread" loading="lazy">
+        <div class="body"><h3>From the coast</h3><p>Seafood dishes that follow the season and the catch.</p><div class="price">Price on request</div></div>
+      </article>
+      <article class="card">
+        <img src="img/mains.jpg" alt="Rack of lamb with asparagus and carrots" loading="lazy">
+        <div class="body"><h3>Modern Irish mains</h3><p>Familiar ingredients, cooked simply and plated with care.</p><div class="price">Price on request</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="hours">
+  <div class="wrap split">
+    <div>
+      <div class="sec-head">
+        <div class="eyebrow" style="color:#e6c88f">Opening hours</div>
+        <h2>When to find us</h2>
+        <p>Evening service, Wednesday to Sunday.</p>
+      </div>
+      <a class="btn btn-gold" href="tel:+353749152226">Call to book a table</a>
+    </div>
+    <div>
+      <ul class="hours" id="hrs">
+        <li data-d="1"><span>Monday</span><span>Closed</span></li>
+        <li data-d="2"><span>Tuesday</span><span>Closed</span></li>
+        <li data-d="3"><span>Wednesday</span><span>5:00 pm – 11:00 pm</span></li>
+        <li data-d="4"><span>Thursday</span><span>5:00 pm – 9:00 pm</span></li>
+        <li data-d="5"><span>Friday</span><span>5:00 pm – 9:00 pm</span></li>
+        <li data-d="6"><span>Saturday</span><span>5:00 pm – 9:00 pm</span></li>
+        <li data-d="0"><span>Sunday</span><span>5:00 pm – 8:00 pm</span></li>
+      </ul>
+      <p class="note">Hours shown as listed publicly — to be confirmed with you before the site goes live.</p>
+    </div>
+  </div>
+</section>
+
+<section id="find">
+  <div class="wrap split">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <div class="eyebrow">Find us</div>
+        <h2>By the bridge in Ramelton</h2>
+      </div>
+      <address>Bridge Bar Restaurant<br>Bridge End, Ramelton<br>Co. Donegal, F92 E427</address>
+      <div class="cta">
+        <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Bridge+Bar+Restaurant+Bridge+End+Ramelton+F92+E427" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-line" href="tel:+353749152226">074 915 2226</a>
+      </div>
+    </div>
+    <div class="contact" id="contact" style="text-align:left">
+      <div class="sec-head" style="margin:0 0 18px">
+        <div class="eyebrow">Bookings &amp; enquiries</div>
+        <h2>Get in touch</h2>
+        <p>For tables, group bookings and dietary questions, call us or send an email.</p>
+      </div>
+      <div class="cta" style="justify-content:flex-start">
+        <a class="btn btn-gold" href="tel:+353749152226">Call us</a>
+        <a class="btn btn-line" href="mailto:bridgebarrestaurant@gmail.com?subject=Table%20enquiry">Email us</a>
+      </div>
+      <p class="small">bridgebarrestaurant@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Bridge Bar Restaurant · Bridge End, Ramelton, Co. Donegal F92 E427 · <a href="tel:+353749152226">074 915 2226</a></div>
+    <p class="credits">Sample photos: “Plate full of Italian meat” by winecountrymedia (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>), “Seafood Dish Plate” via rawpixel (<a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a>), “rack of lamb presentation II” by waferboard (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>), “Cheese plate with bread” by winecountrymedia (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>), “Ramelton, Donegal” by horslips5 (<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>). Real photos of your business will replace these.</p>
+    <p class="credits">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a>. Sample text and layout for preview only.</p>
+  </div>
+</footer>
+
+<script>
+(function(){var d=new Date().getDay();var li=document.querySelector('#hrs li[data-d="'+d+'"]');if(li)li.classList.add('today');})();
+</script>
+</body>
+</html>

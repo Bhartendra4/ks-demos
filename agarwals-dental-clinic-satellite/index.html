@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Agarwal's Multispeciality Dental Clinic | Satellite & Shahibag, Ahmedabad</title>
+<meta name="description" content="NABH-accredited multispeciality dental clinic in Ahmedabad since 1998. Implants, root canal, braces, cosmetic dentistry, gum care and oral surgery. Satellite & Shahibag.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f2a3a;--muted:#5b6b78;--teal:#0e7c86;--teal-d:#0a5d65;--mint:#e8f5f4;--sand:#f7f5f1;--line:#e3e8ec;--white:#fff;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:#cfe3e6;font-size:13px;text-align:center;padding:8px 16px}
+.ribbon b{color:#fff}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo{width:38px;height:38px;border-radius:11px;background:var(--teal);display:grid;place-items:center;color:#fff;font-family:Fraunces,serif;font-weight:600;font-size:18px}
+.brand span{font-weight:600;font-size:15px;line-height:1.2}
+.brand small{display:block;color:var(--muted);font-weight:500;font-size:12px}
+.links{display:none;gap:26px;font-size:15px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn-p{background:var(--teal);color:#fff}.btn-p:hover{background:var(--teal-d)}
+.btn-o{background:#fff;color:var(--ink);border:1.5px solid var(--line)}.btn-o:hover{border-color:var(--teal)}
+.nav .btn{padding:10px 16px;font-size:14px;white-space:nowrap;flex-shrink:0}
+.hero{background:linear-gradient(180deg,var(--mint),#fff);padding:48px 0 56px}
+.hero-grid{display:grid;gap:36px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:500;color:var(--teal-d)}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.hero h1{font-size:clamp(34px,6vw,56px);margin:18px 0 16px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:14px;color:var(--muted)}
+.facts span::before{content:"✓";color:var(--teal);font-weight:700;margin-right:6px}
+.hero-img{position:relative}
+.hero-img img{border-radius:28px;aspect-ratio:4/3.4;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(15,42,58,.45)}
+.hero-card{position:absolute;left:-10px;bottom:-22px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 16px 40px -18px rgba(15,42,58,.4);font-size:14px}
+.hero-card b{display:block;font-size:15px}
+section{padding:72px 0}
+.eyebrow{color:var(--teal);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.sec-h{font-size:clamp(28px,4.4vw,40px);margin:10px 0 14px}
+.sec-p{color:var(--muted);max-width:620px}
+.services{display:grid;gap:18px;margin-top:40px}
+.svc{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#fff;transition:.2s}
+.svc:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 18px 40px -26px rgba(14,124,134,.6)}
+.svc .ic{width:46px;height:46px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:22px;margin-bottom:14px}
+.svc h3{font-size:20px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15px}
+.feature{display:grid;gap:28px;align-items:center;margin-top:56px}
+.feature img{border-radius:var(--r);aspect-ratio:3/2;object-fit:cover;width:100%}
+.feature h3{font-size:28px;margin-bottom:10px}
+.feature p{color:var(--muted);margin-bottom:12px}
+.feature ul{list-style:none;display:grid;gap:8px;margin-top:8px}
+.feature li::before{content:"→";color:var(--teal);margin-right:8px}
+.why{background:var(--sand)}
+.why-grid{display:grid;gap:18px;margin-top:40px}
+.why-item{background:#fff;border-radius:var(--r);padding:26px}
+.why-item h3{font-size:19px;margin:10px 0 6px}
+.why-item p{color:var(--muted);font-size:15px}
+.num{font-family:Fraunces,serif;color:var(--teal);font-size:15px;font-weight:600}
+.book{background:var(--ink);color:#fff;border-radius:28px;padding:36px 24px;display:grid;gap:32px}
+.book .sec-p{color:#b7c9d1}
+.book .eyebrow{color:#7fd3d9}
+form{display:grid;gap:14px}
+.row{display:grid;gap:14px}
+label{font-size:13px;font-weight:500;color:#b7c9d1;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border-radius:12px;border:1px solid #2a4658;background:#14374b;color:#fff;font:inherit;font-size:15px}
+input::placeholder,textarea::placeholder{color:#7f97a5}
+input:focus,select:focus,textarea:focus{outline:2px solid #7fd3d9;border-color:transparent}
+.note{font-size:13px;color:#8fa6b3}
+.ok{display:none;background:#e8f5f4;color:var(--teal-d);padding:14px;border-radius:12px;font-weight:500}
+.locs{display:grid;gap:18px;margin-top:40px}
+.loc{border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.loc h3{font-size:22px;margin-bottom:8px}
+.loc p{color:var(--muted);font-size:15px;margin-bottom:6px}
+.loc .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.loc .btn{padding:10px 16px;font-size:14px}
+.hours{margin-top:18px;background:var(--mint);border-radius:var(--r);padding:20px 24px;font-size:15px}
+.faq{max-width:780px;margin:36px auto 0}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--teal);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+footer{background:var(--sand);padding:40px 0 100px;font-size:14px;color:var(--muted)}
+footer .f{display:grid;gap:18px}
+.credits{font-size:12px;margin-top:20px;border-top:1px solid var(--line);padding-top:16px}
+.float{position:fixed;left:12px;right:12px;bottom:12px;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.float a{padding:14px;border-radius:14px;text-align:center;font-weight:600;text-decoration:none;color:#fff;box-shadow:0 10px 30px -10px rgba(0,0,0,.4)}
+.float .c{background:var(--ink)}.float .w{background:#1fa855}
+@media(min-width:720px){
+ .services{grid-template-columns:repeat(2,1fr)}
+ .why-grid{grid-template-columns:repeat(2,1fr)}
+ .row{grid-template-columns:1fr 1fr}
+ .locs{grid-template-columns:1fr 1fr}
+ .feature{grid-template-columns:1fr 1fr}
+ .feature.rev img{order:2}
+ .book{padding:52px}
+ footer .f{grid-template-columns:2fr 1fr 1fr}
+}
+@media(min-width:960px){
+ .links{display:flex}
+ .hero{padding:72px 0 88px}
+ .hero-grid{grid-template-columns:1.05fr 1fr}
+ .services{grid-template-columns:repeat(3,1fr)}
+ .why-grid{grid-template-columns:repeat(4,1fr)}
+ .book{grid-template-columns:1fr 1.2fr;align-items:start}
+ .float{display:none}
+ footer{padding-bottom:40px}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Agarwal's Multispeciality Dental Clinic</div>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top"><div class="logo">A</div><span>Agarwal's Dental Clinic<small>Implant &amp; Laser Center · Ahmedabad</small></span></a>
+  <nav class="links"><a href="#services">Treatments</a><a href="#why">Why us</a><a href="#book">Appointment</a><a href="#clinics">Clinics</a><a href="#faq">FAQ</a></nav>
+  <a class="btn btn-p" href="#book">Book visit</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="pill"><i></i>NABH-accredited dental facility · Since 1998</span>
+   <h1>Calm, careful dentistry for <em>every age</em> in Ahmedabad.</h1>
+   <p class="lead">From a first check-up to dental implants and full-mouth care — one multispeciality team, two clinics in Satellite and Shahibag.</p>
+   <div class="cta">
+    <a class="btn btn-p" href="#book">Request an appointment</a>
+    <a class="btn btn-o" href="tel:+917926730229">Call Satellite clinic</a>
+   </div>
+   <div class="facts"><span>Implants &amp; laser dentistry</span><span>Kids to grandparents</span><span>Mon–Sat appointments</span></div>
+  </div>
+  <div class="hero-img">
+   <img src="img/hero.jpg" alt="Clean, modern dental treatment area">
+   <div class="hero-card"><b>Two clinics</b>Satellite · Shahibag</div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="eyebrow">Treatments</div>
+  <h2 class="sec-h">Everything your smile needs, under one roof</h2>
+  <p class="sec-p">Our specialists cover the full range of general, cosmetic and surgical dentistry — so you don't have to be referred elsewhere.</p>
+  <div class="services">
+   <div class="svc"><div class="ic">🦷</div><h3>Dental Implants</h3><p>Fixed replacement for missing teeth that looks, feels and works like your own.</p></div>
+   <div class="svc"><div class="ic">🩺</div><h3>Root Canal Treatment</h3><p>Save a painful, decayed or cracked tooth instead of losing it.</p></div>
+   <div class="svc"><div class="ic">😁</div><h3>Braces &amp; Aligners</h3><p>Straighter teeth and a better bite for children, teens and adults.</p></div>
+   <div class="svc"><div class="ic">✨</div><h3>Cosmetic Dentistry</h3><p>Whitening, tooth-coloured fillings and smile makeovers.</p></div>
+   <div class="svc"><div class="ic">🌿</div><h3>Gum Treatment</h3><p>Care for bleeding, swollen or receding gums and bad breath.</p></div>
+   <div class="svc"><div class="ic">👑</div><h3>Crowns, Bridges &amp; Dentures</h3><p>Restore broken or missing teeth for comfortable chewing.</p></div>
+   <div class="svc"><div class="ic">🧒</div><h3>Child Dental Care</h3><p>Gentle, age-appropriate treatment that keeps little ones at ease.</p></div>
+   <div class="svc"><div class="ic">⚕️</div><h3>Oral &amp; Maxillofacial Surgery</h3><p>Wisdom tooth removal, jaw problems and complex surgical cases.</p></div>
+   <div class="svc"><div class="ic">✈️</div><h3>Dental Tourism</h3><p>Planned treatment schedules for patients visiting Ahmedabad from abroad.</p></div>
+  </div>
+
+  <div class="feature">
+   <img src="img/implant.jpg" alt="Model showing a dental implant between natural teeth">
+   <div>
+    <div class="eyebrow">Implant &amp; laser center</div>
+    <h3>Missing a tooth? Get a fixed, natural-feeling solution.</h3>
+    <p>A dental implant is an artificial root placed in the jaw to hold a replacement tooth. It doesn't rely on neighbouring teeth and is built for everyday chewing.</p>
+    <ul><li>Detailed consultation and treatment plan</li><li>Single tooth to full-arch options</li><li>Clear explanation of every step</li></ul>
+   </div>
+  </div>
+  <div class="feature rev">
+   <img src="img/checkup.jpg" alt="Dental mirror on a white surface">
+   <div>
+    <div class="eyebrow">Prevention first</div>
+    <h3>Regular check-ups catch problems early.</h3>
+    <p>Sensitive teeth, bleeding gums or a small cavity are easier — and more affordable — to treat early. A routine visit keeps your whole family on track.</p>
+    <ul><li>Check-up, cleaning and polishing</li><li>Advice for kids, adults and seniors</li><li>Reminders for your next visit</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="why" id="why">
+ <div class="wrap">
+  <div class="eyebrow">Why patients choose us</div>
+  <h2 class="sec-h">Care you can trust, from the first visit</h2>
+  <div class="why-grid">
+   <div class="why-item"><span class="num">01</span><h3>NABH-accredited</h3><p>Our facility follows nationally recognised standards for quality and patient safety.</p></div>
+   <div class="why-item"><span class="num">02</span><h3>Strict infection control</h3><p>Sterilisation and hygiene protocols at par with international standards.</p></div>
+   <div class="why-item"><span class="num">03</span><h3>Specialist team</h3><p>Implantology, oral surgery, gum care, orthodontics and more — in one place.</p></div>
+   <div class="why-item"><span class="num">04</span><h3>Clear, printed pricing</h3><p>Transparent treatment costs explained before we begin.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="book">
+ <div class="wrap">
+  <div class="book">
+   <div>
+    <div class="eyebrow">Appointments</div>
+    <h2 class="sec-h">Request an appointment</h2>
+    <p class="sec-p">Tell us what's bothering you and when you're free. Our team will call you back to confirm a time.</p>
+    <img src="img/care.jpg" alt="Close-up of toothbrush bristles" style="border-radius:16px;margin-top:24px;aspect-ratio:16/10;object-fit:cover;width:100%">
+   </div>
+   <form id="f" novalidate>
+    <div class="row">
+     <div><label for="n">Full name</label><input id="n" placeholder="Your name" required></div>
+     <div><label for="p">Mobile number</label><input id="p" type="tel" placeholder="10-digit mobile" required></div>
+    </div>
+    <div class="row">
+     <div><label for="c">Preferred clinic</label><select id="c"><option>Satellite (Shivranjani)</option><option>Shahibag</option></select></div>
+     <div><label for="d">Preferred date</label><input id="d" type="date"></div>
+    </div>
+    <div><label for="t">Treatment</label><select id="t"><option>General check-up</option><option>Tooth pain / Root canal</option><option>Dental implant</option><option>Braces / Aligners</option><option>Cosmetic / Whitening</option><option>Gum problem</option><option>Child dental care</option><option>Other</option></select></div>
+    <div><label for="m">Message (optional)</label><textarea id="m" rows="3" placeholder="Briefly describe your concern"></textarea></div>
+    <button class="btn btn-p" type="submit">Request appointment</button>
+    <div class="ok" id="ok">Thank you! This is a demo form — on the live website your request will reach the clinic instantly.</div>
+    <p class="note">Prefer to talk? Call or WhatsApp us — details below.</p>
+   </form>
+  </div>
+ </div>
+</section>
+
+<section id="clinics" style="padding-top:20px">
+ <div class="wrap">
+  <div class="eyebrow">Visit us</div>
+  <h2 class="sec-h">Two clinics in Ahmedabad</h2>
+  <div class="locs">
+   <div class="loc">
+    <h3>Satellite</h3>
+    <p>104/B, Shital Varsha Complex, Shivranjani Cross Road, Satellite, Ahmedabad 380015</p>
+    <p>📞 (079) 2673 0229</p>
+    <div class="acts">
+     <a class="btn btn-p" href="tel:+917926730229">Call</a>
+     <a class="btn btn-o" href="mailto:adcsatellite@gmail.com">Email</a>
+     <a class="btn btn-o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shital+Varsha+Complex+Shivranjani+Cross+Road+Satellite+Ahmedabad">Directions</a>
+    </div>
+   </div>
+   <div class="loc">
+    <h3>Shahibag</h3>
+    <p>B/7-10, Manibhadra Enclave, Shahibag, Ahmedabad 380004</p>
+    <p>📞 +91 87802 32648 · (079) 2286 1494</p>
+    <div class="acts">
+     <a class="btn btn-p" href="tel:+918780232648">Call</a>
+     <a class="btn btn-o" target="_blank" rel="noopener" href="https://wa.me/918780232648">WhatsApp</a>
+     <a class="btn btn-o" href="mailto:ahmedabaddentalclinic@gmail.com">Email</a>
+     <a class="btn btn-o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Manibhadra+Enclave+Shahibag+Ahmedabad">Directions</a>
+    </div>
+   </div>
+  </div>
+  <div class="hours"><b>Clinic hours:</b> Monday – Saturday, 10:30 AM – 2:30 PM &amp; 4:00 PM – 8:00 PM · Sunday closed</div>
+ </div>
+</section>
+
+<section id="faq" style="padding-top:20px">
+ <div class="wrap">
+  <div style="text-align:center"><div class="eyebrow">FAQ</div><h2 class="sec-h">Common questions</h2></div>
+  <div class="faq">
+   <details><summary>Do I need an appointment?</summary><p>Appointments help us keep waiting times short. Use the form above, call, or WhatsApp us and our team will confirm a slot.</p></details>
+   <details><summary>Is root canal treatment painful?</summary><p>The procedure is done under local anaesthesia, so most patients feel pressure rather than pain. It relieves the toothache that brought you in.</p></details>
+   <details><summary>Am I a candidate for dental implants?</summary><p>Most adults with good general health can get implants. A consultation and X-ray help the dentist check bone support and plan the right option.</p></details>
+   <details><summary>Do you treat children?</summary><p>Yes — we offer age-appropriate dental care for kids, from first check-ups to cavity treatment.</p></details>
+   <details><summary>Will I know the cost before treatment?</summary><p>Yes. Your dentist explains the plan and the treatment cost before starting.</p></details>
+   <details><summary>Do you help patients coming from abroad?</summary><p>Yes. We can plan your treatment schedule around your travel dates — contact us in advance.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="f">
+   <div><b style="color:var(--ink)">Agarwal's Multispeciality Dental Clinic, Implant &amp; Laser Center</b><br>NABH-accredited dental care in Ahmedabad since 1998.</div>
+   <div><b style="color:var(--ink)">Satellite</b><br>(079) 2673 0229<br>adcsatellite@gmail.com</div>
+   <div><b style="color:var(--ink)">Shahibag</b><br>+91 87802 32648<br>ahmedabaddentalclinic@gmail.com</div>
+  </div>
+  <p class="credits" id="credits"></p>
+ </div>
+</footer>
+
+<div class="float"><a class="c" href="tel:+917926730229">📞 Call</a><a class="w" href="https://wa.me/918780232648" target="_blank" rel="noopener">WhatsApp</a></div>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+ e.preventDefault();
+ var n=document.getElementById('n'),p=document.getElementById('p');
+ if(!n.value.trim()||!/^[0-9+\s-]{10,}$/.test(p.value.trim())){(n.value.trim()?p:n).focus();return}
+ document.getElementById('ok').style.display='block';
+});
+document.getElementById('credits').textContent="Sample photos: “Dental Implant Model” by Dr.Kh.Qalam (CC PDM 1.0); “Toothbrush” by wwarby (CC BY 2.0); “Dentist room” (CC CC0 1.0); “Dental Mirror” (CC CC0 1.0). Real photos of your clinic will replace these.";
+</script>
+</body>
+</html>

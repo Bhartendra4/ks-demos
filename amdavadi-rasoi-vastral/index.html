@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Amdavadi Rasoi — Gujarati Thali &amp; Family Meals, Vastral</title>
+<meta name="description" content="Amdavadi Rasoi, Vastral, Ahmedabad — Gujarati and Punjabi thalis, paneer specialities, rice, rotis and Indo-Chinese. Open daily 11 AM – 11 PM. Takeaway available.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffaf3; --card:#ffffff; --ink:#2a1d14; --muted:#6f5f52; --line:#f0e3d2;
+  --brand:#b4441b; --brand-dk:#8f3314; --gold:#e5a632; --green:#1f8f4e;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+
+.ribbon{background:var(--ink);color:#f7e9d7;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.2px}
+.ribbon b{color:var(--gold);font-weight:600}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,243,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:20px;text-decoration:none;color:var(--brand)}
+.logo span{color:var(--ink)}
+.nav-links{display:flex;gap:22px;font-size:14.5px;font-weight:500}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--brand)}
+.nav-call{background:var(--brand);color:#fff!important;padding:8px 14px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:600}
+@media(max-width:760px){.nav-links{display:none}}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,4,.15) 0%,rgba(20,10,4,.55) 50%,rgba(20,10,4,.88) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:56px}
+.tag{display:inline-block;background:rgba(229,166,50,.95);color:#2a1d14;font-weight:600;font-size:13px;padding:5px 12px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(40px,8vw,74px);margin-bottom:10px}
+.hero .guj{font-size:20px;opacity:.95;margin-bottom:14px;font-weight:500}
+.hero p.lead{max-width:560px;font-size:17px;opacity:.92;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;font-weight:600;text-decoration:none;font-size:15.5px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-wa{background:var(--green);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+
+.facts{background:#fff;border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.fact{padding:20px 14px;text-align:center;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-family:Fraunces,serif;font-size:19px;color:var(--brand)}
+.fact span{font-size:13.5px;color:var(--muted)}
+@media(max-width:600px){.facts .wrap{grid-template-columns:1fr}.fact{border-right:0;border-bottom:1px solid var(--line)}.fact:last-child{border-bottom:0}}
+
+section{padding:76px 0}
+.eyebrow{color:var(--brand);font-weight:600;font-size:13px;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:8px}
+.sec-title{font-size:clamp(30px,5vw,42px);margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:620px;margin-bottom:38px}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 18px rgba(80,40,10,.06);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px;margin-bottom:14px;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;background:#fbf0e2;color:var(--brand-dk);padding:4px 10px;border-radius:999px}
+
+.menu-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:900px){.menu-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.menu-grid{grid-template-columns:1fr}}
+.menu-col{background:var(--bg);border-radius:14px;padding:20px;border:1px solid var(--line)}
+.menu-col h4{font-family:Fraunces,serif;font-size:18px;margin-bottom:10px;color:var(--brand-dk)}
+.menu-col ul{list-style:none;font-size:14.5px}
+.menu-col li{padding:6px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:8px}
+.menu-col li:last-child{border-bottom:0}
+.menu-col li em{font-style:normal;color:var(--muted);font-size:12.5px;white-space:nowrap}
+.note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+@media(max-width:800px){.split{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.hours-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hours-row:last-child{border-bottom:0}
+.open-pill{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:#e8f6ee;color:var(--green)}
+.open-pill.closed{background:#fbeaea;color:#b23a3a}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:320px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.addr{font-size:15.5px;margin:10px 0 18px}
+
+.cta{background:linear-gradient(135deg,var(--brand) 0%,#7e2a10 100%);color:#fff;border-radius:24px;padding:46px 32px;text-align:center}
+.cta h2{font-size:clamp(28px,5vw,40px);margin-bottom:10px}
+.cta p{opacity:.9;margin-bottom:26px}
+.cta .btns{justify-content:center}
+.cta .btn-primary{background:#fff;color:var(--brand)}
+
+footer{background:var(--ink);color:#d9c9b8;padding:40px 0 30px;font-size:14px}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;margin-bottom:22px}
+footer .logo{color:#fff}
+footer .credits{font-size:12px;color:#a8988a;border-top:1px solid #4a3a2e;padding-top:16px;line-height:1.7}
+footer .credits a{color:#c9b8a6}
+
+.float-wa{position:fixed;right:16px;bottom:16px;z-index:30;width:56px;height:56px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.float-wa svg{width:28px;height:28px;fill:#fff}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Amdavadi Rasoi</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">Amdavadi <span>Rasoi</span></a>
+    <nav class="nav-links">
+      <a href="#food">Our Food</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Hours &amp; Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-call" href="tel:+918849642821">Call now</a>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero.jpg" alt="A full Gujarati thali with dal, kadhi, dhokla, rotli and farsan" fetchpriority="high">
+  <div class="wrap">
+    <span class="tag">Gujarati · Punjabi · Indo-Chinese</span>
+    <h1>Amdavadi Rasoi</h1>
+    <div class="guj">ઘર જેવું ભોજન — homestyle food, made fresh daily</div>
+    <p class="lead">Wholesome Gujarati and Punjabi thalis, rich paneer curries and Indo-Chinese favourites in Vastral, Ahmedabad. Drop in, or call ahead for takeaway.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="tel:+918849642821"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.6 1 1 0 01-.25 1z"/></svg>Call to order</a>
+      <a class="btn btn-wa" href="https://wa.me/918849642821?text=Hi%20Amdavadi%20Rasoi%2C%20I%27d%20like%20to%20place%20a%20takeaway%20order." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.8 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 01-1.7-.6 13.4 13.4 0 01-5.1-4.5c-.4-.5-1.2-1.6-1.2-3s.8-2.1 1-2.4a1.1 1.1 0 01.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6a9 9 0 001.7 2.1 8.3 8.3 0 002.4 1.5c.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3a2.5 2.5 0 01-.1 1.2z"/></svg>WhatsApp</a>
+      <a class="btn btn-ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><b>11 AM – 11 PM</b><span>Open daily for lunch &amp; dinner</span></div>
+    <div class="fact"><b>Takeaway</b><span>Call or WhatsApp ahead and pick up hot</span></div>
+    <div class="fact"><b>Vastral</b><span>Pushp Business Campus, opp. Shiv Shanti Society</span></div>
+  </div>
+</div>
+
+<section id="food">
+  <div class="wrap">
+    <div class="eyebrow">What we serve</div>
+    <h2 class="sec-title">Comfort food, the Amdavadi way</h2>
+    <p class="sec-sub">From a complete Gujarati thali at lunch to paneer curries and noodles for dinner — something for every member of the family.</p>
+    <div class="cards">
+      <article class="card">
+        <img src="img/thali.jpg" alt="Gujarati thali with vegetables, puri and rotli" loading="lazy">
+        <div class="body">
+          <h3>Thalis</h3>
+          <p>Silver and Golden Gujarati thalis and a Golden Punjabi thali — dal, sabzi, rotli, rice and sides, served together on one plate.</p>
+          <div class="chips"><span class="chip">Silver Gujarati</span><span class="chip">Golden Gujarati</span><span class="chip">Golden Punjabi</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/paneer.jpg" alt="Paneer butter masala garnished with coriander" loading="lazy">
+        <div class="body">
+          <h3>Paneer &amp; Punjabi</h3>
+          <p>Paneer butter masala, kadai, tikka masala, handi and more, plus kaju curries and koftas — best with butter tandoori roti.</p>
+          <div class="chips"><span class="chip">Paneer Butter Masala</span><span class="chip">Kaju Curry</span><span class="chip">Veg Kolhapuri</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/noodles.jpg" alt="Bowl of vegetable hakka noodles" loading="lazy">
+        <div class="body">
+          <h3>Indo-Chinese</h3>
+          <p>Hakka and schezwan noodles, fried rice, Manchurian dry or gravy, chilli paneer and warming soups.</p>
+          <div class="chips"><span class="chip">Hakka Noodles</span><span class="chip">Manchurian</span><span class="chip">Manchow Soup</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="menu-band" id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Menu highlights</div>
+    <h2 class="sec-title">Something for everyone</h2>
+    <p class="sec-sub">A selection from our menu. Call or WhatsApp for today's full menu and prices.</p>
+    <div class="menu-grid">
+      <div class="menu-col">
+        <h4>Thalis</h4>
+        <ul>
+          <li>Silver Gujarati Thali <em>Price on request</em></li>
+          <li>Golden Gujarati Thali <em>Price on request</em></li>
+          <li>Golden Punjabi Thali <em>Price on request</em></li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h4>Paneer &amp; Veg</h4>
+        <ul>
+          <li>Paneer Butter Masala</li>
+          <li>Paneer Kadai</li>
+          <li>Palak Paneer</li>
+          <li>Kaju Curry</li>
+          <li>Veg Kolhapuri</li>
+          <li>Chana Masala</li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h4>Rice, Dal &amp; Roti</h4>
+        <ul>
+          <li>Jeera Rice</li>
+          <li>Veg Biryani</li>
+          <li>Dal Tadka</li>
+          <li>Butter Dal Fry</li>
+          <li>Butter Tandoori Roti</li>
+          <li>Masala Butter Milk</li>
+        </ul>
+      </div>
+      <div class="menu-col">
+        <h4>Chinese</h4>
+        <ul>
+          <li>Hakka Noodles</li>
+          <li>Schezwan Fried Rice</li>
+          <li>Manchurian Dry / Gravy</li>
+          <li>Paneer Chilli Dry</li>
+          <li>Hot &amp; Sour Soup</li>
+          <li>Chinese Bhel</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Jain options are not available on thalis. Please ask about any dietary needs when ordering.</p>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="eyebrow">Visit us</div>
+    <h2 class="sec-title">Hours &amp; location</h2>
+    <div class="split">
+      <div class="panel">
+        <div class="hours-row"><span>Monday – Sunday</span><b>11:00 AM – 11:00 PM</b></div>
+        <div class="hours-row"><span>Takeaway</span><b>Available</b></div>
+        <span class="open-pill" id="openPill">Open daily</span>
+        <h3 style="margin-top:26px;font-size:20px">Address</h3>
+        <p class="addr">Block A-G / F-10, Pushp Business Campus,<br>Opposite Shiv Shanti Society, Vastral,<br>Ahmedabad, Gujarat</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=22.99878215,72.66548127" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map showing Amdavadi Rasoi, Vastral" loading="lazy" src="https://maps.google.com/maps?q=22.99878215,72.66548127&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta">
+      <h2>Hungry? We're a call away.</h2>
+      <p>Call or WhatsApp to place a takeaway order or ask about today's thali.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="tel:+918849642821">Call +91 88496 42821</a>
+        <a class="btn btn-wa" href="https://wa.me/918849642821?text=Hi%20Amdavadi%20Rasoi%2C%20I%27d%20like%20to%20place%20a%20takeaway%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="logo">Amdavadi <span style="color:#d9c9b8">Rasoi</span></div>
+        <div style="margin-top:6px">Pushp Business Campus, Vastral, Ahmedabad</div>
+      </div>
+      <div>
+        <div>Open daily · 11 AM – 11 PM</div>
+        <div><a href="tel:+918849642821">+91 88496 42821</a></div>
+      </div>
+    </div>
+    <div class="credits" id="credits">
+      Sample photos:
+      <a href="https://commons.wikimedia.org/w/index.php?curid=146022909" target="_blank" rel="noopener">Authentic gujarati thali</a> by Dvivektx (CC BY 4.0);
+      <a href="https://commons.wikimedia.org/w/index.php?curid=47164252" target="_blank" rel="noopener">Gujarati thali</a> by Joey Berzowska (CC BY 2.0);
+      <a href="https://commons.wikimedia.org/w/index.php?curid=40916399" target="_blank" rel="noopener">Popular Indian dish, Paneer Butter Masala</a> by Akash128 (CC BY-SA 4.0);
+      <a href="https://commons.wikimedia.org/w/index.php?curid=40979912" target="_blank" rel="noopener">Hakka Noodles</a> by Aparna Balasubramanian (CC BY-SA 4.0).
+      Real photos of your business will replace these.<br>
+      Website demo by KS Digital Studio · ksdigitalstudio.in
+    </div>
+  </div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/918849642821" target="_blank" rel="noopener" aria-label="WhatsApp Amdavadi Rasoi"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.8 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1a17 17 0 01-1.7-.6 13.4 13.4 0 01-5.1-4.5c-.4-.5-1.2-1.6-1.2-3s.8-2.1 1-2.4a1.1 1.1 0 01.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6a9 9 0 001.7 2.1 8.3 8.3 0 002.4 1.5c.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3a2.5 2.5 0 01-.1 1.2z"/></svg></a>
+
+<script>
+(function(){
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var h=now.getHours();
+    var pill=document.getElementById('openPill');
+    if(h>=11&&h<23){pill.textContent='Open now';}
+    else{pill.textContent='Closed now · opens 11 AM';pill.classList.add('closed');}
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Clock Tower Café — Hokitika, West Coast NZ</title>
+<meta name="description" content="Café on Hokitika&#x27;s main street, opposite the historic Town Clock. Open 7 days from 6.30am. Homemade fare, pies, gluten-free options, whitebait all year and great coffee.">
+<meta name="theme-color" content="#a3322a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f4;--surface:#ffffff;--ink:#17242a;--muted:#55636a;--brand:#a3322a;--brand-dark:#6e1f1a;--accent:#2e6b57;--soft:#f3e4e1;--line:#e2e6e1;--dark:#17242a;--dark2:#0f191d;--radius:18px;--shadow:0 10px 30px rgba(40,20,10,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;line-height:1.12}
+.ribbon{background:var(--dark);color:#f3e9df;font-size:13px;text-align:center;padding:7px 16px}
+.ribbon a{color:#fff;font-weight:600;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:var(--bg);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"DM Serif Display";font-weight:700;font-size:20px;color:var(--brand-dark);min-width:0}
+.logo span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo span.mark{width:36px;height:36px;flex:none;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:17px}
+.nav ul{display:flex;gap:22px;list-style:none;font-weight:500;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--brand)}
+.nav .call-mini{background:var(--brand);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
+@media(max-width:760px){.nav ul{display:none}.logo{font-size:18px}}
+.hero{position:relative;min-height:80vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;padding:0}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,8,4,.15) 0%,rgba(15,8,4,.55) 50%,rgba(15,8,4,.9) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px;width:100%}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-size:13px;letter-spacing:.3px;margin-bottom:16px}
+.hero h1{font-size:clamp(40px,8vw,74px);font-weight:700;margin-bottom:8px}
+.hero .sub{font-size:clamp(18px,3vw,24px);color:#ffd9d3;margin-bottom:14px;font-weight:600}
+.hero p.lead{max-width:580px;font-size:17px;color:#f6ece2;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn.primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px color-mix(in srgb,var(--brand) 35%,transparent)}
+.btn.wa{background:#25d366;color:#0b3d1d}
+.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.strip{background:var(--surface);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:18px 16px}
+.strip .it{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+.strip strong{display:block;color:var(--ink);font-size:15px}
+.strip .ic{width:40px;height:40px;flex:none;border-radius:12px;background:var(--soft);color:var(--brand);display:grid;place-items:center}
+.strip .ic svg{width:20px;height:20px}
+@media(max-width:760px){.strip .wrap{grid-template-columns:1fr}}
+section{padding:76px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 40px}
+.head .eyebrow{color:var(--brand);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+.head h2{font-size:clamp(30px,5vw,44px);margin:6px 0 10px}
+.head p{color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .ph.art{display:grid;place-items:center;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff}
+.card .ph.art svg{width:72px;height:72px;opacity:.9}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:23px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card .price{font-size:13px;font-weight:600;color:var(--accent);margin-top:6px}
+.also{margin-top:30px;text-align:center;color:var(--muted);font-size:15px}
+.also span{display:inline-block;background:var(--soft);color:var(--brand-dark);border-radius:999px;padding:6px 14px;margin:4px;font-weight:500}
+.why{background:var(--dark);color:#efe4da}
+.why .head h2{color:#fff}
+.why .head p{color:#cdbfb2}
+.why .head .eyebrow{color:#f5b3aa}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.feat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:24px}
+.feat .ic{width:44px;height:44px;border-radius:12px;background:var(--brand);color:#fff;display:grid;place-items:center;margin-bottom:14px}
+.feat .ic svg{width:22px;height:22px}
+.feat h3{font-size:21px;color:#fff;margin-bottom:4px}
+.feat p{font-size:15px;color:#cdbfb2}
+.visit{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:stretch}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+.panel{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:28px}
+@media(max-width:420px){.panel{padding:20px}}
+.panel h3{font-size:26px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--brand)}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.addr{display:flex;gap:12px;margin-bottom:18px}
+.addr svg{width:22px;height:22px;flex:none;color:var(--brand);margin-top:3px}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--soft)}
+.map iframe{width:100%;height:100%;border:0}
+.panel .btns{margin-top:18px}
+.panel .btn.ghost{background:var(--soft);color:var(--brand-dark);border:1px solid var(--line)}
+.contact{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;text-align:center}
+.contact h2{font-size:clamp(30px,5vw,46px);margin-bottom:10px}
+.contact p{max-width:560px;margin:0 auto 26px;color:#fff3e9}
+.contact .btns{justify-content:center}
+.contact .btn.primary{background:#fff;color:var(--brand-dark);box-shadow:none}
+.contact .btn.ghost{background:rgba(255,255,255,.14)}
+.contact .phone{display:block;margin-top:22px;font-family:"DM Serif Display";font-size:30px;font-weight:700;text-decoration:none;letter-spacing:.5px}
+footer{background:var(--dark2);color:#b9aa9c;font-size:13px;padding:34px 0 96px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-bottom:16px}
+footer strong{color:#fff;font-family:"DM Serif Display";font-size:18px}
+footer a{color:#f3d9c0}
+footer .credits{border-top:1px solid rgba(255,255,255,.08);padding-top:14px;font-size:12px;line-height:1.7}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.fab a svg{width:24px;height:24px}
+.fab .c{background:var(--brand);color:#fff}
+.fab .w{background:#25d366;color:#0b3d1d}
+@media(max-width:760px){.fab{display:flex}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn,.card .ph img{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Clock Tower Café</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">C</span><span class="t">Clock Tower Café</span></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call-mini" href="tel:+6437557737">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img src="img/hero.jpg" alt="Hokitika&#x27;s historic Town Clock on the main street" fetchpriority="high">
+    <div class="wrap">
+      <span class="tag">Main street · opposite the Town Clock · Hokitika</span>
+      <h1>Clock Tower Café</h1>
+      <div class="sub">Open 7 days from 6.30am</div>
+      <p class="lead">Homemade fare, an extensive menu with gluten-free options, whitebait all year round and awesome coffee — right across from Hokitika&#x27;s historic Town Clock.</p>
+      <div class="btns">
+        <a class="btn primary" href="tel:+6437557737"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 03 755 7737</a>
+        
+        <a class="btn ghost" href="https://www.facebook.com/Clocktowercafehokitika" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg>Facebook</a>
+        <a class="btn ghost" href="#menu">See the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap"><div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><strong>Open 7 days</strong>From 6.30am</span></div><div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><strong>Opposite the Town Clock</strong>Weld Street, Hokitika</span></div><div class="it"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span><span><strong>Award-recognised</strong>Café of the Year runner-up 2012/13 (West Coast)</span></div></div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">On the menu</div>
+        <h2>Homemade, hearty and made for the road</h2>
+        <p>An extensive menu with homemade and gluten-free choices. Pop in for breakfast, lunch or a coffee stop on your West Coast trip.</p>
+      </div>
+      <div class="menu">
+        <article class="card reveal"><div class="ph"><img src="img/pie.jpg" alt="A golden steak and cheese pie" loading="lazy"></div><div class="body"><h3>Pies</h3><p>Our pies were &#x27;Highly Commended&#x27; in the 2014 NZ Pie Awards — a West Coast road-trip essential.</p><div class="price">Ask at the counter</div></div></article><article class="card reveal"><div class="ph art" role="img" aria-label="Whitebait illustration"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12c3-4 7-6 11-6 4 0 7 3 8 6-1 3-4 6-8 6-4 0-8-2-11-6z"/><path d="M2 12l-1-3M2 12l-1 3"/><circle cx="16.5" cy="10.5" r="1" fill="currentColor"/></svg></div><div class="body"><h3>Whitebait</h3><p>Whitebait is on the menu all year round — not just in season.</p><div class="price">Ask at the counter</div></div></article><article class="card reveal"><div class="ph"><img src="img/coffee.jpg" alt="Flat white coffee with latte art" loading="lazy"></div><div class="body"><h3>Coffee</h3><p>Awesome coffee to start your morning from 6.30am, or to take with you on the road.</p><div class="price">Ask at the counter</div></div></article><article class="card reveal"><div class="ph"><img src="img/scones.jpg" alt="Scones served with tea" loading="lazy"></div><div class="body"><h3>Homemade baking</h3><p>Homemade fare from the kitchen, with gluten-free options on the menu.</p><div class="price">Ask at the counter</div></div></article>
+      </div>
+      <div class="also reveal">Good to know<br><span>Gluten-free options</span><span>Homemade fare</span><span>Reasonable prices</span><span>No public holiday surcharge</span></div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">Why stop by</div>
+        <h2>A Hokitika main-street favourite</h2>
+        <p>Right in the heart of town, across from the historic Town Clock.</p>
+      </div>
+      <div class="feats"><div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div><h3>Café of the Year runner-up</h3><p>Named Runner-up Café of the Year 2012/13, West Coast Region, by Café Magazine.</p></div><div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c1 3 4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3s1 2 3 2c0-3-2-4 0-7z"/></svg></div><h3>Award-winning pies</h3><p>&#x27;Highly Commended&#x27; in the 2014 NZ Pie Awards.</p></div><div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Early starts, 7 days</h3><p>Open seven days from 6.30am — and no surcharge on public holidays.</p></div></div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">Visit us</div>
+        <h2>Opposite the Town Clock</h2>
+      </div>
+      <div class="visit">
+        <div class="panel reveal">
+          <div class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Clock Tower Café</strong><br>Weld Street (main street),<br>opposite the historic Town Clock,<br>Hokitika, West Coast, New Zealand</div></div>
+          <div class="map"><iframe title="Map to Clock Tower Café" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Clocktower%20Cafe%2C%20Weld%20Street%2C%20Hokitika%2C%20New%20Zealand&amp;z=16&amp;output=embed"></iframe></div>
+          <div class="btns">
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Clocktower+Cafe%2C+Weld+Street%2C+Hokitika%2C+New+Zealand" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours"><tr data-d="1"><td>Monday</td><td>From 6.30am</td></tr><tr data-d="2"><td>Tuesday</td><td>From 6.30am</td></tr><tr data-d="3"><td>Wednesday</td><td>From 6.30am</td></tr><tr data-d="4"><td>Thursday</td><td>From 6.30am</td></tr><tr data-d="5"><td>Friday</td><td>From 6.30am</td></tr><tr data-d="6"><td>Saturday</td><td>From 6.30am</td></tr><tr data-d="0"><td>Sunday</td><td>From 6.30am</td></tr></table>
+          <p class="note">Open 7 days from 6.30am. Please call to confirm closing time and public holiday hours.</p>
+          <div class="btns">
+            <a class="btn primary" href="tel:+6437557737">Call 03 755 7737</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <h2>Passing through Hokitika?</h2>
+      <p>Give us a call to check today&#x27;s specials, closing time or to ask about gluten-free options.</p>
+      <div class="btns"><a class="btn primary" href="tel:+6437557737">Call now</a><a class="btn ghost" href="https://www.facebook.com/Clocktowercafehokitika" target="_blank" rel="noopener">Message us on Facebook</a></div>
+      <a class="phone" href="tel:+6437557737">03 755 7737</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div><strong>Clock Tower Café</strong><br>Weld Street, opposite the historic Town Clock, Hokitika, New Zealand</div>
+      <div>Open 7 days from 6.30am<br><a href="tel:+6437557737">03 755 7737</a></div>
+    </div>
+    <p class="credits">Sample photos: <a href="https://commons.wikimedia.org/wiki/File:DSCN5599_Hokitika_clock_tower.jpg" target="_blank" rel="noopener">“DSCN5599 Hokitika clock tower”</a> by AlasdairW (<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Steak_and_cheese_pie_-_Napier,_New_Zealand.jpg" target="_blank" rel="noopener">“Steak and cheese pie - Napier, New Zealand”</a> by Daderot (<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Flat_white_coffee_with_pretty_feather_pattern.jpg" target="_blank" rel="noopener">“Flat white coffee with pretty feather pattern”</a> by GeorgeMichaelFarewell (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>) · <a href="https://commons.wikimedia.org/wiki/File:Scones_and_tea.jpg" target="_blank" rel="noopener">“Scones and tea”</a> by AlphaLemur (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>), via Wikimedia Commons. Real photos of your business will replace these.<br>Demo website design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> · ksdigitalstudio.in</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="c" href="tel:+6437557737" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var row=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');
+  if(row) row.classList.add('today');
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

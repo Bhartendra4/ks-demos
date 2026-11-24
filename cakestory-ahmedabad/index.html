@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>CakeStory Ahmedabad · Pure Veg Custom Cakes</title>
+<meta name="description" content="CakeStory by Barkha Jaiswal — pure veg, made-to-order custom cakes and cupcakes in Ahmedabad. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--blush:#fff5f6;--rose:#f8dfe3;--berry:#c2185b;--berry-dk:#8e1245;--choc:#3a1f22;--ink:#2b1a1d;--muted:#7a5d63;--line:#f0d3d9;--white:#fff;--green:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--blush);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.ribbon{background:var(--choc);color:#f8dfe3;font-size:12.5px;text-align:center;padding:7px 16px}
+.ribbon a{color:#fff;font-weight:600;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,245,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:"Playfair Display",serif;font-weight:700;font-size:22px;text-decoration:none;color:var(--choc)}
+.logo span{color:var(--berry)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--berry)}
+.nav .cta{background:var(--green);color:#fff;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:600}
+.menu-btn{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--choc)}
+.hero{padding:72px 0 84px;background:radial-gradient(1000px 480px at 90% -10%,#f6c9d2 0%,transparent 60%),var(--blush)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--berry-dk);background:var(--rose);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-family:"Playfair Display",serif;font-size:clamp(38px,6vw,64px);line-height:1.06;color:var(--choc)}
+h1 em{color:var(--berry)}
+.lead{font-size:17.5px;color:var(--muted);margin:20px 0 30px;max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s,box-shadow .15s;border:0;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(142,18,69,.18)}
+.btn-wa{background:var(--green);color:#fff}
+.btn-primary{background:var(--berry);color:#fff}
+.btn-ghost{background:var(--white);color:var(--choc);border:1px solid var(--line)}
+.hero-photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(58,31,34,.25);background:var(--rose)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.badge{position:absolute;left:16px;bottom:16px;background:var(--white);border-radius:14px;padding:12px 16px;font-size:13px;box-shadow:0 10px 30px rgba(58,31,34,.15)}
+.badge b{display:block;font-family:"Playfair Display",serif;font-size:16px;color:var(--choc)}
+.values{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 0}
+.values .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.values b{font-family:"Playfair Display",serif;font-size:19px;color:var(--choc);display:block}
+.values span{font-size:14px;color:var(--muted)}
+section{padding:80px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 44px}
+h2{font-family:"Playfair Display",serif;font-size:clamp(30px,4vw,42px);color:var(--choc);line-height:1.15}
+.sec-head p{color:var(--muted);margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(58,31,34,.1)}
+.card .photo{aspect-ratio:4/3;overflow:hidden;background:var(--rose)}
+.card .photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.card:hover .photo img{transform:scale(1.05)}
+.card .body{padding:18px 20px 22px}
+.card h3{font-family:"Playfair Display",serif;font-size:20px;color:var(--choc);margin-bottom:4px}
+.card p{font-size:14px;color:var(--muted)}
+.card .price{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--berry-dk);background:var(--blush);padding:4px 10px;border-radius:999px}
+.steps{background:var(--rose)}
+.steps .grid{grid-template-columns:repeat(3,1fr)}
+.step{background:var(--white);border-radius:18px;padding:28px 24px}
+.step .n{width:42px;height:42px;border-radius:50%;background:var(--berry);color:#fff;display:grid;place-items:center;font-weight:600;margin-bottom:14px}
+.step h3{font-family:"Playfair Display",serif;font-size:20px;color:var(--choc);margin-bottom:6px}
+.step p{font-size:14.5px;color:var(--muted)}
+.order{background:var(--choc);color:var(--rose)}
+.order h2{color:#fff}
+.order .sec-head p{color:#e3c3ca}
+form{max-width:640px;margin:0 auto;display:grid;gap:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;color:#e3c3ca;display:grid;gap:6px}
+input,textarea,select{width:100%;padding:13px 15px;border-radius:12px;border:1px solid rgba(248,223,227,.25);background:rgba(255,255,255,.07);color:#fff;font:inherit;font-size:15px}
+input::placeholder,textarea::placeholder{color:#c9a4ad}
+select option{color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+form .btn{justify-content:center}
+.note{font-size:13px;color:#c9a4ad;text-align:center}
+#formMsg{display:none;text-align:center;background:rgba(255,255,255,.08);padding:12px;border-radius:12px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.info{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:30px}
+.info h3{font-family:"Playfair Display",serif;font-size:22px;color:var(--choc);margin-bottom:12px}
+.row{display:flex;gap:14px;padding:13px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row .k{width:96px;flex-shrink:0;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--berry-dk)}
+.row .v small{display:block;color:var(--muted)}
+footer{background:#2a1517;color:#c9a4ad;padding:28px 0;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#f8dfe3;text-decoration:none}
+.credits{font-size:11.5px;opacity:.75;margin-top:12px;line-height:1.5}
+.credits a{text-decoration:underline}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;background:var(--green);color:#fff;width:58px;height:58px;border-radius:50%;place-items:center;text-decoration:none;box-shadow:0 10px 24px rgba(37,211,102,.45)}
+.fab svg{width:30px;height:30px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero .wrap,.contact .wrap{grid-template-columns:1fr}.hero-photo{max-width:420px;margin:0 auto}.steps .grid{grid-template-columns:1fr}}
+@media (max-width:720px){.nav ul,.nav .cta{display:none}.menu-btn{display:block}
+ .nav.open ul{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--blush);padding:18px 20px;gap:16px;border-bottom:1px solid var(--line)}
+ .hero{padding:48px 0 60px}section{padding:60px 0}.values .wrap{grid-template-columns:1fr;gap:14px}.two{grid-template-columns:1fr}.fab{display:grid}}
+@media (max-width:460px){.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for CakeStory Ahmedabad</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">Cake<span>Story</span></a>
+    <ul>
+      <li><a href="#cakes">Cakes</a></li>
+      <li><a href="#how">How to order</a></li>
+      <li><a href="#order">Order form</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cta" href="https://wa.me/917043155722" target="_blank" rel="noopener">WhatsApp to order</a>
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Ahmedabad · 100% Pure Veg</span>
+        <h1>Cakes made for <em>your</em> story.</h1>
+        <p class="lead">Custom, made-to-order cakes and cupcakes by Barkha Jaiswal — designed around your celebration, baked fresh and pure veg.</p>
+        <div class="btns">
+          <a class="btn btn-wa" href="https://wa.me/917043155722?text=Hi%20CakeStory!%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+          <a class="btn btn-ghost" href="#cakes">🎂 See cakes</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="hero-photo">
+          <img src="img/hero.jpg" alt="Tiered celebration cake decorated with fresh flowers" fetchpriority="high">
+          <div class="badge"><b>Custom designs</b>Birthdays · anniversaries · weddings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="values">
+    <div class="wrap">
+      <div><b>Pure veg</b><span>Every cake, every order</span></div>
+      <div><b>Your design</b><span>Share an idea or a photo — we bake it</span></div>
+      <div><b>Made to order</b><span>Baked fresh for your date</span></div>
+    </div>
+  </div>
+
+  <section id="cakes">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Cakes</span>
+        <h2>Something sweet for every occasion</h2>
+        <p>Flavours, sizes and designs are customised for you. Message us for today's options and prices.</p>
+      </div>
+      <div class="grid">
+        <div class="card reveal"><div class="photo"><img src="img/hero.jpg" alt="Tiered celebration cake" loading="lazy"></div><div class="body"><h3>Celebration & tiered</h3><p>Multi-tier designer cakes for weddings, anniversaries and big days.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/chocolate.jpg" alt="Slice of chocolate cake" loading="lazy"></div><div class="body"><h3>Chocolate cakes</h3><p>Rich, moist chocolate cakes — a forever birthday favourite.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/redvelvet.jpg" alt="Slice of red velvet cake" loading="lazy"></div><div class="body"><h3>Red velvet</h3><p>Soft red velvet layers with smooth cream frosting.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/cupcakes.jpg" alt="Cupcakes with sprinkles" loading="lazy"></div><div class="body"><h3>Cupcakes</h3><p>Party boxes of cupcakes — perfect for kids, offices and gifting.</p><span class="price">Price on request</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="how">
+    <div class="wrap">
+      <div class="sec-head reveal"><span class="eyebrow" style="background:#fff">How to order</span><h2>Your cake in 3 easy steps</h2></div>
+      <div class="grid">
+        <div class="step reveal"><div class="n">1</div><h3>Share your idea</h3><p>Tell us the occasion, flavour, size and date — or send a reference photo.</p></div>
+        <div class="step reveal"><div class="n">2</div><h3>Get your quote</h3><p>We confirm the design and price on WhatsApp. Order early for custom designs.</p></div>
+        <div class="step reveal"><div class="n">3</div><h3>Celebrate!</h3><p>Your fresh, pure veg cake is ready for your special day.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" style="background:rgba(255,255,255,.1);color:#f8dfe3">Order form</span>
+        <h2>Plan your cake</h2>
+        <p>Fill this in and it opens WhatsApp with your order details ready to send.</p>
+      </div>
+      <form id="orderForm" class="reveal" novalidate>
+        <div class="two">
+          <label>Your name<input name="name" placeholder="e.g. Priya" required></label>
+          <label>Date needed<input name="date" type="date" required></label>
+        </div>
+        <div class="two">
+          <label>Occasion<select name="occasion"><option>Birthday</option><option>Anniversary</option><option>Wedding / engagement</option><option>Baby shower</option><option>Office / party</option><option>Other</option></select></label>
+          <label>Type<select name="type"><option>Cake</option><option>Cupcakes</option><option>Cake + cupcakes</option></select></label>
+        </div>
+        <div class="two">
+          <label>Flavour<input name="flavour" placeholder="e.g. Chocolate, Red velvet"></label>
+          <label>Size / weight<input name="size" placeholder="e.g. 1 kg, 12 cupcakes"></label>
+        </div>
+        <label>Design idea / message on cake<textarea name="msg" placeholder="Theme, colours, name to write on the cake…"></textarea></label>
+        <button class="btn btn-wa" type="submit">💬 Send order on WhatsApp</button>
+        <div id="formMsg"></div>
+        <p class="note">Nothing is stored on this page — it only opens WhatsApp. You can attach a reference photo there.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="info reveal">
+        <h3>Contact CakeStory</h3>
+        <div class="row"><div class="k">WhatsApp</div><div class="v"><a href="https://wa.me/917043155722" target="_blank" rel="noopener">+91 70431 55722</a><small>Best way to order</small></div></div>
+        <div class="row"><div class="k">Call</div><div class="v"><a href="tel:+917043155722">+91 70431 55722</a></div></div>
+        <div class="row"><div class="k">Instagram</div><div class="v"><a href="https://www.instagram.com/cakestory_ahmedabad/" target="_blank" rel="noopener">@cakestory_ahmedabad</a><small>See our latest designs</small></div></div>
+        <div class="row"><div class="k">City</div><div class="v">Ahmedabad, Gujarat<small>Pickup / delivery details on WhatsApp</small></div></div>
+      </div>
+      <div class="info reveal" style="background:var(--rose)">
+        <h3>Planning a celebration?</h3>
+        <p style="color:var(--muted)">Custom designs take a little time — message us a few days before your date so we can make it perfect.</p>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn btn-wa" href="https://wa.me/917043155722?text=Hi%20CakeStory!%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener">💬 WhatsApp us</a>
+          <a class="btn btn-ghost" href="https://www.instagram.com/cakestory_ahmedabad/" target="_blank" rel="noopener">📸 Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> CakeStory Ahmedabad · Pure veg custom cakes</div>
+    <div>Demo website by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+  </div>
+  <div class="wrap"><p class="credits">Sample photos: <a href="https://commons.wikimedia.org/wiki/File:Summer_wedding_cake_with_flower.jpg" target="_blank" rel="noopener">Summer wedding cake with flower</a> by Kimberly Vardeman (CC BY 2.0) · <a href="https://commons.wikimedia.org/wiki/File:Birthday_Cupcakes.jpg" target="_blank" rel="noopener">Birthday Cupcakes</a> by Kmangwane (CC0) · <a href="https://commons.wikimedia.org/wiki/File:Cake_red_velvet.jpg" target="_blank" rel="noopener">Cake red velvet</a> by Kimberly Mace (CC BY-SA 3.0) · <a href="https://commons.wikimedia.org/wiki/File:Baileys_Chocolate_Cake_-_Cafe_Coho_2026-01-08.jpg" target="_blank" rel="noopener">Baileys Chocolate Cake - Cafe Coho 2026-01-08</a> by Andy Li (CC0). Real photos of your cakes will replace these.</p></div>
+</footer>
+
+<a class="fab" href="https://wa.me/917043155722" target="_blank" rel="noopener" aria-label="Order on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var nav = document.getElementById('nav');
+  document.getElementById('menuBtn').addEventListener('click', function(){ nav.classList.toggle('open'); });
+  nav.querySelectorAll('ul a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold: .12});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+  document.getElementById('orderForm').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var f = ev.target, out = document.getElementById('formMsg');
+    if (!f.name.value.trim() || !f.date.value) { out.style.display='block'; out.textContent='Please add your name and the date you need the cake.'; return; }
+    var lines = ['Hi CakeStory! I would like to order.', 'Name: ' + f.name.value.trim(), 'Date: ' + f.date.value, 'Occasion: ' + f.occasion.value, 'Type: ' + f.type.value];
+    if (f.flavour.value.trim()) lines.push('Flavour: ' + f.flavour.value.trim());
+    if (f.size.value.trim()) lines.push('Size: ' + f.size.value.trim());
+    if (f.msg.value.trim()) lines.push('Design / message: ' + f.msg.value.trim());
+    out.style.display='block'; out.textContent='Opening WhatsApp…';
+    window.open('https://wa.me/917043155722?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+  });
+})();
+</script>
+</body>
+</html>

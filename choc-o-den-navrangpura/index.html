@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Choc-O-Den — Cakes & Chocolates, Navrangpura, Ahmedabad</title>
+<meta name="description" content="Choc-O-Den bakery in Navrangpura, Ahmedabad — fresh cakes, desserts and chocolates for every occasion.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cocoa:#2b1a14;--cocoa2:#4a2c20;--cream:#fbf5ee;--blush:#f3d9cf;--berry:#c2413b;--gold:#c99a5b;--ink:#2b1a14;--muted:#7a625a;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--cocoa);color:#f1e3d8;font-size:12.5px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+.ribbon a{color:var(--gold);text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:rgba(251,245,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid #eadbd0}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:22px;text-decoration:none;color:var(--cocoa)}
+.logo span{color:var(--berry)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--cocoa)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--berry);color:#fff;box-shadow:0 8px 22px rgba(194,65,59,.3)}
+.btn-wa{background:#1f9d55;color:#fff}
+.btn-ghost{background:#fff;color:var(--cocoa);border:1px solid #e6d3c6}
+.nav .btn{padding:9px 16px;font-size:14px}
+.hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,26,20,.15) 0%,rgba(43,26,20,.55) 55%,rgba(43,26,20,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:64px;padding-top:120px}
+.kicker{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:999px;font-size:13px;letter-spacing:.04em;margin-bottom:18px}
+.hero h1{font-size:clamp(44px,8vw,84px);font-weight:700;letter-spacing:-.01em}
+.hero p.lead{font-size:clamp(16px,2.2vw,19px);max-width:560px;margin:14px 0 6px;color:#f6e9e1}
+.hero .guj{font-size:15px;color:var(--blush);margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:84px 0}
+.eyebrow{color:var(--berry);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.sec-h{font-size:clamp(30px,4.5vw,44px);margin:8px 0 12px}
+.sec-p{color:var(--muted);max-width:600px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 30px rgba(43,26,20,.08);transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:20px 22px 24px}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .tag{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--cocoa2);background:var(--blush);padding:4px 12px;border-radius:999px}
+.why{background:var(--cocoa);color:#f4e7de}
+.why .sec-p{color:#cdb6a9}
+.why .eyebrow{color:var(--gold)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:36px}
+.feat{border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:24px}
+.feat .ic{font-size:26px;margin-bottom:10px}
+.feat h3{font-size:19px;margin-bottom:6px;color:#fff}
+.feat p{font-size:14.5px;color:#cdb6a9}
+.order{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.steps{list-style:none;margin-top:24px;display:grid;gap:14px}
+.steps li{display:flex;gap:14px;align-items:flex-start;background:#fff;padding:16px 18px;border-radius:14px;box-shadow:0 4px 14px rgba(43,26,20,.05)}
+.steps b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--berry);color:#fff;display:grid;place-items:center;font-size:14px}
+.order-img{border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(43,26,20,.18)}
+.order-img img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.visit{background:#fff}
+.vgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.box{background:var(--cream);border-radius:var(--r);padding:28px}
+.box h3{font-size:22px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed #e3cfc2}
+.hours td:last-child{text-align:right;font-weight:600}
+.today td{color:var(--berry)}
+.small{font-size:13px;color:var(--muted);margin-top:12px}
+.addr{font-size:16px;margin-bottom:18px}
+.map{margin-top:18px;border-radius:14px;overflow:hidden;border:1px solid #ead8cc}
+.map iframe{width:100%;height:220px;border:0;display:block}
+.contact{text-align:center}
+.contact .cta{justify-content:center;margin-top:26px}
+.form{max-width:520px;margin:34px auto 0;display:grid;gap:12px;text-align:left}
+.form input,.form textarea,.form select{width:100%;padding:13px 15px;border-radius:12px;border:1px solid #e3cfc2;font:inherit;background:#fff}
+.form textarea{min-height:96px;resize:vertical}
+footer{background:var(--cocoa);color:#cdb6a9;padding:36px 0 90px;font-size:13.5px}
+footer .logo{color:#fff;font-size:20px}
+footer .credits{margin-top:16px;font-size:12px;color:#a48b7f}
+footer .credits a{color:#c8ad9e}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;font-size:22px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:820px){
+  .nav ul{display:none}
+  .order,.vgrid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .hero{min-height:88vh}
+  .fab{display:flex}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Choc-O-Den</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">Choc<span>·</span>O<span>·</span>Den</a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#order">Custom Cakes</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-main" href="tel:+919227248122">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <img src="img/hero.jpg" alt="Chocolate cake squares topped with fresh strawberries" fetchpriority="high">
+  <div class="wrap">
+    <span class="kicker">Bakery · Navrangpura, Ahmedabad</span>
+    <h1>Choc-O-Den</h1>
+    <p class="lead">Fresh cakes, desserts and chocolates for birthdays, anniversaries and every little celebration in between.</p>
+    <p class="guj">દરેક ખુશીમાં થોડી મીઠાશ — a little sweetness in every celebration</p>
+    <div class="cta">
+      <a class="btn btn-wa" href="https://wa.me/919227248122?text=Hi%20Choc-O-Den%2C%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+      <a class="btn btn-ghost" href="#menu">See what we make</a>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What we bake</span>
+      <h2 class="sec-h">Made fresh, made for you</h2>
+      <p class="sec-p">From a simple slice with your evening chai to a centrepiece cake for the whole family — choose a favourite or tell us your idea.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/cakes.jpg" alt="Round chocolate cake topped with marshmallows" loading="lazy">
+        <div class="b">
+          <h3>Celebration Cakes</h3>
+          <p>Birthday, anniversary and party cakes in a range of flavours and sizes, finished the way you like.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/slice.jpg" alt="Slice of chocolate cake with a fork" loading="lazy">
+        <div class="b">
+          <h3>Pastries & Desserts</h3>
+          <p>Single slices, pastries and dessert treats — perfect for a quick sweet break or an office tea.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/truffles.jpg" alt="Assorted chocolate truffles in paper cups" loading="lazy">
+        <div class="b">
+          <h3>Chocolates & Truffles</h3>
+          <p>Handmade chocolates and truffles — lovely as return gifts, festive boxes or a treat for yourself.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Why Choc-O-Den</span>
+      <h2 class="sec-h">Your neighbourhood cake shop</h2>
+      <p class="sec-p">Right in Navrangpura, near H L Commerce College — easy to drop by, easy to order ahead.</p>
+    </div>
+    <div class="grid4">
+      <div class="feat reveal"><div class="ic">🎂</div><h3>Cakes for every size</h3><p>Small cakes for two or big ones for a party — just tell us how many guests.</p></div>
+      <div class="feat reveal"><div class="ic">✍️</div><h3>Custom messages</h3><p>Names, wishes and themes written and decorated on your cake.</p></div>
+      <div class="feat reveal"><div class="ic">🌱</div><h3>Eggless options</h3><p>Ask us about eggless cakes and desserts when you order.</p></div>
+      <div class="feat reveal"><div class="ic">📅</div><h3>Open all week</h3><p>Open every day, so last-minute celebrations are covered too.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap order">
+    <div class="reveal">
+      <span class="eyebrow">Custom cakes</span>
+      <h2 class="sec-h">Order a cake in 3 easy steps</h2>
+      <p class="sec-p">Planning a birthday or a surprise? Message us a day or two ahead and we'll help you pick the right cake.</p>
+      <ol class="steps">
+        <li><b>1</b><div><strong>Tell us the occasion</strong><br><span class="sec-p">Date, number of people and any theme or photo idea.</span></div></li>
+        <li><b>2</b><div><strong>Choose flavour & size</strong><br><span class="sec-p">We'll share options and the price for your order.</span></div></li>
+        <li><b>3</b><div><strong>Pick up from the shop</strong><br><span class="sec-p">Collect fresh from Navrangpura at your chosen time.</span></div></li>
+      </ol>
+      <div class="cta" style="margin-top:24px">
+        <a class="btn btn-wa" href="https://wa.me/919227248122?text=Hi%20Choc-O-Den%2C%20I%27d%20like%20a%20custom%20cake%20for%20" target="_blank" rel="noopener">💬 Plan my cake</a>
+      </div>
+    </div>
+    <div class="order-img reveal"><img src="img/cakes.jpg" alt="Chocolate celebration cake" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Visit us</span>
+      <h2 class="sec-h">Hours & location</h2>
+    </div>
+    <div class="vgrid">
+      <div class="box reveal">
+        <h3>Opening hours</h3>
+        <table class="hours" id="hours"></table>
+        <p class="small">Hours as listed publicly — please call to confirm on holidays.</p>
+      </div>
+      <div class="box reveal">
+        <h3>Find us</h3>
+        <p class="addr">Shivam Complex, Ground floor, near H L Commerce College,<br>Shri Sadma Society, Navrangpura,<br>Ahmedabad, Gujarat 380009</p>
+        <div class="cta">
+          <a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Choc-O-Den+Shivam+Complex+Navrangpura+Ahmedabad" target="_blank" rel="noopener">📍 Get directions</a>
+        </div>
+        <div class="map"><iframe loading="lazy" title="Map of Navrangpura" src="https://maps.google.com/maps?q=Shivam%20Complex%20near%20H%20L%20Commerce%20College%20Navrangpura%20Ahmedabad&z=15&output=embed"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap reveal">
+    <span class="eyebrow">Get in touch</span>
+    <h2 class="sec-h">Craving something sweet?</h2>
+    <p class="sec-p" style="margin:0 auto">Call or WhatsApp us to order, ask about flavours, or book a cake for your next celebration.</p>
+    <div class="cta">
+      <a class="btn btn-main" href="tel:+919227248122">📞 +91 92272 48122</a>
+      <a class="btn btn-wa" href="https://wa.me/919227248122" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+    <form class="form" id="f">
+      <input name="n" placeholder="Your name" required>
+      <select name="o"><option>Birthday cake</option><option>Anniversary cake</option><option>Pastries / desserts</option><option>Chocolates / gift box</option><option>Something else</option></select>
+      <input name="d" type="date" aria-label="Date needed">
+      <textarea name="m" placeholder="Tell us flavour, size or any idea…"></textarea>
+      <button class="btn btn-wa" type="submit" style="justify-content:center">Send enquiry on WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo">Choc-O-Den</div>
+    <p>Cakes · Desserts · Chocolates — Navrangpura, Ahmedabad · <a href="tel:+919227248122">+91 92272 48122</a></p>
+    <p class="credits" id="credits">Sample photos: “Chocolate Truffle Cake” by Dennis Wong (CC BY 2.0), “Hot Chocolate cake from Fine Cooking magazine” by EvinDC (CC BY 2.0), “Chocolate cake” by CeresB (CC BY 2.0), “Chocolate Truffles” by cobaltfish (CC BY-SA 2.0), via Flickr. Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://wa.me/919227248122" style="background:#1f9d55" aria-label="WhatsApp">💬</a>
+  <a href="tel:+919227248122" style="background:var(--berry)" aria-label="Call">📞</a>
+</div>
+
+<script>
+(function(){
+  var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],t=new Date().getDay(),h="";
+  [1,2,3,4,5,6,0].forEach(function(d){h+='<tr'+(d===t?' class="today"':'')+'><td>'+days[d]+(d===t?' (today)':'')+'</td><td>9:30 AM – 8:30 PM</td></tr>';});
+  document.getElementById("hours").innerHTML=h;
+  document.getElementById("f").addEventListener("submit",function(e){
+    e.preventDefault();var f=e.target;
+    var msg="Hi Choc-O-Den, I'm "+f.n.value+". Enquiry: "+f.o.value+(f.d.value?" for "+f.d.value:"")+". "+f.m.value;
+    window.open("https://wa.me/919227248122?text="+encodeURIComponent(msg),"_blank");
+  });
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pancham Academy of Indian Music · Paldi, Ahmedabad</title>
+<meta name="description" content="Pancham Academy of Indian Music — Indian classical music classes for all ages near Anjali BRTS, Paldi, Ahmedabad.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{
+  --bg:#fbf6ef; --ink:#2a1a14; --muted:#6e5a4f; --card:#fff;
+  --maroon:#7a1f2b; --maroon-d:#5c1520; --saffron:#e08a1e; --line:#ead9c6;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Gujarati",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:#f3e6d6;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.ribbon b{color:#ffcf8a;font-weight:600}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--maroon);text-decoration:none;display:flex;align-items:center;gap:10px}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:var(--maroon);color:#fff;display:grid;place-items:center;font-size:15px}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:14.5px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--maroon)}
+.nav .call{background:var(--maroon);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-size:14px;font-weight:600}
+@media(max-width:760px){.nav ul{display:none}}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,12,8,.15) 0%,rgba(40,12,8,.55) 45%,rgba(30,8,6,.9) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:64px}
+.tag-gu{display:inline-block;font-size:14px;background:rgba(224,138,30,.9);color:#2a1a14;padding:4px 12px;border-radius:999px;font-weight:600;margin-bottom:16px}
+.hero h1{font-family:var(--serif);font-size:clamp(34px,6.4vw,64px);line-height:1.08;font-weight:700;max-width:780px}
+.hero p.lead{font-size:clamp(16px,2.2vw,19px);max-width:600px;margin-top:16px;color:#f6e9dc}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15.5px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--saffron);color:#2a1a14}
+.btn.w{background:#25d366;color:#08311a}
+.btn.g{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn svg{width:18px;height:18px}
+
+section{padding:76px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;color:var(--saffron);font-weight:700}
+h2{font-family:var(--serif);font-size:clamp(28px,4vw,40px);color:var(--maroon);margin:6px 0 12px;line-height:1.15}
+.sub{color:var(--muted);max-width:640px}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about .points{display:grid;gap:14px;margin-top:22px}
+.about .points div{display:flex;gap:12px;align-items:flex-start}
+.about .points span{flex:none;width:28px;height:28px;border-radius:50%;background:#f3e0c8;color:var(--maroon);display:grid;place-items:center;font-weight:700;font-size:14px}
+.about figure img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%;box-shadow:0 20px 40px -20px rgba(80,30,10,.45)}
+@media(max-width:820px){.about{grid-template-columns:1fr}.about figure{max-width:380px}}
+
+.courses{background:#f5ebdf}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-family:var(--serif);font-size:22px;color:var(--ink)}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card .price{font-size:13.5px;font-weight:600;color:var(--maroon);border-top:1px dashed var(--line);padding-top:10px}
+.note{font-size:13.5px;color:var(--muted);margin-top:18px}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+@media(max-width:760px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.step b{font-family:var(--serif);font-size:30px;color:var(--saffron);display:block}
+.step h4{font-size:17px;margin:4px 0 6px}
+.step p{color:var(--muted);font-size:15px}
+
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+.box h3{font-family:var(--serif);font-size:22px;color:var(--maroon);margin-bottom:12px}
+.hours{list-style:none;display:grid;gap:8px}
+.hours li{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding-bottom:8px;font-size:15px}
+.hours li span:last-child{font-weight:600}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:300px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+
+.contact{background:var(--maroon);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .sub{color:#f1d9c9;margin:0 auto}
+.contact .btns{justify-content:center}
+.contact .ph{font-family:var(--serif);font-size:28px;margin-top:18px;letter-spacing:.02em}
+
+footer{background:#1d120e;color:#cdbcae;font-size:13px;padding:34px 0 90px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer .credits{margin-top:16px;font-size:12px;color:#9c897b;line-height:1.55}
+footer .credits a{color:#c9b3a2}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.fab .wa{background:#25d366}.fab .tel{background:var(--maroon)}
+.fab svg{width:26px;height:26px;fill:#fff}
+@media(min-width:900px){.fab .tel{display:none}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Pancham Academy of Indian Music</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="dot">♪</span>Pancham Academy</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#visit">Timings &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+919662143691">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="Close-up of harmonium keys" width="1600" height="1059" fetchpriority="high">
+    <div class="wrap">
+      <span class="tag-gu">સૂર, તાલ અને સાધના</span>
+      <h1>Pancham Academy of Indian Music</h1>
+      <p class="lead">Learn Indian classical music in a calm, disciplined setting — classes for children and adults near Anjali BRTS, Paldi, Ahmedabad.</p>
+      <div class="btns">
+        <a class="btn p" href="tel:+919662143691"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call 096621 43691</a>
+        <a class="btn w" href="https://wa.me/919662143691?text=Hello%2C%20I%20would%20like%20to%20know%20about%20music%20classes%20at%20Pancham%20Academy." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp us</a>
+        <a class="btn g" href="#courses">View courses</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div class="reveal">
+        <div class="eyebrow">About the academy</div>
+        <h2>A home for Indian classical music in Paldi</h2>
+        <p class="sub">Pancham Academy of Indian Music welcomes students of every age who want to explore the rich tradition of Indian classical music — whether you are starting your very first <i>sa re ga ma</i> or returning to riyaz after years.</p>
+        <div class="points">
+          <div><span>1</span><p><b>Step-by-step learning.</b> Swar, taal and raag introduced in a clear, structured order.</p></div>
+          <div><span>2</span><p><b>All ages welcome.</b> Batches for children, students and working adults.</p></div>
+          <div><span>3</span><p><b>Regular riyaz.</b> Practice routines you can continue at home between classes.</p></div>
+        </div>
+      </div>
+      <figure class="reveal"><img src="img/vocal.jpg" alt="A tanpura standing against a wall" width="900" height="1200" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section id="courses" class="courses">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Courses</div>
+        <h2>What you can learn</h2>
+        <p class="sub">Choose a course that fits your interest and level. Call or WhatsApp to know the current batches.</p>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <img src="img/vocal.jpg" alt="Tanpura, the drone instrument used in classical singing" width="900" height="1200" loading="lazy" style="object-position:center 30%">
+          <div class="b">
+            <h3>Classical Vocal</h3>
+            <p>Voice culture, alankars, swar practice and raag-based singing for beginners and intermediate learners.</p>
+            <div class="price">Fees: Price on request</div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img src="img/tabla.jpg" alt="A pair of tabla drums on a cushion" width="900" height="657" loading="lazy">
+          <div class="b">
+            <h3>Taal &amp; Rhythm</h3>
+            <p>Understand laya and taal — the rhythmic foundation every singer and musician needs.</p>
+            <div class="price">Fees: Price on request</div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <img src="img/sitar.jpg" alt="Hand on the frets of a sitar" width="900" height="600" loading="lazy">
+          <div class="b">
+            <h3>Light &amp; Semi-Classical Songs</h3>
+            <p>Bhajans, film songs and semi-classical pieces sung with correct sur and expression.</p>
+            <div class="price">Fees: Price on request</div>
+          </div>
+        </article>
+      </div>
+      <p class="note">Course list shown for demo purposes — final courses and batch details will be updated by the academy.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Getting started</div>
+        <h2>Joining is simple</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><b>01</b><h4>Call or WhatsApp</h4><p>Tell us your age, level and which days suit you.</p></div>
+        <div class="step reveal"><b>02</b><h4>Visit the academy</h4><p>Meet the teacher and see the class near Anjali BRTS.</p></div>
+        <div class="step reveal"><b>03</b><h4>Begin your riyaz</h4><p>Join a batch and start learning with a clear plan.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:20px">
+    <div class="wrap">
+      <div class="reveal">
+        <div class="eyebrow">Visit us</div>
+        <h2>Timings &amp; location</h2>
+      </div>
+      <div class="visit">
+        <div class="box reveal">
+          <h3>Class timings</h3>
+          <ul class="hours">
+            <li><span>Academy closes</span><span>7:30 pm</span></li>
+            <li><span>Batch timings</span><span>Call to confirm</span></li>
+            <li><span>Holidays</span><span>Call to confirm</span></li>
+          </ul>
+          <h3 style="margin-top:24px">Address</h3>
+          <p>L/9, Ashirwad Complex,<br>Near Anjali BRTS Road, Yogeshwar Nagar,<br>Paldi, Ahmedabad, Gujarat 380007</p>
+          <div class="btns" style="margin-top:18px">
+            <a class="btn p" href="https://www.google.com/maps/search/?api=1&amp;query=Pancham+Academy+of+Indian+Music+Ashirwad+Complex+Anjali+BRTS+Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Map showing Pancham Academy of Indian Music" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=23.0061396,72.5518007&amp;z=16&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <div class="eyebrow" style="color:#ffcf8a">Contact</div>
+      <h2>Start your music journey</h2>
+      <p class="sub">Ask about batches, timings and fees — we are happy to guide you to the right course.</p>
+      <div class="ph">096621 43691</div>
+      <div class="btns">
+        <a class="btn p" href="tel:+919662143691">Call now</a>
+        <a class="btn w" href="https://wa.me/919662143691?text=Hello%2C%20I%20would%20like%20to%20know%20about%20music%20classes%20at%20Pancham%20Academy." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div><b style="color:#fff">Pancham Academy of Indian Music</b><br>L/9, Ashirwad Complex, Near Anjali BRTS, Paldi, Ahmedabad 380007 · 096621 43691</div>
+      <div>© <span id="yr">2026</span> Pancham Academy of Indian Music</div>
+    </div>
+    <p class="credits" id="credits">Sample photos: “Harmonium close up” by gurmatsangeetorg (CC BY 2.0); “Male vocal Tanpura, Miraj 1963” by Martin spaink (CC BY-SA 3.0); “Tabla” by Lestat (CC BY-SA 3.0); “sitar” by MissMessie (CC BY-SA 2.0). Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="tel" href="tel:+919662143691" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+  <a class="wa" href="https://wa.me/919662143691" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bendall &amp; Sons Solicitors | Newmarket &amp; Mildenhall, Suffolk</title>
+<meta name="description" content="Bendall &amp; Sons – solicitors in Newmarket and Mildenhall, West Suffolk. Conveyancing, family law, wills, probate, lasting powers of attorney and civil litigation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14213d;--navy2:#1e2f55;--gold:#b8924a;--gold2:#d8b878;--ink:#1d2433;--muted:#5b6474;--bg:#faf8f4;--card:#fff;--line:#e7e1d6;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.15;color:var(--navy)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--gold);color:#fff;text-align:center;font-size:13px;padding:7px 16px;font-weight:500;letter-spacing:.2px}
+header{position:sticky;top:0;z-index:50;background:rgba(250,248,244,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--navy);font-weight:700}
+.brand span{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+.menu{display:flex;gap:26px;align-items:center}
+.menu a{text-decoration:none;font-size:14.5px;font-weight:500;color:var(--navy)}
+.menu a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn-gold{background:var(--gold);color:#fff}.btn-gold:hover{background:#a37e3b}
+.btn-line{border:1.5px solid rgba(255,255,255,.7);color:#fff}.btn-line:hover{background:rgba(255,255,255,.12)}
+.btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy2)}
+.burger{display:none;background:none;border:0;font-size:26px;color:var(--navy);cursor:pointer}
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,33,61,.94) 0%,rgba(20,33,61,.8) 45%,rgba(20,33,61,.25) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:60px;padding-bottom:60px}
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold2);margin-bottom:18px;font-weight:600}
+.hero h1{color:#fff;font-size:clamp(40px,6vw,68px);max-width:640px;margin-bottom:20px}
+.hero p{max-width:540px;font-size:18px;color:#e5e8ef;margin-bottom:32px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.offices{display:flex;gap:28px;margin-top:44px;flex-wrap:wrap;font-size:14px;color:#cfd5e2}
+.offices strong{display:block;color:#fff;font-size:15px}
+section{padding:90px 0}
+.head{max-width:640px;margin-bottom:46px}
+.head .eyebrow{color:var(--gold)}
+.head h2{font-size:clamp(32px,4.5vw,46px);margin-bottom:12px}
+.head p{color:var(--muted);font-size:17px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -20px rgba(20,33,61,.35)}
+.card img{height:210px;width:100%;object-fit:cover}
+.card .in{padding:26px}
+.card h3{font-size:26px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;margin-bottom:14px}
+.card ul{list-style:none;font-size:14.5px}
+.card li{padding:5px 0 5px 22px;position:relative;border-top:1px dashed var(--line)}
+.card li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+.mini{background:var(--navy);color:#fff;border-radius:var(--r);padding:26px}
+.mini h3{color:#fff;font-size:24px;margin-bottom:6px}
+.mini p{color:#c9d0de;font-size:14.5px}
+.why{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.why-img{border-radius:var(--r);overflow:hidden;position:relative}
+.why-img img{height:460px;width:100%;object-fit:cover}
+.why-img .tag{position:absolute;left:20px;bottom:20px;background:var(--navy);color:#fff;padding:14px 18px;border-radius:10px;font-size:14px;max-width:260px}
+.points{display:grid;gap:20px}
+.pt{display:flex;gap:16px}
+.pt i{flex:0 0 46px;height:46px;border-radius:50%;background:#f3ecdf;color:var(--gold);display:grid;place-items:center;font-style:normal;font-size:20px}
+.pt h3{font-size:22px;margin-bottom:2px}
+.pt p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px;position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--gold);font-weight:700;display:block;margin-bottom:6px}
+.step h3{font-size:21px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:14.5px}
+.enq{background:var(--navy);color:#fff}
+.enq .head h2{color:#fff}.enq .head p{color:#c9d0de}
+.enq-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+form{background:#fff;color:var(--ink);border-radius:var(--r);padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+label{font-size:13px;font-weight:600;color:var(--navy);display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #d8d2c6;border-radius:9px;font:inherit;font-size:15px;background:#fdfcfa}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}
+.chk input{width:auto;margin-top:4px}
+.ok{display:none;grid-column:1/-1;background:#eef7ee;color:#225c2a;border-radius:9px;padding:12px 14px;font-size:14px}
+.contact-cards{display:grid;gap:16px}
+.cc{border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:22px}
+.cc h3{color:#fff;font-size:24px;margin-bottom:6px}
+.cc p{color:#c9d0de;font-size:15px;margin-bottom:12px}
+.cc .row{display:flex;gap:10px;flex-wrap:wrap}
+.cc a.small{font-size:14px;padding:9px 16px}
+.faq{max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--gold);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{padding:0 0 18px;color:var(--muted)}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.loc{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.loc img{height:220px;width:100%;object-fit:cover}
+.loc .in{padding:24px}
+.loc h3{font-size:28px;margin-bottom:6px}
+.loc p{color:var(--muted);margin-bottom:14px}
+footer{background:#0e1830;color:#aab3c5;padding:50px 0 90px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+footer h4{color:#fff;font-family:"Cormorant Garamond",serif;font-size:22px;margin-bottom:10px;font-weight:600}
+footer a{color:#d6dcea;text-decoration:none}
+.credits{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;font-size:12.5px;color:#8892a6}
+.credits a{color:#aab3c5;text-decoration:underline}
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--navy);padding:10px;gap:10px}
+.mbar a{flex:1;justify-content:center;font-size:14px;padding:12px}
+@media (max-width:960px){
+ .svc,.more{grid-template-columns:1fr 1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .why-grid,.enq-grid,.loc-grid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+ .menu{display:none;position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;padding:20px;border-bottom:1px solid var(--line);gap:16px}
+ .menu.open{display:flex}
+ .burger{display:block}
+ .svc,.more,.steps,.fgrid{grid-template-columns:1fr}
+ form{grid-template-columns:1fr;padding:22px}
+ section{padding:64px 0}
+ .hero{min-height:auto}
+ .hero:after{background:linear-gradient(180deg,rgba(20,33,61,.82),rgba(20,33,61,.94))}
+ .why-img img{height:300px}
+ .mbar{display:flex}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by KS Digital Studio — for Bendall &amp; Sons</div>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top"><b>Bendall &amp; Sons</b><span>Solicitors · West Suffolk</span></a>
+  <nav class="menu" id="menu">
+   <a href="#services">Services</a>
+   <a href="#why">About</a>
+   <a href="#process">How it works</a>
+   <a href="#offices">Offices</a>
+   <a href="#faq">FAQ</a>
+   <a class="btn btn-gold" href="#enquiry">Book a consultation</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu">☰</button>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <img src="img/hero.jpg" alt="Gavel beside a model house and keys">
+ <div class="wrap">
+  <span class="eyebrow">Solicitors in Newmarket &amp; Mildenhall</span>
+  <h1>Clear, personal legal advice for West Suffolk</h1>
+  <p>A long-established local firm helping with conveyancing, family law, wills and probate — explained in plain English, in person, by phone, letter or email.</p>
+  <div class="ctas">
+   <a class="btn btn-gold" href="#enquiry">Request a call back</a>
+   <a class="btn btn-line" href="tel:+441638661116">Call 01638 661116</a>
+  </div>
+  <div class="offices">
+   <div><strong>Newmarket</strong>23 High Street · 01638 661116</div>
+   <div><strong>Mildenhall</strong>Ashton House, Mill Street · 01638 712243</div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">What we do</span>
+   <h2>Legal services for people, families and businesses</h2>
+   <p>Some matters — such as straightforward wills, uncontested divorces, lasting powers of attorney and conveyancing — can be handled on a fixed-fee basis. Ask us for a quotation.</p>
+  </div>
+  <div class="svc">
+   <article class="card">
+    <img src="img/property.jpg" alt="Row of traditional English houses" loading="lazy">
+    <div class="in">
+     <h3>Conveyancing</h3>
+     <p>Residential and commercial property, handled carefully from offer to completion.</p>
+     <ul><li>Buying &amp; selling a home</li><li>New build &amp; buy-to-let</li><li>Re-mortgage &amp; transfer of equity</li><li>Leases, shared ownership, right to buy</li></ul>
+    </div>
+   </article>
+   <article class="card">
+    <img src="img/contract.jpg" alt="Legal documents with a fountain pen" loading="lazy">
+    <div class="in">
+     <h3>Family Law</h3>
+     <p>Sensitive, practical guidance when relationships change.</p>
+     <ul><li>Divorce &amp; separation</li><li>Arrangements for children</li><li>Pre- &amp; post-nuptial agreements</li><li>Cohabitation agreements</li></ul>
+    </div>
+   </article>
+   <article class="card">
+    <img src="img/wills.jpg" alt="Two vintage fountain pens on handwritten paper" loading="lazy">
+    <div class="in">
+     <h3>Wills &amp; Probate</h3>
+     <p>Protect the people you care about and plan ahead with confidence.</p>
+     <ul><li>Wills &amp; codicils</li><li>Lasting powers of attorney</li><li>Probate &amp; estate administration</li><li>Court of Protection applications</li></ul>
+    </div>
+   </article>
+  </div>
+  <div class="more">
+   <div class="mini"><h3>Civil Litigation</h3><p>Debt recovery, landlord and tenant matters, injunctions, contract and County Court proceedings.</p></div>
+   <div class="mini"><h3>Commercial Law</h3><p>Commercial leases, sales and purchases, agricultural land and business contracts.</p></div>
+   <div class="mini"><h3>Employment Law</h3><p>Service contracts, redundancy, unfair dismissal and settlement agreements.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="why" id="why">
+ <div class="wrap why-grid">
+  <div class="why-img">
+   <img src="img/contract.jpg" alt="Contract papers on a desk" loading="lazy">
+   <div class="tag">Authorised and regulated by the Solicitors Regulation Authority</div>
+  </div>
+  <div>
+   <div class="head" style="margin-bottom:28px">
+    <span class="eyebrow">Why clients choose us</span>
+    <h2>A local firm with a personal approach</h2>
+    <p>Using a lawyer can feel daunting. We keep things straightforward and stay with you from first call to final paperwork.</p>
+   </div>
+   <div class="points">
+    <div class="pt"><i>✦</i><div><h3>Plain English, no jargon</h3><p>We explain your options clearly so you can make confident decisions.</p></div></div>
+    <div class="pt"><i>☏</i><div><h3>Your way of working</h3><p>Meet in person, or deal with us by phone, letter or email — whatever suits you.</p></div></div>
+    <div class="pt"><i>⌂</i><div><h3>Two accessible offices</h3><p>Ground-floor interview rooms in Newmarket and Mildenhall; home or hospital visits can be arranged.</p></div></div>
+    <div class="pt"><i>£</i><div><h3>Fixed fees where possible</h3><p>Many routine matters are quoted up front, so you know where you stand.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="process">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">How it works</span>
+   <h2>Getting started is simple</h2>
+  </div>
+  <div class="steps">
+   <div class="step"><h3>Get in touch</h3><p>Call either office or send the enquiry form below.</p></div>
+   <div class="step"><h3>Initial chat</h3><p>We listen, check what you need and explain the next steps.</p></div>
+   <div class="step"><h3>Clear quotation</h3><p>You receive a quote — fixed fee where the matter allows.</p></div>
+   <div class="step"><h3>We handle it</h3><p>A qualified member of the team keeps you updated throughout.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="enq" id="enquiry">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">Book a consultation</span>
+   <h2>Request a call back</h2>
+   <p>Tell us briefly what you need and which office suits you. A member of the team will get back to you.</p>
+  </div>
+  <div class="enq-grid">
+   <form id="form" novalidate>
+    <div><label for="n">Full name</label><input id="n" required placeholder="Your name"></div>
+    <div><label for="p">Phone</label><input id="p" type="tel" required placeholder="Best number to call"></div>
+    <div><label for="e">Email</label><input id="e" type="email" placeholder="you@example.com"></div>
+    <div><label for="o">Preferred office</label><select id="o"><option>Newmarket</option><option>Mildenhall</option><option>No preference</option></select></div>
+    <div class="full"><label for="s">Area of law</label><select id="s"><option>Buying or selling property</option><option>Family law / divorce</option><option>Wills, LPA or probate</option><option>Civil litigation / debt recovery</option><option>Commercial or employment</option><option>Something else</option></select></div>
+    <div class="full"><label for="m">How can we help?</label><textarea id="m" placeholder="A few lines about your matter (please don't include sensitive details)"></textarea></div>
+    <label class="chk full"><input type="checkbox" id="c"> I agree to be contacted about my enquiry.</label>
+    <div class="full"><button class="btn btn-gold" type="submit">Request my call back</button></div>
+    <div class="ok" id="ok">Thank you — this is a demo form, so nothing has been sent. On the live site your enquiry would go straight to the team.</div>
+   </form>
+   <div class="contact-cards">
+    <div class="cc"><h3>Newmarket office</h3><p>23 High Street, Newmarket, Suffolk CB8 8LY<br>Public parking within easy walking distance.</p><div class="row"><a class="btn btn-gold small" href="tel:+441638661116">Call 01638 661116</a><a class="btn btn-line small" href="https://www.google.com/maps/search/?api=1&amp;query=23+High+Street+Newmarket+CB8+8LY" target="_blank" rel="noopener">Directions</a></div></div>
+    <div class="cc"><h3>Mildenhall office</h3><p>Ashton House, Mill Street, Mildenhall, Suffolk IP28 7DW<br>Private client parking available.</p><div class="row"><a class="btn btn-gold small" href="tel:+441638712243">Call 01638 712243</a><a class="btn btn-line small" href="https://www.google.com/maps/search/?api=1&amp;query=Ashton+House+Mill+Street+Mildenhall+IP28+7DW" target="_blank" rel="noopener">Directions</a></div></div>
+    <div class="cc"><h3>Email</h3><p>Prefer to write? Send us a message any time.</p><div class="row"><a class="btn btn-line small" href="mailto:law@bendallandsons.co.uk">law@bendallandsons.co.uk</a></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="offices">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">Our offices</span>
+   <h2>Two historic market towns, one local team</h2>
+  </div>
+  <div class="loc-grid">
+   <div class="loc"><img src="img/property.jpg" alt="Traditional houses" loading="lazy"><div class="in"><h3>Newmarket</h3><p>23 High Street, Newmarket, Suffolk CB8 8LY</p><a class="btn btn-navy" href="tel:+441638661116">01638 661116</a></div></div>
+   <div class="loc"><img src="img/hero.jpg" alt="Gavel with model house and keys" loading="lazy"><div class="in"><h3>Mildenhall</h3><p>Ashton House, Mill Street, Mildenhall, Suffolk IP28 7DW</p><a class="btn btn-navy" href="tel:+441638712243">01638 712243</a></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">FAQ</span>
+   <h2>Common questions</h2>
+  </div>
+  <div class="faq">
+   <details><summary>Do you offer fixed fees?</summary><p>Yes, for many routine matters such as straightforward wills, uncontested divorces, lasting powers of attorney, conveyancing and debt collection letters. Contact us for a quotation.</p></details>
+   <details><summary>Can I deal with you without coming into the office?</summary><p>Yes. You can work with us in person, by phone, by letter or by email — whichever you prefer.</p></details>
+   <details><summary>Can you visit me at home or in hospital?</summary><p>Where necessary, home or hospital visits can be arranged. Please call your nearest office to discuss.</p></details>
+   <details><summary>Are your offices accessible?</summary><p>Both offices have ground-floor interview rooms. Mildenhall has private client parking, and there is public parking within easy walking distance of our Newmarket office.</p></details>
+   <details><summary>My matter isn't listed — can you still help?</summary><p>Our list of services isn't exhaustive. Please get in touch anyway and we'll let you know how we can help.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><h4>Bendall &amp; Sons</h4><p>Solicitors serving Newmarket, Mildenhall and West Suffolk. Authorised and regulated by the Solicitors Regulation Authority.</p></div>
+   <div><h4>Newmarket</h4><p>23 High Street<br>Newmarket CB8 8LY<br><a href="tel:+441638661116">01638 661116</a></p></div>
+   <div><h4>Mildenhall</h4><p>Ashton House, Mill Street<br>Mildenhall IP28 7DW<br><a href="tel:+441638712243">01638 712243</a><br><a href="mailto:law@bendallandsons.co.uk">law@bendallandsons.co.uk</a></p></div>
+  </div>
+  <p class="credits" id="credits">Sample photos: <a href="https://commons.wikimedia.org/w/index.php?curid=123024286" target="_blank" rel="noopener">Property Law - Gavel and Block and House Keys</a> by advokatsmart.no (CC BY 2.0); <a href="https://www.flickr.com/photos/143601516@N03/27571322193" target="_blank" rel="noopener">Legal Contract &amp; Signature - Cool Tones</a> by Visual Content (CC BY 2.0); <a href="https://commons.wikimedia.org/wiki/File:Terraced_houses_at_the_bottom_of_Main_Street,_East_Keswick_(8th_July_2016).jpg" target="_blank" rel="noopener">Terraced houses at the bottom of Main Street, East Keswick (8th July 2016)</a> by Mtaylor848 (CC BY-SA 4.0); <a href="https://www.flickr.com/photos/56832361@N00/2794327234" target="_blank" rel="noopener">Fountain pens</a> by vidalia_11 (CC BY 2.0). Real photos of your business will replace these.</p>
+  <p class="credits" style="border:0;padding-top:8px">Demo design by KS Digital Studio · <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">ksdigitalstudio.in</a></p>
+ </div>
+</footer>
+
+<div class="mbar">
+ <a class="btn btn-gold" href="tel:+441638661116">Call</a>
+ <a class="btn btn-line" href="mailto:law@bendallandsons.co.uk">Email</a>
+ <a class="btn btn-line" href="#enquiry">Enquire</a>
+</div>
+
+<script>
+(function(){
+ var b=document.getElementById('burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){m.classList.toggle('open')});
+ m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+ var f=document.getElementById('form');
+ f.addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('n'),p=document.getElementById('p'),ok=true;
+  [n,p].forEach(function(i){if(!i.value.trim()){i.style.borderColor='#c0392b';ok=false}else{i.style.borderColor=''}});
+  if(ok){document.getElementById('ok').style.display='block'}
+ });
+})();
+</script>
+</body>
+</html>

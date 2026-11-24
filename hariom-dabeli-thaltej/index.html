@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hariom Dabeli · Thaltej, Ahmedabad</title>
+<meta name="description" content="Hariom Dabeli, Thaltej, Ahmedabad: Kutchi dabeli, bhel and quick bites. Open daily 9 AM – 11 PM.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{--red:#b8321f;--red-d:#8f2414;--saffron:#f2a33a;--cream:#fff8ee;--ink:#2a1b14;--muted:#6f5a4d;--line:#ecdcc6;--card:#fff;--green:#1f8a4c}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.ribbon{background:var(--ink);color:#f6e7d3;font-size:13px;text-align:center;padding:7px 16px}
+.ribbon a{color:var(--saffron);text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,248,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.3px;text-decoration:none;color:var(--red)}
+.logo span{color:var(--ink);font-weight:600}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--red)}
+.nav .call{background:var(--red);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
+@media(max-width:720px){.nav ul{display:none}}
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,12,6,.15) 0%,rgba(30,12,6,.55) 55%,rgba(30,12,6,.88) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:120px}
+.tag{display:inline-block;background:var(--saffron);color:var(--ink);font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.hero h1{font-size:clamp(40px,8vw,76px);line-height:1.02;letter-spacing:-1.5px;font-weight:800}
+.hero .guj{font-size:clamp(18px,3vw,24px);margin-top:8px;color:#ffe3b8}
+.hero p.lead{max-width:540px;margin-top:14px;font-size:18px;color:#f4e6d8}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.red{background:var(--red);color:#fff}
+.btn.wa{background:var(--green);color:#fff}
+.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.strip{background:var(--red);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 16px;text-align:center;font-size:15px}
+.strip b{display:block;font-size:17px}
+@media(max-width:600px){.strip .wrap{grid-template-columns:1fr;gap:8px}}
+section{padding:72px 0}
+.kicker{color:var(--red);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+h2{font-size:clamp(28px,5vw,40px);letter-spacing:-.8px;line-height:1.15;margin:6px 0 12px}
+.sub{color:var(--muted);max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(80,40,10,.06)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:18px 20px 22px}
+.card h3{font-size:20px}
+.card p{color:var(--muted);font-size:15px;margin-top:4px}
+.card .price{margin-top:12px;font-size:13px;font-weight:700;color:var(--red)}
+.more{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:600;font-size:15px}
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.two img{border-radius:18px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.ticks{list-style:none;margin-top:18px;display:grid;gap:10px}
+.ticks li{padding-left:28px;position:relative}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;color:#fff;background:var(--green);width:20px;height:20px;border-radius:50%;font-size:12px;display:grid;place-items:center;margin-top:3px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:32px}
+@media(max-width:800px){.info{grid-template-columns:1fr}}
+.box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}
+.box h3{font-size:19px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:9px 0;border-bottom:1px dashed var(--line)}
+td:last-child{text-align:right;font-weight:600}
+tr.today td{color:var(--red)}
+.open-now{display:inline-block;margin-top:14px;font-size:14px;font-weight:700;padding:4px 12px;border-radius:999px;background:#e8f5ec;color:var(--green)}
+.open-now.closed{background:#fbe9e6;color:var(--red)}
+address{font-style:normal;color:var(--muted)}
+.map{margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:#f3e8da}
+.map iframe{width:100%;height:100%;border:0}
+.contact{background:var(--ink);color:#f6e7d3;text-align:center}
+.contact h2{color:#fff}
+.contact .sub{margin:0 auto;color:#d9c6b3}
+.contact .btns{justify-content:center}
+footer{background:#1c120d;color:#a8968a;font-size:13px;padding:28px 0 90px}
+footer .wrap{display:grid;gap:8px}
+footer a{color:#d9c6b3}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.fab a svg{width:24px;height:24px;fill:currentColor}
+.fab .c{background:var(--red)}.fab .w{background:var(--green)}
+@media(min-width:900px){.fab{display:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Hariom Dabeli</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Hariom <span>Dabeli</span></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+918000445444">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="img/hero.jpg" alt="Kutchi dabeli garnished with fresh coriander, with chutneys on the side" fetchpriority="high">
+  <div class="wrap">
+    <span class="tag">Thaltej · Sola · Ahmedabad</span>
+    <h1>Hariom Dabeli</h1>
+    <div class="guj" lang="gu">કચ્છી દાબેલીનો અસલ સ્વાદ</div>
+    <p class="lead">Hot Kutchi dabeli, tangy bhel and quick evening bites near Sattadhar Cross Road, Thaltej. Open every day, 9 AM to 11 PM.</p>
+    <div class="btns">
+      <a class="btn red" href="tel:+918000445444"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call 80004 45444</a>
+      <a class="btn wa" href="https://wa.me/918000445444?text=Hi%20Hariom%20Dabeli%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg>Order on WhatsApp</a>
+      <a class="btn ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Open 7 days</b>9:00 AM – 11:00 PM</div>
+    <div><b>Sattadhar Cross Road</b>Opp. Devkunj Flat, Thaltej</div>
+    <div><b>Call / WhatsApp</b>+91 80004 45444</div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="kicker">Our menu</div>
+    <h2>Made fresh, served hot</h2>
+    <p class="sub">Classic Gujarati street snacks, made to order. Call or WhatsApp us for today's menu and prices.</p>
+    <div class="grid">
+      <article class="card">
+        <img src="img/dabeli.jpg" alt="Kutchi dabeli pav with sev, peanuts and pomegranate" loading="lazy" width="900" height="723">
+        <div class="b">
+          <h3>Kutchi Dabeli</h3>
+          <p>Soft pav with spiced potato filling, sweet-tangy chutneys, masala peanuts, pomegranate and sev. Available in oil or butter.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/bhel.jpg" alt="A plate of bhel puri with puffed rice, sev, onion and tomato" loading="lazy" width="900" height="590">
+        <div class="b">
+          <h3>Bhel</h3>
+          <p>Crunchy puffed rice tossed with onion, tomato, chutneys and fine sev. A light, tangy snack for any time of day.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/garlic-bread.jpg" alt="Toasted garlic bread slices on a plate" loading="lazy" width="900" height="675">
+        <div class="b">
+          <h3>Garlic Bread</h3>
+          <p>Toasted, buttery and full of garlic flavour. A favourite with dabeli for an evening bite.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+    </div>
+    <div class="more" aria-label="Also available">
+      <span class="chip">Kutchi Bowl</span>
+      <span class="chip">Veg Puff</span>
+      <span class="chip">Masala Mamra</span>
+      <span class="chip">Butter Dabeli</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap two">
+    <div>
+      <div class="kicker">About us</div>
+      <h2>Your neighbourhood dabeli stop in Thaltej</h2>
+      <p class="sub">Hariom Dabeli is a small, friendly snack counter on Sattadhar Cross Road, serving Kutchi dabeli and quick bites to families, students and office-goers in Thaltej, Sola and Ghatlodia.</p>
+      <ul class="ticks">
+        <li>Dabeli made to order, in oil or butter</li>
+        <li>Open from morning till late night, all 7 days</li>
+        <li>Quick takeaway, so call ahead and pick up</li>
+        <li>Drinking water and hand-wash available</li>
+      </ul>
+    </div>
+    <img src="img/hero.jpg" alt="Close-up of dabeli with coriander and chutneys" loading="lazy">
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="kicker">Visit us</div>
+    <h2>Hours &amp; location</h2>
+    <div class="info">
+      <div class="box">
+        <h3>Opening hours</h3>
+        <table id="hours">
+          <tr data-d="1"><td>Monday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>9:00 AM – 11:00 PM</td></tr>
+        </table>
+        <span id="status" class="open-now">Open daily</span>
+      </div>
+      <div class="box">
+        <h3>Find us</h3>
+        <address>20, Devashish, Opp. Devkunj Flat,<br>Sattadhar Cross Road, Sola, Mrudul Park 2,<br>Thaltej, Ahmedabad, Gujarat 380061</address>
+        <div class="map"><iframe title="Map showing Hariom Dabeli, Thaltej" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Sattadhar+Cross+Road+Thaltej+Ahmedabad&amp;z=15&amp;output=embed"></iframe></div>
+        <div class="btns" style="margin-top:16px"><a class="btn red" href="https://www.google.com/maps/search/?api=1&amp;query=Hariom+Dabeli+Sattadhar+Cross+Road+Thaltej+Ahmedabad" target="_blank" rel="noopener">Get directions</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--saffron)">Order &amp; enquiries</div>
+    <h2>Hungry? Call ahead and skip the wait.</h2>
+    <p class="sub">Call or WhatsApp to place a takeaway order or ask about bulk orders for parties and office snacks.</p>
+    <div class="btns">
+      <a class="btn red" href="tel:+918000445444">Call +91 80004 45444</a>
+      <a class="btn wa" href="https://wa.me/918000445444?text=Hi%20Hariom%20Dabeli%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr">2026</span> Hariom Dabeli, Thaltej, Ahmedabad</div>
+    <div>Sample photos: Kachchi Dabeli by Jatan1992 (CC BY-SA 4.0) · Garlic Bread by mdid (CC BY 2.0) · Kutchi dabeli pav by askmir (CC BY-SA 2.0) · Puffed rice bhelpuri by Vidya pmysore (CC BY-SA 4.0), via Wikimedia Commons / Flickr. Real photos of your business will replace these.</div>
+    <div>Website demo by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="w" href="https://wa.me/918000445444" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.2.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg></a>
+  <a class="c" href="tel:+918000445444" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+    var row=document.querySelector('#hours tr[data-d="'+d+'"]');if(row)row.className='today';
+    var s=document.getElementById('status'),open=m>=540&&m<1380;
+    s.textContent=open?'Open now · closes 11 PM':'Closed now · opens 9 AM';
+    if(!open)s.className='open-now closed';
+    document.getElementById('yr').textContent=now.getFullYear();
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

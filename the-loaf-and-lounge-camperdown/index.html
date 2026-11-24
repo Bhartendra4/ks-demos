@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Loaf and Lounge — Bakery &amp; Café, Camperdown</title>
+<meta name="description" content="The Loaf and Lounge — bakery and café on Manifold Street, Camperdown VIC. Bread and sourdough baked fresh, cakes, hot pastries and coffee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--crust:#8a4b1f;--crust-d:#5e3214;--flour:#fbf6ee;--oat:#f1e6d4;--ink:#2a1f17;--muted:#6f5e50;--line:#e5d7c2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--flour);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.ribbon{background:var(--ink);color:#f1e6d4;font-size:.78rem;text-align:center;padding:.45rem 1rem;letter-spacing:.02em}
+.ribbon a{color:#f3c98b;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .in{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 16px}
+.brand{font-family:Fraunces,serif;font-weight:700;font-size:1.25rem;text-decoration:none;color:var(--crust-d)}
+.nav nav a{margin-left:1.3rem;text-decoration:none;font-weight:500;font-size:.92rem;color:var(--muted)}
+.nav nav a:hover{color:var(--crust)}
+@media(max-width:700px){.nav nav{display:none}}
+.hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,18,10,.15) 0%,rgba(30,18,10,.72) 75%)}
+.hero .in{position:relative;z-index:2;max-width:1120px;margin:auto;width:100%;padding:0 16px 4.5rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:600;color:#f3c98b}
+.hero h1{font-family:Fraunces,serif;font-size:clamp(2.6rem,7vw,5rem);line-height:1.02;margin:.5rem 0 1rem}
+.hero p{max-width:540px;font-size:1.08rem;opacity:.95}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:#f3c98b;color:var(--ink)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn.dark{background:var(--crust);color:#fff}
+.btn.line{border:1.5px solid var(--crust);color:var(--crust)}
+section{padding:5rem 16px}
+.wrap{max-width:1120px;margin:auto}
+.h2{font-family:Fraunces,serif;font-size:clamp(1.9rem,4vw,2.7rem);color:var(--crust-d);line-height:1.15}
+.lead{color:var(--muted);max-width:620px;margin-top:.8rem}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.about img{border-radius:20px;aspect-ratio:1/1;object-fit:cover;box-shadow:0 20px 40px -18px rgba(60,30,10,.45)}
+.pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.pill{background:var(--oat);border:1px solid var(--line);padding:.4rem .85rem;border-radius:999px;font-size:.85rem;color:var(--crust-d)}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.menu{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.card{background:var(--flour);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -20px rgba(60,30,10,.4)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:1.3rem 1.3rem 1.5rem}
+.card h3{font-family:Fraunces,serif;font-size:1.3rem;color:var(--crust-d)}
+.card p{color:var(--muted);font-size:.94rem;margin-top:.4rem}
+.card .tag{display:inline-block;margin-top:.9rem;font-size:.8rem;font-weight:600;color:var(--crust)}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.8rem}
+.panel h3{font-family:Fraunces,serif;color:var(--crust-d);font-size:1.3rem;margin-bottom:.8rem}
+.hours div{display:flex;justify-content:space-between;padding:.55rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.hours div:last-child{border:0}
+.note{font-size:.82rem;color:var(--muted);margin-top:.8rem}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:1rem;aspect-ratio:16/10;background:var(--oat)}
+.map iframe{width:100%;height:100%;border:0}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+.contact{background:var(--crust-d);color:#f7ead6;text-align:center}
+.contact .h2{color:#fff}
+.contact .lead{color:#e9d3b5;margin:.8rem auto 0}
+.contact .btns{justify-content:center}
+.contact .btn.line{border-color:#f3c98b;color:#f3c98b}
+.cinfo{margin-top:2rem;display:flex;flex-wrap:wrap;justify-content:center;gap:1.5rem 2.5rem;font-size:.95rem}
+.cinfo a{text-decoration:none;color:#fff}
+footer{background:var(--ink);color:#bfae99;padding:2.2rem 16px;font-size:.8rem}
+footer .wrap{display:grid;gap:.8rem}
+footer .credits{font-size:.72rem;opacity:.8}
+footer .credits a{color:#bfae99}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;background:var(--crust);color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);text-decoration:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.btn,.card{transition:none}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for The Loaf and Lounge</div>
+
+<header class="nav"><div class="in">
+  <a class="brand" href="#top">The Loaf &amp; Lounge</a>
+  <nav><a href="#about">Our Bakery</a><a href="#menu">What We Bake</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero.jpg" alt="Freshly baked sourdough loaves and baguettes" fetchpriority="high">
+  <div class="in">
+    <div class="eyebrow">Bakery &amp; Café · Camperdown, Victoria</div>
+    <h1>The Loaf<br>and Lounge</h1>
+    <p>Bread and sourdough baked fresh every day, classic cakes, hot pastries and good coffee — right on Manifold Street.</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:+61355931521">📞 Call (03) 5593 1521</a>
+      <a class="btn ghost" href="#menu">See what we bake</a>
+    </div>
+  </div>
+</section>
+
+<section id="about"><div class="wrap about">
+  <div class="reveal">
+    <div class="eyebrow" style="color:var(--crust)">The bakery on the corner</div>
+    <h2 class="h2" style="margin-top:.5rem">Made from scratch, the old-fashioned way</h2>
+    <p class="lead">A family-run bakery and café in the heart of Camperdown. Our loaves are shaped by hand and baked fresh each day, and most of what's on the counter — from cakes to pies to sauces — is made in-house, with local produce wherever we can.</p>
+    <div class="pills"><span class="pill">Sourdough &amp; fresh bread</span><span class="pill">Cakes &amp; sweets</span><span class="pill">Hot pastries</span><span class="pill">Coffee &amp; café</span><span class="pill">Open 7 days</span></div>
+  </div>
+  <img class="reveal" src="img/bread.jpg" alt="Sourdough loaf cut to show the open crumb" loading="lazy">
+</div></section>
+
+<section class="menu" id="menu"><div class="wrap">
+  <div class="eyebrow" style="color:var(--crust)">From our ovens</div>
+  <h2 class="h2" style="margin-top:.5rem">What we bake</h2>
+  <p class="lead">Drop in for a loaf to take home, something sweet with your coffee, or a hot bite on the road. Prices on request — just ask at the counter or give us a call.</p>
+  <div class="cards">
+    <article class="card reveal"><img src="img/bread.jpg" alt="Sourdough bread" loading="lazy"><div class="b"><h3>Bread &amp; Sourdough</h3><p>Hand-shaped loaves baked fresh daily, including our naturally leavened sourdough.</p><span class="tag">Baked fresh every morning</span></div></article>
+    <article class="card reveal"><img src="img/cakes.jpg" alt="Flaky chocolate pastries" loading="lazy"><div class="b"><h3>Cakes &amp; Pastries</h3><p>Classic cakes, sweets and flaky pastries made on site — perfect with a cuppa.</p><span class="tag">Made in-house</span></div></article>
+    <article class="card reveal"><img src="img/coffee.jpg" alt="Latte with leaf latte art" loading="lazy"><div class="b"><h3>Café &amp; Coffee</h3><p>Sit down in the lounge or grab a coffee to go, with fresh savoury options from the café kitchen.</p><span class="tag">Dine in or take away</span></div></article>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <div class="eyebrow" style="color:var(--crust)">Come say hello</div>
+  <h2 class="h2" style="margin-top:.5rem">Visit the bakery</h2>
+  <div class="visit">
+    <div class="panel reveal">
+      <h3>Opening hours</h3>
+      <div class="hours">
+        <div><span>Monday – Friday</span><strong>Open</strong></div>
+        <div><span>Saturday</span><strong>Open</strong></div>
+        <div><span>Sunday</span><strong>Open</strong></div>
+      </div>
+      <p class="note">We're open seven days a week. Exact times to be confirmed by the bakery — please call ahead on public holidays.</p>
+    </div>
+    <div class="panel reveal">
+      <h3>Find us</h3>
+      <p>223–225 Manifold Street<br>Camperdown VIC 3260</p>
+      <div class="map"><iframe title="Map of The Loaf and Lounge" loading="lazy" src="https://www.google.com/maps?q=223-225+Manifold+Street,+Camperdown+VIC+3260&amp;output=embed"></iframe></div>
+      <div class="btns" style="margin-top:1rem"><a class="btn line" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=223-225+Manifold+Street+Camperdown+VIC+3260">Get directions</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2 class="h2">Ordering a cake or a big bread order?</h2>
+  <p class="lead">Give us a call or send an email and we'll get back to you.</p>
+  <div class="btns">
+    <a class="btn primary" href="tel:+61355931521">📞 Call the bakery</a>
+    <a class="btn line" href="mailto:loafandlounge@bigpond.com?subject=Enquiry%20from%20website">✉ Email us</a>
+  </div>
+  <div class="cinfo">
+    <a href="tel:+61355931521">(03) 5593 1521</a>
+    <a href="mailto:loafandlounge@bigpond.com">loafandlounge@bigpond.com</a>
+    <a href="https://www.facebook.com/theloafandlounge" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/theloafandlounge/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div>© <span id="y">2026</span> The Loaf and Lounge · 223–225 Manifold Street, Camperdown VIC 3260</div>
+  <div class="credits" id="credits">Sample photos: Loaves artisanal bread baguettes Venice via Rawpixel (CC0 1.0); White sourdough by treehouse1977 (CC BY-SA 2.0); pain au chocolat by A writer afoot (CC BY 2.0); Coffee Designs by Sam Howzit (CC BY 2.0). Real photos of your business will replace these.</div>
+  <div class="credits">Website demo by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+</div></footer>
+
+<a class="fab" href="tel:+61355931521" aria-label="Call The Loaf and Lounge">📞</a>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+(function(){var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});})();
+</script>
+</body>
+</html>

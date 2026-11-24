@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aarti Tiffin Service — Homemade Tiffin in Maninagar East, Ahmedabad</title>
+<meta name="description" content="Aarti Tiffin Service — home-style meals delivered to your home or office in Maninagar East, Ahmedabad. Daily, weekly and monthly tiffin plans.">
+<style>
+:root{--bg:#fffaf2;--card:#ffffff;--ink:#2a1d12;--muted:#6f5d4c;--brand:#c2410c;--brand-dark:#9a3412;--leaf:#3f6b2a;--line:#eadfce;--cream:#fdf0db}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;text-wrap:balance}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.ribbon{background:#2a1d12;color:#f6e7d0;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.2px}
+.ribbon a{color:#ffd7a3;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:60px}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:19px;text-decoration:none;color:var(--brand-dark)}
+.logo span{color:var(--ink)}
+.nav nav{display:none;gap:22px;font-size:14.5px}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark)}
+.btn-wa{background:#1f8f4e;color:#fff}
+.btn-wa:hover{background:#17733e}
+.btn-ghost{border-color:rgba(255,255,255,.85);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn-line{border-color:var(--brand);color:var(--brand-dark);background:#fff}
+.btn-sm{padding:8px 16px;font-size:14px}
+.hero{position:relative;color:#fff;min-height:78vh;display:flex;align-items:flex-end;background:#2a1d12;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(26,15,6,.15) 0%,rgba(26,15,6,.45) 45%,rgba(26,15,6,.88) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:44px;width:100%}
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;color:#ffd7a3;margin-bottom:12px}
+.hero h1{font-size:clamp(34px,8vw,62px);margin-bottom:8px}
+.hero .guj{font-size:clamp(17px,4vw,22px);color:#ffe2bd;margin-bottom:12px}
+.hero p.lead{max-width:560px;font-size:17px;color:#f3e6d6;margin-bottom:24px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.strip{background:var(--cream);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:1fr;gap:2px;padding-top:14px;padding-bottom:14px}
+.strip div{font-size:14.5px;color:var(--muted);padding:4px 0}
+.strip b{color:var(--ink)}
+section{padding:60px 0}
+.head{max-width:640px;margin-bottom:28px}
+.head .eyebrow{color:var(--brand)}
+.head h2{font-size:clamp(26px,5.5vw,38px);margin-bottom:8px}
+.head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(74,45,15,.06)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .body{padding:18px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.price{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--leaf);background:#edf5e6;border-radius:999px;padding:4px 12px}
+.plans{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plan{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg)}
+.plan.best{border-color:var(--brand);background:#fff7ed}
+.plan h3{font-size:22px;margin-bottom:4px}
+.plan .tag{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--brand)}
+.plan ul{list-style:none;margin:12px 0 16px}
+.plan li{padding:5px 0 5px 24px;position:relative;font-size:15px;color:var(--muted)}
+.plan li::before{content:"";position:absolute;left:2px;top:13px;width:11px;height:6px;border-left:2px solid var(--leaf);border-bottom:2px solid var(--leaf);transform:rotate(-45deg)}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:1fr}
+.step{display:flex;gap:14px;align-items:flex-start}
+.step::before{counter-increment:s;content:counter(s);flex:0 0 40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:grid;place-items:center;font-family:Georgia,serif;font-size:18px}
+.step h3{font-size:18px;margin-bottom:2px}
+.step p{font-size:15px;color:var(--muted)}
+.info{display:grid;grid-template-columns:1fr;gap:18px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.box h3{font-size:20px;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:9px 0;border-bottom:1px dashed var(--line)}
+td:last-child{text-align:right;font-weight:600}
+tr:last-child td{border-bottom:0}
+.note{font-size:13px;color:var(--muted);margin-top:10px}
+address{font-style:normal;color:var(--muted);margin-bottom:14px}
+.contact{background:#2a1d12;color:#f6e7d0;text-align:center}
+.contact h2{font-size:clamp(26px,6vw,40px);color:#fff;margin-bottom:8px}
+.contact p{color:#d9c6ac;max-width:520px;margin:0 auto 22px}
+.contact .cta{justify-content:center}
+.contact .small{margin-top:20px;font-size:14px;color:#c9b598}
+.contact .small a{color:#ffd7a3}
+footer{background:#1c130b;color:#a8957c;font-size:12.5px;padding:24px 0 96px;text-align:center}
+footer p{margin-bottom:8px}
+footer a{color:#d9c6ac}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+.bar a{padding:13px 4px;text-align:center;font-weight:700;font-size:14.5px;text-decoration:none;color:var(--brand-dark)}
+.bar a+a{border-left:1px solid var(--line)}
+.bar a.wa{color:#17733e}
+@media(min-width:720px){
+  .nav nav{display:flex}
+  .strip .wrap{grid-template-columns:repeat(3,1fr);gap:20px}
+  .grid,.info{grid-template-columns:repeat(3,1fr)}
+  .info{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .bar{display:none}
+  footer{padding-bottom:28px}
+  section{padding:80px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" rel="noopener">KS Digital Studio</a> — for Aarti Tiffin Service</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Aarti <span>Tiffin Service</span></a>
+    <nav aria-label="Main">
+      <a href="#meals">Meals</a>
+      <a href="#plans">Plans</a>
+      <a href="#how">How it works</a>
+      <a href="#hours">Hours &amp; location</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="tel:+919725361484">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <img src="img/hero.jpg" alt="Steel thali with rotis, dal, sabzi, papad, salad and sweets" width="1600" height="901" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Maninagar East · Ahmedabad</span>
+    <h1>Aarti Tiffin Service</h1>
+    <p class="guj" lang="gu">ઘર જેવું ભોજન, રોજ તાજું.</p>
+    <p class="lead">Fresh, home-style meals cooked every day and packed for your home or office. Choose a daily, weekly or monthly tiffin — no cooking, no washing up.</p>
+    <div class="cta">
+      <a class="btn btn-wa" id="waHero" href="https://wa.me/919725361484">Order on WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+919725361484">Call 97253 61484</a>
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Homemade meals</b> — cooked fresh daily</div>
+    <div><b>Daily · weekly · monthly</b> tiffin plans</div>
+    <div><b>Open all 7 days</b> — 8–11 am &amp; 2–7 pm</div>
+  </div>
+</div>
+
+<section id="meals">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">What's in the tiffin</span>
+      <h2>Simple food, the way it is made at home</h2>
+      <p>A sample of what a regular tiffin can include. The actual menu changes day to day — message us for this week's menu.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <img src="img/thali.jpg" alt="Steel thali with rotis, dal, vegetable dishes, salad and chutneys" loading="lazy" width="900" height="675">
+        <div class="body">
+          <h3>Full meal tiffin</h3>
+          <p>Rotis, seasonal sabzi, dal, rice, salad and something on the side — a complete, balanced lunch or dinner.</p>
+          <span class="price">Price on request</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/roti.jpg" alt="Stack of freshly made soft rotis" loading="lazy" width="900" height="602">
+        <div class="body">
+          <h3>Fresh rotis &amp; sabzi</h3>
+          <p>Soft rotis made the same day with a home-style vegetable dish. A lighter option for smaller appetites.</p>
+          <span class="price">Price on request</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/dal.jpg" alt="Plate of rice topped with tempered dal" loading="lazy" width="900" height="675">
+        <div class="body">
+          <h3>Dal–rice comfort plate</h3>
+          <p>Tempered dal over steamed rice — the everyday favourite when you want something warm and simple.</p>
+          <span class="price">Price on request</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="plans" class="plans">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Tiffin plans</span>
+      <h2>Order for a day, a week or the whole month</h2>
+      <p>Pick what suits your routine. Rates depend on the meal and plan — ask us and we will share them right away.</p>
+    </div>
+    <div class="grid">
+      <div class="plan">
+        <span class="tag">Try it</span>
+        <h3>Daily</h3>
+        <ul><li>Order for a single day</li><li>Good for trying the food first</li><li>Lunch or dinner</li></ul>
+        <a class="btn btn-line btn-sm" data-plan="Daily" href="https://wa.me/919725361484">Ask for rate</a>
+      </div>
+      <div class="plan">
+        <span class="tag">Short term</span>
+        <h3>Weekly</h3>
+        <ul><li>One week of meals</li><li>Handy for guests or busy weeks</li><li>Lunch, dinner or both</li></ul>
+        <a class="btn btn-line btn-sm" data-plan="Weekly" href="https://wa.me/919725361484">Ask for rate</a>
+      </div>
+      <div class="plan best">
+        <span class="tag">Regular</span>
+        <h3>Monthly</h3>
+        <ul><li>A month of home-style meals</li><li>For students, professionals and families</li><li>Lunch, dinner or both</li></ul>
+        <a class="btn btn-primary btn-sm" data-plan="Monthly" href="https://wa.me/919725361484">Ask for rate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <h2>Three easy steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div><h3>Message or call</h3><p>Tell us your area, how many tiffins and for how long.</p></div></div>
+      <div class="step"><div><h3>Choose your plan</h3><p>Daily, weekly or monthly — we confirm the rate and timing.</p></div></div>
+      <div class="step"><div><h3>Enjoy your meal</h3><p>Fresh home-style food, ready at meal time.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="hours" style="padding-top:0">
+  <div class="wrap">
+    <div class="info">
+      <div class="box">
+        <h3>Opening hours</h3>
+        <table>
+          <tr><td>Monday – Sunday (morning)</td><td>8:00 am – 11:00 am</td></tr>
+          <tr><td>Monday – Sunday (afternoon)</td><td>2:00 pm – 7:00 pm</td></tr>
+        </table>
+        <p class="note" id="openNote">Please call to confirm timings on festival days.</p>
+      </div>
+      <div class="box">
+        <h3>Find us</h3>
+        <address>E-1, 4th Floor, Shiv Aashish Flat, Jasoda Chokdi,<br>Chandola Canal Garden Road, near Jasodanagar,<br>Maninagar East, Ahmedabad 380008</address>
+        <a class="btn btn-line btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Aarti+Tiffin+Service+Jasoda+Chokdi+Maninagar+East+Ahmedabad">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Hungry? Your tiffin is one message away.</h2>
+    <p>Call, WhatsApp or email us with your area and the plan you want. We will reply with the menu and rate.</p>
+    <div class="cta">
+      <a class="btn btn-wa" id="waContact" href="https://wa.me/919725361484">WhatsApp us</a>
+      <a class="btn btn-primary" href="tel:+919725361484">Call 97253 61484</a>
+      <a class="btn btn-ghost" href="mailto:aartitiffins@gmail.com?subject=Tiffin%20enquiry">Email us</a>
+    </div>
+    <p class="small">Email: <a href="mailto:aartitiffins@gmail.com">aartitiffins@gmail.com</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="yr">2026</span> Aarti Tiffin Service · Maninagar East, Ahmedabad</p>
+    <p>Sample photos: “Authentic gujarati thali” by Dvivektx (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>) · “Gujarati Thali 1” by Amol Sinha (<a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener">CC BY-SA 4.0</a>) · “2 Chapati warm and ready to be eaten” by KittyKaht (<a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener">CC BY-SA 2.0</a>) · “Tadka Daal (Indian lentil curry)” by rovingI (<a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>). Real photos of your business will replace these.</p>
+    <p>Demo design by <a href="https://www.ksdigitalstudio.in" rel="noopener">KS Digital Studio</a></p>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Quick contact">
+  <a href="tel:+919725361484">Call</a>
+  <a class="wa" id="waBar" href="https://wa.me/919725361484">WhatsApp</a>
+  <a href="mailto:aartitiffins@gmail.com?subject=Tiffin%20enquiry">Email</a>
+</div>
+
+<script>
+(function(){
+  var base='https://wa.me/919725361484?text=';
+  var msg='Hello Aarti Tiffin Service, I would like to know about your tiffin plans.';
+  ['waHero','waContact','waBar'].forEach(function(id){var a=document.getElementById(id);if(a)a.href=base+encodeURIComponent(msg);});
+  document.querySelectorAll('[data-plan]').forEach(function(a){
+    a.href=base+encodeURIComponent('Hello Aarti Tiffin Service, please share the rate for the '+a.getAttribute('data-plan')+' tiffin plan.');
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  try{
+    var p=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var h=+p.find(function(x){return x.type==='hour'}).value, m=+p.find(function(x){return x.type==='minute'}).value, t=h*60+m;
+    var open=(t>=480&&t<660)||(t>=840&&t<1140);
+    document.getElementById('openNote').textContent=(open?'Open now. ':'Closed right now — leave a WhatsApp message. ')+'Please call to confirm timings on festival days.';
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

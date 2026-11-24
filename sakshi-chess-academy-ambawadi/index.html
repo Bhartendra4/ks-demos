@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sakshi Chess Academy | Chess Coaching in Ahmedabad</title>
+<meta name="description" content="Sakshi Chess Academy, Ahmedabad: online, personal, group, school and corporate chess coaching, camps, workshops and tournaments.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{--ink:#1d1a17;--muted:#6b625a;--paper:#faf6f0;--card:#fff;--wood:#7a4a2a;--gold:#c8963e;--line:#e8dfd3;--dark:#141210}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--dark);color:#d9cfc2;font-size:13px;text-align:center;padding:7px 16px}
+.ribbon b{color:var(--gold);font-weight:600}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(250,246,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;text-decoration:none}
+.logo span.k{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--wood);color:#fff;font-size:20px}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:#1d1a17}
+.btn-wa{background:#1f9d55;color:#fff}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.nav .btn{padding:9px 18px;font-size:14px}
+.hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;background:#2b1d14 url(img/hero.jpg) center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,16,.15) 0%,rgba(20,18,16,.55) 45%,rgba(20,18,16,.9) 100%)}
+.hero .wrap{position:relative;padding-bottom:72px;padding-top:120px}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:14px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,7vw,72px);line-height:1.05;font-weight:700;max-width:760px}
+.hero p{font-size:clamp(17px,2.2vw,20px);max-width:600px;margin:18px 0 30px;color:#eee5da}
+.hero .gu{font-size:16px;color:var(--gold);margin:-14px 0 28px;font-style:italic}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:84px 0}
+.head{max-width:640px;margin-bottom:40px}
+.head h2{font-family:Georgia,serif;font-size:clamp(30px,4.5vw,42px);line-height:1.15;margin-bottom:12px}
+.head p{color:var(--muted);font-size:17px}
+.strip{background:var(--card);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:28px 20px}
+.strip div{font-size:15px;color:var(--muted)}
+.strip b{display:block;color:var(--ink);font-size:16px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.card .in{padding:22px 22px 26px}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.card ul{margin:12px 0 0 18px;color:var(--muted);font-size:15px}
+.price{margin-top:14px;font-size:14px;font-weight:600;color:var(--wood)}
+.prog{background:var(--dark);color:#efe7dc}
+.prog .head p{color:#b9ad9f}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tile{border:1px solid #3a332c;border-radius:16px;padding:24px;background:#1c1916}
+.tile .ic{font-size:28px;color:var(--gold);margin-bottom:10px}
+.tile h4{font-size:17px;margin-bottom:6px;color:#fff}
+.tile p{font-size:14.5px;color:#b9ad9f}
+.split{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.split img{border-radius:20px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.steps{counter-reset:s;list-style:none;margin-top:8px}
+.steps li{counter-increment:s;position:relative;padding:0 0 18px 52px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--wood);color:#fff;display:grid;place-items:center;font-weight:700}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:15px}
+.visit{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.box{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--paper)}
+.box h4{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--wood);margin-bottom:10px}
+.box p{font-size:16px}
+.box a{font-weight:600}
+.contact{text-align:center}
+.contact .head{margin:0 auto 30px}
+.contact .cta{justify-content:center}
+footer{background:var(--dark);color:#a99d90;font-size:14px;padding:40px 0 90px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-bottom:18px}
+footer b{color:#fff}
+.credits{font-size:12px;color:#857a6e;border-top:1px solid #2e2924;padding-top:16px}
+.credits a{color:#a99d90}
+.float{position:fixed;right:16px;bottom:16px;z-index:30;display:none;gap:10px}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;font-size:22px;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.f-wa{background:#1f9d55}.f-call{background:var(--wood)}
+@media (max-width:900px){
+ .cards,.grid4{grid-template-columns:1fr 1fr}
+ .split{grid-template-columns:1fr}
+ .info{grid-template-columns:1fr}
+ .strip .wrap{grid-template-columns:1fr 1fr}
+ .nav ul{display:none}
+}
+@media (max-width:600px){
+ .wrap{padding:0 16px}
+ section{padding:60px 0}
+ .cards,.grid4{grid-template-columns:1fr}
+ .hero{min-height:80vh}
+ .hero .wrap{padding-bottom:48px}
+ .cta .btn{flex:1 1 100%}
+ .nav .btn{display:none}
+ .float{display:flex}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Sakshi Chess Academy</div>
+
+<header class="nav">
+ <div class="wrap">
+  <a href="#top" class="logo"><span class="k">♞</span>Sakshi Chess Academy</a>
+  <ul>
+   <li><a href="#coaching">Coaching</a></li>
+   <li><a href="#programs">Programs</a></li>
+   <li><a href="#visit">Visit</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="btn btn-dark" href="https://wa.me/919558238298?text=Hello%20Sakshi%20Chess%20Academy%2C%20I%20would%20like%20to%20know%20about%20chess%20coaching%20batches.">Enquire</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="wrap">
+  <span class="eyebrow">Chess coaching · Ahmedabad</span>
+  <h1>Think ahead.<br>Play with purpose.</h1>
+  <p>Sakshi Chess Academy offers online, personal, group and school chess coaching, plus camps, workshops and tournaments for players of every age.</p>
+  <p class="gu">ચાલ વિચારો, રમત જીતો.</p>
+  <div class="cta">
+   <a class="btn btn-wa" href="https://wa.me/919558238298?text=Hello%20Sakshi%20Chess%20Academy%2C%20I%20would%20like%20to%20know%20about%20chess%20coaching%20batches.">WhatsApp us</a>
+   <a class="btn btn-ghost" href="tel:+919558238298">Call +91 95582 38298</a>
+  </div>
+ </div>
+</section>
+
+<div class="strip">
+ <div class="wrap">
+  <div><b>Online &amp; offline</b>Learn from home or at the academy</div>
+  <div><b>All age groups</b>Beginners to tournament players</div>
+  <div><b>Schools &amp; corporates</b>Coaching and events on request</div>
+  <div><b>Shreyas Tekra</b>Jain Visa Oswal Club, Ahmedabad</div>
+ </div>
+</div>
+
+<section id="coaching">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">How we teach</span>
+   <h2>Coaching that fits the student</h2>
+   <p>Pick the format that suits your schedule and level. Every format focuses on calculation, planning and calm decision-making at the board.</p>
+  </div>
+  <div class="cards">
+   <article class="card">
+    <img src="img/coaching.jpg" alt="Wooden chess pieces on a board" loading="lazy" width="900" height="600">
+    <div class="in">
+     <h3>Personal &amp; group coaching</h3>
+     <p>One-to-one sessions or small group batches at the academy.</p>
+     <ul><li>Opening principles &amp; tactics</li><li>Middlegame planning</li><li>Endgame technique</li></ul>
+     <div class="price">Fees: price on request</div>
+    </div>
+   </article>
+   <article class="card">
+    <img src="img/online.jpg" alt="Black queen beside a fallen white king" loading="lazy" width="900" height="600">
+    <div class="in">
+     <h3>Online coaching</h3>
+     <p>Live classes from home, with the same structured approach as our offline batches.</p>
+     <ul><li>Flexible timings</li><li>Game review &amp; homework</li><li>Practice games</li></ul>
+     <div class="price">Fees: price on request</div>
+    </div>
+   </article>
+   <article class="card">
+    <img src="img/tournaments.jpg" alt="Wooden chess king and knight mid-game" loading="lazy" width="900" height="600">
+    <div class="in">
+     <h3>Tournaments</h3>
+     <p>We conduct chess tournaments, including open and corporate events, so students get real over-the-board experience.</p>
+     <ul><li>Open tournaments</li><li>Corporate tournaments</li><li>Practice events for students</li></ul>
+     <div class="price">Upcoming events: ask on WhatsApp</div>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="prog" id="programs">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">Programs</span>
+   <h2>Beyond the regular class</h2>
+   <p>Special programs for schools, companies and holiday learners.</p>
+  </div>
+  <div class="grid4">
+   <div class="tile"><div class="ic">♜</div><h4>School coaching</h4><p>Chess programs run inside schools for students of different classes.</p></div>
+   <div class="tile"><div class="ic">♝</div><h4>Coaching camps</h4><p>Short, focused camps during vacations to build strong habits fast.</p></div>
+   <div class="tile"><div class="ic">♛</div><h4>Workshops</h4><p>Topic-based workshops on tactics, openings and endgames.</p></div>
+   <div class="tile"><div class="ic">♚</div><h4>Corporate chess</h4><p>Coaching sessions and tournaments for teams and offices.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap split">
+  <img src="img/hero.jpg" alt="Wooden chess king surrounded by pawns" loading="lazy" width="1024" height="683">
+  <div>
+   <div class="head" style="margin-bottom:24px">
+    <span class="eyebrow">Getting started</span>
+    <h2>Joining is simple</h2>
+   </div>
+   <ol class="steps">
+    <li><b>Send a WhatsApp or call</b><span>Tell us the student's age and current level.</span></li>
+    <li><b>Choose a format</b><span>Personal, group, online, camp or workshop.</span></li>
+    <li><b>Start learning</b><span>Get your batch timing and begin your first class.</span></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">Visit</span>
+   <h2>Find the academy</h2>
+  </div>
+  <div class="info">
+   <div class="box"><h4>Address</h4><p>Jain Visa Oswal Club,<br>Nr Shreyas Foundation, Shreyas Tekra,<br>Ahmedabad, Gujarat</p><p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Jain+Visa+Oswal+Club+Shreyas+Tekra+Ahmedabad" target="_blank" rel="noopener">Open in Google Maps →</a></p></div>
+   <div class="box"><h4>Batch timings</h4><p>Offline and online batches at different times of the day.</p><p style="margin-top:12px;color:var(--muted)">Call or WhatsApp for current timings.</p></div>
+   <div class="box"><h4>Contact</h4><p><a href="tel:+919558238298">+91 95582 38298</a></p><p style="margin-top:8px"><a href="mailto:ashokrathodsa2906@gmail.com">ashokrathodsa2906@gmail.com</a></p></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="head">
+   <span class="eyebrow">Enquire</span>
+   <h2>Ready to make the first move?</h2>
+   <p>Ask about batches, camps, school programs or corporate events.</p>
+  </div>
+  <div class="cta">
+   <a class="btn btn-wa" href="https://wa.me/919558238298?text=Hello%20Sakshi%20Chess%20Academy%2C%20I%20would%20like%20to%20know%20about%20chess%20coaching%20batches.">WhatsApp</a>
+   <a class="btn btn-gold" href="tel:+919558238298">Call now</a>
+   <a class="btn btn-line" href="mailto:ashokrathodsa2906@gmail.com?subject=Chess%20coaching%20enquiry">Email</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="row">
+   <div><b>Sakshi Chess Academy</b><br>Jain Visa Oswal Club, Shreyas Tekra, Ahmedabad</div>
+   <div><a href="tel:+919558238298">+91 95582 38298</a><br><a href="https://www.facebook.com/sakshichessacademy/" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+  <p class="credits" id="credits">Sample photos: <a href="https://www.rawpixel.com/image/5922283/photo-image-public-domain-free-game" target="_blank" rel="noopener">Chess board pieces</a> (rawpixel, CC0 1.0); <a href="https://commons.wikimedia.org/w/index.php?curid=148042600" target="_blank" rel="noopener">Chess pieces close up</a> by Aaaatu (<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>); <a href="https://www.rawpixel.com/image/5902323/photo-image-public-domain-wood-free" target="_blank" rel="noopener">Wood chess board pieces</a> (rawpixel, CC0 1.0); <a href="https://www.rawpixel.com/image/5907429/photo-image-public-domain-free-game" target="_blank" rel="noopener">Chess board pieces</a> (rawpixel, CC0 1.0). Real photos of your academy will replace these.</p>
+ </div>
+</footer>
+
+<div class="float">
+ <a class="f-call" href="tel:+919558238298" aria-label="Call">✆</a>
+ <a class="f-wa" href="https://wa.me/919558238298" aria-label="WhatsApp">✉</a>
+</div>
+</body>
+</html>

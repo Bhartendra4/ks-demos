@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Diwan Bhel Pakodi Center — Jodhpur Char Rasta, Ahmedabad</title>
+<meta name="description" content="Bhel puri, pani puri, sev puri, dahi puri and hot pakodi at Jodhpur Char Rasta, near Shyamal, Ahmedabad. Open daily 11 AM – 10:30 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffaf2;--surface:#ffffff;--ink:#2a1a12;--muted:#6f5a4c;
+  --brand:#d9480f;--brand-dark:#a8360a;--accent:#2b8a3e;--gold:#f59f00;
+  --line:#f0e2d0;--radius:18px;--shadow:0 10px 30px rgba(80,40,10,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:"Baloo 2",system-ui,sans-serif;line-height:1.1}
+
+.ribbon{background:#2a1a12;color:#ffe8cc;font-size:13px;text-align:center;padding:7px 16px}
+.ribbon b{color:#fff}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Baloo 2";font-weight:800;font-size:20px;color:var(--brand-dark)}
+.logo span.mark{width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:18px}
+.nav ul{display:flex;gap:22px;list-style:none;font-weight:500;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--brand)}
+.nav .call-mini{background:var(--brand);color:#fff;text-decoration:none;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
+@media(max-width:760px){.nav ul{display:none}}
+
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,12,4,.15) 0%,rgba(30,12,4,.55) 55%,rgba(30,12,4,.88) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-size:13px;letter-spacing:.3px;margin-bottom:16px}
+.hero h1{font-size:clamp(40px,8vw,76px);font-weight:800;margin-bottom:8px}
+.hero .guj{font-size:clamp(18px,3vw,24px);color:#ffd8a8;margin-bottom:14px;font-weight:600}
+.hero p.lead{max-width:560px;font-size:17px;color:#fbeee0;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn.primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px rgba(217,72,15,.35)}
+.btn.wa{background:#25d366;color:#0b3d1d}
+.btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+
+.strip{background:var(--surface);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:18px 16px}
+.strip div{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted)}
+.strip strong{display:block;color:var(--ink);font-size:15px}
+.strip .ic{width:40px;height:40px;flex:none;border-radius:12px;background:#fff0e3;color:var(--brand);display:grid;place-items:center}
+.strip .ic svg{width:20px;height:20px}
+@media(max-width:760px){.strip .wrap{grid-template-columns:1fr}}
+
+section{padding:76px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 40px}
+.head .eyebrow{color:var(--brand);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+.head h2{font-size:clamp(30px,5vw,44px);margin:6px 0 10px}
+.head p{color:var(--muted)}
+
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{font-size:24px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card .price{font-size:13px;font-weight:600;color:var(--accent);margin-top:6px}
+
+.also{margin-top:30px;text-align:center;color:var(--muted);font-size:15px}
+.also span{display:inline-block;background:#fff0e3;color:var(--brand-dark);border-radius:999px;padding:6px 14px;margin:4px;font-weight:500}
+
+.why{background:#2a1a12;color:#fbeee0}
+.why .head h2{color:#fff}
+.why .head p{color:#d9c3ae}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.feat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:24px}
+.feat .ic{width:44px;height:44px;border-radius:12px;background:var(--brand);color:#fff;display:grid;place-items:center;margin-bottom:14px}
+.feat .ic svg{width:22px;height:22px}
+.feat h3{font-size:21px;color:#fff;margin-bottom:4px}
+.feat p{font-size:15px;color:#d9c3ae}
+
+.visit{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:stretch}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+.panel{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:28px}
+.panel h3{font-size:26px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--brand)}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.addr{display:flex;gap:12px;margin-bottom:18px}
+.addr svg{width:22px;height:22px;flex:none;color:var(--brand);margin-top:3px}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:#f3e6d6}
+.map iframe{width:100%;height:100%;border:0}
+.panel .btns{margin-top:18px}
+.panel .btn.ghost{background:#fff0e3;color:var(--brand-dark);border:1px solid #ffd8a8}
+
+.contact{background:linear-gradient(135deg,var(--brand) 0%,#e8590c 60%,var(--gold) 140%);color:#fff;text-align:center}
+.contact h2{font-size:clamp(30px,5vw,46px);margin-bottom:10px}
+.contact p{max-width:560px;margin:0 auto 26px;color:#fff3e6}
+.contact .btns{justify-content:center}
+.contact .btn.primary{background:#fff;color:var(--brand-dark);box-shadow:none}
+.contact .phone{display:block;margin-top:22px;font-family:"Baloo 2";font-size:30px;font-weight:800;text-decoration:none;letter-spacing:.5px}
+
+footer{background:#1d120c;color:#bfa995;font-size:13px;padding:34px 0 96px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-bottom:16px}
+footer strong{color:#fff;font-family:"Baloo 2";font-size:18px}
+footer .credits{border-top:1px solid rgba(255,255,255,.08);padding-top:14px;font-size:12px;line-height:1.7}
+footer .credits a{color:#ffd8a8}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.fab a svg{width:24px;height:24px}
+.fab .c{background:var(--brand);color:#fff}
+.fab .w{background:#25d366;color:#0b3d1d}
+@media(max-width:760px){.fab{display:flex}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.btn,.card .ph img{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Diwan Bhel Pakodi Center</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><span class="mark">D</span>Diwan Bhel Pakodi</a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call-mini" href="tel:+919904761456">Call now</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="Crisp puris served with tangy chutney" fetchpriority="high">
+    <div class="wrap">
+      <span class="tag">Jodhpur Char Rasta · near Shyamal · Ahmedabad</span>
+      <h1>Diwan Bhel Pakodi Center</h1>
+      <div class="guj">ચટપટો સ્વાદ, દરરોજ તાજો</div>
+      <p class="lead">Bhel puri, pani puri, sev puri, dahi puri and hot pakodi — the evening chaat stop for Jodhpur, Shyamal and Satellite. Open every day.</p>
+      <div class="btns">
+        <a class="btn primary" href="tel:+919904761456"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call 99047 61456</a>
+        <a class="btn wa" href="https://wa.me/919904761456?text=Hi%2C%20I%20found%20Diwan%20Bhel%20Pakodi%20Center%20online." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.2 1.3z"/></svg>WhatsApp</a>
+        <a class="btn ghost" href="#menu">See the menu</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span><strong>Open daily</strong>11:00 AM – 10:30 PM</span></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><strong>Jodhpur Char Rasta</strong>Shivalay 2, near Shyamal</span></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M5 11l1 9h12l1-9M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span><strong>Eat here or take away</strong>Call ahead for parcels</span></div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">Our menu</div>
+        <h2>Chaat, made the moment you order</h2>
+        <p>Crisp puris, tangy chutneys and fresh toppings — the classics Ahmedabad loves, plus hot pakodi straight from the kadhai.</p>
+      </div>
+      <div class="menu">
+        <article class="card reveal">
+          <div class="ph"><img src="img/bhel.jpg" alt="Plate of bhel puri with puffed rice, sev, tomato and onion" loading="lazy"></div>
+          <div class="body"><h3>Bhel Puri</h3><p>Puffed rice, sev, onion, tomato and sweet-and-spicy chutneys, tossed fresh for every plate.</p><div class="price">Price on request</div></div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/panipuri.jpg" alt="Pani puri with potato filling and spiced water" loading="lazy"></div>
+          <div class="body"><h3>Pani Puri</h3><p>Crisp puris filled with potato and served with chilled, tangy pani — the evening favourite.</p><div class="price">Price on request</div></div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/sevpuri.jpg" alt="Sev puri topped with fine sev, carrot and coriander" loading="lazy"></div>
+          <div class="body"><h3>Sev Puri &amp; Dahi Puri</h3><p>Flat puris loaded with potato, chutneys and fine sev — or topped with cool, sweet dahi.</p><div class="price">Price on request</div></div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/pakodi.jpg" alt="Bowl of crispy fried pakodi" loading="lazy"></div>
+          <div class="body"><h3>Hot Pakodi</h3><p>Crunchy, golden pakodi fried fresh — perfect with chutney on a rainy evening.</p><div class="price">Price on request</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="why">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow" style="color:#ffc078">Why stop by</div>
+        <h2>Simple chaat, done right</h2>
+        <p>A neighbourhood counter at Jodhpur Char Rasta, open seven days a week.</p>
+      </div>
+      <div class="feats">
+        <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c1 3 4 4 4 8a4 4 0 0 1-8 0c0-2 1-3 1-3s1 2 3 2c0-3-2-4 0-7z"/></svg></div><h3>Made to order</h3><p>Every plate is assembled when you order, so the puris stay crisp.</p></div>
+        <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Open all week</h3><p>From 11 in the morning to 10:30 at night — lunch, evening snack or late craving.</p></div>
+        <div class="feat reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13l5 5v5h-3M3 7v10h2M3 7l2-3h9l2 3"/><circle cx="7.5" cy="17.5" r="2"/><circle cx="16.5" cy="17.5" r="2"/></svg></div><h3>Call ahead</h3><p>Call or WhatsApp to ask about today's items or a parcel before you come.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="head reveal">
+        <div class="eyebrow">Visit us</div>
+        <h2>Find us at Jodhpur Char Rasta</h2>
+      </div>
+      <div class="visit">
+        <div class="panel reveal">
+          <div class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><strong>Diwan Bhel Pakodi Center</strong><br>Shivalay 2, Jodhpur Village Char Rasta,<br>near Shyamal, Ahmedabad, Gujarat 380015</div></div>
+          <div class="map"><iframe title="Map to Diwan Bhel Pakodi Center" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Diwan%20Bhel%20Pakodi%20Center%2C%20Jodhpur%20Char%20Rasta%2C%20Ahmedabad&z=16&output=embed"></iframe></div>
+          <div class="btns">
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Diwan+Bhel+Pakodi+Center+Jodhpur+Char+Rasta+Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Monday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>11:00 AM – 10:30 PM</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>11:00 AM – 10:30 PM</td></tr>
+          </table>
+          <p class="note">Hours may change on festivals — please call to confirm.</p>
+          <div class="btns">
+            <a class="btn primary" href="tel:+919904761456">Call 99047 61456</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <h2>Craving chaat?</h2>
+      <p>Call or WhatsApp to ask about today's items or a parcel order.</p>
+      <div class="btns">
+        <a class="btn primary" href="tel:+919904761456">Call now</a>
+        <a class="btn wa" href="https://wa.me/919904761456?text=Hi%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+      </div>
+      <a class="phone" href="tel:+919904761456">+91 99047 61456</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div><strong>Diwan Bhel Pakodi Center</strong><br>Shivalay 2, Jodhpur Village Char Rasta, near Shyamal, Ahmedabad 380015</div>
+      <div>Open daily 11:00 AM – 10:30 PM<br><a href="tel:+919904761456">+91 99047 61456</a></div>
+    </div>
+    <p class="credits">Sample photos: “Indian cuisine-Panipuri-03” by Ramakrishna Reddy y (<a href="https://creativecommons.org/licenses/by-sa/2.0" target="_blank" rel="noopener">CC BY-SA 2.0</a>) · “Crispy Pani Puri” by Teena Sometimes (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>) · “Bhel Puri Chaat” by Mdsmds0 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>) · “Pakora (6005558506)” by Upendra Kanda (<a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a>) · “Sev Puri-Indian Street Food” by Thejus Kartha (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>), via Wikimedia Commons. Real photos of your business will replace these.<br>Demo website design by KS Digital Studio · ksdigitalstudio.in</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="w" href="https://wa.me/919904761456" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.2 1.3z"/></svg></a>
+  <a class="c" href="tel:+919904761456" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  var row=document.querySelector('#hours tr[data-d="'+new Date().getDay()+'"]');
+  if(row) row.classList.add('today');
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>

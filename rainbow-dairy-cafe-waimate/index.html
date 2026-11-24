@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rainbow Dairy &amp; Cafe — Queen Street, Waimate</title>
+<meta name="description" content="Rainbow Dairy & Cafe, 87 Queen Street, Waimate. Fresh sandwiches, rolls and salads made daily, hot food, toasties, mini pizzas, coffee, cheese rolls and big ice creams. Eat in or take away.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f2;--paper:#fff;--ink:#1f2430;--muted:#5d6472;--line:#e9e3d8;--teal:#0f766e;--teal-d:#0b5a54;--sun:#f59e0b;--rose:#e11d48;--sky:#0ea5e9;--violet:#7c3aed;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:"Bricolage Grotesque",Inter,system-ui,sans-serif;line-height:1.08;letter-spacing:-.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.rainbow{height:5px;background:linear-gradient(90deg,var(--rose),var(--sun),#22c55e,var(--sky),var(--violet))}
+.ribbon{background:var(--ink);color:#e7e9ee;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.ribbon a{color:#fcd34d;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,248,242,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:20px}
+.logo i{width:30px;height:30px;border-radius:50%;background:conic-gradient(var(--rose),var(--sun),#22c55e,var(--sky),var(--violet),var(--rose));position:relative}
+.logo i::after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--bg)}
+nav.links{display:flex;gap:24px;font-size:14.5px;font-weight:500}
+nav.links a{text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(31,36,48,.18)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn-main{background:var(--teal);color:#fff}
+.btn-main:hover{background:var(--teal-d)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-ghost{background:transparent;border:1.5px solid currentColor}
+.nav-call{padding:9px 16px;font-size:14px}
+/* hero */
+.hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 55%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,18,25,.1) 0%,rgba(15,18,25,.35) 45%,rgba(15,18,25,.86) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:120px 20px 64px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 13px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(46px,9vw,96px);font-weight:800;margin-bottom:14px}
+.hero h1 span{background:linear-gradient(90deg,#fda4af,#fcd34d,#86efac,#7dd3fc,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);max-width:580px;opacity:.95;margin-bottom:28px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+/* strip */
+.strip{background:var(--paper);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.strip div{padding:22px 16px;text-align:center;font-weight:600;font-size:15px;border-right:1px solid var(--line)}
+.strip div:last-child{border-right:0}
+.strip small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+section{padding:86px 0}
+.kicker{color:var(--teal);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-size:clamp(32px,4.6vw,48px);font-weight:800;margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:640px;font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(31,36,48,.12)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .body{padding:22px 22px 24px}
+.card h3{font-size:24px;font-weight:800;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.tag{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;color:var(--teal);background:#e6f4f2;padding:4px 10px;border-radius:999px}
+.also{margin-top:36px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--paper);border:1px solid var(--line);padding:9px 15px;border-radius:999px;font-size:14.5px;font-weight:500}
+.note{margin-top:22px;font-size:14px;color:var(--muted)}
+.about{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.about img{border-radius:var(--r);aspect-ratio:4/4.4;object-fit:cover;box-shadow:0 24px 50px rgba(31,36,48,.16)}
+.ticks{list-style:none;margin-top:24px;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.ticks li::before{content:"";flex:0 0 22px;height:22px;border-radius:50%;margin-top:2px;background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M9.5 16.2 5.3 12l-1.4 1.4 5.6 5.6 11-11-1.4-1.4z'/%3E%3C/svg%3E") center/16px no-repeat}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:42px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.panel h3{font-size:22px;font-weight:800;margin-bottom:12px}
+.row{display:flex;gap:14px;align-items:flex-start;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.row:last-child{border-bottom:0}
+.row b{min-width:84px;font-weight:600}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#ece6da}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.contact{background:var(--teal);color:#fff;text-align:center;position:relative;overflow:hidden}
+.contact .kicker{color:#fcd34d}
+.contact .sec-sub{color:#d5efec;margin:0 auto}
+.contact .ctas{justify-content:center;margin-top:30px}
+.contact .btn-main{background:#fff;color:var(--teal-d)}
+.contact .btn-ghost{color:#fff}
+footer{background:var(--ink);color:#c3c7d0;font-size:13.5px;padding:34px 0 100px}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#fcd34d}
+footer .credits{font-size:12px;color:#8e94a1}
+footer .credits a{color:#b9bfcb}
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;display:none;gap:10px}
+.fab a{flex:1;justify-content:center;box-shadow:0 10px 24px rgba(31,36,48,.25)}
+@media (max-width:860px){
+  nav.links{display:none}
+  .about .wrap,.visit-grid{grid-template-columns:1fr;gap:32px}
+  .cards{grid-template-columns:1fr}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .strip div:nth-child(2){border-right:0}
+  .strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  section{padding:64px 0}
+  .fab{display:flex}
+  .hero{min-height:80vh}
+}
+@media (min-width:861px){footer{padding-bottom:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Rainbow Dairy &amp; Cafe</div>
+<div class="rainbow"></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo"><i></i>Rainbow Dairy &amp; Cafe</a>
+    <nav class="links">
+      <a href="#food">Food</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-main nav-call" href="tel:+6436897246">Call us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="Flat white coffee, a chai latte and a slice of cake on a wooden cafe table" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">87 Queen Street · Waimate</span>
+      <h1>Rainbow <span>Dairy &amp; Cafe</span></h1>
+      <p class="lead">Your quick, friendly stop in the middle of Waimate. Fresh sandwiches, rolls and salads made every day, hot food, good coffee and big ice creams. Eat in or take away.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="#food">See what's on</a>
+        <a class="btn btn-light" href="tel:+6436897246">Call 03 689 7246</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div>Made fresh<small>every day</small></div>
+      <div>Eat in<small>or take away</small></div>
+      <div>Coffee &amp; cold drinks<small>any time</small></div>
+      <div>Grocery basics<small>small selection</small></div>
+    </div>
+  </div>
+
+  <section id="food">
+    <div class="wrap">
+      <p class="kicker">From the cabinet &amp; counter</p>
+      <h2 class="sec-title">Something good, ready when you are</h2>
+      <p class="sec-sub">Pop in for lunch, a coffee on the go, or a treat for the kids. Here's a taste of what you'll find on Queen Street.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="img/rolls.jpg" alt="Filled bread roll with egg and melted cheese" loading="lazy">
+          <div class="body">
+            <h3>Sandwiches, Rolls &amp; Salads</h3>
+            <p>A great range of sandwiches, filled rolls and salads made fresh in-store every day. Perfect for lunch or the road.</p>
+            <span class="tag">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/coffee.jpg" alt="Flat white with latte art in a blue cup" loading="lazy">
+          <div class="body">
+            <h3>Coffee &amp; Cold Drinks</h3>
+            <p>Flat whites, lattes and more, plus a fridge full of cold drinks. Grab one to go or sit down for a few minutes.</p>
+            <span class="tag">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/icecream.jpg" alt="Three scoops of ice cream in a cup" loading="lazy">
+          <div class="body">
+            <h3>Big Ice Creams</h3>
+            <p>Generous scoops for hot Canterbury afternoons, after-school treats or a sweet finish to lunch.</p>
+            <span class="tag">Price on request</span>
+          </div>
+        </article>
+      </div>
+      <div class="also">
+        <span class="chip">Cheese rolls</span>
+        <span class="chip">Toasties</span>
+        <span class="chip">Mini pizzas made in-store</span>
+        <span class="chip">Hot food</span>
+        <span class="chip">Cabinet food</span>
+        <span class="chip">Grocery basics</span>
+      </div>
+      <p class="note">Items shown are examples. The full menu, specials and prices will be added from the cafe.</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap">
+      <img src="img/hero.jpg" alt="Coffee and cake served on a wooden board" loading="lazy" style="object-position:58% center">
+      <div>
+        <p class="kicker">About us</p>
+        <h2 class="sec-title">A proper local dairy, with a cafe inside.</h2>
+        <p class="sec-sub">Rainbow Dairy &amp; Cafe is a great place to come and eat, have a coffee or a cold drink, then get on with your day. Whether you're a local on your lunch break or passing through Waimate, we'll look after you.</p>
+        <ul class="ticks">
+          <li>Sandwiches, rolls and salads made fresh every day</li>
+          <li>Hot food, toasties and mini pizzas made in-store</li>
+          <li>Coffee, cold drinks and big ice creams</li>
+          <li>A small selection of everyday grocery items</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <p class="kicker">Visit us</p>
+      <h2 class="sec-title">Right on Queen Street</h2>
+      <p class="sec-sub">In the middle of Waimate's main street, easy to find and easy to stop.</p>
+      <div class="visit-grid">
+        <div class="panel">
+          <h3>Opening hours</h3>
+          <div class="row"><b>Daily</b><span>Hours to be confirmed. Please give us a call before you come in.</span></div>
+          <h3 style="margin-top:26px">Find us</h3>
+          <div class="row"><b>Address</b><span>87 Queen Street,<br>Waimate 7924, New Zealand</span></div>
+          <div class="row"><b>Phone</b><a href="tel:+6436897246">03 689 7246</a></div>
+          <div class="row"><b>Email</b><a href="mailto:rainbowdairy2019@mail.com">rainbowdairy2019@mail.com</a></div>
+          <div style="margin-top:18px"><a class="btn btn-ghost" style="color:var(--teal)" href="https://www.google.com/maps/search/?api=1&query=Rainbow+Dairy+%26+Cafe+87+Queen+Street+Waimate" target="_blank" rel="noopener">Get directions</a></div>
+        </div>
+        <div class="map">
+          <iframe title="Map showing Rainbow Dairy &amp; Cafe, 87 Queen Street, Waimate" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=87+Queen+Street,+Waimate+7924,+New+Zealand&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="kicker">Get in touch</p>
+      <h2 class="sec-title">Ordering for a group or a work smoko?</h2>
+      <p class="sec-sub">Give us a ring or send an email and we'll sort out sandwiches, rolls and more for you.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="tel:+6436897246"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call 03 689 7246</a>
+        <a class="btn btn-ghost" href="mailto:rainbowdairy2019@mail.com?subject=Order%20enquiry"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Email us</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/rainbowdairyandcafe" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">Rainbow Dairy &amp; Cafe</strong> · 87 Queen Street, Waimate, New Zealand · <a href="tel:+6436897246">03 689 7246</a></div>
+    <div>© <span id="yr"></span> Rainbow Dairy &amp; Cafe. Website demo by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a>.</div>
+    <p class="credits">Sample photos: “Chai latte, flat white, and lemon cake - Pelicano” by Andy Li (<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a>) · “Avocado &amp; Egg Breakfast Bap - Finch” by Andy Li (<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a>) · “Flat white at an Adelaide cafe” by Ashton 29 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>) · “A cup of three ice cream in Victoria Peak Hong Kong” by Peachyeung316 (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>), via Wikimedia Commons. Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="btn btn-main" href="tel:+6436897246">Call</a>
+  <a class="btn btn-light" href="mailto:rainbowdairy2019@mail.com">Email</a>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

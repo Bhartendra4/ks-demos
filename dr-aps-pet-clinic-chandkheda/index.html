@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dr.A.P's Pet Clinic — Pet Clinic in Chandkheda, Ahmedabad</title>
+<meta name="description" content="Dr.A.P's Pet Clinic, Highway Mall, Chandkheda, Ahmedabad: routine check-ups, vaccinations, diagnosis, treatment and preventive care for dogs and cats.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f9f8; --card:#ffffff; --ink:#15302b; --muted:#5d716c;
+  --teal:#0f7c6c; --teal-d:#0a5a4f; --sun:#f6a43a; --mint:#e3f2ee; --line:#dde8e4;
+  --radius:20px; --shadow:0 12px 32px rgba(15,60,50,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.02em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+.ribbon{background:var(--ink);color:#e6f1ee;font-size:12.5px;text-align:center;padding:7px 16px}
+.ribbon b{font-weight:600}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(246,249,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;text-decoration:none;color:var(--teal-d)}
+.logo i{width:34px;height:34px;border-radius:11px;background:var(--teal);display:grid;place-items:center}
+.logo i svg{width:20px;height:20px;fill:#fff}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--teal-d)}
+.cta-sm{background:var(--teal);color:#fff;text-decoration:none;padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600}
+@media(max-width:780px){.nav ul{display:none}}
+
+.hero{position:relative;min-height:min(86vh,700px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#2a3b36}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 35%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,30,26,.82) 0%,rgba(8,30,26,.55) 45%,rgba(8,30,26,.1) 100%)}
+@media(max-width:700px){.hero::after{background:linear-gradient(180deg,rgba(8,30,26,.2) 0%,rgba(8,30,26,.55) 45%,rgba(8,30,26,.88) 100%)}}
+.hero .wrap{position:relative;z-index:2;padding-top:110px;padding-bottom:64px;width:100%}
+.tag{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,7vw,70px);max-width:680px}
+.hero .guj{font-size:clamp(17px,2.4vw,22px);color:#ffd59a;margin-top:10px;font-weight:600}
+.hero p.lead{font-size:clamp(16px,2vw,18.5px);max-width:540px;margin-top:14px;opacity:.95}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn-wa{background:#25d366;color:#073b1c}
+.btn-call{background:#fff;color:var(--ink)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+@media(max-width:600px){.hero .wrap{padding-bottom:44px}.btn{padding:12px 18px;font-size:14.5px}}
+
+.strip{background:var(--teal);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:22px;padding-bottom:22px}
+.strip div{display:flex;gap:12px;align-items:center;font-size:14.5px}
+.strip b{display:block;font-size:15.5px}
+.strip svg{flex:0 0 26px;width:26px;height:26px;fill:#ffd59a}
+@media(max-width:800px){.strip .wrap{grid-template-columns:1fr}}
+
+section{padding:84px 0}
+.eyebrow{color:var(--teal);font-size:13px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase}
+.sec-head{max-width:640px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,4vw,40px);margin-top:8px}
+.sec-head p{color:var(--muted);margin-top:12px}
+
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.about p{color:var(--muted);margin-top:14px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.pill{background:var(--mint);color:var(--teal-d);font-size:14px;font-weight:600;padding:7px 14px;border-radius:999px}
+.about-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
+.about-box h3{font-size:22px;margin-bottom:16px}
+.about-box ol{list-style:none;display:grid;gap:16px;counter-reset:s}
+.about-box li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px;counter-increment:s}
+.about-box li::before{content:counter(s);flex:0 0 30px;height:30px;border-radius:50%;background:var(--sun);color:#3d2500;font-weight:800;display:grid;place-items:center;font-size:14px}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:21px}
+.card p{color:var(--muted);font-size:15px;margin-top:8px;flex:1}
+.card ul{margin:12px 0 0 18px;color:var(--muted);font-size:14.5px}
+.card .price{margin-top:16px;font-size:13.5px;color:var(--teal-d);font-weight:700}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+
+.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:stretch}
+.hours{background:var(--ink);color:#e6f1ee;border-radius:var(--radius);padding:32px}
+.hours h3{color:#fff;font-size:22px;margin-bottom:18px}
+.hours table{width:100%;border-collapse:collapse;font-size:15.5px}
+.hours td{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);vertical-align:top}
+.hours td:last-child{text-align:right;font-weight:600;color:#fff}
+.hours .note{font-size:13.5px;opacity:.75;margin-top:16px}
+#open-now{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:700;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.12)}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff;display:flex;flex-direction:column}
+.map iframe{width:100%;flex:1;min-height:280px;border:0}
+.map .addr{padding:20px 22px}
+.map .addr b{display:block;font-size:16px;margin-bottom:4px}
+.map .addr span{color:var(--muted);font-size:14.5px}
+.map .addr a{display:inline-block;margin-top:10px;color:var(--teal);font-weight:700;font-size:14.5px;text-decoration:none}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.cbox:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.cbox i{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;margin-bottom:14px}
+.cbox i svg{width:22px;height:22px;fill:#fff}
+.cbox h3{font-size:18px}
+.cbox p{color:var(--muted);font-size:14.5px;margin-top:4px;word-break:break-word}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+
+.emerg{margin-top:28px;background:#fff6e8;border:1px solid #f6d7a8;color:#6b4300;border-radius:16px;padding:16px 20px;font-size:14.5px}
+
+footer{background:var(--ink);color:#b9ccc7;padding:44px 0 90px;font-size:14px}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer b{color:#fff;font-size:17px}
+footer .credits{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;opacity:.8}
+footer .credits a{color:inherit}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.22)}
+.fab svg{width:26px;height:26px;fill:#fff}
+.fab .wa{background:#25d366}.fab .ph{background:var(--teal)}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Dr.A.P's Pet Clinic</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top"><i><svg viewBox="0 0 24 24"><path d="M12 13c-2.8 0-6 3.1-6 5.6 0 1.5 1.2 2.4 2.6 2.4 1.2 0 2.1-.7 3.4-.7s2.2.7 3.4.7c1.4 0 2.6-.9 2.6-2.4 0-2.5-3.2-5.6-6-5.6zM5.5 12.5c1.2 0 2-1.3 2-2.8S6.7 7 5.5 7s-2 1.2-2 2.7.8 2.8 2 2.8zm13 0c1.2 0 2-1.3 2-2.8S19.7 7 18.5 7s-2 1.2-2 2.7.8 2.8 2 2.8zM9 8.5c1.3 0 2.2-1.4 2.2-3S10.3 2.5 9 2.5 6.8 3.9 6.8 5.5 7.7 8.5 9 8.5zm6 0c1.3 0 2.2-1.4 2.2-3S16.3 2.5 15 2.5s-2.2 1.4-2.2 3 .9 3 2.2 3z"/></svg></i>Dr.A.P's Pet Clinic</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#visit">Timings &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cta-sm" href="tel:+919825179251">Call clinic</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="img/hero.jpg" alt="A happy golden retriever looking at the camera" fetchpriority="high">
+  <div class="wrap">
+    <span class="tag">Pet Clinic · Chandkheda, Ahmedabad</span>
+    <h1>Gentle, trusted care for your dogs &amp; cats</h1>
+    <p class="guj">તમારા પાલતુની સંભાળ, પ્રેમથી</p>
+    <p class="lead">Routine check-ups, vaccinations, diagnosis, treatment and preventive care — at Highway Mall, near Chandkheda Bus Stand.</p>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/919825179251?text=Hello%20Dr.A.P%27s%20Pet%20Clinic%2C%20I%27d%20like%20to%20book%20a%20visit%20for%20my%20pet." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.3z"/></svg>WhatsApp to book</a>
+      <a class="btn btn-call" href="tel:+919825179251"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>98251 79251</a>
+      <a class="btn btn-ghost" href="#visit">Timings &amp; map</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4V7h-2v6.6l4.6 2.8 1-1.7-3.6-2.3z"/></svg><span><b>Mon–Sat: 9:30–1 &amp; 4–8</b>Sunday: 10:00 am – 12:30 pm</span></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span><b>Highway Mall, Chandkheda</b>Near Chandkheda Bus Stand</span></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.2 3 4.5 6.6 4.5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3 3.6 0 5.7 3.7 4.2 7.2C19.5 16.4 12 21 12 21z"/></svg><span><b>Dogs &amp; cats</b>Check-ups · vaccines · treatment</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow">About the clinic</span>
+      <h2 style="font-size:clamp(28px,4vw,40px);margin-top:8px">A neighbourhood pet clinic for Chandkheda families</h2>
+      <p>Dr.A.P's Pet Clinic looks after dogs and cats at every stage of life — from a puppy's or kitten's first vaccines to regular check-ups, diagnosis and treatment when your pet is unwell.</p>
+      <p>We take time to explain what's going on with your pet and what the treatment involves, so you can make the right decision with confidence.</p>
+      <div class="pills">
+        <span class="pill">Routine check-ups</span>
+        <span class="pill">Vaccinations</span>
+        <span class="pill">Diagnosis</span>
+        <span class="pill">Treatment</span>
+        <span class="pill">Preventive care</span>
+      </div>
+    </div>
+    <div class="about-box">
+      <h3>Visiting us is easy</h3>
+      <ol>
+        <li><span><b>Message or call</b> on WhatsApp / phone to check the doctor's availability.</span></li>
+        <li><span><b>Bring your pet</b> on a leash or in a carrier, along with any old vaccination or medical records.</span></li>
+        <li><span><b>Get a clear plan</b> — check-up, vaccines or treatment, explained step by step.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Services</span>
+      <h2>Care your pet can count on</h2>
+      <p>Everyday veterinary care for dogs and cats. Call or WhatsApp us to know more about any service.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <img src="img/checkup.jpg" alt="A dog wearing a stethoscope" loading="lazy">
+        <div class="body">
+          <h3>Check-ups &amp; Diagnosis</h3>
+          <p>Regular health check-ups and careful examination when your pet seems unwell — with a clear explanation of the diagnosis.</p>
+          <span class="price">Consultation: price on request</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/vaccination.jpg" alt="A healthy white dog smiling" loading="lazy">
+        <div class="body">
+          <h3>Vaccination &amp; Prevention</h3>
+          <p>Vaccination schedules for puppies and adult dogs, plus preventive care to keep your pet healthy year-round.</p>
+          <span class="price">Ask for the vaccine schedule</span>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/cat-care.jpg" alt="A grey kitten resting on an examination table" loading="lazy">
+        <div class="body">
+          <h3>Treatment for Dogs &amp; Cats</h3>
+          <p>Treatment for common illnesses and injuries, with follow-up care and guidance for recovery at home.</p>
+          <span class="price">Price on request</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Timings &amp; Location</span>
+      <h2>Visit the clinic</h2>
+    </div>
+    <div class="visit">
+      <div class="hours">
+        <h3>Clinic timings</h3>
+        <table>
+          <tr><td>Monday – Saturday</td><td>9:30 am – 1:00 pm<br>4:00 pm – 8:00 pm</td></tr>
+          <tr><td>Sunday</td><td>10:00 am – 12:30 pm</td></tr>
+        </table>
+        <span id="open-now"></span>
+        <p class="note">Timings may change on public holidays — please call before visiting.</p>
+      </div>
+      <div class="map">
+        <iframe title="Map to Dr.A.P's Pet Clinic" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Highway%20Mall%2C%20Chandkheda%2C%20Ahmedabad%20382424&amp;output=embed"></iframe>
+        <div class="addr">
+          <b>Dr.A.P's Pet Clinic</b>
+          <span>35, 36, 37 Highway Mall, Near Chandkheda Bus Stand, Next to Satyamev Hospital, Chandkheda, Ahmedabad, Gujarat 382424</span><br>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Dr.A.P%27s%20Pet%20Clinic%20Highway%20Mall%20Chandkheda%20Ahmedabad" target="_blank" rel="noopener">Get directions →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Book a visit for your pet</h2>
+      <p>The quickest way to reach us is WhatsApp or a phone call during clinic hours.</p>
+    </div>
+    <div class="contact">
+      <a class="cbox" href="https://wa.me/919825179251?text=Hello%20Dr.A.P%27s%20Pet%20Clinic%2C%20I%27d%20like%20to%20book%20a%20visit%20for%20my%20pet." target="_blank" rel="noopener">
+        <i style="background:#25d366"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.3z"/></svg></i>
+        <h3>WhatsApp</h3><p>+91 98251 79251</p>
+      </a>
+      <a class="cbox" href="tel:+919825179251">
+        <i style="background:var(--teal)"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></i>
+        <h3>Call</h3><p>+91 98251 79251</p>
+      </a>
+      <a class="cbox" href="mailto:doctorappatel@gmail.com?subject=Pet%20clinic%20enquiry">
+        <i style="background:var(--sun)"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></i>
+        <h3>Email</h3><p>doctorappatel@gmail.com</p>
+      </a>
+    </div>
+    <div class="emerg"><b>Pet unwell outside clinic hours?</b> Please call the clinic number to check what help is available.</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div><b>Dr.A.P's Pet Clinic</b><br>Highway Mall, Chandkheda, Ahmedabad 382424</div>
+      <div>+91 98251 79251 · doctorappatel@gmail.com</div>
+    </div>
+    <p class="credits" id="credits">Sample photos: “happy golden” by Muffet (CC BY 2.0); “Puppy dog with a stethoscope” by ShebleyCL (CC BY 2.0); “White Dog Says Hi” by the-specious (CC BY 2.0); “Fort Knox Veterinarian Clinic” by U.S. Army ROTC (Public Domain Mark 1.0) — via Flickr/Openverse. Real photos of your clinic will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="ph" href="tel:+919825179251" aria-label="Call the clinic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+  <a class="wa" href="https://wa.me/919825179251" target="_blank" rel="noopener" aria-label="WhatsApp the clinic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.3z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  // Open/closed badge using India time (IST)
+  var el=document.getElementById('open-now'); if(!el) return;
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var d=now.getDay(), m=now.getHours()*60+now.getMinutes();
+    var slots=d===0?[[600,750]]:[[570,780],[960,1200]];
+    var open=slots.some(function(s){return m>=s[0]&&m<s[1];});
+    el.textContent=open?'● Open now':'● Closed now — WhatsApp us anytime';
+    el.style.color=open?'#7ee2b8':'#ffd59a';
+  }catch(e){el.style.display='none';}
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sheryl's Bakery &amp; Cafe — Pugwash, Nova Scotia</title>
+<meta name="description" content="Homemade breads, pies, pastries, cinnamon rolls, soups and sandwiches at the entrance to Pugwash, Nova Scotia.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{--cream:#fbf6ee;--paper:#fffdf9;--ink:#2f2219;--muted:#6f5d50;--accent:#b5452f;--accent-dk:#8f3322;--gold:#d9a35a;--line:#eadfce;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.serif{font-family:Georgia,"Times New Roman",serif}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.ribbon{background:var(--ink);color:#f3e7d6;font-size:.8rem;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.ribbon a{color:var(--gold);text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{font-family:Georgia,serif;font-weight:700;font-size:1.2rem;text-decoration:none;white-space:nowrap}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:22px;list-style:none;font-size:.95rem}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;transition:.2s;font-size:.98rem}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dk)}
+.btn-ghost{border-color:#fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-outline{border-color:var(--accent);color:var(--accent)}
+.btn-outline:hover{background:var(--accent);color:#fff}
+.nav .btn{padding:8px 16px;font-size:.9rem}
+.hero{position:relative;min-height:min(88vh,720px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,18,10,.15) 0%,rgba(30,18,10,.55) 55%,rgba(30,18,10,.85) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:80px 0 64px}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.05;margin-bottom:14px}
+.hero p{font-size:clamp(1.02rem,2.4vw,1.25rem);max-width:560px;opacity:.95;margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:80px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 44px}
+.head small{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+.head h2{font-family:Georgia,serif;font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.15;margin:8px 0 10px}
+.head p{color:var(--muted)}
+.intro{background:var(--paper);border-bottom:1px solid var(--line)}
+.intro .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pill{padding:26px;border:1px solid var(--line);border-radius:var(--r);background:var(--cream)}
+.pill .ic{font-size:1.6rem;color:var(--accent);margin-bottom:8px;font-family:Georgia,serif}
+.pill h3{font-size:1.1rem;margin-bottom:4px}
+.pill p{color:var(--muted);font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(60,35,20,.35);display:flex;flex-direction:column;transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:22px;flex:1;display:flex;flex-direction:column}
+.card h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.96rem;flex:1}
+.card .tag{margin-top:14px;font-size:.85rem;color:var(--accent);font-weight:600}
+.menu{background:var(--paper);border-block:1px solid var(--line)}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.mi{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px dashed var(--line)}
+.mi strong{display:block;font-size:1.03rem}
+.mi span{color:var(--muted);font-size:.92rem}
+.mi em{font-style:normal;color:var(--accent);font-size:.85rem;white-space:nowrap;align-self:center}
+.note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:24px}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:stretch}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.box h3{font-family:Georgia,serif;font-size:1.5rem;margin-bottom:16px}
+.hours{list-style:none}
+.hours li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line)}
+.hours li:last-child{border:0}
+.hours .today{color:var(--accent);font-weight:700}
+.addr{margin-top:22px;color:var(--muted)}
+.addr b{color:var(--ink)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#e9e0d2}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.contact{background:var(--ink);color:#f6ecdf}
+.contact .head p{color:#cdbca9}
+.contact .head h2{color:#fff}
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cbox{border:1px solid rgba(255,255,255,.15);border-radius:var(--r);padding:28px;text-align:center;background:rgba(255,255,255,.03)}
+.cbox .ic{font-size:1.8rem;margin-bottom:8px}
+.cbox h3{font-size:1.1rem;margin-bottom:6px;color:#fff}
+.cbox p{color:#cdbca9;font-size:.95rem;margin-bottom:16px;word-break:break-word}
+.cbox .btn{border-color:var(--gold);color:var(--gold)}
+.cbox .btn:hover{background:var(--gold);color:var(--ink)}
+footer{background:#21170f;color:#a8988a;font-size:.85rem;padding:34px 0 90px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-bottom:14px}
+footer .credits{font-size:.76rem;opacity:.8;line-height:1.5}
+footer .credits a{color:#c9b8a6}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;text-decoration:none;font-size:1.4rem;box-shadow:0 10px 24px -8px rgba(0,0,0,.45)}
+.fab a.alt{background:var(--ink)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:900px){
+  .cards,.intro .grid,.cgrid{grid-template-columns:1fr 1fr}
+  .visit{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .nav ul{display:none}
+  section{padding:60px 0}
+  .cards,.intro .grid,.cgrid,.menu-grid{grid-template-columns:1fr}
+  .hero .wrap{padding:60px 0 44px}
+  .fab{display:flex}
+  .cta .btn{flex:1;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.card{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Sheryl's Bakery &amp; Cafe</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Sheryl's <span>Bakery</span></a>
+    <ul>
+      <li><a href="#bakes">Our Bakes</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary" href="tel:+19022432156">Call us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <img src="img/hero.jpg" alt="Fresh pastries and buns in red gingham baskets" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">Pugwash · Nova Scotia</span>
+      <h1>Sheryl's Bakery &amp; Cafe</h1>
+      <p>Breads, pies, pastries and cinnamon rolls baked fresh in-house, plus homemade soups and sandwiches, right at the entrance to Pugwash.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#menu">See what's baking</a>
+        <a class="btn btn-ghost" href="#visit">Hours &amp; directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap grid">
+      <div class="pill reveal"><div class="ic">01</div><h3>Made in-house</h3><p>Everything on the menu is baked and cooked right here: breads, biscuits, soups and sandwiches.</p></div>
+      <div class="pill reveal"><div class="ic">02</div><h3>Coffee &amp; a seat</h3><p>A cozy bakery café and coffee house with free WiFi, plus a patio in the summer.</p></div>
+      <div class="pill reveal"><div class="ic">03</div><h3>Order ahead</h3><p>Planning a family dinner or a get-together? Call or email to ask about pies, breads and trays.</p></div>
+    </div>
+  </section>
+
+  <section id="bakes">
+    <div class="wrap">
+      <div class="head reveal">
+        <small>Our Bakes</small>
+        <h2 class="serif">Local favourites from the oven</h2>
+        <p>A few of the things people come back for. The display case changes daily, so drop in and see what's fresh.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <img src="img/cinnamon.jpg" alt="Glazed cinnamon rolls" loading="lazy" width="900" height="600">
+          <div class="b"><h3>Cinnamon Rolls</h3><p>Soft, swirled and generously glazed. Best enjoyed warm with a cup of coffee.</p><div class="tag">Baked fresh</div></div>
+        </article>
+        <article class="card reveal">
+          <img src="img/cookies.jpg" alt="Sugar-topped molasses cookies on a cooling rack" loading="lazy" width="900" height="675">
+          <div class="b"><h3>Molasses Cookies</h3><p>Big, chewy and old-fashioned. A long-time favourite with regulars.</p><div class="tag">Regulars' pick</div></div>
+        </article>
+        <article class="card reveal">
+          <img src="img/soup.jpg" alt="A bowl of creamy chowder" loading="lazy" width="900" height="600">
+          <div class="b"><h3>Soups &amp; Sandwiches</h3><p>Homemade soups made from scratch and sandwiches on house-baked bread for a hearty lunch.</p><div class="tag">Lunch daily</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="wrap">
+      <div class="head reveal">
+        <small>Menu</small>
+        <h2 class="serif">From the bakery &amp; the café</h2>
+        <p>Selection varies day to day. Ask in store or give us a call.</p>
+      </div>
+      <div class="menu-grid reveal">
+        <div class="mi"><div><strong>Fresh Breads</strong><span>Loaves baked in-house</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Pies</strong><span>Whole pies, great for sharing</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Pastries</strong><span>Sweet treats from the display case</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Cinnamon Rolls</strong><span>Soft and glazed</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Cookies</strong><span>Including our molasses cookies</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Biscuits</strong><span>Homemade, fresh from the oven</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Homemade Soups</strong><span>Made from scratch</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Sandwiches</strong><span>On house-baked bread</span></div><em>Price on request</em></div>
+        <div class="mi"><div><strong>Coffee &amp; Tea</strong><span>Hot drinks to stay or go</span></div><em>Price on request</em></div>
+      </div>
+      <p class="note">Ordering for a family dinner or event? <a href="#contact">Get in touch</a> and we'll help you plan.</p>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="head reveal">
+        <small>Visit Us</small>
+        <h2 class="serif">Find us in Pugwash</h2>
+        <p>On Durham Street, right at the entrance to town on the Northumberland Shore.</p>
+      </div>
+      <div class="visit">
+        <div class="box reveal">
+          <h3>Opening Hours</h3>
+          <ul class="hours" id="hours">
+            <li data-d="2"><span>Tuesday</span><span>7:00 am – 4:00 pm</span></li>
+            <li data-d="3"><span>Wednesday</span><span>7:00 am – 4:00 pm</span></li>
+            <li data-d="4"><span>Thursday</span><span>7:00 am – 4:00 pm</span></li>
+            <li data-d="5"><span>Friday</span><span>7:00 am – 4:00 pm</span></li>
+            <li data-d="6"><span>Saturday</span><span>7:00 am – 3:00 pm</span></li>
+            <li data-d="0 1"><span>Sunday &amp; Monday</span><span>Please call ahead</span></li>
+          </ul>
+          <p class="addr"><b>Sheryl's Bakery &amp; Cafe</b><br>10480 Durham St<br>Pugwash, NS B0K 1L0, Canada</p>
+          <div class="cta" style="margin-top:20px">
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=10480+Durham+St+Pugwash+NS+B0K+1L0" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Map to Sheryl's Bakery &amp; Cafe" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=10480%20Durham%20St%2C%20Pugwash%2C%20NS%20B0K%201L0&amp;z=15&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="head reveal">
+        <small style="color:var(--gold)">Contact</small>
+        <h2 class="serif">Questions or orders?</h2>
+        <p>Call during opening hours or send us an email. We're happy to help.</p>
+      </div>
+      <div class="cgrid">
+        <div class="cbox reveal"><div class="ic">☎</div><h3>Call</h3><p>(902) 243-2156</p><a class="btn" href="tel:+19022432156">Call now</a></div>
+        <div class="cbox reveal"><div class="ic">✉</div><h3>Email</h3><p>sherylsbakery@bellaliant.com</p><a class="btn" href="mailto:sherylsbakery@bellaliant.com?subject=Order%20enquiry">Send email</a></div>
+        <div class="cbox reveal"><div class="ic">⌂</div><h3>Visit</h3><p>10480 Durham St, Pugwash, NS</p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=10480+Durham+St+Pugwash+NS+B0K+1L0" target="_blank" rel="noopener">Directions</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span>© <span id="yr">2026</span> Sheryl's Bakery &amp; Cafe · 10480 Durham St, Pugwash, NS</span>
+      <span>Website by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></span>
+    </div>
+    <p class="credits">Sample photos:
+      <a href="https://www.flickr.com/photos/14764065@N02/5852579677" target="_blank" rel="noopener">Bakery baskets</a> by tristankenney (CC BY 2.0);
+      <a href="https://www.flickr.com/photos/7927684@N03/11487819925" target="_blank" rel="noopener">Cinnamon rolls with maple cream cheese glaze</a> by jeffreyw (CC BY 2.0);
+      <a href="https://www.flickr.com/photos/35735307@N00/6205693442" target="_blank" rel="noopener">Molasses cookies</a> by ozmafan (CC BY 2.0);
+      <a href="https://www.flickr.com/photos/47190679@N06/5354476416" target="_blank" rel="noopener">Shrimps and corn chowder</a> by Leszek.Leszczynski (CC BY 2.0).
+      Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab" aria-label="Quick contact">
+  <a href="mailto:sherylsbakery@bellaliant.com" class="alt" aria-label="Email">✉</a>
+  <a href="tel:+19022432156" aria-label="Call">☎</a>
+</div>
+
+<script>
+(function(){
+  var d=new Date().getDay();
+  document.querySelectorAll('#hours li').forEach(function(li){
+    if(li.getAttribute('data-d').split(' ').indexOf(String(d))>-1) li.classList.add('today');
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},2500);
+})();
+</script>
+</body>
+</html>

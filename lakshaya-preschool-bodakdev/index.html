@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lakshaya Preschool — Bodakdev, Ahmedabad</title>
+<meta name="description" content="Lakshaya Preschool, Bodakdev, Ahmedabad — Pre-Nursery, Nursery, Junior KG and Senior KG with child-centric learning and Indian values.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f2a44;--muted:#5b6478;--bg:#fffaf3;--card:#ffffff;--sun:#ffb81c;--coral:#ff6b5b;--teal:#14a3a3;--sky:#3b82f6;--line:#f0e6d8;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;line-height:1.15}
+.wrap{max-width:1140px;margin:0 auto;padding:0 18px}
+.ribbon{background:var(--ink);color:#fff;text-align:center;font-size:13px;padding:7px 12px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,250,243,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fredoka;font-weight:700;font-size:22px;text-decoration:none}
+.logo span.mark{width:38px;height:38px;border-radius:12px;background:conic-gradient(var(--sun) 0 25%,var(--coral) 0 50%,var(--teal) 0 75%,var(--sky) 0);display:grid;place-items:center;color:#fff;font-size:20px}
+.logo small{display:block;font-family:Nunito;font-weight:600;font-size:12px;color:var(--muted);margin-top:-3px}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-weight:700;font-size:15px;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:15px;font-family:inherit;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--coral);color:#fff;box-shadow:0 8px 20px rgba(255,107,91,.3)}
+.btn-ghost{background:#fff;color:var(--ink);border:2px solid var(--line)}
+.menu-btn{display:none;background:none;border:0;font-size:26px;cursor:pointer}
+.hero{position:relative;padding:56px 0 70px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.tag{display:inline-block;background:#fff3d6;color:#a86a00;font-weight:700;font-size:13px;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.hero h1{font-size:clamp(34px,5.4vw,58px);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero p.lead{font-size:18px;color:var(--muted);margin-bottom:26px;max-width:520px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img img{border-radius:32px;aspect-ratio:5/4;object-fit:cover;width:100%;box-shadow:0 30px 60px rgba(31,42,68,.18)}
+.hero-img .chip{position:absolute;background:#fff;border-radius:16px;padding:12px 16px;font-weight:700;font-size:14px;box-shadow:0 12px 30px rgba(31,42,68,.15)}
+.chip.a{left:-14px;bottom:28px}.chip.b{right:-10px;top:24px}
+.blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;z-index:-1}
+.b1{width:280px;height:280px;background:#ffe2a8;top:-80px;right:-60px}.b2{width:200px;height:200px;background:#c8f0ef;bottom:-60px;left:-60px}
+section{padding:76px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 44px}
+.head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:10px}
+.head p{color:var(--muted)}
+.eyebrow{color:var(--teal);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:13px;margin-bottom:8px;display:block}
+.programs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.prog{background:var(--card);border-radius:var(--r);padding:26px 22px;border:1px solid var(--line);position:relative;overflow:hidden}
+.prog:before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:var(--c)}
+.prog .age{display:inline-block;background:color-mix(in srgb,var(--c) 15%,#fff);color:var(--ink);font-weight:800;font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.prog h3{font-size:22px;margin-bottom:6px}
+.prog p{color:var(--muted);font-size:15px}
+.prog .time{margin-top:14px;font-size:14px;font-weight:700}
+.alt{background:#fff}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:64px}
+.feature:last-child{margin-bottom:0}
+.feature img{border-radius:28px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.feature.rev .txt{order:-1}
+.feature h3{font-size:30px;margin-bottom:12px}
+.feature p{color:var(--muted);margin-bottom:12px}
+.ticks{list-style:none;margin-top:10px}
+.ticks li{padding-left:30px;position:relative;margin-bottom:8px;font-weight:600}
+.ticks li:before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--teal);color:#fff;font-size:12px;display:grid;place-items:center}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.why .ic{font-size:30px;margin-bottom:10px}
+.why h3{font-size:20px;margin-bottom:6px}
+.why p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:24px;border:1px dashed #e5d6c0;counter-increment:s}
+.step:before{content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--sun);font-family:Fredoka;font-weight:700;font-size:20px;margin-bottom:12px}
+.step h3{font-size:18px;margin-bottom:4px}.step p{font-size:14px;color:var(--muted)}
+.enquire{display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:start}
+.contact-card{background:var(--ink);color:#fff;border-radius:28px;padding:32px}
+.contact-card h3{font-size:26px;margin-bottom:8px}
+.contact-card p{opacity:.85;margin-bottom:18px}
+.cline{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:15px}
+.cline b{display:block;font-size:12px;opacity:.7;text-transform:uppercase;letter-spacing:.06em}
+.cline a{text-decoration:none}
+.cbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.cbtns .btn{padding:10px 16px;font-size:14px}
+.wa{background:#25d366;color:#fff}.call{background:var(--sun);color:var(--ink)}.mail{background:#fff;color:var(--ink)}
+form{background:#fff;border-radius:28px;padding:30px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(31,42,68,.08)}
+form h3{font-size:24px;margin-bottom:4px}
+form .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:14px}
+input,select,textarea{width:100%;margin-top:6px;padding:12px 14px;border:2px solid var(--line);border-radius:12px;font:inherit;font-weight:400;background:#fffdf9}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal)}
+.ok{display:none;background:#e7f7f2;color:#0d7a5f;border-radius:12px;padding:12px 14px;font-weight:700;margin-top:12px}
+.map{margin-top:28px;border-radius:24px;overflow:hidden;border:1px solid var(--line);height:300px}
+.map iframe{width:100%;height:100%;border:0}
+.faq{max-width:780px;margin:0 auto}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:22px;color:var(--coral);line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);margin-top:10px}
+footer{background:#14203a;color:#cfd6e6;padding:46px 0 26px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:28px}
+footer h4{color:#fff;font-family:Fredoka;font-size:18px;margin-bottom:10px}
+footer a{text-decoration:none}
+footer ul{list-style:none}footer li{margin-bottom:6px}
+.credits{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12px;opacity:.75}
+.fab{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:30}
+.fab svg{width:30px;height:30px;fill:#fff}
+@media (max-width:920px){
+  .programs,.steps{grid-template-columns:1fr 1fr}
+  .why{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--bg);flex-direction:column;padding:16px 18px 22px;border-bottom:1px solid var(--line);gap:14px;align-items:flex-start}
+  .links.open{display:flex}
+  .menu-btn{display:block}
+  .hero{padding:32px 0 50px}
+  .hero-grid,.feature,.enquire,.fgrid{grid-template-columns:1fr}
+  .feature.rev .txt{order:0}
+  .feature{gap:22px;margin-bottom:44px}
+  .chip.a{left:10px}.chip.b{right:10px}
+  section{padding:56px 0}
+  .row{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr}
+}
+@media (max-width:480px){.programs,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by KS Digital Studio — for Lakshaya Preschool</div>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="mark">L</span><div>Lakshaya<small>Preschool · Bodakdev</small></div></a>
+    <nav class="links" id="links">
+      <a href="#programs">Programs</a>
+      <a href="#life">Life at Lakshaya</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#faq">FAQ</a>
+      <a href="#enquire" class="btn btn-primary">Enquire now</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Preschool in Bodakdev, Ahmedabad · since 2011</span>
+      <h1>Where little learners take their <em>first big steps</em></h1>
+      <p class="lead">Lakshaya Preschool gives children a joyful start with international-quality early education blended with Indian cultural values, in a warm, child-friendly setting off S.G. Road.</p>
+      <div class="cta-row">
+        <a href="#enquire" class="btn btn-primary">Book a school visit</a>
+        <a href="#programs" class="btn btn-ghost">Explore programs</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/hero.jpg" alt="Colourful wooden alphabet blocks">
+      <div class="chip a">🍎 Meals provided — no lunch box needed</div>
+      <div class="chip b">👩‍🏫 Teacher–child ratio 1:10</div>
+    </div>
+  </div>
+</section>
+
+<section id="programs" class="alt">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Our programs</span><h2>A program for every early milestone</h2><p>Classes run Monday to Friday, with age-appropriate timings for each group.</p></div>
+    <div class="programs">
+      <div class="prog" style="--c:var(--sun)"><span class="age">Pre-Nursery</span><h3>First Steps</h3><p>A gentle first experience of school — play, songs, stories and settling in with new friends.</p><div class="time">🕘 9:00 – 11:30 am</div></div>
+      <div class="prog" style="--c:var(--coral)"><span class="age">Nursery · 3 yrs+</span><h3>Explorers</h3><p>Hands-on discovery that builds language, curiosity and early social skills.</p><div class="time">🕘 9:00 – 11:30 am</div></div>
+      <div class="prog" style="--c:var(--teal)"><span class="age">Junior KG · 4 yrs+</span><h3>Thinkers</h3><p>Early literacy and numeracy through activities, art, music and movement.</p><div class="time">🕘 9:00 am – 12:30 pm</div></div>
+      <div class="prog" style="--c:var(--sky)"><span class="age">Senior KG · 5 yrs+</span><h3>Achievers</h3><p>Confident readers and problem-solvers, ready for the move to big school.</p><div class="time">🕘 9:00 am – 12:30 pm</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="life">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Life at Lakshaya</span><h2>Learning that feels like play</h2></div>
+    <div class="feature">
+      <img src="img/classroom.jpg" alt="Pencils, markers and classroom materials" loading="lazy">
+      <div class="txt"><h3>Child-centric, research-based curriculum</h3><p>Every day balances active learning, creative play and quiet time, so each child grows at their own pace across all areas of development.</p>
+        <ul class="ticks"><li>Holistic development model</li><li>Learning beyond lessons</li><li>Regular parent–teacher interaction</li></ul></div>
+    </div>
+    <div class="feature rev">
+      <img src="img/books.jpg" alt="Baskets of picture books" loading="lazy">
+      <div class="txt"><h3>A library that grows readers</h3><p>Bright picture books, board books, pop-ups and easy readers help children discover the joy of reading early.</p>
+        <ul class="ticks"><li>Picture, board and pop-up books</li><li>Easy readers and transition books</li><li>Story time every week</li></ul></div>
+    </div>
+    <div class="feature">
+      <img src="img/pencils.jpg" alt="Coloured pencils" loading="lazy">
+      <div class="txt"><h3>Healthy meals, happy days</h3><p>No lunch boxes required — nutritious, wholesome food is provided during school hours, planned with a nutritionist. Menus are shared with parents, and special diets are available for allergies.</p>
+        <ul class="ticks"><li>Nutritionist-planned menus</li><li>Menus shared with parents</li><li>Care for food allergies</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Why parents choose us</span><h2>The Lakshaya way</h2></div>
+    <div class="why">
+      <div><div class="ic">🌍</div><h3>Global perspective</h3><p>Modern early-years methods with a broad, curious view of the world.</p></div>
+      <div><div class="ic">🪔</div><h3>Strong values</h3><p>Indian cultural values woven naturally into everyday learning.</p></div>
+      <div><div class="ic">🤝</div><h3>Parents as partners</h3><p>Parent events, workshops and regular conversations with teachers.</p></div>
+      <div><div class="ic">🏡</div><h3>Warm environment</h3><p>A cheerful, stress-free space where children feel safe and welcome.</p></div>
+      <div><div class="ic">🩺</div><h3>Health & hygiene</h3><p>Clean, caring routines that keep little ones healthy and happy.</p></div>
+      <div><div class="ic">🎨</div><h3>Multi-dimensional growth</h3><p>Art, music, movement and play alongside early academics.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="admissions">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Admissions</span><h2>Simple, friendly admissions</h2><p>No formal tests or interviews for your child — just a conversation with you.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Enquire</h3><p>Send an enquiry below or call us to ask about seats.</p></div>
+      <div class="step"><h3>Visit</h3><p>See the school and meet the team with your child.</p></div>
+      <div class="step"><h3>Apply</h3><p>Fill in the application form at the school office.</p></div>
+      <div class="step"><h3>Welcome</h3><p>Submit the health form and documents — and you're in!</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="enquire" class="alt">
+  <div class="wrap enquire">
+    <div>
+      <div class="contact-card">
+        <h3>Visit Lakshaya Preschool</h3>
+        <p>We'd love to show you around. Call, WhatsApp or email us anytime.</p>
+        <div class="cline">📍<div><b>Address</b>Opp. Satyavati Farm, Near Shashwat Bunglows, Behind Rajpath Club, 100 Feet Road, Off S.G. Road, Bodakdev, Ahmedabad 380054</div></div>
+        <div class="cline">📞<div><b>Phone</b><a href="tel:+919925170556">+91 99251 70556</a> · <a href="tel:+919712342222">+91 97123 42222</a></div></div>
+        <div class="cline">✉️<div><b>Email</b><a href="mailto:admission@lakshayapreschool.com">admission@lakshayapreschool.com</a><br><a href="mailto:info@lakshayapreschool.com">info@lakshayapreschool.com</a></div></div>
+        <div class="cline">🕘<div><b>School days</b>Monday – Friday, from 9:00 am</div></div>
+        <div class="cbtns">
+          <a class="btn call" href="tel:+919925170556">Call now</a>
+          <a class="btn wa" href="https://wa.me/919925170556?text=Hello%2C%20I%20would%20like%20to%20know%20about%20admissions%20at%20Lakshaya%20Preschool." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn mail" href="mailto:admission@lakshayapreschool.com">Email</a>
+        </div>
+      </div>
+      <div class="map"><iframe title="Map" loading="lazy" src="https://maps.google.com/maps?q=Rajpath%20Club%2C%20Bodakdev%2C%20Ahmedabad&z=15&output=embed"></iframe></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Admission enquiry</h3>
+      <p class="sub">Tell us a little about your child and we'll get back to you.</p>
+      <div class="row">
+        <label>Parent's name<input name="parent" required placeholder="Your name"></label>
+        <label>Mobile number<input name="phone" type="tel" required placeholder="10-digit mobile"></label>
+      </div>
+      <div class="row">
+        <label>Child's name<input name="child" placeholder="Child's first name"></label>
+        <label>Child's date of birth<input name="dob" type="date"></label>
+      </div>
+      <label>Program<select name="program"><option>Pre-Nursery</option><option>Nursery (3 yrs+)</option><option>Junior KG (4 yrs+)</option><option>Senior KG (5 yrs+)</option><option>Not sure yet</option></select></label>
+      <label>Preferred visit day<input name="visit" type="date"></label>
+      <label>Message (optional)<textarea name="msg" rows="3" placeholder="Any questions for us?"></textarea></label>
+      <button class="btn btn-primary" type="submit" style="width:100%">Send enquiry</button>
+      <div class="ok" id="ok">Thank you! This is a demo form — on the live site your enquiry would reach the school directly.</div>
+    </form>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">FAQ</span><h2>Questions parents ask</h2></div>
+    <div class="faq">
+      <details open><summary>What are the school timings?</summary><p>Pre-Nursery and Nursery: 9:00 am – 11:30 am. Junior KG and Senior KG: 9:00 am – 12:30 pm. Classes run Monday to Friday, excluding holidays.</p></details>
+      <details><summary>What age should my child be?</summary><p>Nursery is for children aged 3 years and above, Junior KG for 4 years and above, and Senior KG for 5 years and above.</p></details>
+      <details><summary>Is there an entrance test or interview?</summary><p>No. There is no formal test or interview for the child. Admission is on a first-come, first-served basis after a conversation with the parents.</p></details>
+      <details><summary>What is the teacher–child ratio?</summary><p>Lakshaya Preschool keeps a low teacher–child ratio of 1:10.</p></details>
+      <details><summary>Do I need to send a lunch box?</summary><p>No lunch boxes are required. Nutritious meals are provided during school hours, and special diets are available for children with food allergies.</p></details>
+      <details><summary>Is there a uniform?</summary><p>Yes, children wear a specially designed school uniform.</p></details>
+      <details><summary>How do I find out about fees?</summary><p>Please call or visit the school office for details of the fee structure.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h4>Lakshaya Preschool</h4><p>A culture of learning. Global perspective. Strong values. Multi-dimensional growth.</p></div>
+      <div><h4>Explore</h4><ul><li><a href="#programs">Programs</a></li><li><a href="#life">Life at Lakshaya</a></li><li><a href="#admissions">Admissions</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+919925170556">+91 99251 70556</a></li><li><a href="tel:+919712342222">+91 97123 42222</a></li><li><a href="mailto:info@lakshayapreschool.com">info@lakshayapreschool.com</a></li><li>Bodakdev, Ahmedabad</li></ul></div>
+    </div>
+    <div class="credits" id="credits">Sample photos: loading credits… Real photos of your business will replace these.</div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/919925170556" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.4 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg></a>
+
+<script>
+(function(){
+  var credits=[{"file":"hero.jpg","title":"Wooden Toy Blocks","creator":"SocialAlex","license":"CC BY 2.0","page":"https://www.flickr.com/photos/62895222@N07/15086711522"},{"file":"classroom.jpg","title":"Classroom Materials","creator":"Lyn Lomasi","license":"CC BY 2.0","page":"https://www.flickr.com/photos/61350948@N03/7956993044"},{"file":"books.jpg","title":"Picture Books","creator":"Enokson","license":"CC BY 2.0","page":"https://www.flickr.com/photos/47823583@N03/4385119849"},{"file":"pencils.jpg","title":"Set of colored pencils","creator":"Horia Varlan","license":"CC BY 2.0","page":"https://www.flickr.com/photos/10361931@N06/4268119361"}];
+  var el=document.getElementById('credits');
+  el.innerHTML='Sample photos: '+credits.map(function(c){return '<a href="'+c.page+'" target="_blank" rel="noopener">“'+c.title+'”</a> by '+c.creator+' ('+c.license+')';}).join(', ')+'. Real photos of your business will replace these.';
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('ok').style.display='block';
+  });
+  document.querySelectorAll('#links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('links').classList.remove('open');});});
+})();
+</script>
+</body>
+</html>

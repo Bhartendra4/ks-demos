@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ronak Tailor — Men's Tailor in Naranpura, Ahmedabad</title>
+<meta name="description" content="Ronak Tailor, Naranpura, Ahmedabad: made-to-measure shirts, trousers, suits, kurtas and wedding wear for men. Call or WhatsApp +91 94293 66778.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#161a22; --ink2:#232937; --paper:#f7f4ee; --card:#ffffff; --muted:#5d6472;
+  --brass:#b48a46; --brass2:#8e6a2f; --line:#e6e0d4; --wa:#1f9d55;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1}
+
+.ribbon{background:var(--ink);color:#d9cdb5;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.ribbon b{color:#fff;font-weight:600}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(247,244,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:700;text-decoration:none;letter-spacing:.01em}
+.brand span{color:var(--brass)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--ink2)}
+.nav ul a:hover{color:var(--brass2)}
+.nav .call{background:var(--ink);color:#fff;text-decoration:none;font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;white-space:nowrap}
+@media (max-width:760px){.nav ul{display:none}}
+
+.hero{position:relative;min-height:min(86vh,720px);display:flex;align-items:center;color:#fff;overflow:hidden;background:#222}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,17,24,.92) 0%,rgba(14,17,24,.75) 45%,rgba(14,17,24,.25) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:72px 0}
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:#e2c88f;margin-bottom:16px}
+.hero h1{font-size:clamp(44px,8vw,84px);margin-bottom:10px}
+.hero .guj{font-size:18px;color:#e2c88f;margin-bottom:18px}
+.hero p.lead{max-width:520px;font-size:17px;color:#e7e3da;margin-bottom:30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s ease,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.btn.gold{background:var(--brass);color:#fff}
+.btn.gold:hover{background:var(--brass2)}
+.btn.wa{background:var(--wa);color:#fff}
+.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn.dark{background:var(--ink);color:#fff}
+.btn.line{border:1px solid var(--ink);color:var(--ink)}
+
+.strip{background:var(--ink);color:#e9e2d2}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.strip div{padding:20px 14px;text-align:center;font-size:14px;border-right:1px solid rgba(255,255,255,.08)}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-family:"Cormorant Garamond",serif;font-size:21px;color:#fff;font-weight:600}
+@media (max-width:640px){.strip .wrap{grid-template-columns:1fr}.strip div{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}}
+
+section{padding:84px 0}
+.head{max-width:620px;margin-bottom:40px}
+.head .eyebrow{color:var(--brass2)}
+.head h2{font-size:clamp(34px,5vw,50px);margin-bottom:12px}
+.head p{color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.04)}
+.card .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:27px}
+.card p{color:var(--muted);font-size:15px}
+.card ul{list-style:none;font-size:14.5px;display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.card li{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px 11px}
+.card .price{margin-top:auto;padding-top:12px;font-size:13.5px;color:var(--brass2);font-weight:600}
+
+.alt{background:#efe9dd}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+@media (max-width:860px){.process{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.process{grid-template-columns:1fr}}
+.step{background:var(--card);border-radius:16px;padding:24px;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--brass);font-weight:700;display:block;margin-bottom:4px}
+.step h3{font-size:23px;margin-bottom:6px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:stretch}
+@media (max-width:860px){.visit{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.panel h3{font-size:26px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:500}
+.hours tr.today td{color:var(--brass2);font-weight:600}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.addr{margin:22px 0 18px;font-size:15px;color:var(--ink2)}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:#e9e4da}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+
+.cta{background:var(--ink);color:#fff;text-align:center}
+.cta h2{font-size:clamp(34px,5vw,52px);margin-bottom:12px}
+.cta p{color:#cfc8b8;max-width:560px;margin:0 auto 28px}
+.cta .btns{justify-content:center}
+.cta .mail{margin-top:20px;font-size:14px;color:#a9a294}
+
+footer{background:#0f1218;color:#9a9486;font-size:13px;padding:34px 0 90px}
+footer .wrap{display:flex;flex-direction:column;gap:10px}
+footer .top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#d6cfbf}
+footer .credits{font-size:12px;line-height:1.55}
+footer .credits a{color:#b9b1a0}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25);color:#fff}
+.fab a svg{width:24px;height:24px;fill:currentColor}
+.fab .c{background:var(--ink)}
+.fab .w{background:var(--wa)}
+@media (min-width:900px){.fab .c{display:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Ronak Tailor</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Ronak <span>Tailor</span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+919429366778">Call now</a>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <img src="img/hero.jpg" alt="Tailor stitching fabric on a sewing machine" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Men's Tailor · Naranpura, Ahmedabad</span>
+    <h1>Ronak Tailor</h1>
+    <div class="guj">માપ તમારું, સિલાઈ અમારી</div>
+    <p class="lead">Made-to-measure shirts, trousers, suits and ethnic wear for men, stitched to fit you, plus a men's clothing counter at the same shop.</p>
+    <div class="btns">
+      <a class="btn gold" href="tel:+919429366778"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>Call +91 94293 66778</a>
+      <a class="btn wa" href="https://wa.me/919429366778?text=Hi%20Ronak%20Tailor%2C%20I%27d%20like%20to%20get%20some%20clothes%20stitched." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.8 14.1c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.11-1.9-.12a17 17 0 01-1.7-.63 13.4 13.4 0 01-5.1-4.5 5.8 5.8 0 01-1.2-3.1 3.3 3.3 0 011.05-2.47 1.1 1.1 0 01.8-.37h.57c.18 0 .43-.07.67.51l.92 2.24a.6.6 0 010 .58 2.4 2.4 0 01-.35.58c-.17.2-.36.45-.52.6-.17.17-.35.36-.15.7a10.3 10.3 0 001.9 2.36 9.3 9.3 0 002.74 1.69c.34.17.54.14.74-.09s.85-1 1.08-1.33.45-.28.76-.17 1.98.93 2.32 1.1.57.25.65.4a2.8 2.8 0 01-.2 1.6z"/></svg>WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Made to measure</b>Stitched to your own measurements</div>
+    <div><b>Wedding &amp; festive wear</b>Outfits for functions and occasions</div>
+    <div><b>In Naranpura</b>Sardar Patel Stadium Road, Aishwarya Complex</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">What we stitch</span>
+      <h2>Tailoring for every occasion</h2>
+      <p>From everyday office shirts to your outfit for a family wedding, bring your fabric or choose at the shop, and we'll stitch it to fit.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/shirts.jpg" alt="Close-up of a checked shirt collar" loading="lazy"></div>
+        <div class="bd">
+          <h3>Shirts &amp; Trousers</h3>
+          <p>Formal and casual shirts and trousers stitched to your measurements, with your choice of collar, cuff and fit.</p>
+          <ul><li>Formal shirts</li><li>Casual shirts</li><li>Trousers</li></ul>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/suits.jpg" alt="Tailoring scissors, measuring tape and pin cushion on suit fabric" loading="lazy"></div>
+        <div class="bd">
+          <h3>Suits &amp; Blazers</h3>
+          <p>Suits, blazers and waistcoats cut and finished for a sharp, comfortable fit, for office, parties or receptions.</p>
+          <ul><li>2 &amp; 3-piece suits</li><li>Blazers</li><li>Waistcoats</li></ul>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/ethnic.jpg" alt="Folded embroidered kurta with a stole" loading="lazy"></div>
+        <div class="bd">
+          <h3>Kurtas &amp; Wedding Wear</h3>
+          <p>Kurtas and traditional outfits for weddings, functions and festivals, stitched to measure or from the ready-made counter.</p>
+          <ul><li>Kurta-pyjama</li><li>Festive wear</li><li>Function wear</li></ul>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How it works</span>
+      <h2>Simple, from measure to fitting</h2>
+    </div>
+    <div class="process">
+      <div class="step"><h3>Visit or call</h3><p>Drop in at Aishwarya Complex or WhatsApp us to tell us what you need.</p></div>
+      <div class="step"><h3>Choose &amp; measure</h3><p>Bring your fabric or pick one, choose the style, and we take your measurements.</p></div>
+      <div class="step"><h3>We stitch</h3><p>Your garment is cut and stitched to your measurements. We'll give you a delivery date.</p></div>
+      <div class="step"><h3>Trial &amp; pick-up</h3><p>Try it on, and any small adjustments are made before you take it home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Visit the shop</span>
+      <h2>Hours &amp; location</h2>
+    </div>
+    <div class="visit">
+      <div class="panel">
+        <h3>Opening hours</h3>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Monday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="2"><td>Tuesday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="3"><td>Wednesday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="4"><td>Thursday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="5"><td>Friday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="6"><td>Saturday</td><td>9:30 AM – 9:00 PM</td></tr>
+          <tr data-d="0"><td>Sunday</td><td>Please call to confirm</td></tr>
+        </table>
+        <p class="note">Hours may change on festivals. Please call before visiting.</p>
+        <p class="addr"><strong>Ronak Tailor</strong><br>9, Aishwarya Complex, Sardar Patel Stadium Road,<br>Nayak Nagar, Naranpura, Ahmedabad, Gujarat 380014</p>
+        <div class="btns">
+          <a class="btn dark" href="https://www.google.com/maps/search/?api=1&amp;query=Ronak+Tailor+Aishwarya+Complex+Naranpura+Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn line" href="tel:+919429366778">Call the shop</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map: Aishwarya Complex, Naranpura, Ahmedabad" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Aishwarya%20Complex%2C%20Sardar%20Patel%20Stadium%20Road%2C%20Naranpura%2C%20Ahmedabad%20380014&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2>Need something stitched?</h2>
+    <p>Call or WhatsApp us with what you need, whether it's a shirt, a suit or your wedding outfit, and we'll guide you on fabric, style and timing.</p>
+    <div class="btns">
+      <a class="btn gold" href="tel:+919429366778">Call +91 94293 66778</a>
+      <a class="btn wa" href="https://wa.me/919429366778?text=Hi%20Ronak%20Tailor%2C%20I%27d%20like%20to%20get%20some%20clothes%20stitched." target="_blank" rel="noopener">WhatsApp us</a>
+      <a class="btn ghost" href="#visit">Visit the shop</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top"><span>© <span id="yr">2026</span> Ronak Tailor · Naranpura, Ahmedabad</span><span>+91 94293 66778</span></div>
+    <p class="credits" id="credits">Sample photos: “Tailor sewing machine” by Sajid213 (CC BY-SA 3.0); “Tailoring Tools” by amtec_photos (CC BY-SA 2.0); “Off-white brown square folded shirt” by 2Tales (CC BY-SA 2.0); “Kurta pajamas for men Indian Dress” by beccapie (CC BY-SA 2.0). Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="c" href="tel:+919429366778" aria-label="Call Ronak Tailor"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg></a>
+  <a class="w" href="https://wa.me/919429366778" target="_blank" rel="noopener" aria-label="WhatsApp Ronak Tailor"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  try{
+    var d=new Date().getDay();
+    var r=document.querySelector('#hours tr[data-d="'+d+'"]');
+    if(r) r.className='today';
+    document.getElementById('yr').textContent=new Date().getFullYear();
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

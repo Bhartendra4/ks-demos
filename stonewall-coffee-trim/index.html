@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Stonewall Coffee · Castle Street, Trim</title>
+<meta name="description" content="Stonewall Coffee — fresh brewed coffee, treats and healthy acai bowls on Castle Street, Trim, Co. Meath, across from Trim Castle.">
+<style>
+:root{--ink:#2b211b;--muted:#6f625a;--bg:#faf6f1;--card:#fff;--stone:#8a7d72;--accent:#b5652d;--accent-d:#8f4d1f;--green:#3f5a43;--line:#e8dfd5;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:#f3e9de;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.2px}
+.ribbon b{color:#f0b98a;font-weight:600}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(250,246,241,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-size:21px;font-weight:700;text-decoration:none;letter-spacing:.3px}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.nav .cta{background:var(--accent);color:#fff;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:600}
+@media(max-width:760px){.nav ul{display:none}}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,14,.15) 0%,rgba(30,20,14,.35) 45%,rgba(30,20,14,.85) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:72px;padding-top:120px}
+.eyebrow{display:inline-block;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,7vw,76px);line-height:1.05;font-weight:700;max-width:760px}
+.hero p{font-size:clamp(16px,2.2vw,19px);max-width:560px;margin:18px 0 28px;color:#f2e8de}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-d)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.45)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-line{border:1px solid var(--line);background:#fff;color:var(--ink)}
+.strip{background:var(--green);color:#eef2ea}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:22px 20px;font-size:14.5px}
+.strip b{display:block;font-size:15.5px;color:#fff}
+@media(max-width:700px){.strip .wrap{grid-template-columns:1fr}}
+section{padding:84px 0}
+.head{max-width:620px;margin-bottom:40px}
+.kicker{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,4.4vw,44px);line-height:1.15;margin:8px 0 12px}
+.head p{color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03);transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 14px 34px rgba(60,40,25,.12);transform:translateY(-3px)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:20px 22px 24px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .tag{display:inline-block;margin-top:12px;font-size:12.5px;color:var(--accent-d);background:#f6e9de;padding:4px 10px;border-radius:999px}
+.about{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.split{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr;gap:32px}}
+.split img{border-radius:var(--r);aspect-ratio:1/1;object-fit:cover;width:100%}
+.ticks{list-style:none;margin-top:22px;display:grid;gap:12px}
+.ticks li{padding-left:30px;position:relative;color:var(--ink)}
+.ticks li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--green);box-shadow:inset 0 0 0 5px #dfe8dc}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.info{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.panel h3{font-size:20px;margin-bottom:14px}
+.hours{width:100%;border-collapse:collapse;font-size:15px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.note{font-size:13.5px;color:var(--muted);margin-top:14px}
+.map{border-radius:12px;overflow:hidden;border:1px solid var(--line);margin:14px 0 16px;aspect-ratio:16/10;background:#eee}
+.map iframe{width:100%;height:100%;border:0}
+.contact{background:var(--ink);color:#f3e9de;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#d8cabd;max-width:560px;margin:0 auto 28px;font-size:17px}
+.contact .btns{justify-content:center}
+.contact .mail{margin-top:20px;font-size:15px;color:#f0b98a}
+footer{background:#1e1712;color:#a89a8e;font-size:13px;padding:30px 0 90px}
+footer .wrap{display:grid;gap:10px}
+footer a{color:#d8cabd}
+.credits{font-size:12px;color:#8a7c70}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;background:var(--accent);color:#fff;padding:13px 20px;border-radius:999px;font-weight:600;text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+@media(max-width:760px){.fab{display:inline-flex}}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Stonewall Coffee</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Stonewall <span>Coffee</span></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="cta" href="#visit">Find us</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="img/hero.jpg" alt="A cup of black coffee and a fresh pastry on a wooden tray in a bright café" fetchpriority="high">
+  <div class="wrap">
+    <span class="eyebrow">Castle Street · Trim · Co. Meath</span>
+    <h1>Fresh coffee, right across from Trim Castle.</h1>
+    <p>Freshly brewed coffee, sweet treats and healthy options like acai bowls — the perfect stop before (or after) your sightseeing.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#menu">See what we serve</a>
+      <a class="btn btn-ghost" href="#visit">Get directions</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Walk-in only</b>No booking needed — just drop by</div>
+    <div><b>Breakfast till 11am</b>Start your day the right way</div>
+    <div><b>Eat in, outside or take away</b>Indoor &amp; outdoor seating</div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">What we serve</span>
+      <h2>Good coffee &amp; good food</h2>
+      <p>A short, honest menu made for locals and visitors alike. Full menu and prices available in the café.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <img src="img/coffee.jpg" alt="Creamy latte in a white cup" loading="lazy">
+        <div class="body">
+          <h3>Fresh brewed coffee</h3>
+          <p>Lattes, cappuccinos, americanos and flat whites — made fresh, to stay or to go.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/acai.jpg" alt="Acai bowl topped with raspberries and blueberries" loading="lazy">
+        <div class="body">
+          <h3>Acai bowls</h3>
+          <p>A lighter, healthy option — bright acai topped with fresh berries and seeds.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <img src="img/treats.jpg" alt="Slice of coffee and walnut cake" loading="lazy">
+        <div class="body">
+          <h3>Treats &amp; bakes</h3>
+          <p>Something sweet to go with your coffee — cakes, slices and daily treats.</p>
+          <span class="tag">Price on request</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap split">
+    <img class="reveal" src="img/hero.jpg" alt="Coffee and pastry on a café table" loading="lazy" style="object-position:60% 80%">
+    <div class="reveal">
+      <span class="kicker">Our café</span>
+      <h2>A friendly stop in the heart of Trim</h2>
+      <p style="color:var(--muted);font-size:17px">Stonewall Coffee opened its doors on Castle Street in June 2024, just across the road from Trim Tourist Office and the castle itself. Whether you're a local on the way to work or visiting one of Ireland's great Norman castles, we're here to fuel your day.</p>
+      <ul class="ticks">
+        <li>Freshly brewed coffee, every cup</li>
+        <li>Healthy options like acai bowls</li>
+        <li>Breakfast served until 11am</li>
+        <li>Indoor &amp; outdoor seating, or take away</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="kicker">Visit us</span>
+      <h2>Opening hours &amp; location</h2>
+    </div>
+    <div class="info">
+      <div class="panel reveal">
+        <h3>Opening hours</h3>
+        <table class="hours">
+          <tr><td>Monday – Friday</td><td>To be confirmed</td></tr>
+          <tr><td>Saturday</td><td>To be confirmed</td></tr>
+          <tr><td>Sunday</td><td>To be confirmed</td></tr>
+          <tr><td>Breakfast</td><td>Served until 11am</td></tr>
+        </table>
+        <p class="note">Walk-in only — no booking needed. Exact hours will be added once confirmed by the café.</p>
+      </div>
+      <div class="panel reveal">
+        <h3>Find us</h3>
+        <p>Castle Street, Trim, Co. Meath, Ireland<br><span style="color:var(--muted)">Across from Trim Tourist Office &amp; Trim Castle</span></p>
+        <div class="map"><iframe title="Map of Castle Street, Trim" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Castle%20Street%2C%20Trim%2C%20Co.%20Meath%2C%20Ireland&amp;z=16&amp;output=embed"></iframe></div>
+        <a class="btn btn-dark" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Stonewall+Coffee+Castle+Street+Trim+Co+Meath">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap reveal">
+    <span class="kicker" style="color:#f0b98a">Say hello</span>
+    <h2>Questions, large orders or events?</h2>
+    <p>Drop us an email or send us a message on Facebook — we'd love to hear from you.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="mailto:stonewallcoffee@hotmail.com?subject=Hello%20Stonewall%20Coffee">✉ Email us</a>
+      <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.facebook.com/stonewallcoffee1/">Facebook</a>
+      <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.instagram.com/stonewall_coffee/">Instagram</a>
+    </div>
+    <div class="mail">stonewallcoffee@hotmail.com</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr">2026</span> Stonewall Coffee · Castle Street, Trim, Co. Meath, Ireland</div>
+    <div>Website design: <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+    <div class="credits">Sample photos: A cup of black coffee and a croissant pastry on a wooden tray by Jiwoon Kim (CC0 1.0) · Berries Galore Acai Bowl by ella.o (CC BY 2.0) · Coffee &amp; walnut cake by dichohecho (CC BY 2.0) · A coffee (latte) I made today by insidious_plots (CC BY 2.0). Real photos of your business will replace these.</div>
+  </div>
+</footer>
+
+<a class="fab" href="mailto:stonewallcoffee@hotmail.com">✉ Email us</a>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var els=document.querySelectorAll('.reveal');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
+els.forEach(function(e){io.observe(e)});})();
+</script>
+</body>
+</html>

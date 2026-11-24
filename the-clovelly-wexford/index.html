@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Clovelly — Speciality Coffee, Wexford</title>
+<meta name="description" content="The Clovelly — speciality coffee shop on Common Quay Street, Wexford. Good coffee, waffles, crepes and pancakes in a warm, community-feel café.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f7f1e8;--paper:#fffaf3;--ink:#2b211b;--muted:#6f6158;--coffee:#6b4226;--accent:#b5652f;--sea:#2f5d62;--line:#e6dbcc;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ribbon{background:var(--ink);color:#f3e7d6;font-size:12.5px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+.ribbon a{color:#f0b98a;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(247,241,232,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:Fraunces,serif;font-size:22px;font-weight:700;text-decoration:none;color:var(--coffee)}
+.logo span{color:var(--accent)}
+nav.links{display:flex;gap:22px;font-size:14.5px;font-weight:500}
+nav.links a{text-decoration:none;color:var(--muted)}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(43,33,27,.18)}
+.btn-main{background:var(--accent);color:#fff}
+.btn-light{background:rgba(255,255,255,.92);color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-wa{background:#1f8f4e;color:#fff}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.nav-call{padding:9px 16px;font-size:14px}
+/* hero */
+.hero{position:relative;min-height:84vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,10,.15) 0%,rgba(20,14,10,.35) 45%,rgba(20,14,10,.82) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:64px;padding-top:120px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(44px,8vw,86px);margin-bottom:14px}
+.hero p.lead{font-size:clamp(17px,2.2vw,21px);max-width:560px;opacity:.95;margin-bottom:28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+/* sections */
+section{padding:84px 0}
+.kicker{color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-size:clamp(30px,4.5vw,44px);margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:620px;font-size:17px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.about img{border-radius:var(--r);aspect-ratio:4/3.4;object-fit:cover;box-shadow:0 24px 50px rgba(43,33,27,.18)}
+.pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pill{background:var(--paper);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;font-weight:500}
+.menu{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(43,33,27,.12)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .body{padding:22px}
+.card h3{font-size:23px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .price{margin-top:12px;font-size:13.5px;font-weight:600;color:var(--sea)}
+.note{margin-top:26px;font-size:14px;color:var(--muted)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.panel h3{font-size:22px;margin-bottom:14px}
+.row{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px dashed var(--line);font-size:15.5px}
+.row:last-child{border-bottom:0}
+.row b{min-width:92px;font-weight:600}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:320px;background:#e9e1d4}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.contact{background:var(--coffee);color:#f7ede2;text-align:center}
+.contact .sec-sub{color:#e6d4c3;margin:0 auto}
+.contact .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.contact .btn-ghost{color:#fff;border-color:rgba(255,255,255,.7)}
+footer{background:var(--ink);color:#cbbcae;font-size:13.5px;padding:34px 0 96px}
+footer .wrap{display:grid;gap:10px}
+footer .credits{font-size:12px;color:#9c8c7f}
+footer .credits a{color:#c9a98e}
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;display:none;gap:10px}
+.fab a{flex:1;justify-content:center}
+@media (max-width:860px){
+  nav.links{display:none}
+  .about,.visit{grid-template-columns:1fr;gap:32px}
+  .cards{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .fab{display:flex}
+  .hero{min-height:78vh}
+}
+@media (min-width:861px){footer{padding-bottom:34px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for The Clovelly</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">The Clovelly<span>.</span></a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-main nav-call" href="tel:+353858385308">Call us</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="Cup of coffee with latte art on a saucer" fetchpriority="high">
+    <div class="wrap">
+      <span class="eyebrow">Common Quay Street · Wexford</span>
+      <h1>The Clovelly</h1>
+      <p class="lead">A speciality coffee shop serving consistently good coffee, with a warm atmosphere and a real community feel.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="#menu">See the menu</a>
+        <a class="btn btn-light" href="#visit">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <p class="kicker">Welcome in</p>
+        <h2 class="sec-title">Good coffee, made with care, just off the quay.</h2>
+        <p class="sec-sub">Whether you're grabbing a flat white on the way to work, meeting friends for something sweet, or taking a break from a walk along Wexford's harbour, The Clovelly is a cosy spot to slow down for a few minutes.</p>
+        <div class="pill-row">
+          <span class="pill">☕ Speciality coffee</span>
+          <span class="pill">🧇 Waffles</span>
+          <span class="pill">🥞 Crepes &amp; pancakes</span>
+          <span class="pill">🥡 Takeaway</span>
+        </div>
+      </div>
+      <img src="img/coffee.jpg" alt="Cappuccino with latte art on a wooden table" loading="lazy">
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="wrap">
+      <p class="kicker">On the menu</p>
+      <h2 class="sec-title">Coffee &amp; something sweet</h2>
+      <p class="sec-sub">A short, tasty menu done well. Ask at the counter for today's specials.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="img/coffee.jpg" alt="Cappuccino" loading="lazy">
+          <div class="body">
+            <h3>Speciality Coffee</h3>
+            <p>Espresso, flat whites, lattes, cappuccinos and more, made with care every single cup.</p>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/waffles.jpg" alt="Waffles topped with berries" loading="lazy">
+          <div class="body">
+            <h3>Belgian Waffles</h3>
+            <p>Golden, crisp waffles with sweet toppings, perfect alongside your coffee.</p>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/pancakes.jpg" alt="Stack of pancakes with blueberries" loading="lazy" style="object-position:center 70%">
+          <div class="body">
+            <h3>Crepes &amp; Pancakes</h3>
+            <p>Light crepes and fluffy American-style pancakes with your favourite toppings.</p>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">Menu items shown are examples. The full menu and prices will be added from the café.</p>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <p class="kicker">Visit us</p>
+      <h2 class="sec-title">Find The Clovelly</h2>
+      <p class="sec-sub">Right in Wexford town, a short stroll from the quays and Main Street.</p>
+      <div class="visit">
+        <div class="panel">
+          <h3>Opening hours</h3>
+          <div class="row"><b>Mon – Sun</b><span>Hours to be confirmed. Please call ahead or check our latest posts.</span></div>
+          <h3 style="margin-top:26px">Address</h3>
+          <div class="row"><span>No. 5 Common Quay Street,<br>Wexford, Ireland</span></div>
+          <div class="row"><b>Phone</b><a href="tel:+353858385308">+353 85 838 5308</a></div>
+          <div class="row"><b>Email</b><a href="mailto:theclovelly1@gmail.com">theclovelly1@gmail.com</a></div>
+          <div style="margin-top:18px"><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=The+Clovelly+5+Common+Quay+Street+Wexford" target="_blank" rel="noopener">Get directions</a></div>
+        </div>
+        <div class="map">
+          <iframe title="Map showing The Clovelly, Common Quay Street, Wexford" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=5+Common+Quay+Street,+Wexford,+Ireland&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="kicker" style="color:#f0b98a">Say hello</p>
+      <h2 class="sec-title">Questions, group bookings or just a coffee?</h2>
+      <p class="sec-sub">Give us a call, send a WhatsApp or drop us an email, and we'll get back to you.</p>
+      <div class="ctas">
+        <a class="btn btn-main" href="tel:+353858385308"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Call</a>
+        <a class="btn btn-wa" href="https://wa.me/353858385308" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a15 15 0 0 1-1.5-.6 12 12 0 0 1-4.6-4.1c-.4-.5-1-1.5-1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.1 1.4 1.8 1 .9 1.8 1.2 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:theclovelly1@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Email</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff">The Clovelly</strong> · No. 5 Common Quay Street, Wexford, Ireland · <a href="tel:+353858385308">+353 85 838 5308</a></div>
+    <div>© <span id="yr"></span> The Clovelly. Website demo by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener" style="color:#f0b98a">KS Digital Studio</a>.</div>
+    <p class="credits" id="credits">Sample photos: “Cup of coffee with latte art 2016” by Abdulrohmatt (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>) · “A cup of cappuccino” by Vee Satayamas (<a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener">CC BY 4.0</a>) · “Berries on heart waffles” by Yoori Koo (CC0) · “Blueberry pancake” by Andy Li (CC0), via Wikimedia Commons. Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="btn btn-main" href="tel:+353858385308">Call</a>
+  <a class="btn btn-wa" href="https://wa.me/353858385308" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

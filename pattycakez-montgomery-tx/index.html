@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pattycakez — Custom Cakes, Cookies &amp; Cupcakes · Montgomery, TX</title>
+<meta name="description" content="Pattycakez is a home baker in Montgomery, Texas offering custom cakes, cookies and cupcakes, made under the Texas Cottage Food laws.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+:root{
+  --cream:#fff8f3; --paper:#ffffff; --ink:#2b1d22; --muted:#6f5a61;
+  --rose:#d9577f; --rose-dark:#b23d63; --blush:#fbe3ea; --teal:#1f7a80;
+  --line:#efdde3; --radius:18px; --shadow:0 10px 30px rgba(73,30,45,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.serif{font-family:"Playfair Display",Georgia,"Times New Roman",serif}
+
+/* demo ribbon */
+.ribbon{background:var(--ink);color:#f7e9ee;font-size:.8rem;text-align:center;padding:7px 14px;letter-spacing:.02em}
+.ribbon b{color:#ffd1de;font-weight:600}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,248,243,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.55rem;font-weight:700;text-decoration:none;color:var(--rose-dark);letter-spacing:.01em}
+.logo span{color:var(--ink)}
+.nav nav{display:flex;gap:22px;align-items:center}
+.nav nav a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+.nav nav a:hover{color:var(--rose-dark)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:600;font-size:.98rem;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;font-family:inherit}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--rose);color:#fff;box-shadow:0 6px 18px rgba(217,87,127,.35)}
+.btn-primary:hover{background:var(--rose-dark)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:.9rem}
+@media (max-width:760px){.nav nav a:not(.btn){display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:64px;padding-bottom:72px}
+.eyebrow{display:inline-block;background:var(--blush);color:var(--rose-dark);font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);line-height:1.05;margin-bottom:18px}
+.hero h1 em{color:var(--rose);font-style:italic}
+.hero p.lead{font-size:1.12rem;color:var(--muted);max-width:520px;margin-bottom:28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;background:var(--blush)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.badge{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.95);border-radius:14px;padding:10px 14px;font-size:.85rem;box-shadow:0 6px 16px rgba(0,0,0,.12)}
+.badge b{display:block;font-size:.95rem;color:var(--rose-dark)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:48px}.hero-photo{aspect-ratio:4/3.4}}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 40px}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 14px rgba(73,30,45,.05);display:flex;flex-direction:column}
+.alt .card{background:var(--cream)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.3rem}
+.card p{color:var(--muted);font-size:.96rem;flex:1}
+.price{font-size:.85rem;font-weight:600;color:var(--teal)}
+@media (max-width:860px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.cards{grid-template-columns:1fr}}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--blush);color:var(--rose-dark);font-weight:700;margin-bottom:12px}
+.step h3{font-size:1.05rem;margin-bottom:4px}
+.step p{font-size:.92rem;color:var(--muted)}
+@media (max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+.occasions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px}
+.occasions span{background:var(--blush);color:var(--rose-dark);border-radius:999px;padding:8px 16px;font-size:.92rem;font-weight:500}
+
+/* info */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.panel h3{font-size:1.35rem;margin-bottom:12px}
+.panel ul{list-style:none;display:grid;gap:10px}
+.panel li{display:flex;justify-content:space-between;gap:16px;border-bottom:1px dashed var(--line);padding-bottom:10px;font-size:.97rem}
+.panel li:last-child{border-bottom:0}
+.panel li span:first-child{color:var(--muted)}
+.map{margin-top:16px;border-radius:14px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--blush)}
+.map iframe{width:100%;height:100%;border:0}
+@media (max-width:860px){.info{grid-template-columns:1fr}}
+
+/* order form */
+.order{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.order-copy h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.order-copy p{color:var(--muted);margin-bottom:18px}
+form{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;gap:14px;box-shadow:var(--shadow)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:.86rem;font-weight:600;color:var(--muted);display:grid;gap:6px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:11px 13px;width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+.form-note{font-size:.8rem;color:var(--muted)}
+@media (max-width:860px){.order{grid-template-columns:1fr}}
+@media (max-width:480px){.row{grid-template-columns:1fr}}
+
+/* contact band */
+.band{background:linear-gradient(135deg,var(--rose) 0%,var(--rose-dark) 100%);color:#fff;border-radius:28px;padding:44px 32px;text-align:center}
+.band h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:10px}
+.band p{opacity:.92;margin-bottom:22px}
+.band .cta-row{justify-content:center}
+.band .btn-ghost{color:#fff;border-color:#fff}
+
+footer{padding:40px 0 90px;color:var(--muted);font-size:.86rem}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin-bottom:18px}
+footer .credits{font-size:.75rem;line-height:1.55;border-top:1px solid var(--line);padding-top:16px}
+footer .credits a{color:var(--muted)}
+
+/* mobile sticky bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+.mbar .btn{flex:1;padding:12px 10px}
+@media (max-width:760px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Pattycakez</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo serif" href="#top">Patty<span>cakez</span></a>
+    <nav>
+      <a href="#treats">Treats</a>
+      <a href="#how">How to order</a>
+      <a href="#info">Pickup</a>
+      <a class="btn btn-primary btn-sm" href="#order">Request a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Home baker · Montgomery, Texas</span>
+        <h1 class="serif">Custom cakes made <em>just for your</em> celebration.</h1>
+        <p class="lead">Pattycakez bakes custom cakes, decorated cookies and cupcakes to order, for birthdays, showers, weddings and every little reason to celebrate. Made at home in Montgomery under the Texas Cottage Food laws.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#order">Request a quote</a>
+          <a class="btn btn-ghost" href="mailto:pattycakez@rocketmail.com?subject=Custom%20order%20enquiry">Email Pattycakez</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="img/hero.jpg" alt="A three-tier white celebration cake decorated with fresh white roses" width="1328" height="2000" fetchpriority="high">
+        <div class="badge"><b>Made to order</b>Every cake designed around your event</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="treats" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="serif">What we bake</h2>
+        <p>Every order is custom. Tell us your theme, colors and guest count and we'll plan the design with you.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img src="img/custom-cake.jpg" alt="A round pink fondant cake decorated with pink and white stars" loading="lazy" width="900" height="675">
+          <div class="body">
+            <h3 class="serif">Custom cakes</h3>
+            <p>Birthday, shower, anniversary and wedding cakes in your colors and theme, from simple and elegant to fully decorated.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cookies.jpg" alt="Hand-decorated sugar cookies shaped like pumpkins, acorns and a sunflower" loading="lazy" width="900" height="600">
+          <div class="body">
+            <h3 class="serif">Decorated cookies</h3>
+            <p>Hand-iced sugar cookies made to match your party, holiday or favors table. A sweet gift for any occasion.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/cupcakes.jpg" alt="A chocolate cupcake with swirled pink frosting" loading="lazy" width="900" height="600">
+          <div class="body">
+            <h3 class="serif">Cupcakes</h3>
+            <p>Cupcakes on their own or paired with a matching cake, so your celebration has a coordinated dessert table.</p>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+      </div>
+      <div class="occasions">
+        <span>Birthdays</span><span>Baby showers</span><span>Gender reveals</span><span>Weddings</span><span>Holidays</span><span>Graduations</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="serif">How ordering works</h2>
+        <p>Simple, personal and planned around your date.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Send your idea</h3><p>Share your date, occasion, servings and any inspiration photos.</p></div>
+        <div class="step"><h3>Get a quote</h3><p>We confirm availability, design details and pricing by email.</p></div>
+        <div class="step"><h3>Confirm the order</h3><p>Lock in your date once you're happy with the plan.</p></div>
+        <div class="step"><h3>Pick up &amp; celebrate</h3><p>Collect your treats in Montgomery at the agreed time.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="serif">Ordering &amp; pickup</h2>
+        <p>Pattycakez is a home bakery, so all orders are by request.</p>
+      </div>
+      <div class="info">
+        <div class="panel">
+          <h3 class="serif">Ordering hours</h3>
+          <ul>
+            <li><span>Orders</span><span>By request, any day by email</span></li>
+            <li><span>Lead time</span><span>Please ask early, dates fill up</span></li>
+            <li><span>Pickup</span><span>At an agreed time</span></li>
+            <li><span>Email</span><span><a href="mailto:pattycakez@rocketmail.com">pattycakez@rocketmail.com</a></span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 class="serif">Location</h3>
+          <p style="color:var(--muted)">Based in <b style="color:var(--ink)">Montgomery, Texas</b>. Pickup details are shared when your order is confirmed.</p>
+          <div class="map">
+            <iframe title="Map of Montgomery, Texas" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Montgomery%2C%20TX&amp;z=12&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="wrap order">
+      <div class="order-copy">
+        <span class="eyebrow">Request a quote</span>
+        <h2 class="serif">Tell us about your celebration</h2>
+        <p>Fill in the details and your email app will open with everything ready to send to Pattycakez. You'll hear back by email with availability and a quote.</p>
+        <p style="font-size:.9rem">Prefer to write it yourself? Email <a href="mailto:pattycakez@rocketmail.com">pattycakez@rocketmail.com</a>.</p>
+      </div>
+      <form id="quote" novalidate>
+        <div class="row">
+          <label>Your name<input name="name" required autocomplete="name"></label>
+          <label>Event date<input name="date" type="date" required></label>
+        </div>
+        <div class="row">
+          <label>What would you like?
+            <select name="item">
+              <option>Custom cake</option>
+              <option>Decorated cookies</option>
+              <option>Cupcakes</option>
+              <option>Cake + cupcakes</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Servings / quantity<input name="qty" placeholder="e.g. 20 people, 2 dozen"></label>
+        </div>
+        <label>Theme, colors &amp; flavors<textarea name="notes" placeholder="Occasion, theme, colors, flavors, allergies…"></textarea></label>
+        <button class="btn btn-primary" type="submit">Open email with my request</button>
+        <p class="form-note">Nothing is sent automatically. Your own email app opens so you can review before sending.</p>
+      </form>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <h2 class="serif">Have a date coming up?</h2>
+        <p>Reach out early to check availability for your celebration.</p>
+        <div class="cta-row">
+          <a class="btn btn-light" href="mailto:pattycakez@rocketmail.com?subject=Custom%20order%20enquiry">Email Pattycakez</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/pattycakezwithaz/" target="_blank" rel="noopener">Message on Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div><b class="serif" style="color:var(--rose-dark);font-size:1.15rem">Pattycakez</b><br>Custom cakes, cookies &amp; cupcakes · Montgomery, TX<br>Home baker operating under the Texas Cottage Food laws.</div>
+      <div><a href="mailto:pattycakez@rocketmail.com">pattycakez@rocketmail.com</a><br><a href="https://www.facebook.com/pattycakezwithaz/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+    <p class="credits" id="credits">Sample photos: Fondant Cake decorated with flowers by aliciazinn (Pexels) (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en/" rel="noopener">CC0 1.0</a>) · Pink Starry Fondant Cake by Ken's Oven (<a href="https://creativecommons.org/licenses/by/2.0/" rel="noopener">CC BY 2.0</a>) · Fall decorated sugar cookie platter by m01229 (<a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener">CC BY-SA 2.0</a>) · devil's food cupcakes with white chocolate cream cheese frosting by ginnerobot (<a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="noopener">CC BY-SA 2.0</a>). Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-primary" href="mailto:pattycakez@rocketmail.com?subject=Custom%20order%20enquiry">Email</a>
+  <a class="btn btn-ghost" href="#order">Get a quote</a>
+</div>
+
+<script>
+(function(){
+  var f=document.getElementById('quote');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d=new FormData(f);
+    var name=(d.get('name')||'').trim(), date=d.get('date')||'';
+    if(!name||!date){ alert('Please add your name and event date.'); return; }
+    var body='Hi Pattycakez,\n\nI would like to request a quote.\n\n'+
+      'Name: '+name+'\nEvent date: '+date+'\nOrder: '+d.get('item')+
+      '\nServings / quantity: '+(d.get('qty')||'-')+'\nDetails: '+(d.get('notes')||'-')+'\n\nThank you!';
+    location.href='mailto:pattycakez@rocketmail.com?subject='+encodeURIComponent('Quote request – '+d.get('item')+' for '+date)+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

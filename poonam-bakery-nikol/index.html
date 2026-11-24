@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Poonam Bakery · Nikol, Ahmedabad</title>
+<meta name="description" content="Poonam Bakery, Nikol, Ahmedabad — fresh cakes, pastries, bread, pav, khari and puffs. Open daily 7 AM to 11 PM.">
+<style>
+:root{--cream:#fff8ef;--paper:#ffffff;--ink:#2b1d14;--muted:#6f5c4e;--brand:#b5452b;--brand-d:#8e3220;--gold:#e7a33e;--line:#efe2d2;--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.ribbon{background:var(--ink);color:#f6e7d6;font-size:.78rem;text-align:center;padding:6px 12px;letter-spacing:.02em}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,248,239,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--brand)}
+.logo span{color:var(--ink)}
+.nav ul{display:flex;gap:22px;list-style:none}
+.nav ul a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+.nav ul a:hover{color:var(--brand)}
+@media(max-width:700px){.nav ul{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;text-decoration:none;font-size:.95rem;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-d)}
+.btn-wa{background:#1f9d55;color:#fff}
+.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.55)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,15,8,.15) 0%,rgba(30,15,8,.55) 50%,rgba(30,15,8,.88) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:56px;padding-top:120px}
+.tag{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;font-size:.8rem;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.05;margin-bottom:10px}
+.hero p.lead{font-size:clamp(1rem,2.4vw,1.2rem);max-width:560px;opacity:.95;margin-bottom:6px}
+.hero p.guj{opacity:.85;margin-bottom:24px;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.strip{background:var(--paper);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:18px 16px;text-align:center}
+.strip b{display:block;color:var(--brand);font-size:1rem}
+.strip small{color:var(--muted);font-size:.82rem}
+@media(max-width:600px){.strip .wrap{grid-template-columns:1fr;gap:8px}}
+section{padding:72px 0}
+.eyebrow{color:var(--brand);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4.5vw,2.6rem);line-height:1.15;margin:6px 0 14px}
+.intro{color:var(--muted);max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:36px}
+.card{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(60,30,10,.35);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-family:Georgia,serif;font-size:1.3rem}
+.card p{color:var(--muted);font-size:.95rem;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.chips span{background:var(--cream);border:1px solid var(--line);font-size:.78rem;padding:3px 10px;border-radius:999px}
+.price{font-size:.85rem;font-weight:600;color:var(--brand)}
+.order{background:var(--ink);color:#f8ecdf}
+.order .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.order h2{color:#fff}
+.order p{color:#d9c8b8}
+.steps{list-style:none;display:grid;gap:14px;margin-top:22px}
+.steps li{display:flex;gap:14px;align-items:flex-start}
+.steps .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--gold);color:var(--ink);font-weight:800;display:grid;place-items:center}
+.order .panel{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:26px}
+.order .panel h3{font-family:Georgia,serif;color:#fff;margin-bottom:10px}
+.order .panel .cta{margin-top:16px}
+@media(max-width:800px){.order .grid{grid-template-columns:1fr}}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px}
+@media(max-width:800px){.info{grid-template-columns:1fr}}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.box h3{font-family:Georgia,serif;font-size:1.3rem;margin-bottom:12px}
+table.hours{width:100%;border-collapse:collapse;font-size:.95rem}
+table.hours td{padding:8px 0;border-bottom:1px dashed var(--line)}
+table.hours td:last-child{text-align:right;font-weight:600}
+table.hours tr.today td{color:var(--brand)}
+.open-now{display:inline-block;margin-top:12px;font-size:.85rem;font-weight:700;padding:4px 12px;border-radius:999px;background:#e7f6ec;color:#1f7a45}
+.open-now.closed{background:#fbe9e6;color:var(--brand-d)}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);margin-top:14px;aspect-ratio:16/10;background:#eee}
+.map iframe{width:100%;height:100%;border:0}
+.contact{background:var(--paper);border-top:1px solid var(--line)}
+.contact .cta{margin-top:20px}
+.contact .btn-outline{border:1.5px solid var(--brand);color:var(--brand);background:transparent}
+footer{background:#1e140e;color:#bfae9f;font-size:.82rem;padding:34px 0 90px}
+footer .wrap{display:grid;gap:10px}
+footer b{color:#f3e3d2}
+.credits{font-size:.74rem;opacity:.75}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px -6px rgba(0,0,0,.4);text-decoration:none}
+.fab .call{background:var(--brand)}
+.fab .wa{background:#1f9d55}
+svg{width:20px;height:20px;fill:currentColor}
+.fab svg{width:24px;height:24px}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by KS Digital Studio — for Poonam Bakery</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">Poonam <span>Bakery</span></a>
+    <ul>
+      <li><a href="#bakes">Our Bakes</a></li>
+      <li><a href="#order">Order a Cake</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary" href="tel:+919427325152" style="padding:8px 16px">Call</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="A tray of colourful fresh pastries" width="1600" height="1200" fetchpriority="high">
+    <div class="wrap">
+      <span class="tag">Nikol, Ahmedabad · Open daily</span>
+      <h1>Poonam Bakery</h1>
+      <p class="lead">Fresh cakes, pastries, bread, pav, khari and puffs — baked for your everyday cravings and your special days.</p>
+      <p class="guj">તાજું બેકિંગ, દરરોજ</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+919427325152"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call to order</a>
+        <a class="btn btn-wa" href="https://wa.me/919427325152?text=Hi%20Poonam%20Bakery%2C%20I%27d%20like%20to%20order%20a%20cake." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>WhatsApp us</a>
+        <a class="btn btn-ghost" href="#visit">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><b>7:00 AM – 11:00 PM</b><small>Open all 7 days</small></div>
+      <div><b>Nikol – Naroda Road</b><small>Near Nishant Bunglows</small></div>
+      <div><b>Cakes on order</b><small>Call or WhatsApp to book</small></div>
+    </div>
+  </div>
+
+  <section id="bakes">
+    <div class="wrap">
+      <span class="eyebrow">Our bakes</span>
+      <h2>Something fresh for every craving</h2>
+      <p class="intro">From your morning bread and pav to an evening puff with chai, and the cake for tonight's celebration — drop in, or call ahead and we'll keep it ready.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="img/cakes.jpg" alt="Chocolate cupcake with pink frosting" width="900" height="600" loading="lazy">
+          <div class="body">
+            <h3>Cakes &amp; Pastries</h3>
+            <p>Birthday and celebration cakes, pastries and cupcakes. Tell us the flavour, size and message — we'll bake it for you.</p>
+            <div class="chips"><span>Birthday cakes</span><span>Pastries</span><span>Cupcakes</span></div>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/bread.jpg" alt="Freshly baked bread in a basket" width="900" height="675" loading="lazy">
+          <div class="body">
+            <h3>Bread, Pav &amp; Toast</h3>
+            <p>Daily-fresh bread, soft pav for your bhaji and vada pav, crisp toast and khari for chai time.</p>
+            <div class="chips"><span>Bread</span><span>Pav</span><span>Toast</span><span>Khari</span></div>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/puffs.jpg" alt="Golden puff pastry swirls" width="900" height="596" loading="lazy">
+          <div class="body">
+            <h3>Puffs, Cookies &amp; Biscuits</h3>
+            <p>Flaky puffs, crunchy cookies and bakery biscuits — perfect for snacks, guests and gifting.</p>
+            <div class="chips"><span>Puffs</span><span>Cookies</span><span>Biscuits</span></div>
+            <span class="price">Price on request</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Celebration cakes</span>
+        <h2>Order your cake in 3 easy steps</h2>
+        <p>Birthdays, anniversaries, office parties — share the details and pick it up fresh from the shop.</p>
+        <ol class="steps">
+          <li><span class="n">1</span><div><b style="color:#fff">Choose</b><br>Flavour, size and the message on top.</div></li>
+          <li><span class="n">2</span><div><b style="color:#fff">Send</b><br>Call or WhatsApp us with your date and time.</div></li>
+          <li><span class="n">3</span><div><b style="color:#fff">Collect</b><br>Pick up your cake fresh from our Nikol shop.</div></li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h3>Book a cake now</h3>
+        <p>Tell us what you'd like and when you need it. We'll confirm the details and price.</p>
+        <div class="cta">
+          <a class="btn btn-wa" href="https://wa.me/919427325152?text=Hi%20Poonam%20Bakery%2C%20I%27d%20like%20to%20order%20a%20cake.%20Flavour%3A%20%20Size%3A%20%20Date%3A%20" target="_blank" rel="noopener">WhatsApp order</a>
+          <a class="btn btn-primary" href="tel:+919427325152">+91 94273 25152</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <span class="eyebrow">Visit us</span>
+      <h2>Hours &amp; location</h2>
+      <div class="info">
+        <div class="box">
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Monday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="5"><td>Friday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>7:00 AM – 11:00 PM</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>7:00 AM – 11:00 PM</td></tr>
+          </table>
+          <span class="open-now" id="openNow" hidden></span>
+        </div>
+        <div class="box">
+          <h3>Find the shop</h3>
+          <p>Nishant Bunglows, Nikol – Naroda Road, Nikol Gam Road, Nikol, Ahmedabad, Gujarat 380049</p>
+          <div class="map"><iframe title="Map to Poonam Bakery, Nikol" loading="lazy" src="https://www.google.com/maps?q=Poonam+Bakery+Nishant+Bunglows+Nikol+Naroda+Road+Ahmedabad&output=embed"></iframe></div>
+          <div class="cta" style="margin-top:14px"><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Poonam+Bakery+Nikol+Naroda+Road+Ahmedabad" target="_blank" rel="noopener">Get directions</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h2>Call, WhatsApp or drop in</h2>
+      <p class="intro">For cake orders, bulk orders for functions, or to check what's fresh today — we're just a call away.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+919427325152">Call +91 94273 25152</a>
+        <a class="btn btn-wa" href="https://wa.me/919427325152" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-outline" href="#visit">Directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Poonam Bakery</b> · Nikol – Naroda Road, Nikol, Ahmedabad 380049 · +91 94273 25152 · Open daily 7 AM – 11 PM</div>
+    <div class="credits" id="credits">Sample photos: Assorted Pastries - Indian by Rameshng (CC BY-SA 2.0); devil's food cupcakes with white chocolate cream cheese frosting by ginnerobot (CC BY-SA 2.0); Fresh Bread by Nutrition, Food Safety &amp; Health (CC0 1.0); Puff pastry cinnamon palmier by Valters Krontals (CC BY 2.0). Real photos of your business will replace these.</div>
+    <div class="credits">Demo website designed by KS Digital Studio · ksdigitalstudio.in</div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="wa" href="https://wa.me/919427325152" target="_blank" rel="noopener" aria-label="WhatsApp Poonam Bakery"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+  <a class="call" href="tel:+919427325152" aria-label="Call Poonam Bakery"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+
+<script>
+(function(){
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var d=now.getDay(),h=now.getHours();
+    var row=document.querySelector('#hours tr[data-d="'+d+'"]');
+    if(row)row.className='today';
+    var el=document.getElementById('openNow');
+    var open=h>=7&&h<23;
+    el.textContent=open?'Open now':'Closed now · opens 7:00 AM';
+    if(!open)el.classList.add('closed');
+    el.hidden=false;
+  }catch(e){}
+})();
+</script>
+</body>
+</html>

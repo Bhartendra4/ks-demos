@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Bakery on Main · Ashtabula, Ohio</title>
+<meta name="description" content="The Bakery on Main — a women-owned family bakery on Main Avenue in Ashtabula, Ohio. From-scratch croissants, cookies, cinnamon rolls and breads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fbf6ee;--dough:#f3e6d2;--crust:#b4692f;--crust-dk:#8a4d1f;--cocoa:#3b2618;--ink:#2a1d14;--muted:#6f5a49;--line:#e6d6bf;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.ribbon{background:var(--cocoa);color:#f3e6d2;font-size:12.5px;text-align:center;padding:7px 16px;letter-spacing:.02em}
+.ribbon a{color:#fff;font-weight:600;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(251,246,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:20px;text-decoration:none;color:var(--cocoa)}
+.logo span{color:var(--crust)}
+.nav ul{display:flex;gap:26px;list-style:none;font-size:14.5px;font-weight:500}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--crust)}
+.nav .call{background:var(--crust);color:#fff;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:600}
+.menu-btn{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--cocoa)}
+.hero{position:relative;overflow:hidden;padding:84px 0 92px;background:radial-gradient(1200px 500px at 85% -10%,#f0d7b4 0%,transparent 60%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--crust-dk);background:var(--dough);padding:6px 12px;border-radius:999px;margin-bottom:20px}
+h1{font-family:Fraunces,serif;font-size:clamp(40px,6vw,66px);line-height:1.04;color:var(--cocoa);font-weight:700;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--crust)}
+.hero p.lead{font-size:18px;color:var(--muted);margin:22px 0 32px;max-width:520px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(59,38,24,.15)}
+.btn-primary{background:var(--crust);color:#fff}
+.btn-ghost{background:var(--white);color:var(--cocoa);border:1px solid var(--line)}
+.plate{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 50%,#fff 0 58%,var(--dough) 58% 64%,#fff 64% 66%,transparent 66%);position:relative;display:grid;place-items:center;filter:drop-shadow(0 30px 40px rgba(138,77,31,.18))}
+.plate svg{width:62%;height:auto}
+.badge{position:absolute;bottom:8%;left:-4%;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font-size:13.5px;box-shadow:0 10px 30px rgba(59,38,24,.1)}
+.badge b{display:block;font-family:Fraunces,serif;font-size:16px;color:var(--cocoa)}
+section{padding:84px 0}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 48px}
+.sec-head .eyebrow{margin-bottom:14px}
+h2{font-family:Fraunces,serif;font-size:clamp(30px,4vw,42px);color:var(--cocoa);line-height:1.15}
+.sec-head p{color:var(--muted);margin-top:12px}
+.values{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0}
+.values .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.values b{font-family:Fraunces,serif;font-size:19px;color:var(--cocoa);display:block}
+.values span{font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:26px 22px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(59,38,24,.1)}
+.card .ico{width:54px;height:54px;border-radius:14px;background:var(--dough);display:grid;place-items:center;font-size:26px;margin-bottom:16px}
+.card h3{font-family:Fraunces,serif;font-size:20px;color:var(--cocoa);margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--muted)}
+.card .price{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:600;color:var(--crust-dk);background:var(--cream);padding:4px 10px;border-radius:999px}
+.about{background:var(--dough)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about p{color:var(--muted);margin-top:16px}
+.about ul{list-style:none;margin-top:22px;display:grid;gap:10px}
+.about li{display:flex;gap:10px;align-items:flex-start}
+.about li::before{content:"✓";color:var(--crust);font-weight:700}
+.about-art{background:var(--cocoa);border-radius:24px;padding:40px;color:var(--dough);position:relative;overflow:hidden}
+.about-art h3{font-family:Fraunces,serif;font-size:30px;line-height:1.2;color:#fff}
+.about-art p{color:#e2cfb6}
+.about-art::after{content:"";position:absolute;right:-60px;bottom:-60px;width:200px;height:200px;border-radius:50%;border:30px solid rgba(243,230,210,.08)}
+.order{text-align:center}
+.order .box{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:48px 28px;max-width:760px;margin:0 auto}
+.order .box p{color:var(--muted);margin:12px auto 26px;max-width:520px}
+.order .btns{justify-content:center}
+.visit .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+.info{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:30px}
+.info h3{font-family:Fraunces,serif;font-size:22px;color:var(--cocoa);margin-bottom:16px}
+.row{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row .k{width:90px;flex-shrink:0;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--crust-dk)}
+.row .v{color:var(--ink)}
+.row .v small{display:block;color:var(--muted)}
+.map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:340px;background:var(--dough)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.contact{background:var(--cocoa);color:var(--dough)}
+.contact h2{color:#fff}
+.contact .sec-head p{color:#d9c4a8}
+form{max-width:620px;margin:0 auto;display:grid;gap:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,textarea,select{width:100%;padding:14px 16px;border-radius:12px;border:1px solid rgba(243,230,210,.2);background:rgba(255,255,255,.06);color:#fff;font:inherit;font-size:15px}
+input::placeholder,textarea::placeholder{color:#bfa98e}
+select option{color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+form .btn{justify-content:center;border:0;cursor:pointer;font:inherit;font-weight:600}
+.note{font-size:13px;color:#bfa98e;text-align:center}
+#formMsg{display:none;text-align:center;background:rgba(255,255,255,.08);padding:14px;border-radius:12px}
+footer{background:#2a1b11;color:#bfa98e;padding:30px 0;font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#f3e6d2;text-decoration:none}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:none;background:var(--crust);color:#fff;width:56px;height:56px;border-radius:50%;place-items:center;font-size:24px;text-decoration:none;box-shadow:0 10px 24px rgba(138,77,31,.4)}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+.hero-photo{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(60,32,14,.28);background:#e9dcc8}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-photo .badge{position:absolute;left:16px;bottom:16px}
+.card{padding:0;overflow:hidden}
+.card .photo{aspect-ratio:4/3;overflow:hidden;background:#efe3d1}
+.card .photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.card:hover .photo img{transform:scale(1.05)}
+.card .body{padding:20px 22px 24px}
+.about-photo{border-radius:22px;overflow:hidden;margin-bottom:22px;aspect-ratio:16/9}
+.about-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.credits{font-size:11.5px;opacity:.7;margin-top:10px;line-height:1.5}
+.credits a{text-decoration:underline}
+@media (max-width:900px){
+ .grid{grid-template-columns:repeat(2,1fr)}
+ .hero .wrap,.about .wrap,.visit .wrap{grid-template-columns:1fr}
+ .hero-art{max-width:340px;margin:0 auto}
+}
+@media (max-width:720px){
+ .nav ul,.nav .call{display:none}
+ .menu-btn{display:block}
+ .nav.open ul{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:var(--cream);padding:18px 20px;gap:16px;border-bottom:1px solid var(--line)}
+ .hero{padding:52px 0 64px}
+ section{padding:64px 0}
+ .values .wrap{grid-template-columns:1fr;gap:16px}
+ .two{grid-template-columns:1fr}
+ .fab{display:grid}
+ .badge{left:0}
+}
+@media (max-width:460px){.grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for The Bakery on Main</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo">The Bakery <span>on Main</span></a>
+    <ul>
+      <li><a href="#bakes">Our Bakes</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+14409903096">Call 440-990-3096</a>
+    <button class="menu-btn" aria-label="Open menu" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Ashtabula, Ohio · Main Avenue</span>
+        <h1>Baked from scratch, <em>fresh</em> every day.</h1>
+        <p class="lead">A women-owned family bakery making croissants, cookies, cinnamon rolls and breads by hand — with fresh ingredients, the way baking should be.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="tel:+14409903096">📞 Call to order</a>
+          <a class="btn btn-ghost" href="sms:+14409903096">💬 Text us</a>
+          <a class="btn btn-ghost" href="#visit">📍 Find us</a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-photo">
+          <img src="img/hero.jpg" alt="Fresh artisan loaves on the counter" fetchpriority="high">
+          <div class="badge"><b>Made by hand</b>Women-owned · family-run</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="values">
+    <div class="wrap">
+      <div><b>From scratch</b><span>Every batch made in-house</span></div>
+      <div><b>Fresh daily</b><span>Fresh ingredients, every morning</span></div>
+      <div><b>Family-owned</b><span>A women-owned local bakery</span></div>
+    </div>
+  </div>
+
+  <section id="bakes">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Our Bakes</span>
+        <h2>Something warm from the oven</h2>
+        <p>Our everyday favourites. Selection changes with the day — call ahead to check what's fresh.</p>
+      </div>
+      <div class="grid">
+        <div class="card reveal"><div class="photo"><img src="img/croissants.jpg" alt="Golden croissants" loading="lazy"></div><div class="body"><h3>Croissants</h3><p>Buttery, flaky layers, rolled and baked from scratch.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/cookies.jpg" alt="Chocolate chip cookies" loading="lazy"></div><div class="body"><h3>Cookies</h3><p>Classic home-style cookies — perfect by the dozen or for a treat on the go.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/cinnamon-rolls.jpg" alt="Cinnamon buns" loading="lazy"></div><div class="body"><h3>Cinnamon Rolls</h3><p>Soft, swirled and generously spiced — a morning favourite.</p><span class="price">Price on request</span></div></div>
+        <div class="card reveal"><div class="photo"><img src="img/breads.jpg" alt="Braided challah loaves" loading="lazy"></div><div class="body"><h3>Breads</h3><p>Fresh loaves baked daily for your table, sandwiches and toast.</p><span class="price">Price on request</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Our Story</span>
+        <h2>A family bakery on Main Avenue</h2>
+        <p>The Bakery on Main is a women-owned, family-run bakery in the heart of Ashtabula. We believe good baking is simple: real ingredients, made by hand, baked fresh.</p>
+        <ul>
+          <li>Everything made from scratch in our own kitchen</li>
+          <li>Fresh ingredients used daily</li>
+          <li>Croissants, cookies, cinnamon rolls, breads and more</li>
+        </ul>
+      </div>
+      <div class="about-art reveal">
+        <div class="about-photo"><img src="img/about.jpg" alt="Freshly baked breads" loading="lazy"></div>
+        <h3>Good mornings start at the bakery.</h3>
+        <p style="margin-top:14px">Stop in on Main Avenue, or call ahead and we'll have your order ready.</p>
+        <div class="btns" style="margin-top:24px"><a class="btn btn-primary" href="tel:+14409903096">Call 440-990-3096</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="wrap">
+      <div class="box reveal">
+        <span class="eyebrow">Orders</span>
+        <h2>Ordering for a crowd?</h2>
+        <p>Office mornings, family gatherings or a box of treats for someone special — give us a call or send a message and we'll help you put together your order.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="tel:+14409903096">📞 Call the bakery</a>
+          <a class="btn btn-ghost" href="#contact">✉️ Send an order request</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="info reveal">
+        <h3>Visit the bakery</h3>
+        <div class="row"><div class="k">Address</div><div class="v">4608 Main Avenue<small>Ashtabula, OH 44004</small></div></div>
+        <div class="row"><div class="k">Phone</div><div class="v"><a href="tel:+14409903096">440-990-3096</a><small>Call or text</small></div></div>
+        <div class="row"><div class="k">Hours</div><div class="v">Please call for today's hours<small>Fresh bakes go fast — call ahead!</small></div></div>
+        <div class="btns" style="margin-top:18px">
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=4608+Main+Ave+Ashtabula+OH" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to The Bakery on Main" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4608+Main+Ave,+Ashtabula,+OH&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="eyebrow" style="background:rgba(255,255,255,.08);color:#f3e6d2">Get in touch</span>
+        <h2>Questions or an order request?</h2>
+        <p>Fill this in and it will open a text message to the bakery — or simply call 440-990-3096.</p>
+      </div>
+      <form id="contactForm" class="reveal" novalidate>
+        <div class="two">
+          <input name="name" placeholder="Your name" required>
+          <input name="when" placeholder="Pickup day (optional)">
+        </div>
+        <select name="topic">
+          <option>General question</option>
+          <option>Order request</option>
+          <option>Treats for an event</option>
+        </select>
+        <textarea name="msg" placeholder="What would you like?" required></textarea>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <div id="formMsg"></div>
+        <p class="note">This demo form doesn't store anything — it opens your phone's messaging app.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> The Bakery on Main · 4608 Main Ave, Ashtabula, OH</div>
+    <div>Demo website by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+  </div>
+<p class="credits">Sample photos: <a href="https://www.rawpixel.com/image/3282923/free-photo-image-artisanal-bread-baguettes" target="_blank" rel="noopener">Loaves artisanal bread baguettes Venice</a> (CC CC0 1.0) · <a href="https://www.flickr.com/photos/46583370@N04/4599562280" target="_blank" rel="noopener">Croissant</a> by Blarvar (CC PDM 1.0) · <a href="https://www.flickr.com/photos/95142644@N00/671970657" target="_blank" rel="noopener">Challah loaves</a> by Ruth and Dave (CC BY 2.0) · <a href="https://www.flickr.com/photos/70757891@N00/7133349441" target="_blank" rel="noopener">Browned butter chocolate chip cookies</a> by grongar (CC BY 2.0) · <a href="https://www.flickr.com/photos/55856449@N04/16040236058" target="_blank" rel="noopener">Cinnamon buns</a> by Infomastern (CC BY-SA 2.0) · <a href="https://www.flickr.com/photos/95142644@N00/671962729" target="_blank" rel="noopener">Dave&#x27;s bread</a> by Ruth and Dave (CC BY 2.0). Your own bakery photos will replace these.</p></footer>
+
+<a class="fab" href="tel:+14409903096" aria-label="Call the bakery">📞</a>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var nav = document.getElementById('nav');
+  document.getElementById('menuBtn').addEventListener('click', function(){ nav.classList.toggle('open'); });
+  nav.querySelectorAll('ul a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
+
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold: .12});
+    els.forEach(function(el){ io.observe(el); });
+  } else { els.forEach(function(el){ el.classList.add('in'); }); }
+
+  document.getElementById('contactForm').addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var f = ev.target, out = document.getElementById('formMsg');
+    if (!f.name.value.trim() || !f.msg.value.trim()) {
+      out.style.display = 'block'; out.textContent = 'Please add your name and a short message.'; return;
+    }
+    var body = 'Hi, this is ' + f.name.value.trim() + '. ' + f.topic.value + ': ' + f.msg.value.trim() +
+      (f.when.value.trim() ? ' (Pickup: ' + f.when.value.trim() + ')' : '');
+    out.style.display = 'block'; out.textContent = 'Opening your messages app…';
+    window.location.href = 'sms:+14409903096?&body=' + encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>

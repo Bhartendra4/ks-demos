@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accessibility report — www.ksdigitalstudio.in</title>
+<style>
+:root{--ink:#101828;--muted:#5b6475;--line:#e4e7ef;--brand:#1f4fd8}*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,Segoe UI,Inter,Arial,sans-serif;color:var(--ink);background:#f6f7fb;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:28px 20px}header{display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:800;font-size:18px}.brand span{color:var(--brand)}h1{font-size:28px;margin:18px 0 4px}.muted{color:var(--muted)}
+.top{display:grid;grid-template-columns:220px 1fr;gap:18px;margin:20px 0}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.score{text-align:center}.score .n{font-size:64px;font-weight:800;color:#0f9d58;line-height:1}.score .g{font-weight:700;color:#0f9d58}
+.counts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.counts div{background:#f6f7fb;border-radius:10px;padding:10px;text-align:center}.counts b{display:block;font-size:22px}
+.shot img{width:100%;max-height:380px;object-fit:cover;object-position:top;border-radius:10px;border:1px solid var(--line)}
+.issue{background:#fff;border:1px solid var(--line);border-left:6px solid #9aa4b2;border-radius:12px;padding:14px 16px;margin:12px 0;page-break-inside:avoid}
+.issue.critical{border-left-color:#d93025}.issue.serious{border-left-color:#e8710a}.issue.moderate{border-left-color:#c27c0e}
+.ih{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.imp{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cnt{margin-left:auto;font-size:13px;color:var(--muted)}.issue p{margin:6px 0;font-size:14.5px}.ref{font-size:12.5px;color:var(--muted)}
+code{font-size:12px;background:#f1f3f8;padding:1px 4px;border-radius:4px;word-break:break-all}details{font-size:13px}
+.law{display:grid;grid-template-columns:1fr 1fr;gap:14px}.cta{background:var(--brand);color:#fff;border-radius:14px;padding:20px;margin-top:20px}.cta a{color:#fff}
+.note{font-size:12px;color:var(--muted);margin-top:16px}
+@media (max-width:700px){.top,.law{grid-template-columns:1fr}.counts{grid-template-columns:repeat(2,1fr)}}
+@media print{body{background:#fff}.wrap{padding:0 8px}details{display:block}details>*{display:block}}
+</style></head><body><div class="wrap">
+<header><div class="brand">Access<span>Scan</span> <span class="muted" style="font-weight:500;font-size:13px">by KS Digital Studio</span></div><div class="muted">2026-10-23</div></header>
+<h1>Accessibility report for www.ksdigitalstudio.in</h1><div class="muted">Glow Studio — Hair, nails &amp; beauty salon · Concept by KS Digital Studio · https://www.ksdigitalstudio.in/concepts/glow-studio/index.html</div>
+<div class="top"><div class="card score"><div class="n">89</div><div class="g">Good</div><div class="muted" style="font-size:13px;margin-top:6px">Automated score (0–100)</div></div>
+<div class="card"><b>2 types of problems, 3 issues found on this page</b> (automated WCAG 2.2 AA check).
+<div class="counts"><div><b style="color:#d93025">0</b>Critical</div><div><b style="color:#e8710a">2</b>Serious</div><div><b style="color:#c27c0e">1</b>Moderate</div><div><b>0</b>Minor</div></div></div></div>
+<div class="card shot"><img src="screenshot.png" alt="Screenshot of the scanned page"></div>
+<h2>Why this matters</h2><div class="law">
+<div class="card"><b>🇪🇺 Europe — European Accessibility Act</b><p class="muted" style="font-size:14px">In force since 28 June 2025 for e-commerce and many consumer services sold in the EU (micro-enterprises are largely exempt). National authorities can order fixes and impose penalties; courts have already ordered major retailers to fix their sites.</p></div>
+<div class="card"><b>🇺🇸 USA — ADA website claims</b><p class="muted" style="font-size:14px">Thousands of website accessibility lawsuits are filed every year, many more demand letters are sent, and most targets are small and mid-sized businesses — especially online stores.</p></div></div>
+<h2>Issues to fix (most important first)</h2><div class="issue serious"><div class="ih"><span class="imp">Serious</span>
+          <b>Text is hard to read</b><span class="cnt">2 on this page</span></div>
+          <p><b>Why it matters:</b> Some text doesn&#x27;t have enough contrast with its background, so people with low vision can&#x27;t read it.</p><p><b>How to fix:</b> Darken the text or lighten the background until the contrast ratio is at least 4.5:1 (3:1 for large text).</p>
+          <p class="ref">WCAG 1.4.3 · rule <code>color-contrast</code> · <a href="https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI">guidance</a></p>
+          <details><summary>Examples from your page</summary><ul><li><code>&lt;button class=&quot;cta-s&quot; data-demo=&quot;&quot;&gt;Book appointment&lt;/button&gt;</code></li><li><code>&lt;a class=&quot;btn btn-p&quot; href=&quot;#book&quot;&gt;Book appointment&lt;/a&gt;</code></li></ul></details></div><div class="issue moderate"><div class="ih"><span class="imp">Moderate</span>
+          <b>Content outside landmarks</b><span class="cnt">1 on this page</span></div>
+          <p><b>Why it matters:</b> Parts of the page aren&#x27;t inside header/nav/main/footer regions.</p><p><b>How to fix:</b> Place all content inside semantic landmark elements.</p>
+          <p class="ref">WCAG Best practice · rule <code>region</code> · <a href="https://dequeuniversity.com/rules/axe/4.10/region?application=axeAPI">guidance</a></p>
+          <details><summary>Examples from your page</summary><ul><li><code>&lt;div class=&quot;ribbon&quot;&gt;Concept website by &lt;a href=&quot;https://www.ksdigitalstudio.in&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;KS Digital Studio&lt;/a&gt; — Glow Studio is a fictional brand&lt;/div&gt;</code></li></ul></details></div>
+<div class="cta"><b style="font-size:18px">Want these fixed properly — in the code, not with an overlay?</b>
+<p style="margin:8px 0 0">KS Digital Studio fixes accessibility issues directly in your website and re-tests until it passes. Fixed-price quote within 24 hours.<br>
+info@ksdigitalstudio.in · www.ksdigitalstudio.in</p></div>
+<p class="note">Automated tools find roughly a third to a half of accessibility problems; a full audit also needs manual keyboard and screen-reader testing. This report checks one page with axe-core 4.10 (WCAG 2.0/2.1/2.2 A & AA rules). It is not legal advice or a certificate of compliance.</p>
+</div></body></html>

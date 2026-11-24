@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Atharva Physiotherapy Clinic — Gota, Ahmedabad</title>
+<meta name="description" content="Atharva Physiotherapy Clinic, Gota, Ahmedabad — orthopedic, neurological, sports, pediatric, geriatric and cardiopulmonary physiotherapy. Book an appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f2a33; --muted:#53707a; --bg:#f6faf9; --card:#ffffff; --line:#dde9e7;
+  --teal:#0e7c74; --teal-d:#0a5f59; --teal-l:#e3f3f1; --accent:#f4a259;
+  --radius:18px; --shadow:0 10px 30px rgba(15,42,51,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2}
+h1,h2{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.01em}
+.ribbon{background:var(--ink);color:#d8ecea;font-size:13px;text-align:center;padding:8px 16px}
+.ribbon b{color:#fff}
+header{position:sticky;top:0;z-index:20;background:rgba(246,250,249,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:17px}
+.logo .mark{width:38px;height:38px;border-radius:12px;background:var(--teal);display:grid;place-items:center;color:#fff}
+.logo small{display:block;font-weight:500;font-size:12px;color:var(--muted);margin-top:-3px}
+.links{display:none;gap:26px;font-weight:600;font-size:15px}
+.links a{text-decoration:none;color:var(--muted)}
+.links a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font:700 15px Manrope,sans-serif;text-decoration:none;border-radius:999px;padding:13px 22px;transition:.2s}
+.btn-p{background:var(--teal);color:#fff}
+.btn-p:hover{background:var(--teal-d)}
+.btn-o{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-o:hover{border-color:var(--teal);color:var(--teal)}
+.btn-sm{padding:10px 16px;font-size:14px;white-space:nowrap}
+@media(max-width:560px){.nav .btn-sm{display:none}.logo{font-size:16px}}
+.menu-btn{background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:42px;display:grid;place-items:center;cursor:pointer}
+.mobile-menu{display:none;flex-direction:column;padding:8px 20px 18px;gap:4px;border-top:1px solid var(--line)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:10px 0;text-decoration:none;font-weight:600;border-bottom:1px solid var(--line)}
+.hero{position:relative;padding:44px 0 56px}
+.hero-grid{display:grid;gap:32px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--teal-l);color:var(--teal-d);font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px}
+.hero h1{font-size:clamp(34px,7vw,58px);margin:16px 0 14px}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p.lead{color:var(--muted);font-size:17px;max-width:540px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.hero-img{position:relative;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;left:16px;bottom:16px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;font-size:14px;max-width:calc(100% - 32px)}
+.hero-badge .ic{width:40px;height:40px;border-radius:12px;background:var(--teal-l);display:grid;place-items:center;color:var(--teal);flex:none}
+.quick{display:grid;gap:12px;margin-top:30px}
+.quick div{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--muted)}
+.quick svg{flex:none;color:var(--teal);margin-top:2px}
+section{padding:64px 0}
+.sec-head{max-width:640px;margin-bottom:34px}
+.eyebrow{color:var(--teal);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+.sec-head h2{font-size:clamp(28px,5vw,40px);margin:8px 0 10px}
+.sec-head p{color:var(--muted)}
+.feature{display:grid;gap:18px}
+.fcard{background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.fcard img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.fcard .b{padding:20px 22px 24px}
+.fcard h3{font-size:19px;margin-bottom:6px}
+.fcard p{color:var(--muted);font-size:15px}
+.svc{display:grid;gap:14px;margin-top:18px}
+.scard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;gap:16px;align-items:flex-start;transition:.2s}
+.scard:hover{border-color:var(--teal);transform:translateY(-2px)}
+.scard .ic{width:46px;height:46px;border-radius:14px;background:var(--teal-l);color:var(--teal);display:grid;place-items:center;flex:none}
+.scard h3{font-size:17px;margin-bottom:4px}
+.scard p{color:var(--muted);font-size:14.5px}
+.why{background:var(--ink);color:#e6f1ef}
+.why .sec-head p,.why .eyebrow{color:#9fc9c4}
+.why-grid{display:grid;gap:16px}
+.wcard{border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:24px;background:rgba(255,255,255,.03)}
+.wcard .n{font-family:Fraunces,serif;font-size:28px;color:var(--accent)}
+.wcard h3{font-size:18px;margin:6px 0}
+.wcard p{color:#b6cfcb;font-size:15px}
+.steps{display:grid;gap:14px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:22px;border:1px solid var(--line);position:relative;padding-left:72px}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:22px;top:22px;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:800}
+.step h3{font-size:17px}
+.step p{color:var(--muted);font-size:15px}
+.book{display:grid;gap:22px}
+.book-info{background:var(--teal);color:#fff;border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:18px}
+.book-info h2{font-size:32px}
+.book-info p{color:#d6efec}
+.cline{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:#fff}
+.cline .ic{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.14);display:grid;place-items:center;flex:none}
+.cline small{display:block;color:#bfe4df;font-size:12px}
+.cline span{font-weight:700;word-break:break-word}
+form{background:#fff;border-radius:24px;padding:28px;box-shadow:var(--shadow);display:grid;gap:14px}
+.row{display:grid;gap:14px}
+label{font-weight:700;font-size:14px;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;font:500 15px Manrope,sans-serif;color:var(--ink);padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:#fbfdfd}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal-l);border-color:var(--teal)}
+textarea{min-height:96px;resize:vertical}
+.note{font-size:13px;color:var(--muted)}
+.ok{display:none;background:var(--teal-l);color:var(--teal-d);padding:14px;border-radius:12px;font-weight:600}
+.loc{display:grid;gap:20px}
+.map{border-radius:24px;overflow:hidden;min-height:300px;border:1px solid var(--line);background:#e8f0ee}
+.map iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+.addr{background:#fff;border-radius:24px;padding:28px;border:1px solid var(--line)}
+.addr h3{font-size:20px;margin-bottom:8px}
+.addr p{color:var(--muted);margin-bottom:16px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:12px}
+.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--teal);font-size:22px;line-height:1}
+.faq details[open] summary:after{content:"–"}
+.faq details p{color:var(--muted);margin-top:10px;font-size:15px}
+footer{background:#0b1f26;color:#9fb8b5;padding:42px 0 96px;font-size:14px}
+footer .fg{display:grid;gap:22px}
+footer h4{color:#fff;margin-bottom:8px;font-size:15px}
+footer a{color:#cfe5e2;text-decoration:none}
+.credits{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:18px;font-size:12px;color:#7f9a97}
+.credits a{color:#a9c6c2;text-decoration:underline}
+.fab{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:10px 12px;background:rgba(255,255,255,.96);border-top:1px solid var(--line)}
+.fab a{display:flex;align-items:center;justify-content:center;gap:6px;padding:11px 6px;border-radius:12px;font-weight:700;font-size:14px;text-decoration:none}
+.fab .c{background:var(--teal);color:#fff}
+.fab .w{background:#25d366;color:#fff}
+.fab .e{background:var(--teal-l);color:var(--teal-d)}
+@media(min-width:720px){
+  .feature{grid-template-columns:repeat(3,1fr)}
+  .svc{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .row{grid-template-columns:1fr 1fr}
+  .quick{grid-template-columns:repeat(3,1fr)}
+  footer .fg{grid-template-columns:2fr 1fr 1fr}
+}
+@media(min-width:980px){
+  .links{display:flex}
+  .menu-btn{display:none}
+  .hero{padding:70px 0 80px}
+  .hero-grid{grid-template-columns:1.05fr 1fr}
+  .svc{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:repeat(4,1fr)}
+  .book{grid-template-columns:.85fr 1.15fr}
+  .loc{grid-template-columns:1.4fr 1fr}
+  .fab{display:none}
+  footer{padding-bottom:42px}
+  section{padding:88px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Atharva Physiotherapy Clinic</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">
+      <span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="4.5" r="2"/><path d="M12 8v6m0 0-4 6m4-6 4 6M6 10.5l6-2 6 2"/></svg></span>
+      <span>Atharva Physiotherapy<small>Gota, Ahmedabad</small></span>
+    </a>
+    <nav class="links">
+      <a href="#services">Treatments</a>
+      <a href="#why">Why us</a>
+      <a href="#book">Appointment</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-p btn-sm" href="#book">Book visit</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services">Treatments</a><a href="#why">Why us</a><a href="#book">Appointment</a><a href="#location">Location</a><a href="#faq">FAQ</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">● Physiotherapy &amp; Rehabilitation · Gota</span>
+      <h1>Move better.<br>Recover <em>with a plan.</em></h1>
+      <p class="lead">Atharva Physiotherapy Clinic offers orthopedic, neurological, sports, pediatric, geriatric and cardiopulmonary physiotherapy — with a treatment plan built around your condition and your goals.</p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="#book">Book an appointment</a>
+        <a class="btn btn-o" href="tel:+916354073970"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+91 63540 73970</a>
+      </div>
+      <div class="quick">
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Assessment before treatment</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Plans for all ages</div>
+        <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Home exercise guidance</div>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="img/hero.jpg" alt="Exercise and rehabilitation equipment in a bright physiotherapy clinic" fetchpriority="high">
+      <div class="hero-badge"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></span><div><b>Near Vandematram Cross Road</b><br><span style="color:var(--muted)">Aaryan Eureka, Gota</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Treatments</span>
+      <h2>Care for pain, injury and recovery</h2>
+      <p>From a stiff back to recovery after surgery or a stroke — every programme starts with a proper assessment.</p>
+    </div>
+    <div class="feature">
+      <article class="fcard"><img src="img/rehab.jpg" alt="Patient doing a guided strengthening exercise on rehab equipment" loading="lazy"><div class="b"><h3>Orthopedic Rehabilitation</h3><p>Back, neck, knee and shoulder pain, fractures and post-operative recovery — restoring strength and movement step by step.</p></div></article>
+      <article class="fcard"><img src="img/taping.jpg" alt="Roll of blue kinesiology tape used in sports physiotherapy" loading="lazy"><div class="b"><h3>Sports Physiotherapy</h3><p>Sprains, strains and overuse injuries — treatment, taping and a graded plan to get you back to your sport safely.</p></div></article>
+      <article class="fcard"><img src="img/recovery.jpg" alt="Foam roller used for muscle recovery and mobility" loading="lazy"><div class="b"><h3>Geriatric Physiotherapy</h3><p>Gentle programmes for balance, joint stiffness and everyday mobility, helping seniors stay active and independent.</p></div></article>
+    </div>
+    <div class="svc">
+      <div class="scard"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.5 2a4.5 4.5 0 0 0-4.4 5.4A4 4 0 0 0 6 15a4 4 0 0 0 6 3.5V4a2 2 0 0 0-2.5-2zM14.5 2a4.5 4.5 0 0 1 4.4 5.4A4 4 0 0 1 18 15a4 4 0 0 1-6 3.5"/></svg></span><div><h3>Neurological Rehabilitation</h3><p>Support after stroke and for nerve-related conditions — working on balance, coordination and daily function.</p></div></div>
+      <div class="scard"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="6" r="3"/><path d="M8 21v-5l-2-4 6-2 6 2-2 4v5"/></svg></span><div><h3>Pediatric Physiotherapy</h3><p>Child-friendly sessions for developmental delays and movement difficulties, with guidance for parents.</p></div></div>
+      <div class="scard"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h4l2-5 4 10 2-5h6"/></svg></span><div><h3>Cardiopulmonary Rehab</h3><p>Breathing exercises and graded activity to improve stamina and lung function after illness or surgery.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Why Atharva</span>
+      <h2>Treatment that is planned, not guessed</h2>
+      <p>What you can expect at every visit.</p>
+    </div>
+    <div class="why-grid">
+      <div class="wcard"><div class="n">01</div><h3>Assessment first</h3><p>We understand the cause of your pain before deciding on treatment.</p></div>
+      <div class="wcard"><div class="n">02</div><h3>A personal plan</h3><p>Exercises and therapy chosen for your condition, age and lifestyle.</p></div>
+      <div class="wcard"><div class="n">03</div><h3>Progress you can see</h3><p>Clear goals for each stage, reviewed as you improve.</p></div>
+      <div class="wcard"><div class="n">04</div><h3>Exercises for home</h3><p>Simple routines so recovery continues between sessions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Your first visit</span><h2>How it works</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Book a slot</h3><p>Call, WhatsApp or send the form below with your preferred day and time.</p></div>
+      <div class="step"><h3>Get assessed</h3><p>Bring any reports or X-rays. We check movement, strength and pain.</p></div>
+      <div class="step"><h3>Start your plan</h3><p>In-clinic sessions plus home exercises, adjusted as you recover.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" style="padding-top:0">
+  <div class="wrap book">
+    <div class="book-info">
+      <span class="eyebrow" style="color:#bfe4df">Appointments</span>
+      <h2>Book your visit</h2>
+      <p>Share a few details and the clinic will confirm your appointment time. For quick help, call or WhatsApp.</p>
+      <a class="cline" href="tel:+916354073970"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Call</small><span>+91 63540 73970</span></div></a>
+      <a class="cline" href="https://wa.me/916354073970?text=Hello%2C%20I%20would%20like%20to%20book%20a%20physiotherapy%20appointment." target="_blank" rel="noopener"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg></span><div><small>WhatsApp</small><span>Message the clinic</span></div></a>
+      <a class="cline" href="mailto:aasthatrivedi78@gmail.com?subject=Appointment%20enquiry"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small>Email</small><span>aasthatrivedi78@gmail.com</span></div></a>
+    </div>
+    <form id="bookForm" novalidate>
+      <div class="row">
+        <div><label for="name">Full name</label><input id="name" required placeholder="Your name"></div>
+        <div><label for="phone">Mobile number</label><input id="phone" type="tel" required placeholder="10-digit mobile"></div>
+      </div>
+      <div class="row">
+        <div><label for="concern">Concern</label>
+          <select id="concern"><option>Back / neck pain</option><option>Knee / joint pain</option><option>Sports injury</option><option>After surgery / fracture</option><option>Stroke / neurological</option><option>Child development</option><option>Senior mobility</option><option>Breathing / cardiac rehab</option><option>Other</option></select></div>
+        <div><label for="date">Preferred date</label><input id="date" type="date"></div>
+      </div>
+      <div><label for="msg">Anything we should know? (optional)</label><textarea id="msg" placeholder="E.g. how long you have had the pain, any recent surgery"></textarea></div>
+      <button class="btn btn-p" type="submit">Request appointment</button>
+      <p class="note">This is a demo form — on the live website, requests will reach the clinic directly by WhatsApp/email.</p>
+      <div class="ok" id="ok">Thank you! (Demo) On the live site, the clinic would now receive your request.</div>
+    </form>
+  </div>
+</section>
+
+<section id="location" style="padding-top:0">
+  <div class="wrap loc">
+    <div class="map"><iframe title="Map: Aaryan Eureka, Gota, Ahmedabad" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Aaryan%20Eureka%2C%20Vandematram%20Cross%20Road%2C%20Gota%2C%20Ahmedabad&output=embed"></iframe></div>
+    <div class="addr">
+      <span class="eyebrow">Location</span>
+      <h3>Visit the clinic</h3>
+      <p>2nd Floor, Aaryan Eureka, near Vandematram Cross Road, near Vandemataram Icon, opp. Shayona Shikhar, Gota, Ahmedabad, Gujarat 382481</p>
+      <p><b>Timings:</b> please call to confirm current clinic hours.</p>
+      <a class="btn btn-p" href="https://www.google.com/maps/search/?api=1&query=Aaryan%20Eureka%20Gota%20Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq" style="padding-top:0">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head"><span class="eyebrow">FAQ</span><h2>Common questions</h2></div>
+    <details><summary>Do I need a doctor's referral?</summary><p>You can book directly. If you have a doctor's note, X-ray or MRI report, please bring it to your first visit.</p></details>
+    <details><summary>What should I wear?</summary><p>Comfortable, loose clothing that lets the therapist assess and treat the affected area easily.</p></details>
+    <details><summary>How many sessions will I need?</summary><p>It depends on your condition. After the first assessment you will get a clear idea of the plan and expected number of sessions.</p></details>
+    <details><summary>Do you treat children and senior citizens?</summary><p>Yes — the clinic offers pediatric and geriatric physiotherapy with programmes suited to each age group.</p></details>
+    <details><summary>How do I book?</summary><p>Call or WhatsApp +91 63540 73970, email the clinic, or use the appointment form on this page.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div><h4>Atharva Physiotherapy Clinic</h4><p>Orthopedic, neurological, sports, pediatric, geriatric and cardiopulmonary physiotherapy in Gota, Ahmedabad.</p></div>
+      <div><h4>Contact</h4><p><a href="tel:+916354073970">+91 63540 73970</a><br><a href="mailto:aasthatrivedi78@gmail.com">aasthatrivedi78@gmail.com</a></p></div>
+      <div><h4>Visit</h4><p>2nd Floor, Aaryan Eureka, Gota, Ahmedabad 382481</p></div>
+    </div>
+    <div class="credits" id="credits">Sample photos: loading credits… Real photos of your business will replace these.</div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="c" href="tel:+916354073970">Call</a>
+  <a class="w" href="https://wa.me/916354073970" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="e" href="mailto:aasthatrivedi78@gmail.com">Email</a>
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),m=document.getElementById('mobileMenu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');b.setAttribute('aria-expanded','false')})});
+  var d=document.getElementById('date');d.min=new Date().toISOString().slice(0,10);
+  document.getElementById('bookForm').addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('name'),p=document.getElementById('phone');
+    if(!n.value.trim()){n.focus();return}
+    if(!/^[0-9+ ]{10,14}$/.test(p.value.trim())){p.focus();return}
+    document.getElementById('ok').style.display='block';
+  });
+  var credits=[
+    {t:"Various exercise machines in a physiotherapy clinic",c:"Ivan Radic",l:"CC BY 2.0",u:"https://www.flickr.com/photos/26344495@N05/50697649353"},
+    {t:"Physiotherapy clinic (cropped)",c:"seosuman32",l:"Public Domain Mark",u:"https://www.flickr.com/photos/196262984@N06/52517014263"},
+    {t:"Foam roller",c:"rachelkramerbussel.com",l:"CC BY 2.0",u:"https://www.flickr.com/photos/33108296@N07/6222774519"},
+    {t:"Kinesio Tape Blue",c:"MipMed",l:"CC BY-SA 2.0",u:"https://www.flickr.com/photos/138914636@N02/42620256872"}
+  ];
+  document.getElementById('credits').innerHTML='Sample photos: '+credits.map(function(x){return '<a href="'+x.u+'" target="_blank" rel="noopener">'+x.t+'</a> by '+x.c+' ('+x.l+')'}).join('; ')+'. Real photos of your business will replace these.';
+})();
+</script>
+</body>
+</html>

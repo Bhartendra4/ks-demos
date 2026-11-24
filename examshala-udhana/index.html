@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Examshala — Government Exam Coaching in Udhana, Surat</title>
+<meta name="description" content="Examshala, Udhana, Surat: coaching for UPSC, GPSC, Bank PO/Clerk, SSC, Railways, PSI, Constable and TET/TAT exams. Offline and online classes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--ink2:#3b4660;--muted:#6b7488;--bg:#fbfaf7;--card:#fff;--line:#e7e3da;--brand:#0f3d6e;--accent:#e8a317;--accent2:#c9860a;--soft:#f2efe7;--r:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+.ribbon{background:var(--ink);color:#fff;text-align:center;font-size:13px;padding:8px 12px}
+.ribbon b{color:var(--accent)}
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,247,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:.06em}
+.logo span.m{width:36px;height:36px;border-radius:10px;background:var(--brand);color:var(--accent);display:grid;place-items:center;font-family:Fraunces,serif;font-size:20px}
+.links{display:flex;gap:26px;font-size:15px;color:var(--ink2)}
+.links a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn-p{background:var(--accent);color:var(--ink)}
+.btn-p:hover{background:var(--accent2)}
+.btn-o{border-color:#fff;color:#fff}
+.btn-o:hover{background:#fff;color:var(--ink)}
+.btn-d{background:var(--brand);color:#fff}
+.nav .btn{padding:10px 18px;font-size:14px}
+.menu{display:none;background:none;border:0;font-size:26px;cursor:pointer;color:var(--ink)}
+.hero{position:relative;color:#fff;min-height:620px;display:flex;align-items:center;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,30,58,.93) 0%,rgba(15,61,110,.82) 50%,rgba(15,61,110,.45) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-top:70px;padding-bottom:70px}
+.tag{display:inline-block;background:rgba(232,163,23,.18);border:1px solid rgba(232,163,23,.55);color:#ffd77a;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:20px}
+.hero h1{font-size:clamp(36px,5.6vw,62px);max-width:760px;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:18px;max-width:590px;opacity:.92;margin-bottom:30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.chips span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 13px;border-radius:8px;font-size:13px;font-weight:500}
+section{padding:88px 0}
+.eyebrow{color:var(--accent2);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.head{max-width:640px;margin-bottom:46px}
+.head h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.head p{color:var(--muted);font-size:17px}
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.course{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:.25s;position:relative}
+.course:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(20,33,61,.25);border-color:transparent}
+.course .ic{width:48px;height:48px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+.course h3{font-size:21px;margin-bottom:8px}
+.course p{color:var(--muted);font-size:15px;margin-bottom:14px}
+.course ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.course li{font-size:12px;background:var(--soft);padding:4px 9px;border-radius:6px;color:var(--ink2);font-weight:500}
+.course.feat{background:var(--brand);color:#fff;border-color:var(--brand)}
+.course.feat p{color:#cfdbea}
+.course.feat .ic{background:rgba(255,255,255,.12)}
+.course.feat li{background:rgba(255,255,255,.14);color:#fff}
+.modes{background:var(--ink);color:#fff}
+.modes .head p{color:#b9c2d3}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mode{border-radius:var(--r);overflow:hidden;background:#1d2b4a}
+.mode img{height:220px;width:100%;object-fit:cover}
+.mode div{padding:24px}
+.mode h3{font-size:22px;margin-bottom:8px;color:#fff}
+.mode p{color:#b9c2d3;font-size:15px}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why .pic{border-radius:22px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 30px 60px -30px rgba(20,33,61,.45)}
+.why .pic img{width:100%;height:100%;object-fit:cover}
+.points{display:grid;gap:22px}
+.pt{display:flex;gap:16px}
+.pt b{flex:none;width:42px;height:42px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-weight:700}
+.pt h3{font-family:Inter,sans-serif;font-size:17px;margin-bottom:3px}
+.pt p{color:var(--muted);font-size:15px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;counter-increment:s}
+.step:before{content:"0" counter(s);font-family:Fraunces,serif;font-size:34px;color:var(--accent);display:block;margin-bottom:8px}
+.step h3{font-family:Inter,sans-serif;font-size:16px;margin-bottom:4px}
+.step p{color:var(--muted);font-size:14px}
+.enq{background:var(--soft)}
+.egrid{display:grid;grid-template-columns:1fr 1.1fr;gap:46px;align-items:start}
+.contact-card{background:var(--brand);color:#fff;border-radius:22px;padding:34px}
+.contact-card h3{font-size:26px;margin-bottom:18px}
+.ci{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.ci:last-of-type{border:0}
+.ci span{font-size:20px}
+.ci small{display:block;color:#a9bdd6;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.ci a,.ci p{font-weight:500}
+.qbtns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:22px}
+.qbtns a{background:rgba(255,255,255,.1);border-radius:12px;padding:12px 6px;text-align:center;font-size:14px;font-weight:600}
+.qbtns a:hover{background:var(--accent);color:var(--ink)}
+form{background:#fff;border-radius:22px;padding:34px;border:1px solid var(--line)}
+form h3{font-size:26px;margin-bottom:6px}
+form>p{color:var(--muted);margin-bottom:22px;font-size:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--ink2)}
+.f{margin-bottom:16px}
+input,select,textarea{width:100%;font:inherit;font-size:15px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.radio{display:flex;gap:10px;flex-wrap:wrap}
+.radio label{display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-weight:500;cursor:pointer;margin:0}
+.radio input{width:auto}
+form .btn{width:100%;margin-top:6px}
+.ok{display:none;margin-top:14px;background:#e9f6ee;color:#1d6b3a;padding:12px 14px;border-radius:10px;font-size:14px}
+.map{margin-top:22px;border-radius:16px;overflow:hidden;border:1px solid var(--line);height:240px}
+.map iframe{width:100%;height:100%;border:0}
+.faq{max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;padding:18px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary:after{content:"+";font-size:22px;color:var(--accent2);line-height:1}
+details[open] summary:after{content:"–"}
+details p{padding:0 0 18px;color:var(--muted)}
+.band{background:linear-gradient(120deg,var(--brand),#16508c);color:#fff;border-radius:26px;padding:56px 40px;text-align:center}
+.band h2{font-size:clamp(26px,4vw,40px);margin-bottom:12px}
+.band p{opacity:.88;margin-bottom:26px}
+.band .cta{justify-content:center}
+footer{background:var(--ink);color:#b9c2d3;padding:50px 0 28px;font-size:14px;margin-top:88px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+footer h4{color:#fff;margin-bottom:12px;font-size:15px}
+footer li{list-style:none;margin-bottom:6px}
+.credits{border-top:1px solid #2a3858;padding-top:18px;font-size:12px;color:#8592ab}
+.credits a{text-decoration:underline}
+.float{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+.float svg{width:30px;height:30px;fill:#fff}
+.mbar{display:none}
+@media (max-width:900px){
+ .links,.nav .btn{display:none}
+ .menu{display:block}
+ .links.open{display:flex;flex-direction:column;position:absolute;top:66px;left:0;right:0;background:var(--bg);padding:18px 20px;gap:14px;border-bottom:1px solid var(--line)}
+ .courses,.mgrid{grid-template-columns:1fr 1fr}
+ .why,.egrid{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr}
+ .fgrid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+ section{padding:64px 0}
+ .hero{min-height:560px}
+ .hero p{font-size:16px}
+ .courses,.mgrid,.steps,.row{grid-template-columns:1fr}
+ form,.contact-card{padding:24px}
+ .band{padding:40px 22px}
+ .float{bottom:78px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:29;background:var(--ink)}
+ .mbar a{color:#fff;text-align:center;padding:14px 4px;font-size:14px;font-weight:600}
+ .mbar a:nth-child(2){background:var(--accent);color:var(--ink)}
+ footer{padding-bottom:80px}
+}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Examshala</div>
+
+<header>
+ <div class="wrap nav">
+  <a href="#top" class="logo"><span class="m">E</span>EXAMSHALA</a>
+  <nav class="links" id="links">
+   <a href="#courses">Courses</a>
+   <a href="#modes">Classes</a>
+   <a href="#why">Why Us</a>
+   <a href="#faq">FAQ</a>
+   <a href="#enquire">Contact</a>
+  </nav>
+  <a href="#enquire" class="btn btn-d">Book a Free Counselling</a>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+ </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+ <img src="img/hero.jpg" alt="Classroom with desks ready for a batch">
+ <div class="wrap">
+  <span class="tag">GOVERNMENT EXAM COACHING · UDHANA, SURAT · SINCE 2019</span>
+  <h1>Prepare smart. <em>Clear your exam</em> and build a government career.</h1>
+  <p>Focused coaching for UPSC, GPSC, Bank, SSC, Railways, PSI, Constable and TET/TAT — in our Udhana classroom or live online, with limited-student batches and regular mock tests.</p>
+  <div class="cta">
+   <a href="#enquire" class="btn btn-p">Book a Free Counselling →</a>
+   <a href="#courses" class="btn btn-o">Explore Courses</a>
+  </div>
+  <div class="chips"><span>UPSC CSE</span><span>GPSC 1/2/3</span><span>Bank PO / Clerk</span><span>SSC / Railways</span><span>PSI / Constable</span><span>TET / TAT</span></div>
+ </div>
+</section>
+
+<section id="courses">
+ <div class="wrap">
+  <div class="head">
+   <div class="eyebrow">Our courses</div>
+   <h2>One institute for every major government exam</h2>
+   <p>Choose your target exam. Each course covers the full syllabus, practice sessions and doubt-clearing.</p>
+  </div>
+  <div class="courses">
+   <div class="course feat"><div class="ic">🏛️</div><h3>UPSC Civil Services</h3><p>A disciplined, step-by-step plan that balances static subjects with daily current affairs.</p><ul><li>Prelims</li><li>Mains</li><li>Current affairs</li></ul></div>
+   <div class="course"><div class="ic">📜</div><h3>GPSC Class 1 / 2 / 3</h3><p>Complete preparation for Gujarat state exams, offline and online.</p><ul><li>CCE</li><li>DySO</li><li>STI</li><li>PSI</li></ul></div>
+   <div class="course"><div class="ic">🏦</div><h3>Bank PO / Clerk / LBO</h3><p>Quants, Reasoning, English and Banking Awareness with updated mock tests.</p><ul><li>SBI</li><li>IBPS</li><li>RRB</li></ul></div>
+   <div class="course"><div class="ic">🚆</div><h3>SSC &amp; Railways</h3><p>Maths, Reasoning, English and GK/GS for every SSC and Railway exam.</p><ul><li>CGL</li><li>CHSL</li><li>MTS</li><li>GD</li><li>NTPC</li><li>Group D</li></ul></div>
+   <div class="course"><div class="ic">🛡️</div><h3>PSI &amp; Constable</h3><p>Exam-pattern practice and full syllabus coverage for Gujarat police recruitment.</p><ul><li>PSI</li><li>Constable</li></ul></div>
+   <div class="course"><div class="ic">🍎</div><h3>TET / TAT</h3><p>Structured preparation for teacher eligibility and aptitude tests.</p><ul><li>TET</li><li>TAT</li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="modes" id="modes">
+ <div class="wrap">
+  <div class="head">
+   <div class="eyebrow">How you learn</div>
+   <h2>Classroom, live online, or both</h2>
+   <p>Study the way that fits your schedule, with the same teachers and the same study plan.</p>
+  </div>
+  <div class="mgrid">
+   <div class="mode"><img src="img/s2.jpg" alt="Open notebook and study tools on a desk" loading="lazy"><div><h3>Offline classroom</h3><p>Limited-student batches at our Udhana centre, so every student gets attention and doubts get solved on the spot.</p></div></div>
+   <div class="mode"><img src="img/s3.jpg" alt="Laptop showing online learning" loading="lazy"><div><h3>Live online classes</h3><p>Join live interactive classes from anywhere in Gujarat, with recorded sessions to revise later in our app.</p></div></div>
+   <div class="mode"><img src="img/s1.jpg" alt="Stacks of study books" loading="lazy"><div><h3>Free tests &amp; study material</h3><p>Regular mock tests on the latest exam pattern, plus PDFs and practice sets for self-study.</p></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="why">
+ <div class="wrap why">
+  <div class="pic"><img src="img/hero.jpg" alt="Classroom" loading="lazy"></div>
+  <div>
+   <div class="eyebrow">Why Examshala</div>
+   <h2 style="font-size:clamp(28px,4vw,42px);margin-bottom:26px">Built for serious aspirants</h2>
+   <div class="points">
+    <div class="pt"><b>1</b><div><h3>Limited-student batches</h3><p>Smaller groups mean more personal guidance and better doubt-solving.</p></div></div>
+    <div class="pt"><b>2</b><div><h3>Updated mock tests</h3><p>Practise on the current exam pattern and track your progress test by test.</p></div></div>
+    <div class="pt"><b>3</b><div><h3>Offline + online flexibility</h3><p>Switch between classroom and live online without losing your study plan.</p></div></div>
+    <div class="pt"><b>4</b><div><h3>Personal mentoring</h3><p>Get help planning your preparation, revision and exam strategy.</p></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="head">
+   <div class="eyebrow">Getting started</div>
+   <h2>Join a batch in four simple steps</h2>
+  </div>
+  <div class="steps">
+   <div class="step"><h3>Send an enquiry</h3><p>Fill the form or WhatsApp us with your target exam.</p></div>
+   <div class="step"><h3>Free counselling</h3><p>We help you choose the right course and batch.</p></div>
+   <div class="step"><h3>Attend a class</h3><p>Visit our Udhana centre or join online.</p></div>
+   <div class="step"><h3>Start preparing</h3><p>Get your study plan, material and test schedule.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="enq" id="enquire">
+ <div class="wrap egrid">
+  <div>
+   <div class="contact-card">
+    <h3>Visit or contact us</h3>
+    <div class="ci"><span>📍</span><div><small>Address</small><p>2nd Floor, Choksi Building, Udhana–Magdalla Road, opp. Khatodara Police Station, Laxmi Nagar, Udhana, Surat, Gujarat 395002</p></div></div>
+    <div class="ci"><span>📞</span><div><small>Phone</small><a href="tel:+917574000950">+91 75740 00950</a> / <a href="tel:+917574000960">00960</a></div></div>
+    <div class="ci"><span>✉️</span><div><small>Email</small><a href="mailto:examshalaindia@gmail.com">examshalaindia@gmail.com</a></div></div>
+    <div class="qbtns">
+     <a href="tel:+917574000950">📞 Call</a>
+     <a href="https://wa.me/917574000950?text=Hello%20Examshala%2C%20I%20want%20to%20know%20about%20your%20courses." target="_blank" rel="noopener">💬 WhatsApp</a>
+     <a href="mailto:examshalaindia@gmail.com">✉️ Email</a>
+    </div>
+   </div>
+   <div class="map"><iframe title="Examshala location map" loading="lazy" src="https://www.google.com/maps?q=Choksi+Building+Udhana+Magdalla+Road+Khatodara+Surat&output=embed"></iframe></div>
+  </div>
+  <form id="form" novalidate>
+   <h3>Book a free counselling</h3>
+   <p>Tell us your target exam and we’ll call you back.</p>
+   <div class="row">
+    <div class="f"><label for="n">Full name</label><input id="n" required placeholder="Your name"></div>
+    <div class="f"><label for="m">Mobile number</label><input id="m" type="tel" required placeholder="10-digit mobile"></div>
+   </div>
+   <div class="f"><label for="e">Target exam</label>
+    <select id="e"><option>UPSC Civil Services</option><option>GPSC Class 1/2/3</option><option>Bank PO / Clerk / LBO</option><option>SSC / Railways</option><option>PSI / Constable</option><option>TET / TAT</option><option>Not sure yet</option></select></div>
+   <div class="f"><label>Preferred mode</label>
+    <div class="radio"><label><input type="radio" name="md" checked> Classroom</label><label><input type="radio" name="md"> Online</label><label><input type="radio" name="md"> Either</label></div></div>
+   <div class="f"><label for="q">Your question (optional)</label><textarea id="q" rows="3" placeholder="e.g. batch timings, starting date"></textarea></div>
+   <button class="btn btn-p" type="submit">Request a Call Back</button>
+   <div class="ok" id="ok">✓ Thank you! This is a demo form — on the live website your enquiry will reach Examshala directly.</div>
+  </form>
+ </div>
+</section>
+
+<section id="faq">
+ <div class="wrap">
+  <div class="head"><div class="eyebrow">FAQ</div><h2>Common questions</h2></div>
+  <div class="faq">
+   <details><summary>Which exams do you prepare students for?</summary><p>UPSC CSE, GPSC Class 1/2/3 (CCE, DySO, STI), Bank PO/Clerk/LBO (SBI, IBPS, RRB), SSC and Railways, PSI, Constable and TET/TAT.</p></details>
+   <details><summary>Can I join online if I live outside Surat?</summary><p>Yes. Live interactive online classes are available, and recorded sessions help you revise.</p></details>
+   <details><summary>Do you offer mock tests?</summary><p>Yes, regular mock tests based on the latest exam pattern are part of every course, along with free tests for practice.</p></details>
+   <details><summary>How do I know which course and batch is right for me?</summary><p>Book a free counselling session using the form above, or call / WhatsApp us. We will guide you based on your target exam and schedule.</p></details>
+   <details><summary>Where is the classroom centre?</summary><p>2nd Floor, Choksi Building, Udhana–Magdalla Road, opposite Khatodara Police Station, Udhana, Surat.</p></details>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">
+ <div class="band">
+  <h2>Your government job starts with the right preparation</h2>
+  <p>Talk to us today about your target exam and the next batch.</p>
+  <div class="cta"><a href="#enquire" class="btn btn-p">Book a Free Counselling</a><a href="tel:+917574000950" class="btn btn-o">Call +91 75740 00950</a></div>
+ </div>
+</div>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><div class="logo" style="color:#fff;margin-bottom:12px"><span class="m">E</span>EXAMSHALA</div><p>Coaching for government exams — offline in Udhana, Surat and live online.</p></div>
+   <div><h4>Courses</h4><ul><li>UPSC CSE</li><li>GPSC 1/2/3</li><li>Bank PO / Clerk</li><li>SSC / Railways</li></ul></div>
+   <div><h4>Contact</h4><ul><li><a href="tel:+917574000950">+91 75740 00950</a></li><li><a href="mailto:examshalaindia@gmail.com">examshalaindia@gmail.com</a></li><li>Udhana, Surat</li></ul></div>
+  </div>
+  <div class="credits" id="credits">Sample photos: “Empty classroom” by ishmael n. daro (CC BY 2.0); notebook photo from rawpixel (CC0); “Two stacks of books next to each other” by Horia Varlan (CC BY 2.0); “Laptop Online Learning” by bluefield_photos (CC BY-SA 2.0). Real photos of your business will replace these.<br>Demo design by KS Digital Studio · ksdigitalstudio.in</div>
+ </div>
+</footer>
+
+<a class="float" href="https://wa.me/917574000950" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+<div class="mbar"><a href="tel:+917574000950">📞 Call</a><a href="#enquire">Enquire</a><a href="https://wa.me/917574000950" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+
+<script>
+document.getElementById('menu').addEventListener('click',function(){document.getElementById('links').classList.toggle('open')});
+document.querySelectorAll('#links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('links').classList.remove('open')})});
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+</script>
+</body>
+</html>

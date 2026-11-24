@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Barcaldine Bakery — Fresh bread, pies &amp; coffee on Oak Street</title>
+<meta name="description" content="Barcaldine Bakery, 123 Oak Street, Barcaldine QLD 4725. Fresh bread, pies and coffee from early morning. Call 07 4651 2999.">
+<meta name="theme-color" content="#7a3b1e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --crust:#7a3b1e; --crust-dk:#4e2412; --ochre:#d98b2b; --cream:#fbf5ec; --flour:#fffdf8;
+    --ink:#2b1d14; --muted:#6f5d50; --line:#eadfce; --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Nunito Sans",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;letter-spacing:-.01em}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  .ribbon{background:var(--crust-dk);color:#f3e2cf;font-size:.8rem;text-align:center;padding:7px 16px}
+  .ribbon a{color:#ffd59a;text-decoration:none;font-weight:700}
+
+  header.nav{position:sticky;top:0;z-index:20;background:rgba(251,245,236,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-family:Fraunces,serif;font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--crust)}
+  .brand span{color:var(--ochre)}
+  .nav-links{display:flex;gap:22px;align-items:center}
+  .nav-links a{text-decoration:none;font-weight:600;font-size:.95rem;color:var(--muted)}
+  .nav-links a:hover{color:var(--crust)}
+  .nav-links .call{background:var(--crust);color:#fff;padding:9px 16px;border-radius:999px;white-space:nowrap}
+  .nav-links .call:hover{color:#fff;background:var(--crust-dk)}
+  @media (max-width:720px){.nav-links a:not(.call){display:none}.call .long{display:none}}
+
+  .hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,20,8,.15) 0%,rgba(43,20,8,.55) 55%,rgba(43,20,8,.88) 100%)}
+  .hero .wrap{position:relative;z-index:1;padding-top:120px;padding-bottom:64px}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:18px}
+  .hero h1{font-size:clamp(2.6rem,7vw,4.6rem);max-width:12ch}
+  .hero p.lead{font-size:clamp(1.05rem,2.2vw,1.25rem);max-width:40ch;margin:16px 0 28px;color:#f7ebdd}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;transition:transform .15s ease,background .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--ochre);color:#2b1406}
+  .btn-primary:hover{background:#e89b3a}
+  .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.6)}
+  .btn-dark{background:var(--crust);color:#fff}
+  .btn-dark:hover{background:var(--crust-dk)}
+  .btn-outline{border:1.5px solid var(--crust);color:var(--crust)}
+  .btn svg{width:18px;height:18px}
+
+  .strip{background:var(--flour);border-bottom:1px solid var(--line)}
+  .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:22px 20px}
+  .strip div{display:flex;gap:12px;align-items:center;font-size:.95rem}
+  .strip b{display:block;font-size:1rem}
+  .strip .ic{flex:none;width:42px;height:42px;border-radius:12px;background:#f6e6d2;display:grid;place-items:center;color:var(--crust)}
+  .strip .ic svg{width:22px;height:22px}
+  @media (max-width:720px){.strip .wrap{grid-template-columns:1fr}}
+
+  section{padding:84px 0}
+  .sec-head{max-width:620px;margin-bottom:40px}
+  .sec-head .kicker{color:var(--ochre);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+  .sec-head h2{font-size:clamp(1.9rem,4vw,2.6rem);margin:8px 0 12px;color:var(--crust-dk)}
+  .sec-head p{color:var(--muted)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+  @media (max-width:620px){.cards{grid-template-columns:1fr}}
+  .card{background:var(--flour);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 10px 30px -18px rgba(78,36,18,.35);display:flex;flex-direction:column}
+  .card .ph{aspect-ratio:4/3;overflow:hidden}
+  .card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .card:hover .ph img{transform:scale(1.04)}
+  .card .body{padding:22px 22px 24px;flex:1;display:flex;flex-direction:column}
+  .card h3{font-size:1.35rem;color:var(--crust-dk);margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.97rem;flex:1}
+  .card ul{list-style:none;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .card li{font-size:.8rem;font-weight:700;background:#f6e6d2;color:var(--crust);padding:4px 10px;border-radius:999px}
+  .card .price{margin-top:16px;font-size:.85rem;color:var(--muted);font-style:italic}
+
+  .about{background:var(--crust-dk);color:#f3e2cf}
+  .about .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  .about h2{color:#fff}
+  .about .sec-head p{color:#e2cdb6}
+  .about .feat{display:grid;gap:16px;margin-top:8px}
+  .about .feat div{display:flex;gap:14px;align-items:flex-start}
+  .about .feat .dot{flex:none;width:30px;height:30px;border-radius:50%;background:var(--ochre);color:#2b1406;display:grid;place-items:center;font-weight:700;font-size:.9rem}
+  .about .feat b{color:#fff;display:block}
+  .about .pic{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .about .pic img{width:100%;height:100%;object-fit:cover}
+  @media (max-width:860px){.about .grid{grid-template-columns:1fr}.about .pic{aspect-ratio:16/10}}
+
+  .visit .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}
+  @media (max-width:860px){.visit .grid{grid-template-columns:1fr}}
+  .panel{background:var(--flour);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .panel h3{font-size:1.3rem;color:var(--crust-dk);margin-bottom:14px}
+  table.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+  table.hours td{padding:10px 0;border-bottom:1px dashed var(--line)}
+  table.hours td:last-child{text-align:right;font-weight:700}
+  table.hours tr.today td{color:var(--crust)}
+  .open-now{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:700;margin-bottom:14px;padding:5px 12px;border-radius:999px;background:#eee;color:#555}
+  .open-now.on{background:#e3f3e5;color:#1f6b31}
+  .open-now.off{background:#f8e5df;color:#94371c}
+  .open-now i{width:8px;height:8px;border-radius:50%;background:currentColor}
+  .note{font-size:.85rem;color:var(--muted);margin-top:12px}
+  .addr{margin:18px 0 6px;font-weight:700}
+  .map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:340px;background:#eadfce}
+  .map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+
+  .contact{background:linear-gradient(135deg,#f6e6d2,#fbf5ec)}
+  .contact .box{background:var(--flour);border:1px solid var(--line);border-radius:24px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;box-shadow:0 20px 50px -30px rgba(78,36,18,.4)}
+  @media (max-width:860px){.contact .box{grid-template-columns:1fr;padding:28px}}
+  .contact h2{font-size:clamp(1.8rem,4vw,2.4rem);color:var(--crust-dk);margin-bottom:10px}
+  .contact p{color:var(--muted)}
+  .contact .list{display:grid;gap:12px}
+  .contact .list a{display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:14px;border:1px solid var(--line);text-decoration:none;background:#fff;transition:border-color .15s ease,transform .15s ease}
+  .contact .list a:hover{border-color:var(--ochre);transform:translateY(-2px)}
+  .contact .list .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--crust);color:#fff;display:grid;place-items:center}
+  .contact .list .ic svg{width:20px;height:20px}
+  .contact .list small{display:block;color:var(--muted);font-size:.8rem}
+  .contact .list b{overflow-wrap:anywhere}
+
+  footer{background:#22140c;color:#c9b39c;padding:44px 0 90px;font-size:.9rem}
+  footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;margin-bottom:22px}
+  footer .brand{color:#fff}
+  footer a{color:#f0c98f}
+  .credits{font-size:.75rem;color:#9c8670;margin-top:8px;line-height:1.55}
+
+  .fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:30;display:none;gap:10px}
+  .fab a{flex:1;justify-content:center}
+  @media (max-width:720px){.fab{display:flex}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Barcaldine Bakery</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Barcaldine <span>Bakery</span></a>
+    <nav class="nav-links">
+      <a href="#menu">What we bake</a>
+      <a href="#about">About</a>
+      <a href="#visit">Hours &amp; map</a>
+      <a class="call" href="tel:+61746512999">Call<span class="long"> 07 4651 2999</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <img src="img/hero.jpg" alt="A bowl of fresh golden bread rolls" fetchpriority="high" width="1600" height="1060">
+    <div class="wrap">
+      <span class="eyebrow">Oak Street · Barcaldine, Queensland</span>
+      <h1>Barcaldine Bakery</h1>
+      <p class="lead">Fresh bread, hot pies and a good coffee — baked in town and ready from 5am, Monday to Saturday.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="tel:+61746512999">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call to order
+        </a>
+        <a class="btn btn-ghost" href="#visit">Opening hours</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="wrap">
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span><span><b>Open from 5:00am</b>Mon–Fri till 3pm · Sat till noon</span></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span><span><b>123 Oak Street</b>Barcaldine QLD 4725</span></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18M5 11V7a7 7 0 0 1 14 0v4M4 11l1.5 9h13L20 11"/></svg></span><span><b>Bakery &amp; café</b>Grab-and-go or sit down</span></div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">From our ovens</span>
+        <h2>Baked fresh for Barcaldine</h2>
+        <p>The everyday favourites locals and travellers on the Landsborough Highway stop in for. Ask in store for today's range.</p>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ph"><img src="img/pies.jpg" alt="A golden meat pie with sauce, held in a paper bag" loading="lazy" width="900" height="900"></div>
+          <div class="body">
+            <h3>Hot pies &amp; savouries</h3>
+            <p>Flaky, golden pies straight from the warmer — the classic outback road-trip stop, morning or lunch.</p>
+            <ul><li>Meat pies</li><li>Sausage rolls</li><li>Savoury bakes</li></ul>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/bread.jpg" alt="Three freshly baked crusty bread rolls" loading="lazy" width="900" height="600"></div>
+          <div class="body">
+            <h3>Bread &amp; rolls</h3>
+            <p>Loaves and rolls baked early every morning, for the family table, the station smoko or the esky.</p>
+            <ul><li>Loaves</li><li>Rolls</li><li>Bulk orders — call ahead</li></ul>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/coffee.jpg" alt="A cup of coffee topped with cream and caramel" loading="lazy" width="900" height="675"></div>
+          <div class="body">
+            <h3>Coffee &amp; café</h3>
+            <p>Pair your bake with a hot coffee — take it on the road or take a seat and have a break.</p>
+            <ul><li>Coffee</li><li>Sweet treats</li><li>Dine in or takeaway</li></ul>
+            <p class="price">Price on request</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap grid">
+      <div class="reveal">
+        <div class="sec-head" style="margin-bottom:24px">
+          <span class="kicker">Your local bakery</span>
+          <h2>A proper country bakery in the heart of town</h2>
+          <p>Barcaldine Bakery is on Oak Street, right in the middle of Barcaldine. Whether you live in town, work on the land or you're driving through the Central West, call in for something fresh.</p>
+        </div>
+        <div class="feat">
+          <div><span class="dot">1</span><span><b>Early starts</b>Doors open at 5am on weekdays, so breakfast is sorted before work.</span></div>
+          <div><span class="dot">2</span><span><b>Easy to find</b>123 Oak Street, a short walk from the main street shops.</span></div>
+          <div><span class="dot">3</span><span><b>Ordering ahead?</b>Give us a call on 07 4651 2999 for larger or special orders.</span></div>
+        </div>
+      </div>
+      <div class="pic reveal"><img src="img/hero.jpg" alt="Freshly baked bread rolls in a bowl" loading="lazy" width="1600" height="1060"></div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="kicker">Visit us</span>
+        <h2>Opening hours &amp; location</h2>
+      </div>
+      <div class="grid">
+        <div class="panel reveal">
+          <span class="open-now" id="openNow"><i></i><span>Opening hours</span></span>
+          <h3>Opening hours</h3>
+          <table class="hours" id="hours">
+            <tr data-d="1"><td>Monday</td><td>5:00am – 3:00pm</td></tr>
+            <tr data-d="2"><td>Tuesday</td><td>5:00am – 3:00pm</td></tr>
+            <tr data-d="3"><td>Wednesday</td><td>5:00am – 3:00pm</td></tr>
+            <tr data-d="4"><td>Thursday</td><td>5:00am – 3:00pm</td></tr>
+            <tr data-d="5"><td>Friday</td><td>5:00am – 3:00pm</td></tr>
+            <tr data-d="6"><td>Saturday</td><td>5:30am – 12:00pm</td></tr>
+            <tr data-d="0"><td>Sunday</td><td>Please call ahead</td></tr>
+          </table>
+          <p class="note">Public holiday hours may vary — please call to check.</p>
+          <p class="addr">123 Oak Street, Barcaldine QLD 4725</p>
+          <div class="btns" style="margin-top:14px">
+            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Barcaldine%20Bakery%2C%20123%20Oak%20Street%2C%20Barcaldine%20QLD%204725" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-outline" href="tel:+61746512999">Call us</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Map showing Barcaldine Bakery, 123 Oak Street, Barcaldine" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=123%20Oak%20Street%2C%20Barcaldine%20QLD%204725&amp;z=15&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="box reveal">
+        <div>
+          <h2>Ordering for a crowd?</h2>
+          <p>Smoko for the crew, a meeting, a school or club event — give us a call or send an email with what you need and when, and we'll get back to you.</p>
+        </div>
+        <div class="list">
+          <a href="tel:+61746512999">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span><small>Phone</small><b>07 4651 2999</b></span>
+          </a>
+          <a href="mailto:Jobric@bigpond.com?subject=Order%20enquiry%20-%20Barcaldine%20Bakery">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span>
+            <span><small>Email</small><b>Jobric@bigpond.com</b></span>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Barcaldine%20Bakery%2C%20123%20Oak%20Street%2C%20Barcaldine%20QLD%204725" target="_blank" rel="noopener">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><small>Address</small><b>123 Oak Street, Barcaldine QLD 4725</b></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="#top">Barcaldine <span>Bakery</span></a>
+        <p style="margin-top:6px">123 Oak Street, Barcaldine QLD 4725 · <a href="tel:+61746512999">07 4651 2999</a></p>
+      </div>
+      <p>Mon–Fri 5:00am – 3:00pm<br>Sat 5:30am – 12:00pm</p>
+    </div>
+    <p class="credits">Sample photos: <a href="https://commons.wikimedia.org/wiki/File:Fresh_hot_dinner_rolls_(8214213532).jpg" target="_blank" rel="noopener">Fresh hot dinner rolls (8214213532)</a> by jeffreyw (<a href="https://creativecommons.org/licenses/by/2.0" target="_blank" rel="noopener">CC BY 2.0</a>); <a href="https://commons.wikimedia.org/wiki/File:Aussie_meat_pie.jpg" target="_blank" rel="noopener">Aussie meat pie</a> by Finbar.concaig (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>); <a href="https://commons.wikimedia.org/wiki/File:Fresh_made_bread_09.jpg" target="_blank" rel="noopener">Fresh made bread 09</a> by FranHogan (<a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">CC BY-SA 4.0</a>); <a href="https://commons.wikimedia.org/wiki/File:Cafe_Latte.jpg" target="_blank" rel="noopener">Cafe Latte</a> by Alayna the Extravagant (<a href="https://creativecommons.org/licenses/by-sa/3.0" target="_blank" rel="noopener">CC BY-SA 3.0</a>). Real photos of your business will replace these.</p>
+    <p class="credits">Demo website designed by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a>.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="btn btn-dark" href="tel:+61746512999">Call</a>
+  <a class="btn btn-primary" href="mailto:Jobric@bigpond.com?subject=Order%20enquiry%20-%20Barcaldine%20Bakery">Email</a>
+</div>
+
+<script>
+  // Open/closed badge using Barcaldine time (AEST, UTC+10, no daylight saving)
+  (function () {
+    var hrs = {1:[300,900],2:[300,900],3:[300,900],4:[300,900],5:[300,900],6:[330,720]};
+    var now = new Date(Date.now() + (10 * 60 + new Date().getTimezoneOffset()) * 60000);
+    var d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+    var row = document.querySelector('#hours tr[data-d="' + d + '"]');
+    if (row) row.className = 'today';
+    var badge = document.getElementById('openNow');
+    if (!hrs[d]) { badge.lastChild.textContent = 'Sunday — please call ahead'; return; }
+    var open = m >= hrs[d][0] && m < hrs[d][1];
+    badge.className = 'open-now ' + (open ? 'on' : 'off');
+    badge.lastChild.textContent = open ? 'Open now' : 'Closed now';
+  })();
+
+  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: .12}) : null;
+  document.querySelectorAll('.reveal').forEach(function (el) { io ? io.observe(el) : el.classList.add('in'); });
+</script>
+</body>
+</html>

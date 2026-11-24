@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Anand Sweetmart — Sweets &amp; Snacks, Gurukul, Ahmedabad</title>
+<meta name="description" content="Anand Sweetmart, Gurukul Road, Ahmedabad — fresh Indian sweets, farsan and hot bhajias every evening. Open daily 9 AM – 11 PM.">
+<style>
+:root{--maroon:#7a1f2b;--maroon-d:#5c1520;--saffron:#f29f05;--cream:#fff8ee;--ink:#2b1a12;--muted:#6f5b4e;--line:#ecdcc6;--card:#fff;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.ribbon{background:var(--ink);color:#f5e6d3;font-size:13px;text-align:center;padding:7px 12px}
+.ribbon b{color:var(--saffron);font-weight:600}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,248,238,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;color:var(--maroon);text-decoration:none}
+.brand span{color:var(--saffron)}
+.nav ul{display:flex;gap:22px;list-style:none}
+.nav ul a{text-decoration:none;font-size:15px;color:var(--muted)}
+.nav ul a:hover{color:var(--maroon)}
+.nav .call{background:var(--maroon);color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;text-decoration:none;font-weight:600}
+@media(max-width:720px){.nav ul{display:none}}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,26,18,.15) 0%,rgba(43,26,18,.55) 50%,rgba(43,26,18,.9) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;padding-top:120px}
+.tag{display:inline-block;background:var(--saffron);color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(40px,8vw,72px);line-height:1.05;margin-bottom:10px}
+.hero .guj{font-size:20px;color:#ffd98a;margin-bottom:8px}
+.hero p.lead{font-size:18px;max-width:560px;color:#f7ebdd;margin-bottom:26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--saffron);color:var(--ink)}
+.btn.wa{background:#25d366;color:#fff}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.strip{background:var(--maroon);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px 16px;text-align:center;font-size:15px}
+.strip b{display:block;font-size:17px;color:var(--saffron)}
+@media(max-width:640px){.strip .wrap{grid-template-columns:1fr;gap:14px}}
+section{padding:72px 0}
+.eyebrow{color:var(--saffron);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,5vw,42px);color:var(--maroon);line-height:1.15;margin:6px 0 14px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:36px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:860px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(92,21,32,.35);display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.card h3{font-family:Georgia,serif;font-size:22px;color:var(--ink);margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card .price{margin-top:14px;font-size:14px;font-weight:600;color:var(--maroon)}
+.occasions{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.occ{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:760px){.occ{grid-template-columns:1fr 1fr}}
+.occ div{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:20px}
+.occ h4{color:var(--maroon);font-size:17px;margin-bottom:4px}
+.occ p{font-size:14px;color:var(--muted)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+.hours{width:100%;border-collapse:collapse;margin:8px 0 20px}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.hours td:last-child{text-align:right;font-weight:600}
+.addr{font-size:16px;margin-bottom:18px}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:320px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.contact{background:linear-gradient(135deg,var(--maroon),var(--maroon-d));color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact .sub{color:#f3d9c6;margin:0 auto 28px}
+.contact .btns{justify-content:center}
+.contact .btn.ghost{border-color:rgba(255,255,255,.5)}
+.contact .num{margin-top:20px;font-size:15px;color:#f3d9c6}
+footer{background:var(--ink);color:#cdb8a5;font-size:13px;padding:30px 0 90px}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-bottom:14px;color:#f5e6d3}
+footer .credits{opacity:.75;line-height:1.5}
+footer .credits a{color:#cdb8a5}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;gap:10px}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.fab a svg{width:24px;height:24px;fill:#fff}
+.fab .c{background:var(--maroon)}
+.fab .w{background:#25d366}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Anand Sweetmart</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Anand <span>Sweetmart</span></a>
+    <ul>
+      <li><a href="#menu">Sweets &amp; Snacks</a></li>
+      <li><a href="#occasions">Orders</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="call" href="tel:+917965256644">Call</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+  <img src="img/hero.jpg" alt="A plate of assorted Indian sweets" fetchpriority="high">
+  <div class="wrap">
+    <span class="tag">Gurukul Road · Ahmedabad</span>
+    <h1>Anand Sweetmart</h1>
+    <div class="guj">મીઠાશ દરેક પ્રસંગ માટે</div>
+    <p class="lead">Fresh Indian sweets, farsan and hot bhajias every evening — your neighbourhood sweet shop near Oxford Tower, open every day till 11 PM.</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:+917965256644"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call to order</a>
+      <a class="btn wa" href="https://wa.me/917965256644?text=Hi%20Anand%20Sweetmart%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.46-.72-1.7-.8-.22-.08-.39-.12-.55.13-.16.24-.63.8-.77.96-.14.16-.28.18-.53.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42l-.75-1.8c-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.7 2.7 0 0 0-.85 2 4.7 4.7 0 0 0 1 2.5 10.8 10.8 0 0 0 4.1 3.6c1.53.66 2.13.72 2.9.6.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.14-1.17-.06-.1-.22-.16-.47-.28z"/></svg>WhatsApp</a>
+      <a class="btn ghost" href="#menu">See what we make</a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div><b>Open daily</b>9:00 AM – 11:00 PM</div>
+    <div><b>Fresh every evening</b>Hot bhajias &amp; snacks</div>
+    <div><b>Gurukul Road</b>Opp. Oxford Tower</div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="wrap">
+    <div class="eyebrow">Sweets &amp; Snacks</div>
+    <h2>Made fresh, packed with care</h2>
+    <p class="sub">A sweet counter and a snack counter under one roof — pick up a box for home, guests or a festival, or grab something hot on your evening walk.</p>
+    <div class="cards">
+      <article class="card">
+        <img src="img/kaju-katli.jpg" alt="Kaju katli with silver varakh" loading="lazy">
+        <div class="body">
+          <h3>Classic Mithai</h3>
+          <p>Kaju katli, barfi, peda and other traditional sweets — loose by weight or in gift boxes.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/jalebi.jpg" alt="Golden jalebis" loading="lazy">
+        <div class="body">
+          <h3>Syrupy Favourites</h3>
+          <p>Jalebi and other syrup sweets — perfect with a Sunday breakfast or a family get-together.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+      <article class="card">
+        <img src="img/bhajia.jpg" alt="Plates of fresh hot bhajias" loading="lazy">
+        <div class="body">
+          <h3>Hot Bhajias &amp; Farsan</h3>
+          <p>Fresh, hot bhajias made every evening, plus everyday namkeen and farsan for tea-time.</p>
+          <div class="price">Price on request</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="occasions" class="occasions">
+  <div class="wrap">
+    <div class="eyebrow">Orders</div>
+    <h2>Sweets for every occasion</h2>
+    <p class="sub">Call or WhatsApp ahead and we'll keep your order ready for pick-up.</p>
+    <div class="occ">
+      <div><h4>Festivals</h4><p>Diwali, Raksha Bandhan and festival boxes.</p></div>
+      <div><h4>Weddings &amp; Pooja</h4><p>Bulk sweets and farsan for family functions.</p></div>
+      <div><h4>Office &amp; Gifting</h4><p>Neatly packed boxes for colleagues and clients.</p></div>
+      <div><h4>Everyday</h4><p>A little something sweet for home, any day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="eyebrow">Visit us</div>
+    <h2>Find us on Gurukul Road</h2>
+    <div class="visit">
+      <div class="panel">
+        <p class="addr"><b>Anand Sweetmart</b><br>G-1, Meghansi Complex, Gurukul Road,<br>opp. Oxford Tower, Nilmani Society, Gurukul,<br>Ahmedabad, Gujarat 380052</p>
+        <table class="hours">
+          <tr><td>Monday – Sunday</td><td>9:00 AM – 11:00 PM</td></tr>
+          <tr><td>Hot bhajias</td><td>Every evening</td></tr>
+        </table>
+        <div class="btns">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=Anand+Sweetmart+Meghansi+Complex+Gurukul+Road+Ahmedabad" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn wa" href="tel:+917965256644" style="background:var(--maroon)">Call +91 79 6525 6644</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map to Anand Sweetmart" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Meghansi%20Complex%2C%20Gurukul%20Road%2C%20Ahmedabad%20380052&amp;z=16&amp;output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#ffd98a">Contact</div>
+    <h2>Planning a function or festival order?</h2>
+    <p class="sub">Tell us what you need and when — we'll help you choose the right sweets and quantity.</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:+917965256644">Call now</a>
+      <a class="btn wa" href="https://wa.me/917965256644?text=Hi%20Anand%20Sweetmart%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+    <p class="num">+91 79 6525 6644 · Open daily 9 AM – 11 PM</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row"><span>© <span id="yr">2026</span> Anand Sweetmart, Gurukul, Ahmedabad</span><span>Website design: KS Digital Studio</span></div>
+    <p class="credits" id="credits">Sample photos: “A tray full of Indian sweets mithai desserts c” by DDohler (CC BY 2.0); “Kaju Katli” by 1989bhaveshv (CC BY-SA 4.0); “Jalebi - Closeup View of Jalebis” by Lion.harvinder (CC BY-SA 4.0); “Chilli Bites (Bhaji)” by Damien Ramon Naidoo (CC BY-SA 3.0), via Wikimedia Commons. Real photos of your business will replace these.</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="w" href="https://wa.me/917965256644" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+  <a class="c" href="tel:+917965256644" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
