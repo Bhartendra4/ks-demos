@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Beaminster Upholstery — Redlands Yard, Broadwindsor</title>
+<meta name="description" content="Upholstery and furniture repair from Redlands Yard, Broadwindsor, West Dorset.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#22201c;--muted:#6b645a;--bg:#faf7f2;--card:#fff;--accent:#7a3b2e;--accent-2:#b5894a;--line:#e7dfd3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+.ribbon{background:var(--ink);color:#e9e2d6;font-size:.78rem;text-align:center;padding:.45rem 1rem;letter-spacing:.02em}
+.ribbon a{color:#f0c98a;text-decoration:none}
+header.nav{position:sticky;top:0;z-index:10;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.45rem;font-weight:600;text-decoration:none;letter-spacing:.01em}
+.nav-links{display:flex;gap:1.4rem;font-size:.92rem}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--accent)}
+@media(max-width:700px){.nav-links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.3rem;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-wa{background:#1f8f4e;color:#fff}
+.btn-sm{padding:.5rem 1rem;font-size:.85rem}
+.hero{position:relative;min-height:82vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,15,10,.25) 0%,rgba(20,15,10,.78) 75%)}
+.hero-in{position:relative;z-index:1;max-width:1120px;margin:auto;width:100%;padding:3rem 1rem 4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;color:#f0c98a;font-weight:600}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.02;margin:.5rem 0 1rem}
+.hero p{max-width:560px;font-size:1.08rem;color:#f2ece3}
+.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+section{padding:4.5rem 1rem}
+.wrap{max-width:1120px;margin:auto}
+.sec-head{max-width:640px;margin-bottom:2.4rem}
+.sec-head h2{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4.5vw,2.8rem);font-weight:600;line-height:1.1;margin:.4rem 0 .7rem}
+.sec-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-b{padding:1.3rem 1.3rem 1.5rem}
+.card h3{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:600;margin-bottom:.35rem}
+.card p{color:var(--muted);font-size:.95rem}
+.price{margin-top:.8rem;font-size:.85rem;font-weight:600;color:var(--accent)}
+.band{background:#efe7da}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.2rem;counter-reset:s}
+.step{background:#fff;border-radius:16px;padding:1.4rem;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:2.1rem;height:2.1rem;border-radius:50%;background:var(--accent);color:#fff;font-weight:600;margin-bottom:.7rem}
+.step h3{font-size:1.02rem;margin-bottom:.3rem}
+.step p{color:var(--muted);font-size:.92rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.8rem}
+.panel h3{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;margin-bottom:.8rem}
+.row{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.row:last-child{border-bottom:0}
+.row span:first-child{color:var(--muted)}
+.map{border:0;width:100%;height:280px;border-radius:14px;margin-top:1rem}
+.contact{background:var(--ink);color:#efe7da}
+.contact .sec-head p{color:#c9bfae}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem}
+.cbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:1.3rem;text-decoration:none;display:block;transition:background .15s}
+.cbox:hover{background:rgba(255,255,255,.11)}
+.cbox small{display:block;color:#f0c98a;text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;margin-bottom:.3rem}
+.cbox strong{font-size:1.05rem;word-break:break-word}
+form{margin-top:2rem;display:grid;gap:.8rem;max-width:620px}
+input,textarea{width:100%;padding:.85rem 1rem;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);color:#fff;font:inherit}
+input::placeholder,textarea::placeholder{color:#a99f8e}
+textarea{min-height:110px;resize:vertical}
+.note{font-size:.8rem;color:#a99f8e}
+footer{background:#171512;color:#8f8676;font-size:.78rem;padding:2rem 1rem;text-align:center}
+footer .wrap>*+*{margin-top:.6rem}
+footer a{color:#b9ad97}
+.fab{position:fixed;right:16px;bottom:16px;z-index:20;width:56px;height:56px;border-radius:50%;background:#1f8f4e;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.25)}
+.fab svg{width:28px;height:28px;fill:#fff}
+</style>
+</head>
+<body>
+<div class="ribbon">Demo design by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a> — for Beaminster Upholstery</div>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top">Beaminster Upholstery</a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#visit">Visit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="tel:+447470007588">Call</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img src="img/hero.jpg" alt="Living room with comfortable upholstered sofas" fetchpriority="high">
+    <div class="hero-in">
+      <div class="eyebrow">Redlands Yard · Broadwindsor · West Dorset</div>
+      <h1>Give your favourite<br>furniture a second life</h1>
+      <p>Traditional and modern upholstery, re-covering and furniture repair, from our workshop in Broadwindsor for homes across Dorset, Somerset and Devon.</p>
+      <div class="cta">
+        <a class="btn btn-light" href="#contact">Ask for a quote</a>
+        <a class="btn btn-wa" href="https://wa.me/447470007588?text=Hello%2C%20I%27d%20like%20a%20quote%20for%20some%20upholstery%20work." target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" style="color:var(--accent)">What we do</div>
+        <h2>Careful work on the pieces you love</h2>
+        <p>From a single dining chair to a full three-piece suite — send a photo and we'll talk you through the options.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <img src="img/card1.jpg" alt="Re-covered armchair" loading="lazy">
+          <div class="card-b">
+            <h3>Re-upholstery</h3>
+            <p>Armchairs, sofas, headboards, footstools and dining chairs re-covered in the fabric of your choice, with new foam and padding where needed.</p>
+            <div class="price">Price on request</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/card2.jpg" alt="Stack of upholstery fabric samples" loading="lazy">
+          <div class="card-b">
+            <h3>Fabrics &amp; finishes</h3>
+            <p>Choose from fabric samples in the workshop, or bring your own. We'll advise on hard-wearing options for busy family rooms.</p>
+            <div class="price">Price on request</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="img/card3.jpg" alt="Restored sofa with cushions" loading="lazy">
+          <div class="card-b">
+            <h3>Furniture repair</h3>
+            <p>Sagging seats, broken springs, loose frames and worn cushions repaired, so good furniture stays out of landfill.</p>
+            <div class="price">Price on request</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="band">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow" style="color:var(--accent)">How it works</div>
+        <h2>Simple from start to finish</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Send a photo</h3><p>WhatsApp or email a few pictures of your piece and tell us what you'd like done.</p></div>
+        <div class="step"><h3>Get a quote</h3><p>We'll reply with honest advice and a clear price before any work starts.</p></div>
+        <div class="step"><h3>Pick your fabric</h3><p>Visit the workshop at Redlands Yard to see and feel the samples.</p></div>
+        <div class="step"><h3>Enjoy it again</h3><p>Your furniture comes back looking and feeling like new.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap two">
+      <div class="panel">
+        <h3>Opening hours</h3>
+        <div class="row"><span>Workshop visits</span><span>By appointment</span></div>
+        <div class="row"><span>Quotes</span><span>Call, WhatsApp or email</span></div>
+        <div class="row"><span>Areas covered</span><span>Dorset, Somerset &amp; Devon</span></div>
+        <p class="note" style="color:var(--muted);margin-top:1rem">Please get in touch before visiting so we can make sure someone is in the workshop.</p>
+      </div>
+      <div class="panel">
+        <h3>Find us</h3>
+        <p>Redlands Yard, Broadwindsor, Beaminster, Dorset</p>
+        <iframe class="map" loading="lazy" title="Map of Redlands Yard, Broadwindsor" src="https://maps.google.com/maps?q=Redlands%20Yard%2C%20Broadwindsor%2C%20Dorset&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Get in touch</div>
+        <h2>Tell us about your piece</h2>
+        <p>Quotes are free. A couple of photos helps us give you an accurate price.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="cbox" href="tel:+447470007588"><small>Call</small><strong>07470 007588</strong></a>
+        <a class="cbox" href="https://wa.me/447470007588" target="_blank" rel="noopener"><small>WhatsApp</small><strong>Send photos</strong></a>
+        <a class="cbox" href="mailto:beaminsterupholstery@gmail.com"><small>Email</small><strong>beaminsterupholstery@gmail.com</strong></a>
+      </div>
+      <form id="qf">
+        <input name="name" placeholder="Your name" required>
+        <input name="item" placeholder="What needs doing? (e.g. re-cover two armchairs)" required>
+        <textarea name="msg" placeholder="Anything else we should know?"></textarea>
+        <button class="btn btn-primary" type="submit" style="border:0;cursor:pointer;justify-self:start">Email my enquiry</button>
+        <p class="note">Opens your email app with your message filled in — nothing is stored on this site.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© Beaminster Upholstery · Redlands Yard, Broadwindsor, Dorset</div>
+    <div id="credits"></div>
+    <div>Demo website designed by <a href="https://www.ksdigitalstudio.in" target="_blank" rel="noopener">KS Digital Studio</a></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/447470007588" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script>
+document.getElementById('credits').textContent = "Sample photos: “Yellow upholstered armchair” by Nilo Velez (CC0 1.0) · “Fabric Swatches” by Spare Parts San Antonio (CC BY 2.0) · “Reupholstered vintage sofa” by Paris on Ponce & Le Maison Rouge (CC BY 2.0) · “Casual living room, blue velvet sofas” by Wonderlane (CC BY 2.0). Real photos of your business will replace these.";
+document.getElementById('qf').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target;
+  var body = "Name: " + f.name.value + "\nWork needed: " + f.item.value + "\n\n" + f.msg.value;
+  location.href = "mailto:beaminsterupholstery@gmail.com?subject=" + encodeURIComponent("Upholstery enquiry") + "&body=" + encodeURIComponent(body);
+});
+</script>
+</body>
+</html>
