@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Reynolds Travel — Group Tours, Game-Day Trips & Escorted Travel | Columbus, Ohio</title>
+<meta name="description" content="Reynolds Travel, Columbus, Ohio: Buckeye football away-game and bowl trips, escorted European tours, group travel and cruises. Call 614-847-8008.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --scarlet:#b3122b;--scarlet-d:#8d0c20;--ink:#1b1d22;--slate:#4a4f5a;--muted:#6b7180;
+  --gray:#eef0f3;--line:#dfe2e8;--cream:#faf7f2;--white:#fff;--gold:#c9a45c;
+  --r:16px;--shadow:0 10px 30px rgba(20,22,30,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;font-weight:700}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--scarlet)}
+.lead{color:var(--slate);font-size:1.08rem;max-width:620px}
+section{padding:84px 0}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.35rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s;border:2px solid transparent;cursor:pointer}
+.btn-primary{background:var(--scarlet);color:#fff}
+.btn-primary:hover{background:var(--scarlet-d);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-outline{border-color:var(--ink);color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:#fff}
+
+/* ribbon + nav */
+.ribbon{background:var(--ink);color:#e8e9ec;text-align:center;font-size:.8rem;padding:.5rem 16px}
+.ribbon b{color:#fff}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:Fraunces,serif;font-weight:700;font-size:1.3rem}
+.logo .mark{width:38px;height:38px;border-radius:10px;background:var(--scarlet);color:#fff;display:grid;place-items:center;font-size:1.1rem}
+.logo small{display:block;font-family:Inter,sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:-2px}
+.menu{display:flex;gap:1.8rem;font-weight:500;font-size:.95rem}
+.menu a:hover{color:var(--scarlet)}
+.nav-cta{display:flex;gap:.6rem;align-items:center}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:5px auto;transition:.25s}
+@media(max-width:900px){
+  .menu{position:fixed;inset:70px 0 auto 0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.3s;z-index:-1}
+  .menu.open{transform:none}
+  .menu a{padding:1rem 16px;border-top:1px solid var(--line)}
+  .burger{display:block}
+  .nav-cta .btn{display:none}
+}
+
+/* hero */
+.hero{position:relative;color:#fff;min-height:86vh;display:flex;align-items:center;background:#20232b url(img/hero.jpg) center/cover no-repeat;padding:96px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,20,28,.86) 0%,rgba(18,20,28,.62) 48%,rgba(141,12,32,.30) 100%)}
+.hero .wrap{position:relative}
+.hero .eyebrow{color:#ffd9de}
+.hero h1{font-size:clamp(2.3rem,6vw,4.2rem);max-width:780px;margin:.8rem 0 1.1rem}
+.hero h1 em{font-style:normal;color:#ffb3bf}
+.hero p{font-size:1.12rem;max-width:580px;color:#eceef2}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hero-strip{position:absolute;left:0;right:0;bottom:-46px}
+.strip{background:#fff;color:var(--ink);border-radius:var(--r);box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div{padding:1.2rem 1.4rem;border-right:1px solid var(--line)}
+.strip div:last-child{border-right:0}
+.strip b{display:block;font-size:.98rem}
+.strip span{font-size:.85rem;color:var(--muted)}
+@media(max-width:800px){.hero{flex-direction:column;align-items:stretch;justify-content:center;min-height:auto;padding:72px 0 40px}.hero-strip{position:relative;bottom:auto;margin-top:2.4rem}#trips{padding-top:64px}.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(2){border-right:0}.strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* trips */
+#trips{padding-top:140px;background:var(--cream)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:2.6rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 2px 0 var(--line);display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card .ph{aspect-ratio:4/3;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .body{padding:1.4rem 1.4rem 1.6rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.tag{align-self:flex-start;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:#fbe7ea;color:var(--scarlet);padding:.3rem .6rem;border-radius:6px}
+.card h3{font-size:1.35rem}
+.card p{color:var(--slate);font-size:.95rem}
+.card .more{margin-top:auto;font-weight:600;color:var(--scarlet);font-size:.92rem}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.cards{grid-template-columns:1fr}}
+
+/* services list */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.4rem}
+.svc div{border:1px solid var(--line);border-radius:var(--r);padding:1.5rem}
+.svc .ic{width:44px;height:44px;border-radius:12px;background:var(--gray);display:grid;place-items:center;margin-bottom:.9rem}
+.svc svg{width:22px;height:22px;stroke:var(--scarlet);fill:none;stroke-width:1.8}
+.svc h3{font-family:Inter,sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.35rem}
+.svc p{color:var(--slate);font-size:.93rem}
+@media(max-width:900px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc{grid-template-columns:1fr}}
+
+/* why */
+#why{background:var(--ink);color:#fff}
+#why .eyebrow{color:#ff9aa9}
+#why .lead{color:#c5c8d0}
+.why{display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:center}
+.why-img{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3.4}
+.why-img img{width:100%;height:100%;object-fit:cover}
+.pts{display:grid;gap:1.2rem;margin-top:2rem}
+.pt{display:flex;gap:1rem}
+.pt .n{flex:none;width:36px;height:36px;border-radius:50%;background:var(--scarlet);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.pt h3{font-family:Inter,sans-serif;font-size:1.02rem;font-weight:700}
+.pt p{color:#c5c8d0;font-size:.93rem}
+@media(max-width:900px){.why{grid-template-columns:1fr;gap:2.2rem}}
+
+/* enquiry */
+#enquire{background:var(--gray)}
+.enq{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:start}
+.contact-list{display:grid;gap:.9rem;margin-top:1.8rem}
+.contact-list a,.contact-list div{display:flex;gap:.9rem;align-items:center;background:#fff;border-radius:12px;padding:1rem 1.1rem;font-weight:500}
+.contact-list svg{width:20px;height:20px;stroke:var(--scarlet);fill:none;stroke-width:1.8;flex:none}
+.contact-list small{display:block;color:var(--muted);font-weight:400;font-size:.8rem}
+form{background:#fff;border-radius:var(--r);padding:2rem;box-shadow:var(--shadow)}
+form h3{font-size:1.5rem;margin-bottom:.3rem}
+form .sub{color:var(--muted);font-size:.9rem;margin-bottom:1.4rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.f{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+.f label{font-size:.82rem;font-weight:600;color:var(--slate)}
+.f input,.f select,.f textarea{font:inherit;font-size:.95rem;padding:.8rem .9rem;border:1px solid var(--line);border-radius:10px;background:#fbfbfc;width:100%}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid #f3b6c0;border-color:var(--scarlet)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{cursor:pointer}
+.chips input{display:none}
+.chips span{display:inline-block;padding:.45rem .85rem;border:1px solid var(--line);border-radius:999px;font-size:.85rem;font-weight:500;background:#fff}
+.chips input:checked+span{background:var(--scarlet);border-color:var(--scarlet);color:#fff}
+.note{font-size:.8rem;color:var(--muted);margin-top:.8rem}
+.ok{display:none;background:#eaf6ee;color:#1d6b3a;border-radius:10px;padding:.9rem 1rem;font-size:.92rem;margin-top:1rem}
+@media(max-width:900px){.enq{grid-template-columns:1fr}}
+@media(max-width:520px){.row{grid-template-columns:1fr}form{padding:1.4rem}}
+
+/* location */
+.loc{display:grid;grid-template-columns:1fr 1.3fr;gap:2.4rem;align-items:center}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--gray)}
+.map iframe{width:100%;height:100%;border:0}
+.areas{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.2rem}
+.areas span{background:var(--gray);padding:.35rem .75rem;border-radius:999px;font-size:.85rem}
+@media(max-width:900px){.loc{grid-template-columns:1fr}}
+
+/* faq */
+#faq{background:var(--cream)}
+.faq{max-width:820px;margin:2.2rem auto 0}
+details{background:#fff;border-radius:12px;margin-bottom:.8rem;border:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:1.15rem 1.3rem;font-weight:600;display:flex;justify-content:space-between;gap:1rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--scarlet);transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 1.3rem 1.2rem;color:var(--slate)}
+
+/* cta + footer */
+.cta{background:linear-gradient(120deg,var(--scarlet-d),var(--scarlet));color:#fff;border-radius:22px;padding:3rem;display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.cta h2{font-size:clamp(1.6rem,3.5vw,2.3rem)}
+.cta p{color:#ffe1e5}
+.cta .btn-white{background:#fff;color:var(--scarlet)}
+footer{background:var(--ink);color:#aeb2bc;padding:56px 0 28px;font-size:.9rem;margin-top:84px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+footer h4{color:#fff;font-size:.95rem;margin-bottom:.8rem}
+footer a:hover{color:#fff}
+footer ul{list-style:none;display:grid;gap:.45rem}
+.credits{border-top:1px solid #2d3039;margin-top:2.4rem;padding-top:1.4rem;font-size:.78rem;color:#80858f}
+.credits a{text-decoration:underline}
+@media(max-width:800px){.fgrid{grid-template-columns:1fr}}
+
+/* sticky mobile bar */
+.mbar{display:none}
+@media(max-width:700px){
+  .mbar{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 20px rgba(0,0,0,.08)}
+  .mbar a{padding:.75rem 0;text-align:center;font-size:.78rem;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:.2rem}
+  .mbar svg{width:20px;height:20px;stroke:var(--scarlet);fill:none;stroke-width:1.8}
+  body{padding-bottom:64px}
+  section{padding:64px 0}
+  .cta{padding:2rem 1.4rem}
+}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<div class="ribbon">Demo design by <b>KS Digital Studio</b> — for Reynolds Travel</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="mark">R</span><span>Reynolds Travel<small>Columbus · Ohio</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="#trips">Trips</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#enquire">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+16148478008">614-847-8008</a>
+      <a class="btn btn-primary" href="#enquire">Plan My Trip</a>
+      <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Central Ohio's group &amp; game-day travel specialists</span>
+    <h1>Follow the Buckeyes. <em>See the world.</em> We handle every detail.</h1>
+    <p>Away-game and bowl packages, escorted European tours and group trips — planned personally from Columbus, for travelers across Central Ohio.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#trips">View Upcoming Trips</a>
+      <a class="btn btn-ghost" href="#enquire">Plan a Group Trip</a>
+    </div>
+  </div>
+  <div class="hero-strip">
+    <div class="wrap strip">
+      <div><b>Game-day packages</b><span>Away games &amp; bowl trips</span></div>
+      <div><b>Escorted tours</b><span>Europe &amp; beyond</span></div>
+      <div><b>Group travel</b><span>Clubs, alumni, churches</span></div>
+      <div><b>Personal agent</b><span>Call 1-866-880-0577</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="trips">
+  <div class="wrap">
+    <div class="head reveal">
+      <div>
+        <span class="eyebrow">Featured journeys</span>
+        <h2>Trips our travelers love</h2>
+      </div>
+      <p class="lead">Each trip page can show dates, inclusions and live availability — and old trips archive automatically, so the homepage is always current.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ph"><img src="img/hero.jpg" alt="View of clouds from an aircraft window" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Sports travel</span>
+          <h3>Buckeye Away Games &amp; Bowl Trips</h3>
+          <p>Air-inclusive and land-only packages for Ohio State football away games, bowl games and tournament basketball — tickets, hotel and transfers sorted.</p>
+          <a class="more" href="#enquire">Ask about this season →</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/normandy.jpg" alt="Cliffs and sea along the Normandy coast" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Escorted tour</span>
+          <h3>Normandy &amp; WWII Heritage</h3>
+          <p>Retrace the path of the 1944 Allied landings with a fully escorted itinerary through Normandy's beaches, memorials and villages.</p>
+          <a class="more" href="#enquire">Request the itinerary →</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="ph"><img src="img/iceland.jpg" alt="Skogafoss waterfall in Iceland" loading="lazy"></div>
+        <div class="body">
+          <span class="tag">Group adventure</span>
+          <h3>Iceland — Land of Fire &amp; Ice</h3>
+          <p>Waterfalls, glaciers and geothermal lagoons on a small-group journey, with air-inclusive or land-only options.</p>
+          <a class="more" href="#enquire">Join the interest list →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>Full-service travel, one personal agent</h2>
+      <p class="lead" style="margin-top:.8rem">From a couple's cruise to a coach-load of alumni, one call to our Columbus office starts it all.</p>
+    </div>
+    <div class="svc">
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div><h3>Sports &amp; Game-Day Trips</h3><p>Football away games, bowl games and NCAA tournament trips with tickets and hotels bundled.</p></div>
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6"/></svg></div><h3>Escorted European Tours</h3><p>Fully escorted itineraries across Europe with trusted tour partners — no planning stress.</p></div>
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 15.5c3 0 7 1.5 7 4.5"/></svg></div><h3>Group Travel Planning</h3><p>Clubs, churches, schools and alumni groups — we build the trip and manage sign-ups.</p></div>
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 17c2 2 4 2 6 0s4-2 6 0 4 2 6 0M4 14l2-6h12l2 6M9 8V4h6v4"/></svg></div><h3>Cruises</h3><p>Caribbean, Alaska, Mediterranean and river cruises matched to your budget and dates.</p></div>
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-5h6v5"/></svg></div><h3>Vacation Condo Rentals</h3><p>Hand-picked condos and resorts for family getaways and longer stays.</p></div>
+      <div class="reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M2 12l20-7-7 20-3-9z"/></svg></div><h3>Individual Vacations</h3><p>Hawaii, Mexico, the Caribbean and U.S. getaways — flights, hotels and extras in one plan.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why">
+    <div class="why-img reveal"><img src="img/lakes.jpg" alt="Red pierhead lighthouse on the Great Lakes" loading="lazy"></div>
+    <div class="reveal">
+      <span class="eyebrow">Why travel with us</span>
+      <h2>Local, personal and here when plans change</h2>
+      <p class="lead" style="margin-top:.8rem">Booking sites sell seats. We plan journeys — and we pick up the phone.</p>
+      <div class="pts">
+        <div class="pt"><span class="n">1</span><div><h3>A real person in Columbus</h3><p>Talk to your own travel agent, not a call centre — before, during and after your trip.</p></div></div>
+        <div class="pt"><span class="n">2</span><div><h3>Game-day know-how</h3><p>Buckeye away games and bowl trips have been a specialty for decades — we know the logistics.</p></div></div>
+        <div class="pt"><span class="n">3</span><div><h3>Groups made simple</h3><p>One organiser, one point of contact — we handle rooming lists, payments and transfers.</p></div></div>
+        <div class="pt"><span class="n">4</span><div><h3>Trusted tour partners</h3><p>Escorted tours with established operators, so every day is planned and every guide is vetted.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="enquire">
+  <div class="wrap enq">
+    <div class="reveal">
+      <span class="eyebrow">Start planning</span>
+      <h2>Tell us where you'd like to go</h2>
+      <p class="lead" style="margin-top:.8rem">Send a quick request and your travel agent will call you back with options.</p>
+      <div class="contact-list">
+        <a href="tel:+16148478008"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>614-847-8008<small>Local office</small></span></a>
+        <a href="tel:+18668800577"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span>1-866-880-0577<small>Toll free</small></span></a>
+                <a href="mailto:ike@reynoldstravel.net"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>ike@reynoldstravel.net<small>Email</small></span></a>
+      </div>
+    </div>
+    <form id="form" class="reveal" novalidate>
+      <h3>Trip request</h3>
+      <p class="sub">Takes under a minute. No obligation.</p>
+      <div class="f"><label>I'm interested in</label>
+        <div class="chips">
+          <label><input type="checkbox" checked><span>Game-day trip</span></label>
+          <label><input type="checkbox"><span>Escorted tour</span></label>
+          <label><input type="checkbox"><span>Group trip</span></label>
+          <label><input type="checkbox"><span>Cruise</span></label>
+          <label><input type="checkbox"><span>Other</span></label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="f"><label for="n">Name</label><input id="n" placeholder="Your name"></div>
+        <div class="f"><label for="p">Phone</label><input id="p" type="tel" placeholder="(614) 555-0100"></div>
+      </div>
+      <div class="row">
+        <div class="f"><label for="e">Email</label><input id="e" type="email" placeholder="you@email.com"></div>
+        <div class="f"><label for="t">Travelers</label><select id="t"><option>1–2</option><option>3–6</option><option>7–15</option><option>16+ (group)</option></select></div>
+      </div>
+      <div class="f"><label for="m">Destination, dates or game</label><textarea id="m" rows="3" placeholder="e.g. Away game in October, 2 nights, air from Columbus"></textarea></div>
+      <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send Trip Request</button>
+      <p class="note">Demo form — nothing is sent. On the live site, requests go straight to your inbox and phone.</p>
+      <div class="ok" id="ok">Thanks! (Demo) On the live site, your agent would receive this request instantly.</div>
+    </form>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap loc">
+    <div class="reveal">
+      <span class="eyebrow">Visit or call</span>
+      <h2>Our Columbus office</h2>
+      <p class="lead" style="margin-top:.8rem">Reynolds Travel LLC<br>8905 Commerce Loop Drive<br>Columbus, Ohio 43240</p>
+      <div class="areas">
+        <span>Columbus</span><span>Hilliard</span><span>Delaware</span><span>Powell</span><span>Dublin</span><span>Westerville</span><span>Worthington</span><span>Upper Arlington</span><span>Gahanna</span>
+      </div>
+      <div style="margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=8905+Commerce+Loop+Drive+Columbus+OH+43240" target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn btn-outline" href="tel:+16148478008">Call the Office</a>
+      </div>
+    </div>
+    <div class="map reveal">
+      <iframe title="Map to Reynolds Travel" loading="lazy" src="https://www.google.com/maps?q=8905+Commerce+Loop+Drive,+Columbus,+OH+43240&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <span class="eyebrow">Good to know</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Do your game-day packages include game tickets?</summary><p>Packages are built around the game — ask us which options include tickets, hotel and transfers for the trip you're interested in.</p></details>
+      <details><summary>Can you plan a trip for our club or alumni group?</summary><p>Yes. Group travel is a core part of what we do — tell us your group size, dates and budget and we'll put together a proposal.</p></details>
+      <details><summary>Do I have to fly, or are land-only packages available?</summary><p>Many trips are offered both air-inclusive and land-only, so you can use your own flights or miles if you prefer.</p></details>
+      <details><summary>What are escorted tours?</summary><p>A professional tour director travels with the group the whole way — hotels, sightseeing, transport and many meals are pre-arranged.</p></details>
+      <details><summary>How do I hold a spot on an upcoming trip?</summary><p>Send a trip request or call the office. Your agent will confirm availability and explain deposit and payment steps.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="wrap reveal">
+  <div class="cta">
+    <div><h2>Your next trip starts with one call.</h2><p>Speak with a Central Ohio travel agent today.</p></div>
+    <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+      <a class="btn btn-white" href="tel:+18668800577">1-866-880-0577</a>
+      <a class="btn btn-ghost" href="#enquire">Send a Request</a>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:.8rem"><span class="mark">R</span><span>Reynolds Travel</span></div>
+        <p>Game-day trips, escorted tours, cruises and group travel for Central Ohio.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#trips">Upcoming trips</a></li><li><a href="#services">Services</a></li><li><a href="#faq">FAQ</a></li><li><a href="#enquire">Plan a trip</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>8905 Commerce Loop Drive, Columbus, OH 43240</li><li><a href="tel:+16148478008">614-847-8008</a></li><li><a href="tel:+18668800577">1-866-880-0577 (toll free)</a></li><li><a href="mailto:ike@reynoldstravel.net">ike@reynoldstravel.net</a></li></ul></div>
+    </div>
+    <p class="credits" id="credits">Sample photos: loading credits… Real photos of your business will replace these.</p>
+    <p class="credits" style="border:0;margin-top:0;padding-top:.4rem">Demo design by KS Digital Studio · www.ksdigitalstudio.in</p>
+  </div>
+</footer>
+
+<nav class="mbar">
+  <a href="tel:+16148478008"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+  <a href="#enquire"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/></svg>Enquire</a>
+  <a href="mailto:ike@reynoldstravel.net"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a>
+</nav>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){m.classList.toggle('open')});
+  m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block'});
+  var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12}):null;
+  document.querySelectorAll('.reveal').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+  var credits=[
+    {t:"Soaring between the clouds",c:"Lenny K Photography",l:"CC BY 2.0",u:"https://www.flickr.com/photos/57527070@N06/17574894754"},
+    {t:"Skogafoss waterfall - Iceland",c:"Giuseppe Milo (www.pixael.com)",l:"CC BY 2.0",u:"https://www.flickr.com/photos/87690240@N03/34692750741"},
+    {t:"Normandy Beaches from Pointe du Hoc",c:"string_bass_dave",l:"CC BY-SA 2.0",u:"https://www.flickr.com/photos/16069488@N00/32861105064"},
+    {t:"Sturgeon Bay Ship Canal North Pierhead Light",c:"pmarkham",l:"CC BY-SA 2.0",u:"https://www.flickr.com/photos/9197427@N06/9201193356"}
+  ];
+  var el=document.getElementById('credits');
+  el.innerHTML='Sample photos: '+credits.map(function(x){return '<a href="'+x.u+'" target="_blank" rel="noopener">“'+x.t+'”</a> by '+x.c+' ('+x.l+')'}).join('; ')+'. Real photos of your business will replace these.';
+})();
+</script>
+</body>
+</html>
